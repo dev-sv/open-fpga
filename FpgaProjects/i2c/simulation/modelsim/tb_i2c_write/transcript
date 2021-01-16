@@ -1,0 +1,4 @@
+# Compile of i2c.sv was successful.
+# Compile of tb_i2c_write.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -gui -l msim_transcript work.tb_i2c_write

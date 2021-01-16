@@ -1,0 +1,22 @@
+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module queue
+
+Top level modules:
+	queue
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module lcd_12864b
+
+Top level modules:
+	lcd_12864b
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/tb_lcd_12864b.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/tb_lcd_12864b.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_lcd_12864b
+
+Top level modules:
+	tb_lcd_12864b
+
+} {} {}}

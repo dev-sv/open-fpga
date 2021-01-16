@@ -1,0 +1,84 @@
+
+
+
+module lcd_12864b #(parameter N = 8)(input bit clk, input logic[7:0] in_data, input bit cmd, 
+                                     input logic[$clog2(N) - 1:0] pWR, output bit rs, rw, e, 
+												 output logic [7:0] out_data, output bit full);
+
+												 
+
+enum {WR, E_HI, E_LOW, QRY, TO_WR} state = QRY;
+												 
+bit [7:0] qcount;	
+bit       query = 0;
+int       delay = 0;	
+
+	
+			  
+	queue	#(N)queue_inst(.clk(clk), .pWR(pWR), .in_data(in_data), .full(full), 
+	                     .qcount(qcount), .out_queue(out_data), .query(query));
+						
+
+						
+	always @(posedge clk) begin
+	
+	
+		  case(state)
+		  
+									 
+				 WR:   begin
+				 
+						   rs <= cmd;								
+						   rw <= 0;									
+						   state <= E_HI;														
+				       end
+
+						 
+			    E_HI: begin
+										
+						   e <= 1'b1;
+					      state <= E_LOW;
+				        end
+
+						  
+  				 E_LOW: begin
+	
+						    e <= 0;
+						    state <= QRY;
+				        end 
+								 
+								
+				 QRY:   begin
+				 							
+						    e <= 0;
+						    rs <= 1'b1;
+						    rw <= 1'b1;
+							
+					       if(delay < 100)
+						       ++delay;
+								
+						    else begin
+							                
+						           if(qcount) begin
+						
+							           query <= 1;								
+							           delay <= 0;
+							           state <= TO_WR;
+						           end	
+					       end															
+				        end	
+						  
+				 
+			    TO_WR: begin
+							 							
+						    query <= 0;			
+						    state <= WR;
+					     end				 
+				 						 
+				 default: ;	 
+						 						 
+			endcase
+	
+	end
+
+endmodule: lcd_12864b

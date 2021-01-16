@@ -1,0 +1,191 @@
+/*
+
+ comment WR_ONE_BYTE for sequential writing. 
+
+*/
+`timescale 1 ps / 1 ps
+
+
+module tb_wr_seq;
+
+
+`include "../tb.h"
+
+
+`define WR_ONE_BYTE
+
+localparam int			 max = 3;
+	
+localparam logic[7:0] addr_dev = 8'b10100000;
+
+
+enum_t::i2c_t st;
+enum_t::en_t  en = enum_t::EN_WR;
+enum {FREE, BUSY, STOP} state = FREE;
+
+
+	 
+int   i = 0, 
+      j = 0,
+      nb = 8; 
+
+bit   sclk,
+	   sw = 0,
+	   clk = 0, 
+	   fl_stop = 0, 
+	   fl_start = 0; 
+		
+logic[7:0] data,
+           buff[max],
+			  sda_buff[max],
+			  out_i2c;
+
+wire  	  sda;
+
+			  
+	assign sda = !sw ? 1'bz : 0;
+	
+			  
+initial
+begin
+ 
+ buff[0] = addr_dev;
+ sda_buff[0] = 0;
+ 
+ for(int i = 0; i < (max - 1); ++i) begin
+ 
+	  sda_buff[i + 1] = 0;
+	  buff[i + 1] = i + 8'ha9;
+ end
+    
+	 
+ forever
+	#10 clk = ~clk;
+
+end
+
+
+	i2c	i2c_inst(.clk(clk), .sda(sda), .sclk(sclk), .data(data), .en(en), .st(st), .out_i2c(out_i2c));
+
+
+/****************************************************************************************
+	Master device.
+****************************************************************************************/
+	
+ always @(negedge clk) begin
+	
+	
+		case(state)
+			
+
+			FREE: if(st == enum_t::ACK || !i) begin
+					  						  
+			         data <= buff[i];
+						state <= BUSY;													   	
+					end	
+					  					
+
+			BUSY: if(st == enum_t::WR) begin
+					  
+					   ++i;
+						
+						if(i < max)
+					      state <= FREE;
+							
+						else begin 
+						
+								 `ifdef WR_ONE_BYTE
+								 
+											state <= STOP;
+								 `endif
+								 
+						       en <= enum_t::EN_STOP;
+						end		 
+					end
+					
+					
+			STOP: if(st == enum_t::STOP) begin
+
+					     i <= 0;						 
+						  state <= FREE;
+						  en <= enum_t::EN_WR;
+					end											
+		endcase
+ end
+
+		
+/****************************************************************************************
+	Slave device.
+****************************************************************************************/
+
+	
+// Catch start.	
+ always @(sclk, sda) begin	
+	
+	if(sclk && !sda && !fl_start)	
+	   fl_start = 1;		
+	
+ end	
+
+ 
+// Catch stop.	
+ always @(posedge sclk)
+	fl_stop <= 1;
+		
+ 
+ always @(posedge sda) begin
+
+	if(fl_stop) begin
+	
+		fl_start <= 0;
+		
+      for(int i = 0; i < max; ++i) begin
+		
+		    `COMP(buff[i], sda_buff[i], EQ);
+	   end		 
+	end	
+ end
+	
+	
+// Slave sets bus to z state.	
+ always @(negedge sclk) begin	
+	
+	fl_stop <= 0;
+	
+	if(sw)	
+	   sw <= 0;
+ end
+	
+	
+// Slave gets data;		
+ always @(posedge sclk) begin
+	
+	
+	if(fl_start) begin
+		
+		if(nb && sda !== 1'bz) begin
+			   
+			--nb;
+			sda_buff[j] <= sda_buff[j] | (sda << nb);
+		end
+			
+			
+		if(!nb) begin
+			      
+		   if(sda === 1'bz) begin
+			
+			   ++j;
+			
+			   if(j == max)
+			      j <= 0;
+			
+			   sw <= 1;
+			   nb <= 8;
+		   end
+      end
+						
+   end
+	
+ end	 
+	
+ endmodule: tb_wr_seq

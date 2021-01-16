@@ -1,0 +1,83 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/simulation/modelsim
+vlcd_12864b
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1603966378
+!i10b 1
+!s100 Za?3GbX<zd`Nj>AAZMVlI3
+IPB_i738O^3366G8MeV[043
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+!s105 lcd_12864b_sv_unit
+S1
+Z2 dC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/simulation/modelsim/tb_lcd_12864b
+w1596803131
+8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv
+FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv
+L0 4
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1603966378.000000
+!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv|
+!i113 1
+Z4 o-work work -sv
+Z5 tCvgOpt 0
+vqueue
+R0
+Z6 !s110 1603966379
+!i10b 1
+!s100 7KJY@?7ool;CQXT96h48<2
+IKJaO]Fkj?Il1O@^Tg:R5C2
+R1
+!s105 queue_sv_unit
+S1
+R2
+w1596461525
+8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv
+FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv
+L0 4
+R3
+r1
+!s85 0
+31
+Z7 !s108 1603966379.000000
+!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv|
+!i113 1
+R4
+R5
+vtb_lcd_12864b
+R0
+R6
+!i10b 1
+!s100 L@BekZ2PO9M76:9[hhgeZ2
+I^X:9_];Ij7kYCJ_N>H@8X3
+R1
+!s105 tb_lcd_12864b_sv_unit
+S1
+R2
+w1596214752
+8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/tb_lcd_12864b.sv
+FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/tb_lcd_12864b.sv
+FC:\Projects\FPGA\SystemVerilog\GitHubRelease\lcd_12864b\..\tb.h
+L0 6
+R3
+r1
+!s85 0
+31
+R7
+!s107 C:\Projects\FPGA\SystemVerilog\GitHubRelease\lcd_12864b\..\tb.h|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/tb_lcd_12864b.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/tb_lcd_12864b.sv|
+!i113 1
+R4
+R5

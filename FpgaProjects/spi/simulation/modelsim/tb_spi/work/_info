@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/simulation/modelsim
+vspi
+Z0 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z1 !s110 1603966276
+!i10b 1
+!s100 50T]ZOA?;__ALZGJV27Zh1
+I<bAPeoX]i[SCn2dVc22==2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 spi_sv_unit
+S1
+Z3 dC:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/simulation/modelsim/tb_spi
+w1597667509
+8C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/spi.sv
+FC:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/spi.sv
+L0 4
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1603966276.000000
+!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/spi.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/spi.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vtb_spi
+R0
+R1
+!i10b 1
+!s100 4I6KEfc6Sjz5XH27gmf<z3
+InV1in7i:nZWTVicMFAjz22
+R2
+!s105 tb_spi_sv_unit
+S1
+R3
+w1597688443
+8C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/tb_spi.sv
+FC:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/tb_spi.sv
+FC:\Projects\FPGA\SystemVerilog\GitHubRelease\spi\..\tb.h
+L0 5
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:\Projects\FPGA\SystemVerilog\GitHubRelease\spi\..\tb.h|C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/tb_spi.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/tb_spi.sv|
+!i113 1
+R6
+R7

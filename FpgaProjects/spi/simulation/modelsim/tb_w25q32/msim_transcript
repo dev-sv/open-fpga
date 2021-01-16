@@ -1,0 +1,29 @@
+# vsim -gui -l msim_transcript work.tb_w25q32 
+# Start time: 17:01:17 on Aug 12,2020
+# Loading sv_std.std
+# Loading work.tb_w25q32
+# Loading work.w25q32
+# Loading work.spi
+add wave -position insertpoint  \
+sim:/tb_w25q32/sclk \
+sim:/tb_w25q32/ss \
+sim:/tb_w25q32/mosi \
+sim:/tb_w25q32/mem_data
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:01:41 on Aug 12,2020, Elapsed time: 0:00:24
+# Errors: 0, Warnings: 0

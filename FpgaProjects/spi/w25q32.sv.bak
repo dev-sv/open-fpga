@@ -1,0 +1,10 @@
+
+
+
+module w25q32(input bit clk);
+
+
+
+
+
+endmodule: w25q32

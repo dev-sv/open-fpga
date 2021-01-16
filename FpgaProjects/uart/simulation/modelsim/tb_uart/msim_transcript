@@ -1,0 +1,47 @@
+# vsim -gui -l msim_transcript work.tb_uart -L altera_mf_ver 
+# Start time: 01:33:00 on Nov 06,2020
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+add wave -position insertpoint  \
+sim:/tb_uart/tx
+add wave -position insertpoint  \
+sim:/tb_uart/rx
+add wave -position insertpoint  \
+sim:/tb_uart/rx_full
+add wave -position insertpoint  \
+sim:/tb_uart/en_tx
+run
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 31 OK.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# End time: 01:38:22 on Nov 06,2020, Elapsed time: 0:05:22
+# Errors: 0, Warnings: 0

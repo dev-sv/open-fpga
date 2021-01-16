@@ -1,0 +1,10 @@
+
+
+
+module lcd_1602(input bit clk);
+
+
+
+
+
+endmodule: lcd_1602

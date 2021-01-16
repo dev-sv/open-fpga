@@ -1,0 +1,35 @@
+
+
+
+module sync(input bit clk, output bit de = 1, output bit[1:0] vh = 0, output bit [10:0] x = 0, y = 0);
+
+
+parameter horz_front_porch = 30;//24;
+parameter horz_sync = 140;//136;
+parameter horz_back_porch = 170;//160;
+parameter horz_pix = 1024;
+
+parameter vert_front_porch = 1;//10
+parameter vert_sync = 5;//50;//6;//3;		 
+parameter vert_back_porch = 30;////80;//29;//21;
+parameter vert_pix = 600;
+
+
+		
+	always @(posedge clk) begin
+	
+		
+		de <= (x < horz_pix) && (y < vert_pix);	
+			
+		x <= (x == (horz_pix + horz_front_porch + horz_sync + horz_back_porch - 1)) ? 0 : (x + 1);		
+				
+		if(x == (horz_pix + horz_front_porch + horz_sync + horz_back_porch - 1))
+		   y <= (y == (vert_pix + vert_front_porch + vert_sync + vert_back_porch - 1)) ? 0 : (y + 1);
+			
+		vh[0] <= (x >= (horz_pix + horz_front_porch - 1) && x < (horz_pix + horz_front_porch + horz_sync - 1));
+						
+		vh[1] <= (y >= (vert_pix + vert_front_porch - 1) && y < (vert_pix + vert_front_porch + vert_sync - 1));
+	end
+		
+
+endmodule: sync

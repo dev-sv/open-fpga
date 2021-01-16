@@ -1,0 +1,10 @@
+
+
+
+module char(input bit clk);
+
+
+
+
+
+endmodule: char

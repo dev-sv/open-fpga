@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sclk_max",
+					"strict" : false
+				},
+				{
+					"name" : "ss_max",
+					"strict" : false
+				},
+				{
+					"name" : "mosi_max",
+					"strict" : false
+				},
+				{
+					"name" : "sclk_w25",
+					"strict" : false
+				},
+				{
+					"name" : "ss_w25",
+					"strict" : false
+				},
+				{
+					"name" : "mosi_w25",
+					"strict" : false
+				},
+				{
+					"name" : "miso_w25",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

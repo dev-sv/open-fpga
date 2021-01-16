@@ -1,0 +1,5 @@
+Warning (10268): Verilog HDL information at max7219.sv(58): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/max7219.sv Line: 58
+Warning (10268): Verilog HDL information at spi.sv(29): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/spi.sv Line: 29
+Warning (10268): Verilog HDL information at w25q32.sv(37): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/w25q32.sv Line: 37
+Warning (10268): Verilog HDL information at tb_spi.sv(58): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/tb_spi.sv Line: 58
+Warning (10268): Verilog HDL information at tb_spi.sv(90): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/spi/tb_spi.sv Line: 90

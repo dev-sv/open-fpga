@@ -1,0 +1,91 @@
+# vsim -gui -l msim_transcript work.tb_i2c_write 
+# Start time: 22:02:13 on Oct 12,2020
+# Loading sv_std.std
+# Loading work.enum_t
+# Loading work.tb_i2c_write
+# Loading work.i2c
+add wave -position insertpoint  \
+sim:/tb_i2c_write/sclk
+add wave -position insertpoint  \
+sim:/tb_i2c_write/sda
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# Testbench i2c for sequential writing.
+# 
+# op: EQ  a = 96 b = 96 OK.
+# op: EQ  a = 97 b = 97 OK.
+# op: EQ  a = 98 b = 98 OK.
+# op: EQ  a = 99 b = 99 OK.
+# op: EQ  a = 9a b = 9a OK.
+# op: EQ  a = 9b b = 9b OK.
+# op: EQ  a = 9c b = 9c OK.
+# op: EQ  a = 9d b = 9d OK.
+# op: EQ  a = 9e b = 9e OK.
+# op: EQ  a = 9f b = 9f OK.
+# op: EQ  a = a0 b = a0 OK.
+# op: EQ  a = a1 b = a1 OK.
+# op: EQ  a = a2 b = a2 OK.
+# op: EQ  a = a3 b = a3 OK.
+run
+run
+run
+run
+# End time: 22:02:40 on Oct 12,2020, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 0

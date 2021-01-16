@@ -1,0 +1,5 @@
+
+State Machine - |i2c_top|lcd_1602:lcd_1602_inst|ns
+Name ns.11000000 
+ns.10000000 0 
+ns.11000000 1 

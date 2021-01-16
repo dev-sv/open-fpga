@@ -1,0 +1,254 @@
+
+
+import t_if::*;
+import p_rd::*;
+
+module tb_cross_bar;
+
+
+//enum {MUX, REQ, CMD, WR, RD, WAIT_ACK} st_m = REQ;
+//enum {S_REQ, S_WR, S_RD, S_NO} st_s = S_REQ;
+
+
+bit clk = 0;
+
+/*
+// Master.
+wire[31:0] addr[2];
+wire[31:0] wr_data[2];
+//wire[31:0] rd_data[2];
+wire       cmd[2];
+wire       req[2], ack[2];
+	  	  
+	  
+// Slave.
+wire[31:0] s_addr[2], 
+           s_wr_data[2],
+           s_rd_data[2];
+			  
+wire       s_cmd[2], 
+           s_ack[2],
+           s_req[2];
+
+
+
+bit[31:0] s_mem[8];
+*/
+
+/*	  
+	  
+initial
+begin
+
+ mst[0].req = 1'b0;
+ mst[0].ack = 1'b0;
+ mst[0].cmd = 1'bz;
+
+// mst[0].addr = 32'h00000001;
+// mst[0].wr_data = 32'h12345678;
+
+ mst[1].req = 1'b0;
+ mst[1].ack = 1'b0;
+ mst[1].cmd = 1'bz;
+// mst[1].ack = 1'b0;
+
+// mst[1].addr = 32'h00000002;
+// mst[1].wr_data = 32'h87654321;
+ */
+ /*
+ ++{mst[0].addr[31], mst[1].addr[31]};
+ ++{mst[0].addr[31], mst[1].addr[31]};
+ ++{mst[0].addr[31], mst[1].addr[31]};
+  */
+  
+t_st	mst[2], in[2],
+		slv[2]; 
+		 
+t_rd	in_rd[2], 
+      out_rd[2];
+
+//bit[31:0] rd_data[2] = '{32'h10000001, 32'h20000002};
+  
+//bit ack[2];  
+  
+//bit[1:0] sel;  
+
+  
+initial
+begin
+
+in[0].req = 1;
+//in[0].ack = 0;
+in[0].cmd = 1; 
+in[0].addr = 32'h00000001;
+in[0].data = 32'h90011009;
+
+in[1].req = 0;
+//in[1].ack = 0;
+in[1].cmd = 1; 
+in[1].addr = 32'h81111111;
+in[1].data = 32'h22222222;
+
+
+  
+ forever
+	#10 clk = ~clk;
+	  
+end
+	  
+	
+//	master master_0(.clk(clk), .in(in[0]), .ack(out_rd[0].ack), .rd(out_rd[0].data), .out(mst[0]));
+	master master_0(.clk(clk), .in(in[0]), .rd(out_rd[0]), .out(mst[0]));
+	
+//	master master_1(.clk(clk), .in(in[1]), .ack(out_rd[1].ack), .out(mst[1]));
+	master master_1(.clk(clk), .in(in[1]), .rd(out_rd[1]), .out(mst[1]));
+	
+	cross_bar cross_bar_dut(.clk(clk), .mst(mst), .slv(slv), .slv_cross(in_rd), .cross_mst(out_rd));
+
+	slave slave_0(.clk(clk), .in(slv[0]), .rd(in_rd[0]));//.ack(in_rd[0].ack), .data(in_rd[0].data));
+
+	
+	
+   always @(posedge clk) begin
+	/*		
+	#100 $display("addr0 slv_0 = %h", slv[0].addr);
+		  $display("data0 slv_0 = %h\n", slv[0].data);
+	     $display("addr1 slv_1 = %h", slv[1].addr);
+		  $display("data1 slv_1 = %h\n", slv[1].data);*/
+		  
+	//#1  $display("ack = %b\n", out_rd[0].ack);
+		
+	//#1	$display("mst req = %b\n", mst[0].req);
+	
+	#1	$display("rd data = %h\n", in_rd[0].data);
+		
+	end
+	
+	//cross_bar cross_bar_dut(.clk(clk), .mst(mst), .slv(slv), .rd_data(rd_data));
+	
+	/*
+	master master_0(.clk(clk), .addr(addr[0]), .wr_data(wr_data[0]), .cmd(cmd[0]), .req(req[0]), .ack(ack[0]), .rd_data(rd_data[0]));
+	master master_1(.clk(clk), .addr(addr[1]), .wr_data(wr_data[1]), .cmd(cmd[1]), .req(req[1]), .ack(ack[1]), .rd_data(rd_data[1]));
+
+	slave slave_0(.clk(clk), .addr(s_addr[0]), .wr_data(s_wr_data[0]), .cmd(s_cmd[0]), .req(s_req[0]), .ack(s_ack[0]), .rd_data(s_rd_data[0]));
+	slave slave_1(.clk(clk), .addr(s_addr[1]), .wr_data(s_wr_data[1]), .cmd(s_cmd[1]), .req(s_req[1]), .ack(s_ack[1]), .rd_data(s_rd_data[1]));
+	
+	
+	cross_bar cross_bar_dut(.clk(clk), .addr(addr), .wr_data(wr_data), .cmd(cmd), .req(req), .ack(s_ack), .rd_data(s_rd_data),
+						         .s_addr(s_addr), .s_wr_data(s_wr_data), .s_cmd(s_cmd), .s_req(s_req), .sm_ack(ack), .sm_rd_data(rd_data));
+
+//					  output bit[31:0] s_addr[2], s_wr_data[2], output s_cmd[2], output bit s_req[2], sm_ack[2], output bit[31:0] sm_rd_data[2]);
+									
+	*/								
+	 
+/*	
+   always @(posedge clk) begin
+			
+	#1	$display("req = %b", slv[{mst[0].addr[31], mst[1].addr[31]} >> 1].req);
+		$display("cmd = %b", slv[{mst[0].addr[31], mst[1].addr[31]} >> 1].cmd);
+		$display("ack = %b", slv[{mst[0].addr[31], mst[1].addr[31]} >> 1].ack);
+		
+		$display("addr = %h", slv[{mst[0].addr[31], mst[1].addr[31]} >> 1].addr);
+		$display("wr_data = %h", slv[{mst[0].addr[31], mst[1].addr[31]} >> 1].wr_data);	
+	end
+*/
+/*
+// Master.	
+   always @(posedge clk) begin
+	
+	
+		case(st_m)
+		
+		
+			MUX: begin
+			
+					 ++{mst[0].addr[31], mst[1].addr[31]};
+                st_m <= REQ;
+				  end	
+		
+		
+			REQ: begin
+			
+					 mst[0].req <= 1'b1;
+			       st_m <= WR;
+			       //st_m <= RD;
+				  end	
+		
+		   WR: begin
+			
+//					 mst[0].cmd <= mst[0].cmd ? 1'b0 : 1'b1;
+					 mst[0].cmd <= 1'b0;
+					 mst[0].addr <= 32'h00000001;
+					 mst[0].wr_data <= 32'h12345678;	
+				
+		          st_m <= WAIT_ACK;		
+				 end	
+				  
+		   RD: begin
+			
+					 mst[0].cmd <= 1'b1;
+				    st_m <= WAIT_ACK;
+				 end		
+
+			WAIT_ACK: begin
+			
+							mst[0].cmd <= 1'bz;
+							
+			            
+							if(mst[0].ack) begin
+							
+							   //mst[0].req <= 1'b0;
+								//st_m <= REQ;
+						
+								$display("AAAAAAAAAAAAA");
+
+								
+							end
+							
+						 end	
+				  
+		endcase
+		
+	end
+
+
+// Slave.
+   always @(posedge clk) begin
+	
+	
+		case(st_s)
+		
+
+			S_REQ: if(slv[0].req) begin
+						 
+						 if(slv[0].cmd !== 1'bz)
+						    st_s <= !slv[0].cmd ? S_WR : S_RD;							
+					 end
+					 
+			
+			 S_WR: if(slv[0].cmd === 1'bz) begin
+						
+						 s_mem[slv[0].addr] <= slv[0].wr_data;
+						
+					    mst[0].ack <= 1'b1;	
+						 st_s <= S_NO;
+					 end
+					 
+					 
+ 			 S_RD: if(slv[0].cmd === 1'bz) begin
+			 
+						$display("RRRRRRRRRRRRR");
+						//rd_data <= s_mem[slv[0].addr];
+					   
+					 end	
+					 
+					 
+			 default: $display("mem = %h", s_mem[1]);		 
+		
+		endcase	
+		
+	end	
+*/
+	
+endmodule: tb_cross_bar
+

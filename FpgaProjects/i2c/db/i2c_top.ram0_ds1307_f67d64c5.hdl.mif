@@ -1,0 +1,21 @@
+-- begin_signature
+-- ds1307
+-- end_signature
+WIDTH=8;
+DEPTH=10;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	9 :	10010010;
+	8 :	00100000;
+	7 :	00000010;
+	6 :	00010011;
+	5 :	00000011;
+	4 :	00100011;
+	3 :	01011001;
+	2 :	00000001;
+	1 :	00000001;
+	0 :	10100000;
+END;

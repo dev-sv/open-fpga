@@ -1,0 +1,104 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/simulation/modelsim
+Xconf_t
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1604615553
+!i10b 1
+!s100 KT]ACf:G;S;Em_S9L^nif0
+IbgQD:@b35>0GbCa5]k3DZ0
+VbgQD:@b35>0GbCa5]k3DZ0
+S1
+R0
+Z3 w1604615161
+Z4 8C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/uart.sv
+Z5 FC:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/uart.sv
+L0 3
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1604615552.000000
+Z8 !s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/uart.sv|
+Z9 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart|C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/uart.sv|
+!i113 1
+Z10 o-sv -work work
+Z11 !s92 -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart
+Z12 tCvgOpt 0
+vpll
+Z13 !s110 1604615552
+!i10b 1
+!s100 MC:9H8LKSDV]6z2XJb3QF0
+I64F2=Yh34:SOc;g3eHW5k0
+Z14 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1604573357
+8C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/pll.v
+FC:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/pll.v
+L0 39
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart|C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/pll.v|
+!i113 1
+Z15 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart
+R12
+vpll_altpll
+R13
+!i10b 1
+!s100 VMJnj@KPlg=MI>oCDYJR>0
+IYX@FQ>Bf2lgmB73Pm113h2
+R14
+R0
+w1604573382
+8C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/db/pll_altpll.v
+FC:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/db/pll_altpll.v
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/db|C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/db/pll_altpll.v|
+!i113 1
+R15
+!s92 -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/uart/db
+R12
+vuart
+R1
+DXx4 work 6 conf_t 0 22 bgQD:@b35>0GbCa5]k3DZ0
+R2
+!i10b 1
+!s100 joUlZdkoIb@gOR@>aoAJ42
+IG^KjLRIW:`=?YzFKAVlEY3
+R14
+!s105 uart_sv_unit
+S1
+R0
+R3
+R4
+R5
+L0 24
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+R12

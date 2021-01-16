@@ -1,0 +1,11 @@
+
+
+
+module i2c(input bit clk, inout sda, output bit sclk);
+
+
+
+
+
+
+endmodule: i2c

@@ -1,0 +1,973 @@
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
+ -- Your use of Intel Corporation's design tools, logic functions 
+ -- and other software and tools, and its AMPP partner logic 
+ -- functions, and any output files from any of the foregoing 
+ -- (including device programming or simulation files), and any 
+ -- associated documentation or information are expressly subject 
+ -- to the terms and conditions of the Intel Program License 
+ -- Subscription Agreement, the Intel Quartus Prime License Agreement,
+ -- the Intel FPGA IP License Agreement, or other applicable license
+ -- agreement, including, without limitation, that your use is for
+ -- the sole purpose of programming logic devices manufactured by
+ -- Intel and sold by Intel or its authorized distributors.  Please
+ -- refer to the applicable agreement for further details.
+ -- 
+ -- This is a Quartus Prime output file. It is for reporting purposes only, and is
+ -- not intended for use as a Quartus Prime input file. This file cannot be used
+ -- to make Quartus Prime pin assignments - for instructions on how to make pin
+ -- assignments, please see Quartus Prime help.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- NC            : No Connect. This pin has no internal connection to the device.
+ -- DNU           : Do Not Use. This pin MUST NOT be connected.
+ -- VCCPGM        : Dedicated power pin for configuration, which MUST be connected to 1.8V, 2.5V or 3.0V depending on the requirements of the configuration device.
+ -- VCCINT        : Dedicated power pin, which MUST be connected to VCC  (1.2V).
+ -- VCCIO         : Dedicated power pin, which MUST be connected to VCC
+ --                 of its bank.
+ --                  Bank 3:       2.5V
+ --                  Bank 4:       2.5V
+ --                  Bank 5:       2.5V
+ --                  Bank 6:       2.5V
+ --                  Bank 7:       2.5V
+ --                  Bank 8:  2.5V
+ --                  Bank 9:  2.5V
+ -- RREF          : External reference resistor for the quad, MUST be connected to
+ --                 GND via a 2k Ohm resistor.
+ -- GND           : Dedicated ground pin. Dedicated GND pins MUST be connected to GND.
+ --                  It can also be used to report unused dedicated pins. The connection
+ --                  on the board for unused dedicated pins depends on whether this will
+ --                  be used in a future design. One example is device migration. When
+ --                  using device migration, refer to the device pin-tables. If it is a
+ --                  GND pin in the pin table or if it will not be used in a future design
+ --                  for another purpose the it MUST be connected to GND. If it is an unused
+ --                  dedicated pin, then it can be connected to a valid signal on the board
+ --                  (low, high, or toggling) if that signal is required for a different
+ --                  revision of the design.
+ -- GND+          : Unused input pin. It can also be used to report unused dual-purpose pins.
+ --                  This pin should be connected to GND. It may also be connected  to a
+ --                  valid signal  on the board  (low, high, or toggling)  if that signal
+ --                  is required for a different revision of the design.
+ -- GND*          : Unused  I/O  pin.   For transceiver I/O banks, connect each pin marked GND*
+ --                  either individually through a 10k Ohm resistor to GND or tie all pins
+ --                  together and connect through a single 10k Ohm resistor to GND.
+ -- RESERVED      : Unused I/O pin, which MUST be left unconnected.
+ -- RESERVED_INPUT    : Pin is tri-stated and should be connected to the board.
+ -- RESERVED_INPUT_WITH_WEAK_PULLUP    : Pin is tri-stated with internal weak pull-up resistor.
+ -- RESERVED_INPUT_WITH_BUS_HOLD       : Pin is tri-stated with bus-hold circuitry.
+ -- RESERVED_OUTPUT_DRIVEN_HIGH        : Pin is output driven high.
+ -- GXB_GND*      : Unused GXB Receiver or dedicated reference clock pin. This pin
+ --                 must be connected to GXB_GND through a 10k Ohm resistor.
+ -- GXB_NC        : Unused GXB Transmitter or dedicated clock output pin. This pin
+ --                 must not be connected.
+ ---------------------------------------------------------------------------------
+
+
+
+ ---------------------------------------------------------------------------------
+ -- Pin directions (input, output or bidir) are based on device operating in user mode.
+ ---------------------------------------------------------------------------------
+
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+CHIP  "cross_bar"  ASSIGNED TO AN: EP4CGX110DF31C7
+
+Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
+-------------------------------------------------------------------------------------------------------------
+NC                           : A2        :        :                   :         :           :                
+~ALTERA_DATA0~ / RESERVED_INPUT_WITH_WEAK_PULLUP : A3        : input  : 2.5 V             :         : 9         : N              
+st0[14]                      : A4        : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[20]     : A5        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[3]      : A6        : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[20]     : A7        : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[16]     : A8        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[4]      : A9        : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[23]     : A10       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[9]      : A11       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[8]      : A12       : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].addr[23]     : A13       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[0].addr[22]     : A14       : input  : 2.5 V             :         : 8         : N              
+st1[13]                      : A15       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[8]      : A16       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].req          : A17       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[0].addr[11]     : A18       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[0].req          : A19       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[21]     : A20       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[18]     : A21       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[17]     : A22       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].data[21]     : A23       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[16]     : A24       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[26]     : A25       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[28]     : A26       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[27]     : A27       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].data[16]     : A28       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[27]     : A29       : output : 2.5 V             :         : 7         : N              
+GXB_GND*                     : AA1       :        :                   :         : QL0       :                
+GXB_GND*                     : AA2       :        :                   :         : QL0       :                
+GND                          : AA3       : gnd    :                   :         :           :                
+GND                          : AA4       : gnd    :                   :         :           :                
+GND                          : AA5       : gnd    :                   :         :           :                
+VCCL_GXB                     : AA6       : power  :                   : 1.2V    :           :                
+VCCA                         : AA7       : power  :                   : 2.5V    :           :                
+GND                          : AA8       : gnd    :                   :         :           :                
+VCCA                         : AA9       : power  :                   : 2.5V    :           :                
+VCCINT                       : AA10      : power  :                   : 1.2V    :           :                
+GND                          : AA11      : gnd    :                   :         :           :                
+cross_to_mst[0].data[1]      : AA12      : output : 2.5 V             :         : 3         : N              
+mx1                          : AA13      : output : 2.5 V             :         : 3         : N              
+VCCINT                       : AA14      : power  :                   : 1.2V    :           :                
+rd_to_mst[1].data[27]        : AA15      : output : 2.5 V             :         : 3         : N              
+rd_to_mst[1].data[26]        : AA16      : output : 2.5 V             :         : 3         : N              
+rd_to_cross[0].data[28]      : AA17      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[9]       : AA18      : input  : 2.5 V             :         : 4         : N              
+GND                          : AA19      : gnd    :                   :         :           :                
+rd_to_cross[1].data[6]       : AA20      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[15]      : AA21      : input  : 2.5 V             :         : 4         : N              
+mst_to_cross[0].data[14]     : AA22      : input  : 2.5 V             :         : 5         : N              
+VCCIO5                       : AA23      : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : AA24      : power  :                   : 2.5V    : 5         :                
+rd_to_mst[1].data[1]         : AA25      : output : 2.5 V             :         : 5         : N              
+st0[23]                      : AA26      : input  : 2.5 V             :         : 5         : N              
+st0[25]                      : AA27      : input  : 2.5 V             :         : 5         : N              
+cross_to_mst[0].data[11]     : AA28      : output : 2.5 V             :         : 5         : N              
+rd_to_cross[1].data[18]      : AA29      : input  : 2.5 V             :         : 5         : N              
+cross_to_mst[0].data[10]     : AA30      : output : 2.5 V             :         : 5         : N              
+GND                          : AB1       : gnd    :                   :         :           :                
+GND                          : AB2       : gnd    :                   :         :           :                
+GXB_NC                       : AB3       :        :                   :         : QL0       :                
+GXB_NC                       : AB4       :        :                   :         : QL0       :                
+GND                          : AB5       : gnd    :                   :         :           :                
+GND                          : AB6       : gnd    :                   :         :           :                
+GND                          : AB7       : gnd    :                   :         :           :                
+VCCINT                       : AB8       : power  :                   : 1.2V    :           :                
+CONF_DONE                    : AB9       :        :                   :         : 3         :                
+GND                          : AB10      : gnd    :                   :         :           :                
+cross_to_mst[0].addr[12]     : AB11      : output : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB12      : power  :                   : 2.5V    : 3         :                
+mst_to_cross[1].addr[19]     : AB13      : input  : 2.5 V             :         : 3         : N              
+rd_to_cross[0].data[27]      : AB14      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AB15      : power  :                   : 2.5V    : 3         :                
+cross_to_mst[0].data[27]     : AB16      : output : 2.5 V             :         : 3         : N              
+rd_to_cross[1].data[28]      : AB17      : input  : 2.5 V             :         : 4         : N              
+VCCIO4                       : AB18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AB20      : power  :                   : 2.5V    : 4         :                
+rd_to_mst[1].data[11]        : AB21      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[3]       : AB22      : input  : 2.5 V             :         : 4         : N              
+VCCD_PLL                     : AB23      : power  :                   : 1.2V    :           :                
+VCCA                         : AB24      : power  :                   : 2.5V    :           :                
+cross_to_mst[0].data[6]      : AB25      : output : 2.5 V             :         : 5         : N              
+rd_to_cross[0].data[18]      : AB26      : input  : 2.5 V             :         : 5         : N              
+rd_to_mst[0].data[6]         : AB27      : output : 2.5 V             :         : 5         : N              
+cross_to_mst[0].addr[4]      : AB28      : output : 2.5 V             :         : 5         : N              
+rd_to_cross[1].data[0]       : AB29      : input  : 2.5 V             :         : 5         : N              
+mst_to_cross[1].data[7]      : AB30      : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : AC1       :        :                   :         : QL0       :                
+GXB_GND*                     : AC2       :        :                   :         : QL0       :                
+GND                          : AC3       : gnd    :                   :         :           :                
+GND                          : AC4       : gnd    :                   :         :           :                
+GND                          : AC5       : gnd    :                   :         :           :                
+GND                          : AC6       : gnd    :                   :         :           :                
+MSEL2                        : AC7       :        :                   :         : 3         :                
+MSEL3                        : AC8       :        :                   :         : 3         :                
+VCCIO3                       : AC9       : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC10      : power  :                   : 2.5V    : 3         :                
+GND                          : AC11      : gnd    :                   :         :           :                
+VCCIO3                       : AC12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AC13      : power  :                   : 2.5V    : 3         :                
+GND                          : AC14      : gnd    :                   :         :           :                
+VCCIO3                       : AC15      : power  :                   : 2.5V    : 3         :                
+rd_to_mst[1].data[24]        : AC16      : output : 2.5 V             :         : 3         : N              
+GND                          : AC17      : gnd    :                   :         :           :                
+VCCIO4                       : AC18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC19      : power  :                   : 2.5V    : 4         :                
+GND                          : AC20      : gnd    :                   :         :           :                
+VCCIO4                       : AC21      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AC22      : power  :                   : 2.5V    : 4         :                
+GND                          : AC23      : gnd    :                   :         :           :                
+GND                          : AC24      : gnd    :                   :         :           :                
+rd_to_mst[0].data[0]         : AC25      : output : 2.5 V             :         : 5         : N              
+GND                          : AC26      : gnd    :                   :         :           :                
+mst_to_cross[0].addr[5]      : AC27      : input  : 2.5 V             :         : 5         : N              
+rd_to_mst[0].data[16]        : AC28      : output : 2.5 V             :         : 5         : N              
+GND                          : AC29      : gnd    :                   :         :           :                
+mst_to_cross[1].data[14]     : AC30      : input  : 2.5 V             :         : 5         : N              
+GND                          : AD1       : gnd    :                   :         :           :                
+GND                          : AD2       : gnd    :                   :         :           :                
+VCCA_GXB                     : AD3       : power  :                   : 2.5V    :           :                
+VCCL_GXB                     : AD4       : power  :                   : 1.2V    :           :                
+GND                          : AD5       : gnd    :                   :         :           :                
+st0[9]                       : AD6       : input  : 2.5 V             :         : 3         : N              
+MSEL0                        : AD7       :        :                   :         : 3         :                
+MSEL1                        : AD8       :        :                   :         : 3         :                
+st1[2]                       : AD9       : input  : 2.5 V             :         : 3         : N              
+st1[22]                      : AD10      : input  : 2.5 V             :         : 3         : N              
+VCCIO3                       : AD11      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD12      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD13      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD14      : power  :                   : 2.5V    : 3         :                
+VCCIO3                       : AD15      : power  :                   : 2.5V    : 3         :                
+rd_to_mst[0].data[25]        : AD16      : output : 2.5 V             :         : 4         : N              
+VCCIO4                       : AD17      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD18      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD19      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD20      : power  :                   : 2.5V    : 4         :                
+VCCIO4                       : AD21      : power  :                   : 2.5V    : 4         :                
+mst_to_cross[1].addr[31]     : AD22      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[9]       : AD23      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[21]      : AD24      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[5]         : AD25      : output : 2.5 V             :         : 5         : N              
+cross_to_mst[1].data[8]      : AD26      : output : 2.5 V             :         : 5         : N              
+rd_to_mst[1].data[14]        : AD27      : output : 2.5 V             :         : 5         : N              
+rd_to_cross[1].data[1]       : AD28      : input  : 2.5 V             :         : 5         : N              
+st0[26]                      : AD29      : input  : 2.5 V             :         : 5         : N              
+rd_to_cross[1].data[16]      : AD30      : input  : 2.5 V             :         : 5         : N              
+RREF                         : AE1       :        :                   :         :           :                
+GND                          : AE2       : gnd    :                   :         :           :                
+cross_to_mst[0].addr[31]     : AE3       : output : 2.5 V             :         : 3         : N              
+st0[2]                       : AE4       : input  : 2.5 V             :         : 3         : N              
+st0[1]                       : AE5       : input  : 2.5 V             :         : 3         : N              
+st0[10]                      : AE6       : input  : 2.5 V             :         : 3         : N              
+~ALTERA_NCEO~ / RESERVED_OUTPUT_OPEN_DRAIN : AE7       : output : 2.5 V             :         : 3         : N              
+st0[7]                       : AE8       : input  : 2.5 V             :         : 3         : N              
+st0[3]                       : AE9       : input  : 2.5 V             :         : 3         : N              
+st1[31]                      : AE10      : input  : 2.5 V             :         : 3         : N              
+st1[29]                      : AE11      : input  : 2.5 V             :         : 3         : N              
+st1[0]                       : AE12      : input  : 2.5 V             :         : 3         : N              
+rd_to_mst[0].data[24]        : AE13      : output : 2.5 V             :         : 3         : N              
+rd_to_mst[0].data[27]        : AE14      : output : 2.5 V             :         : 3         : N              
+rd_to_mst[0].data[26]        : AE15      : output : 2.5 V             :         : 3         : N              
+rd_to_mst[1].data[30]        : AE16      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[24]      : AE17      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[27]      : AE18      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[19]        : AE19      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[4]       : AE20      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[10]      : AE21      : input  : 2.5 V             :         : 4         : N              
+mst_to_cross[0].addr[31]     : AE22      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[2]         : AE23      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[19]      : AE24      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[6]         : AE25      : output : 2.5 V             :         : 5         : N              
+rd_to_mst[1].data[3]         : AE26      : output : 2.5 V             :         : 5         : N              
+cross_to_mst[1].data[6]      : AE27      : output : 2.5 V             :         : 5         : N              
+cross_to_mst[1].data[14]     : AE28      : output : 2.5 V             :         : 5         : N              
+rd_to_cross[0].data[5]       : AE29      : input  : 2.5 V             :         : 5         : N              
+rd_to_cross[0].data[2]       : AE30      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF1       : gnd    :                   :         :           :                
+GND                          : AF2       : gnd    :                   :         :           :                
+st1[26]                      : AF3       : input  : 2.5 V             :         : 3         : N              
+st1[10]                      : AF4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AF5       : gnd    :                   :         :           :                
+st0[6]                       : AF6       : input  : 2.5 V             :         : 3         : N              
+st0[8]                       : AF7       : input  : 2.5 V             :         : 3         : N              
+GND                          : AF8       : gnd    :                   :         :           :                
+st0[5]                       : AF9       : input  : 2.5 V             :         : 3         : N              
+st1[21]                      : AF10      : input  : 2.5 V             :         : 3         : N              
+GND                          : AF11      : gnd    :                   :         :           :                
+rd_to_mst[0].data[12]        : AF12      : output : 2.5 V             :         : 3         : N              
+mst_to_cross[0].data[3]      : AF13      : input  : 2.5 V             :         : 3         : N              
+GND                          : AF14      : gnd    :                   :         :           :                
+rd_to_mst[1].data[28]        : AF15      : output : 2.5 V             :         : 3         : N              
+rd_to_mst[0].data[21]        : AF16      : output : 2.5 V             :         : 4         : N              
+GND                          : AF17      : gnd    :                   :         :           :                
+rd_to_mst[1].data[29]        : AF18      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[12]        : AF19      : output : 2.5 V             :         : 4         : N              
+GND                          : AF20      : gnd    :                   :         :           :                
+rd_to_cross[1].data[2]       : AF21      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[5]       : AF22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AF23      : gnd    :                   :         :           :                
+rd_to_cross[0].data[6]       : AF24      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[9]         : AF25      : output : 2.5 V             :         : 4         : N              
+GND                          : AF26      : gnd    :                   :         :           :                
+rd_to_mst[1].data[2]         : AF27      : output : 2.5 V             :         : 5         : N              
+rd_to_cross[1].data[22]      : AF28      : input  : 2.5 V             :         : 5         : N              
+GND                          : AF29      : gnd    :                   :         :           :                
+rd_to_cross[1].data[7]       : AF30      : input  : 2.5 V             :         : 5         : N              
+NC                           : AG1       :        :                   :         :           :                
+GND                          : AG2       : gnd    :                   :         :           :                
+st1[19]                      : AG3       : input  : 2.5 V             :         : 3         : N              
+st1[30]                      : AG4       : input  : 2.5 V             :         : 3         : N              
+st1[8]                       : AG5       : input  : 2.5 V             :         : 3         : N              
+st0[4]                       : AG6       : input  : 2.5 V             :         : 3         : N              
+mst_to_cross[0].addr[19]     : AG7       : input  : 2.5 V             :         : 3         : N              
+mst_to_cross[1].data[2]      : AG8       : input  : 2.5 V             :         : 3         : N              
+st1[27]                      : AG9       : input  : 2.5 V             :         : 3         : N              
+st0[18]                      : AG10      : input  : 2.5 V             :         : 3         : N              
+st0[15]                      : AG11      : input  : 2.5 V             :         : 3         : N              
+st0[17]                      : AG12      : input  : 2.5 V             :         : 3         : N              
+mst_to_cross[0].data[1]      : AG13      : input  : 2.5 V             :         : 3         : N              
+mx0                          : AG14      : output : 2.5 V             :         : 3         : N              
+rd_to_mst[1].data[31]        : AG15      : output : 2.5 V             :         : 3         : N              
+rd_to_cross[0].data[31]      : AG16      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[24]      : AG17      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[19]        : AG18      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[15]      : AG19      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[17]      : AG20      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[12]      : AG21      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[23]      : AG22      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[20]      : AG23      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[13]        : AG24      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[22]        : AG25      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[20]        : AG26      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[14]      : AG27      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[13]      : AG28      : input  : 2.5 V             :         : 4         : N              
+cross_to_mst[0].data[14]     : AG29      : output : 2.5 V             :         : 5         : N              
+rd_to_mst[1].data[16]        : AG30      : output : 2.5 V             :         : 5         : N              
+NC                           : AH1       :        :                   :         :           :                
+st1[5]                       : AH2       : input  : 2.5 V             :         : 3         : N              
+st1[25]                      : AH3       : input  : 2.5 V             :         : 3         : N              
+cross_to_mst[1].addr[31]     : AH4       : output : 2.5 V             :         : 3         : N              
+st1[3]                       : AH5       : input  : 2.5 V             :         : 3         : N              
+st1[28]                      : AH6       : input  : 2.5 V             :         : 3         : N              
+rd_to_cross[0].data[25]      : AH7       : input  : 2.5 V             :         : 3         : N              
+mst_to_cross[1].data[27]     : AH8       : input  : 2.5 V             :         : 3         : N              
+rd_to_mst[0].data[29]        : AH9       : output : 2.5 V             :         : 3         : N              
+st0[16]                      : AH10      : input  : 2.5 V             :         : 3         : N              
+cross_to_mst[1].addr[19]     : AH11      : output : 2.5 V             :         : 3         : N              
+cross_to_mst[1].addr[20]     : AH12      : output : 2.5 V             :         : 3         : N              
+cross_to_mst[1].data[4]      : AH13      : output : 2.5 V             :         : 3         : N              
+st0[31]                      : AH14      : input  : 2.5 V             :         : 3         : N              
+rd_to_cross[0].data[30]      : AH15      : input  : 2.5 V             :         : 3         : N              
+rd_to_mst[1].data[25]        : AH16      : output : 2.5 V             :         : 3         : N              
+rd_to_cross[0].ack           : AH17      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[26]      : AH18      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].ack           : AH19      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[15]        : AH20      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[1]         : AH21      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[8]         : AH22      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[20]      : AH23      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[8]         : AH24      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[18]        : AH25      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[13]        : AH26      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[8]       : AH27      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[22]      : AH28      : input  : 2.5 V             :         : 4         : N              
+cross_to_mst[1].data[7]      : AH29      : output : 2.5 V             :         : 5         : N              
+rd_to_mst[0].data[7]         : AH30      : output : 2.5 V             :         : 5         : N              
+nSTATUS                      : AJ1       :        :                   :         : 3         :                
+GND                          : AJ2       : gnd    :                   :         :           :                
+st1[9]                       : AJ3       : input  : 2.5 V             :         : 3         : N              
+st1[20]                      : AJ4       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ5       : gnd    :                   :         :           :                
+st1[4]                       : AJ6       : input  : 2.5 V             :         : 3         : N              
+st0[0]                       : AJ7       : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ8       : gnd    :                   :         :           :                
+mst_to_cross[1].req          : AJ9       : input  : 2.5 V             :         : 3         : N              
+cross_to_mst[0].data[3]      : AJ10      : output : 2.5 V             :         : 3         : N              
+GND                          : AJ11      : gnd    :                   :         :           :                
+rd_to_mst[0].data[28]        : AJ12      : output : 2.5 V             :         : 3         : N              
+mst_to_cross[1].data[0]      : AJ13      : input  : 2.5 V             :         : 3         : N              
+GND                          : AJ14      : gnd    :                   :         :           :                
+rd_to_cross[1].data[29]      : AJ15      : input  : 2.5 V             :         : 4         : N              
+st1[15]                      : AJ16      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ17      : gnd    :                   :         :           :                
+rd_to_mst[0].data[18]        : AJ18      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[22]        : AJ19      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ20      : gnd    :                   :         :           :                
+rd_to_cross[1].data[12]      : AJ21      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[8]       : AJ22      : input  : 2.5 V             :         : 4         : N              
+GND                          : AJ23      : gnd    :                   :         :           :                
+rd_to_cross[0].data[21]      : AJ24      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[21]        : AJ25      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ26      : gnd    :                   :         :           :                
+rd_to_mst[0].data[9]         : AJ27      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[11]        : AJ28      : output : 2.5 V             :         : 4         : N              
+GND                          : AJ29      : gnd    :                   :         :           :                
+rd_to_mst[1].data[0]         : AJ30      : output : 2.5 V             :         : 5         : N              
+NC                           : AK2       :        :                   :         :           :                
+st1[17]                      : AK3       : input  : 2.5 V             :         : 3         : N              
+st1[1]                       : AK4       : input  : 2.5 V             :         : 3         : N              
+st1[18]                      : AK5       : input  : 2.5 V             :         : 3         : N              
+st1[23]                      : AK6       : input  : 2.5 V             :         : 3         : N              
+rd_to_mst[0].data[30]        : AK7       : output : 2.5 V             :         : 3         : N              
+mst_to_cross[1].addr[12]     : AK8       : input  : 2.5 V             :         : 3         : N              
+rd_to_mst[0].data[31]        : AK9       : output : 2.5 V             :         : 3         : N              
+rd_to_mst[0].ack             : AK10      : output : 2.5 V             :         : 3         : N              
+rd_to_mst[1].data[10]        : AK11      : output : 2.5 V             :         : 3         : N              
+rd_to_cross[1].data[31]      : AK12      : input  : 2.5 V             :         : 3         : N              
+st0[27]                      : AK13      : input  : 2.5 V             :         : 3         : N              
+mst_to_cross[0].addr[20]     : AK14      : input  : 2.5 V             :         : 3         : N              
+rd_to_cross[1].data[30]      : AK15      : input  : 2.5 V             :         : 4         : N              
+st1[16]                      : AK16      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[25]      : AK17      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[29]      : AK18      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[20]        : AK19      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[11]      : AK20      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[15]        : AK21      : output : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[13]      : AK22      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[19]      : AK23      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[10]      : AK24      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[23]      : AK25      : input  : 2.5 V             :         : 4         : N              
+rd_to_cross[0].data[16]      : AK26      : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[1].data[17]        : AK27      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[23]        : AK28      : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[17]        : AK29      : output : 2.5 V             :         : 4         : N              
+nCONFIG                      : B1        :        :                   :         : 9         :                
+GND                          : B2        : gnd    :                   :         :           :                
+~ALTERA_DCLK~                : B3        : output : 2.5 V             :         : 9         : N              
+~ALTERA_NCSO~ / RESERVED_INPUT_WITH_WEAK_PULLUP : B4        : input  : 2.5 V             :         : 9         : N              
+GND                          : B5        : gnd    :                   :         :           :                
+cross_to_mst[0].data[0]      : B6        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[0].addr[16]     : B7        : input  : 2.5 V             :         : 8         : N              
+GND                          : B8        : gnd    :                   :         :           :                
+mst_to_cross[0].addr[8]      : B9        : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[9]      : B10       : input  : 2.5 V             :         : 8         : N              
+GND                          : B11       : gnd    :                   :         :           :                
+cross_to_mst[0].data[4]      : B12       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[15]     : B13       : input  : 2.5 V             :         : 8         : N              
+GND                          : B14       : gnd    :                   :         :           :                
+st1[14]                      : B15       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[24]     : B16       : output : 2.5 V             :         : 7         : N              
+GND                          : B17       : gnd    :                   :         :           :                
+cross_to_mst[0].data[22]     : B18       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[1].data[15]     : B19       : input  : 2.5 V             :         : 7         : N              
+GND                          : B20       : gnd    :                   :         :           :                
+mst_to_cross[1].addr[25]     : B21       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[15]     : B22       : input  : 2.5 V             :         : 7         : N              
+GND                          : B23       : gnd    :                   :         :           :                
+mst_to_cross[1].addr[17]     : B24       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[23]     : B25       : input  : 2.5 V             :         : 7         : N              
+GND                          : B26       : gnd    :                   :         :           :                
+mst_to_cross[1].addr[18]     : B27       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[18]     : B28       : input  : 2.5 V             :         : 7         : N              
+GND                          : B29       : gnd    :                   :         :           :                
+cross_to_mst[1].addr[24]     : B30       : output : 2.5 V             :         : 7         : N              
+nCE                          : C1        :        :                   :         : 9         :                
+cross_to_mst[0].addr[10]     : C2        : output : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[3]      : C3        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[14]     : C4        : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[20]     : C5        : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[17]     : C6        : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].addr[15]     : C7        : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].data[5]      : C8        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[16]     : C9        : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[23]     : C10       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].addr[14]     : C11       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[17]     : C12       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].addr[11]     : C13       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].addr[23]     : C14       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[22]     : C15       : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[9]      : C16       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[24]     : C17       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[27]     : C18       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].data[21]     : C19       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[25]     : C20       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[16]     : C21       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[1].data[19]     : C22       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].data[23]     : C23       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].data[15]     : C24       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[18]     : C25       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[29]     : C26       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[21]     : C27       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].data[19]     : C28       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[0].cmd          : C29       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[1].data[30]     : C30       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[1].addr[11]     : D1        : output : 2.5 V             :         : 8         : N              
+GND                          : D2        : gnd    :                   :         :           :                
+cross_to_mst[1].data[27]     : D3        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[20]     : D4        : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[2]      : D5        : output : 2.5 V             :         : 8         : N              
+cross_to_mst[1].addr[14]     : D6        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[22]     : D7        : input  : 2.5 V             :         : 8         : N              
+st0[19]                      : D8        : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[2]      : D9        : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[4]      : D10       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[0]      : D11       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[9]      : D12       : input  : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[1]      : D13       : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].addr[12]     : D14       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[0].addr[15]     : D15       : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[0].data[20]     : D16       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[0].data[24]     : D17       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].req          : D18       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].addr[25]     : D19       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[15]     : D20       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[21]     : D21       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[26]     : D22       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[19]     : D23       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[28]     : D24       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[26]     : D25       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[28]     : D26       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[0].addr[28]     : D27       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[28]     : D28       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].cmd          : D29       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[1].data[25]     : D30       : input  : 2.5 V             :         : 6         : N              
+TMS                          : E1        : input  :                   :         : 9         :                
+TDI                          : E2        : input  :                   :         : 9         :                
+mst_to_cross[0].addr[10]     : E3        : input  : 2.5 V             :         : 8         : N              
+st0[13]                      : E4        : input  : 2.5 V             :         : 8         : N              
+GND                          : E5        : gnd    :                   :         :           :                
+mst_to_cross[0].addr[9]      : E6        : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[17]     : E7        : output : 2.5 V             :         : 8         : N              
+GND                          : E8        : gnd    :                   :         :           :                
+cross_to_mst[1].addr[10]     : E9        : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].addr[10]     : E10       : input  : 2.5 V             :         : 8         : N              
+GND                          : E11       : gnd    :                   :         :           :                
+cross_to_mst[1].data[20]     : E12       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[19]     : E13       : output : 2.5 V             :         : 8         : N              
+GND                          : E14       : gnd    :                   :         :           :                
+cross_to_mst[0].addr[9]      : E15       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[22]     : E16       : output : 2.5 V             :         : 8         : N              
+GND                          : E17       : gnd    :                   :         :           :                
+cross_to_mst[1].data[21]     : E18       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[0].addr[17]     : E19       : output : 2.5 V             :         : 7         : N              
+GND                          : E20       : gnd    :                   :         :           :                
+mst_to_cross[0].addr[29]     : E21       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].addr[26]     : E22       : output : 2.5 V             :         : 7         : N              
+GND                          : E23       : gnd    :                   :         :           :                
+mst_to_cross[0].data[25]     : E24       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[24]     : E25       : input  : 2.5 V             :         : 7         : N              
+GND                          : E26       : gnd    :                   :         :           :                
+cross_to_mst[0].data[28]     : E27       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[0].addr[0]      : E28       : output : 2.5 V             :         : 6         : N              
+GND                          : E29       : gnd    :                   :         :           :                
+mst_to_cross[0].data[31]     : E30       : input  : 2.5 V             :         : 6         : N              
+TDO                          : F1        : output :                   :         : 9         :                
+TCK                          : F2        : input  :                   :         : 9         :                
+GND                          : F3        : gnd    :                   :         :           :                
+cross_to_mst[1].data[1]      : F4        : output : 2.5 V             :         : 8         : N              
+st0[12]                      : F5        : input  : 2.5 V             :         : 8         : N              
+st0[21]                      : F6        : input  : 2.5 V             :         : 8         : N              
+st0[20]                      : F7        : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[0].data[2]      : F8        : output : 2.5 V             :         : 8         : N              
+rd_to_mst[1].ack             : F9        : output : 2.5 V             :         : 8         : N              
+cross_to_mst[1].addr[9]      : F10       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[1].data[22]     : F11       : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].addr[13]     : F12       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[5]      : F13       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[1].addr[22]     : F14       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[0]      : F15       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[13]     : F16       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[19]     : F17       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[0].data[9]      : F18       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[18]     : F19       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[1].data[16]     : F20       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[17]     : F21       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[1].data[18]     : F22       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].data[29]     : F23       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[24]     : F24       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].addr[27]     : F25       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[0].addr[21]     : F26       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[0].data[29]     : F27       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[1].data[28]     : F28       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[0].data[25]     : F29       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[0].data[31]     : F30       : output : 2.5 V             :         : 6         : N              
+GND                          : G1        : gnd    :                   :         :           :                
+GND                          : G2        : gnd    :                   :         :           :                
+GND                          : G3        : gnd    :                   :         :           :                
+GND                          : G4        : gnd    :                   :         :           :                
+GND                          : G5        : gnd    :                   :         :           :                
+mst_to_cross[1].data[5]      : G6        : input  : 2.5 V             :         : 8         : N              
+st1[24]                      : G7        : input  : 2.5 V             :         : 8         : N              
+st0[22]                      : G8        : input  : 2.5 V             :         : 8         : N              
+~ALTERA_ASDO_DATA1~ / RESERVED_INPUT_WITH_WEAK_PULLUP : G9        : input  : 2.5 V             :         : 9         : N              
+mst_to_cross[0].addr[13]     : G10       : input  : 2.5 V             :         : 8         : N              
+cross_to_mst[1].data[22]     : G11       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].data[17]     : G12       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[15]     : G13       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[14]     : G14       : output : 2.5 V             :         : 8         : N              
+cross_to_mst[0].addr[8]      : G15       : output : 2.5 V             :         : 8         : N              
+mst_to_cross[0].addr[12]     : G16       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[23]     : G17       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[11]     : G18       : input  : 2.5 V             :         : 7         : N              
+VCCIO7                       : G19       : power  :                   : 2.5V    : 7         :                
+cross_to_mst[1].addr[21]     : G20       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[25]     : G21       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[0].data[18]     : G22       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[27]     : G23       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[0].data[29]     : G24       : input  : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[29]     : G25       : input  : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[26]     : G26       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[1].data[31]     : G27       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[1].addr[0]      : G28       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[0].cmd          : G29       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[0].addr[30]     : G30       : output : 2.5 V             :         : 6         : N              
+GND                          : H1        : gnd    :                   :         :           :                
+GND                          : H2        : gnd    :                   :         :           :                
+GXB_NC                       : H3        :        :                   :         : QL1       :                
+GXB_NC                       : H4        :        :                   :         : QL1       :                
+GND                          : H5        : gnd    :                   :         :           :                
+GND                          : H6        : gnd    :                   :         :           :                
+VCCIO9                       : H7        : power  :                   : 2.5V    : 9         :                
+GND                          : H8        : gnd    :                   :         :           :                
+st0[11]                      : H9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : H10       : power  :                   : 2.5V    : 8         :                
+GND                          : H11       : gnd    :                   :         :           :                
+VCCIO8                       : H12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H13       : power  :                   : 2.5V    : 8         :                
+GND                          : H14       : gnd    :                   :         :           :                
+VCCIO8                       : H15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : H16       : power  :                   : 2.5V    : 8         :                
+GND                          : H17       : gnd    :                   :         :           :                
+VCCIO7                       : H18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H19       : power  :                   : 2.5V    : 7         :                
+GND                          : H20       : gnd    :                   :         :           :                
+VCCIO7                       : H21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : H22       : power  :                   : 2.5V    : 7         :                
+GND                          : H23       : gnd    :                   :         :           :                
+cross_to_mst[0].addr[18]     : H24       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[0].addr[2]      : H25       : input  : 2.5 V             :         : 6         : N              
+GND                          : H26       : gnd    :                   :         :           :                
+cross_to_mst[1].addr[0]      : H27       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[1].data[25]     : H28       : output : 2.5 V             :         : 6         : N              
+GND                          : H29       : gnd    :                   :         :           :                
+cross_to_mst[1].addr[2]      : H30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : J1        :        :                   :         : QL1       :                
+GXB_GND*                     : J2        :        :                   :         : QL1       :                
+GND                          : J3        : gnd    :                   :         :           :                
+GND                          : J4        : gnd    :                   :         :           :                
+GND                          : J5        : gnd    :                   :         :           :                
+VCCA                         : J6        : power  :                   : 2.5V    :           :                
+GND                          : J7        : gnd    :                   :         :           :                
+GND                          : J8        : gnd    :                   :         :           :                
+mst_to_cross[0].data[5]      : J9        : input  : 2.5 V             :         : 8         : N              
+VCCIO8                       : J10       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J11       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J12       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J13       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J14       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J15       : power  :                   : 2.5V    : 8         :                
+VCCIO8                       : J16       : power  :                   : 2.5V    : 8         :                
+VCCIO7                       : J17       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J18       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J19       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J20       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J21       : power  :                   : 2.5V    : 7         :                
+VCCIO7                       : J22       : power  :                   : 2.5V    : 7         :                
+VCCD_PLL                     : J23       : power  :                   : 1.2V    :           :                
+GND                          : J24       : gnd    :                   :         :           :                
+mst_to_cross[0].data[28]     : J25       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[1].data[31]     : J26       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[0].data[26]     : J27       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[0].data[30]     : J28       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[0].addr[7]      : J29       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[0].addr[1]      : J30       : output : 2.5 V             :         : 6         : N              
+GND                          : K1        : gnd    :                   :         :           :                
+GND                          : K2        : gnd    :                   :         :           :                
+GXB_NC                       : K3        :        :                   :         : QL1       :                
+GXB_NC                       : K4        :        :                   :         : QL1       :                
+VCCL_GXB                     : K5        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : K6        : power  :                   : 1.2V    :           :                
+GND                          : K7        : gnd    :                   :         :           :                
+GND                          : K8        : gnd    :                   :         :           :                
+VCCINT                       : K9        : power  :                   : 1.2V    :           :                
+VCC_CLKIN8B                  : K10       : power  :                   : 2.5V    : 8B        :                
+GXB_GND*                     : K11       :        :                   :         : 8B        :                
+GND                          : K12       : gnd    :                   :         :           :                
+VCCINT                       : K13       : power  :                   : 1.2V    :           :                
+GND                          : K14       : gnd    :                   :         :           :                
+st0[28]                      : K15       : input  : 2.5 V             :         : 8A        : N              
+VCC_CLKIN8A                  : K16       : power  :                   : 2.5V    : 8A        :                
+cross_to_mst[0].data[24]     : K17       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].addr[16]     : K18       : output : 2.5 V             :         : 7         : N              
+mst_to_cross[1].addr[13]     : K19       : input  : 2.5 V             :         : 7         : N              
+GND                          : K20       : gnd    :                   :         :           :                
+cross_to_mst[0].data[23]     : K21       : output : 2.5 V             :         : 7         : N              
+cross_to_mst[1].data[29]     : K22       : output : 2.5 V             :         : 7         : N              
+VCCA                         : K23       : power  :                   : 2.5V    :           :                
+cross_to_mst[0].addr[29]     : K24       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[1].cmd          : K25       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[0].addr[24]     : K26       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[1].data[26]     : K27       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[1].addr[3]      : K28       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[0].addr[3]      : K29       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[0].addr[3]      : K30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : L1        :        :                   :         : QL1       :                
+GXB_GND*                     : L2        :        :                   :         : QL1       :                
+GND                          : L3        : gnd    :                   :         :           :                
+GND                          : L4        : gnd    :                   :         :           :                
+GND                          : L5        : gnd    :                   :         :           :                
+VCCH_GXB                     : L6        : power  :                   : 2.5V    :           :                
+GND                          : L7        : gnd    :                   :         :           :                
+VCCA                         : L8        : power  :                   : 2.5V    :           :                
+GND                          : L9        : gnd    :                   :         :           :                
+GXB_GND*                     : L10       :        :                   :         : 8B        :                
+GXB_GND*                     : L11       :        :                   :         : 8B        :                
+VCCINT                       : L12       : power  :                   : 1.2V    :           :                
+GND                          : L13       : gnd    :                   :         :           :                
+VCCINT                       : L14       : power  :                   : 1.2V    :           :                
+st0[29]                      : L15       : input  : 2.5 V             :         : 8A        : N              
+VCCINT                       : L16       : power  :                   : 1.2V    :           :                
+GND                          : L17       : gnd    :                   :         :           :                
+VCCINT                       : L18       : power  :                   : 1.2V    :           :                
+GND                          : L19       : gnd    :                   :         :           :                
+VCCINT                       : L20       : power  :                   : 1.2V    :           :                
+GND                          : L21       : gnd    :                   :         :           :                
+VCCIO6                       : L22       : power  :                   : 2.5V    : 6         :                
+GND                          : L23       : gnd    :                   :         :           :                
+VCCIO6                       : L24       : power  :                   : 2.5V    : 6         :                
+mst_to_cross[0].data[26]     : L25       : input  : 2.5 V             :         : 6         : N              
+GND                          : L26       : gnd    :                   :         :           :                
+cross_to_mst[0].data[30]     : L27       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[1].addr[5]      : L28       : output : 2.5 V             :         : 6         : N              
+GND                          : L29       : gnd    :                   :         :           :                
+mst_to_cross[1].addr[4]      : L30       : input  : 2.5 V             :         : 6         : N              
+GND                          : M1        : gnd    :                   :         :           :                
+GND                          : M2        : gnd    :                   :         :           :                
+GXB_NC                       : M3        :        :                   :         : QL1       :                
+GXB_NC                       : M4        :        :                   :         : QL1       :                
+VCCL_GXB                     : M5        : power  :                   : 1.2V    :           :                
+GND                          : M6        : gnd    :                   :         :           :                
+VCCA_GXB                     : M7        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : M8        : power  :                   : 1.2V    :           :                
+VCCINT                       : M9        : power  :                   : 1.2V    :           :                
+GXB_GND*                     : M10       :        :                   :         : 8B        :                
+VCCINT                       : M11       : power  :                   : 1.2V    :           :                
+GND                          : M12       : gnd    :                   :         :           :                
+VCCINT                       : M13       : power  :                   : 1.2V    :           :                
+GND                          : M14       : gnd    :                   :         :           :                
+VCCINT                       : M15       : power  :                   : 1.2V    :           :                
+GND                          : M16       : gnd    :                   :         :           :                
+VCCINT                       : M17       : power  :                   : 1.2V    :           :                
+GND                          : M18       : gnd    :                   :         :           :                
+VCCINT                       : M19       : power  :                   : 1.2V    :           :                
+GND                          : M20       : gnd    :                   :         :           :                
+mst_to_cross[0].addr[0]      : M21       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[1].data[30]     : M22       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : M23       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : M24       : power  :                   : 2.5V    : 6         :                
+cross_to_mst[0].addr[2]      : M25       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[0].addr[5]      : M26       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[1].addr[6]      : M27       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[0].addr[6]      : M28       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[0].addr[7]      : M29       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[0].addr[4]      : M30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : N1        :        :                   :         : QL1       :                
+GXB_GND*                     : N2        :        :                   :         : QL1       :                
+GND                          : N3        : gnd    :                   :         :           :                
+GND                          : N4        : gnd    :                   :         :           :                
+VCCH_GXB                     : N5        : power  :                   : 2.5V    :           :                
+GND                          : N6        : gnd    :                   :         :           :                
+VCCL_GXB                     : N7        : power  :                   : 1.2V    :           :                
+VCCINT                       : N8        : power  :                   : 1.2V    :           :                
+GND                          : N9        : gnd    :                   :         :           :                
+VCCINT                       : N10       : power  :                   : 1.2V    :           :                
+GND                          : N11       : gnd    :                   :         :           :                
+VCCINT                       : N12       : power  :                   : 1.2V    :           :                
+GND                          : N13       : gnd    :                   :         :           :                
+VCCINT                       : N14       : power  :                   : 1.2V    :           :                
+GND                          : N15       : gnd    :                   :         :           :                
+VCCINT                       : N16       : power  :                   : 1.2V    :           :                
+GND                          : N17       : gnd    :                   :         :           :                
+VCCINT                       : N18       : power  :                   : 1.2V    :           :                
+GND                          : N19       : gnd    :                   :         :           :                
+VCCINT                       : N20       : power  :                   : 1.2V    :           :                
+cross_to_mst[1].addr[1]      : N21       : output : 2.5 V             :         : 6         : N              
+VCCIO6                       : N22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : N23       : power  :                   : 2.5V    : 6         :                
+mst_to_cross[1].addr[5]      : N24       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[1].addr[30]     : N25       : input  : 2.5 V             :         : 6         : N              
+rd_to_cross[1].data[11]      : N26       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[1].addr[7]      : N27       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[1].addr[1]      : N28       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[0].addr[30]     : N29       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[0].addr[1]      : N30       : input  : 2.5 V             :         : 6         : N              
+GND                          : P1        : gnd    :                   :         :           :                
+GND                          : P2        : gnd    :                   :         :           :                
+GXB_NC                       : P3        :        :                   :         : QL1       :                
+GXB_NC                       : P4        :        :                   :         : QL1       :                
+GND                          : P5        : gnd    :                   :         :           :                
+VCCL_GXB                     : P6        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : P7        : power  :                   : 1.2V    :           :                
+GND                          : P8        : gnd    :                   :         :           :                
+VCCINT                       : P9        : power  :                   : 1.2V    :           :                
+GND                          : P10       : gnd    :                   :         :           :                
+VCCINT                       : P11       : power  :                   : 1.2V    :           :                
+GND                          : P12       : gnd    :                   :         :           :                
+VCCINT                       : P13       : power  :                   : 1.2V    :           :                
+GND                          : P14       : gnd    :                   :         :           :                
+VCCINT                       : P15       : power  :                   : 1.2V    :           :                
+GND                          : P16       : gnd    :                   :         :           :                
+VCCINT                       : P17       : power  :                   : 1.2V    :           :                
+GND                          : P18       : gnd    :                   :         :           :                
+VCCINT                       : P19       : power  :                   : 1.2V    :           :                
+GND                          : P20       : gnd    :                   :         :           :                
+mst_to_cross[1].addr[2]      : P21       : input  : 2.5 V             :         : 6         : N              
+VCCIO6                       : P22       : power  :                   : 2.5V    : 6         :                
+GND                          : P23       : gnd    :                   :         :           :                
+VCCIO6                       : P24       : power  :                   : 2.5V    : 6         :                
+cross_to_mst[1].addr[4]      : P25       : output : 2.5 V             :         : 6         : N              
+GND                          : P26       : gnd    :                   :         :           :                
+mst_to_cross[0].data[11]     : P27       : input  : 2.5 V             :         : 6         : N              
+mst_to_cross[1].data[13]     : P28       : input  : 2.5 V             :         : 6         : N              
+GND                          : P29       : gnd    :                   :         :           :                
+rd_to_mst[1].data[4]         : P30       : output : 2.5 V             :         : 6         : N              
+GXB_GND*                     : R1        :        :                   :         : QL1       :                
+GXB_GND*                     : R2        :        :                   :         : QL1       :                
+GND                          : R3        : gnd    :                   :         :           :                
+GND                          : R4        : gnd    :                   :         :           :                
+GND                          : R5        : gnd    :                   :         :           :                
+VCCA_GXB                     : R6        : power  :                   : 2.5V    :           :                
+GND                          : R7        : gnd    :                   :         :           :                
+VCCA                         : R8        : power  :                   : 2.5V    :           :                
+GND                          : R9        : gnd    :                   :         :           :                
+VCCINT                       : R10       : power  :                   : 1.2V    :           :                
+GND                          : R11       : gnd    :                   :         :           :                
+VCCINT                       : R12       : power  :                   : 1.2V    :           :                
+GND                          : R13       : gnd    :                   :         :           :                
+VCCINT                       : R14       : power  :                   : 1.2V    :           :                
+GND                          : R15       : gnd    :                   :         :           :                
+VCCINT                       : R16       : power  :                   : 1.2V    :           :                
+GND                          : R17       : gnd    :                   :         :           :                
+VCCINT                       : R18       : power  :                   : 1.2V    :           :                
+GND                          : R19       : gnd    :                   :         :           :                
+VCCINT                       : R20       : power  :                   : 1.2V    :           :                
+GND                          : R21       : gnd    :                   :         :           :                
+VCCIO6                       : R22       : power  :                   : 2.5V    : 6         :                
+VCCIO6                       : R23       : power  :                   : 2.5V    : 6         :                
+mst_to_cross[1].addr[7]      : R24       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[0].data[8]      : R25       : output : 2.5 V             :         : 6         : N              
+rd_to_cross[1].data[17]      : R26       : input  : 2.5 V             :         : 6         : N              
+cross_to_mst[1].data[12]     : R27       : output : 2.5 V             :         : 6         : N              
+cross_to_mst[0].data[7]      : R28       : output : 2.5 V             :         : 6         : N              
+mst_to_cross[0].data[8]      : R29       : input  : 2.5 V             :         : 6         : N              
+rd_to_cross[1].data[4]       : R30       : input  : 2.5 V             :         : 6         : N              
+GND                          : T1        : gnd    :                   :         :           :                
+GND                          : T2        : gnd    :                   :         :           :                
+GXB_NC                       : T3        :        :                   :         : QL0       :                
+GXB_NC                       : T4        :        :                   :         : QL0       :                
+GND                          : T5        : gnd    :                   :         :           :                
+VCCL_GXB                     : T6        : power  :                   : 1.2V    :           :                
+GND                          : T7        : gnd    :                   :         :           :                
+VCCA                         : T8        : power  :                   : 2.5V    :           :                
+VCCINT                       : T9        : power  :                   : 1.2V    :           :                
+GND                          : T10       : gnd    :                   :         :           :                
+VCCINT                       : T11       : power  :                   : 1.2V    :           :                
+GND                          : T12       : gnd    :                   :         :           :                
+VCCINT                       : T13       : power  :                   : 1.2V    :           :                
+GND                          : T14       : gnd    :                   :         :           :                
+VCCINT                       : T15       : power  :                   : 1.2V    :           :                
+GND                          : T16       : gnd    :                   :         :           :                
+VCCINT                       : T17       : power  :                   : 1.2V    :           :                
+GND                          : T18       : gnd    :                   :         :           :                
+VCCINT                       : T19       : power  :                   : 1.2V    :           :                
+GND                          : T20       : gnd    :                   :         :           :                
+mst_to_cross[0].data[6]      : T21       : input  : 2.5 V             :         : 5         : N              
+GND                          : T22       : gnd    :                   :         :           :                
+cross_to_mst[0].data[12]     : T23       : output : 2.5 V             :         : 5         : N              
+rd_to_cross[0].data[0]       : T24       : input  : 2.5 V             :         : 5         : N              
+st0[24]                      : T25       : input  : 2.5 V             :         : 5         : N              
+mst_to_cross[1].data[10]     : T26       : input  : 2.5 V             :         : 5         : N              
+mst_to_cross[0].data[10]     : T27       : input  : 2.5 V             :         : 5         : N              
+cross_to_mst[1].data[13]     : T28       : output : 2.5 V             :         : 6         : N              
+st1[12]                      : T29       : input  : 2.5 V             :         : 6         : N              
+st1[11]                      : T30       : input  : 2.5 V             :         : 6         : N              
+GXB_GND*                     : U1        :        :                   :         : QL0       :                
+GXB_GND*                     : U2        :        :                   :         : QL0       :                
+GND                          : U3        : gnd    :                   :         :           :                
+GND                          : U4        : gnd    :                   :         :           :                
+GND                          : U5        : gnd    :                   :         :           :                
+VCCH_GXB                     : U6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : U7        : power  :                   : 1.2V    :           :                
+VCCINT                       : U8        : power  :                   : 1.2V    :           :                
+GND                          : U9        : gnd    :                   :         :           :                
+VCCINT                       : U10       : power  :                   : 1.2V    :           :                
+GND                          : U11       : gnd    :                   :         :           :                
+VCCINT                       : U12       : power  :                   : 1.2V    :           :                
+GND                          : U13       : gnd    :                   :         :           :                
+VCCINT                       : U14       : power  :                   : 1.2V    :           :                
+GND                          : U15       : gnd    :                   :         :           :                
+VCCINT                       : U16       : power  :                   : 1.2V    :           :                
+GND                          : U17       : gnd    :                   :         :           :                
+VCCINT                       : U18       : power  :                   : 1.2V    :           :                
+GND                          : U19       : gnd    :                   :         :           :                
+VCCINT                       : U20       : power  :                   : 1.2V    :           :                
+rd_to_mst[1].data[23]        : U21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : U22       : power  :                   : 2.5V    : 5         :                
+GND                          : U23       : gnd    :                   :         :           :                
+VCCIO5                       : U24       : power  :                   : 2.5V    : 5         :                
+rd_to_mst[1].data[7]         : U25       : output : 2.5 V             :         : 5         : N              
+GND                          : U26       : gnd    :                   :         :           :                
+mst_to_cross[0].data[12]     : U27       : input  : 2.5 V             :         : 5         : N              
+mst_to_cross[1].addr[6]      : U28       : input  : 2.5 V             :         : 5         : N              
+GND                          : U29       : gnd    :                   :         :           :                
+mst_to_cross[1].data[6]      : U30       : input  : 2.5 V             :         : 5         : N              
+GND                          : V1        : gnd    :                   :         :           :                
+GND                          : V2        : gnd    :                   :         :           :                
+GXB_NC                       : V3        :        :                   :         : QL0       :                
+GXB_NC                       : V4        :        :                   :         : QL0       :                
+VCCL_GXB                     : V5        : power  :                   : 1.2V    :           :                
+GND                          : V6        : gnd    :                   :         :           :                
+VCCA_GXB                     : V7        : power  :                   : 2.5V    :           :                
+GND                          : V8        : gnd    :                   :         :           :                
+VCCINT                       : V9        : power  :                   : 1.2V    :           :                
+GND                          : V10       : gnd    :                   :         :           :                
+GXB_GND*                     : V11       :        :                   :         : 3B        :                
+GXB_GND*                     : V12       :        :                   :         : 3B        :                
+VCCINT                       : V13       : power  :                   : 1.2V    :           :                
+GND                          : V14       : gnd    :                   :         :           :                
+st0[30]                      : V15       : input  : 2.5 V             :         : 3A        : N              
+GND                          : V16       : gnd    :                   :         :           :                
+VCCINT                       : V17       : power  :                   : 1.2V    :           :                
+GND                          : V18       : gnd    :                   :         :           :                
+VCCINT                       : V19       : power  :                   : 1.2V    :           :                
+GND                          : V20       : gnd    :                   :         :           :                
+rd_to_mst[0].data[5]         : V21       : output : 2.5 V             :         : 5         : N              
+VCCIO5                       : V22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : V23       : power  :                   : 2.5V    : 5         :                
+GND                          : V24       : gnd    :                   :         :           :                
+mst_to_cross[1].data[12]     : V25       : input  : 2.5 V             :         : 5         : N              
+cross_to_mst[1].data[11]     : V26       : output : 2.5 V             :         : 5         : N              
+mst_to_cross[1].addr[3]      : V27       : input  : 2.5 V             :         : 5         : N              
+rd_to_cross[1].data[3]       : V28       : input  : 2.5 V             :         : 5         : N              
+st1[7]                       : V29       : input  : 2.5 V             :         : 5         : N              
+st1[6]                       : V30       : input  : 2.5 V             :         : 5         : N              
+GXB_GND*                     : W1        :        :                   :         : QL0       :                
+GXB_GND*                     : W2        :        :                   :         : QL0       :                
+GND                          : W3        : gnd    :                   :         :           :                
+GND                          : W4        : gnd    :                   :         :           :                
+GND                          : W5        : gnd    :                   :         :           :                
+GND                          : W6        : gnd    :                   :         :           :                
+VCCH_GXB                     : W7        : power  :                   : 2.5V    :           :                
+VCCINT                       : W8        : power  :                   : 1.2V    :           :                
+GND                          : W9        : gnd    :                   :         :           :                
+VCCINT                       : W10       : power  :                   : 1.2V    :           :                
+GXB_GND*                     : W11       :        :                   :         : 3B        :                
+GXB_GND*                     : W12       :        :                   :         : 3B        :                
+GND                          : W13       : gnd    :                   :         :           :                
+VCCINT                       : W14       : power  :                   : 1.2V    :           :                
+clk                          : W15       : input  : 2.5 V             :         : 3A        : N              
+VCC_CLKIN3A                  : W16       : power  :                   : 2.5V    : 3A        :                
+GND                          : W17       : gnd    :                   :         :           :                
+VCCINT                       : W18       : power  :                   : 1.2V    :           :                
+GND                          : W19       : gnd    :                   :         :           :                
+VCCINT                       : W20       : power  :                   : 1.2V    :           :                
+GND                          : W21       : gnd    :                   :         :           :                
+VCCIO5                       : W22       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W23       : power  :                   : 2.5V    : 5         :                
+VCCIO5                       : W24       : power  :                   : 2.5V    : 5         :                
+mst_to_cross[1].data[11]     : W25       : input  : 2.5 V             :         : 5         : N              
+rd_to_mst[0].data[3]         : W26       : output : 2.5 V             :         : 5         : N              
+cross_to_mst[1].data[10]     : W27       : output : 2.5 V             :         : 5         : N              
+cross_to_mst[0].data[13]     : W28       : output : 2.5 V             :         : 5         : N              
+cross_to_mst[1].addr[30]     : W29       : output : 2.5 V             :         : 5         : N              
+cross_to_mst[0].addr[6]      : W30       : output : 2.5 V             :         : 5         : N              
+GND                          : Y1        : gnd    :                   :         :           :                
+GND                          : Y2        : gnd    :                   :         :           :                
+GXB_NC                       : Y3        :        :                   :         : QL0       :                
+GXB_NC                       : Y4        :        :                   :         : QL0       :                
+VCCL_GXB                     : Y5        : power  :                   : 1.2V    :           :                
+VCCA_GXB                     : Y6        : power  :                   : 2.5V    :           :                
+VCCD_PLL                     : Y7        : power  :                   : 1.2V    :           :                
+VCCD_PLL                     : Y8        : power  :                   : 1.2V    :           :                
+GND                          : Y9        : gnd    :                   :         :           :                
+GND                          : Y10       : gnd    :                   :         :           :                
+VCCINT                       : Y11       : power  :                   : 1.2V    :           :                
+VCC_CLKIN3B                  : Y12       : power  :                   : 2.5V    : 3B        :                
+VCCINT                       : Y13       : power  :                   : 1.2V    :           :                
+GND                          : Y14       : gnd    :                   :         :           :                
+VCCINT                       : Y15       : power  :                   : 1.2V    :           :                
+GND                          : Y16       : gnd    :                   :         :           :                
+rd_to_cross[1].data[26]      : Y17       : input  : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[10]        : Y18       : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[14]        : Y19       : output : 2.5 V             :         : 4         : N              
+rd_to_mst[0].data[4]         : Y20       : output : 2.5 V             :         : 4         : N              
+rd_to_cross[1].data[14]      : Y21       : input  : 2.5 V             :         : 4         : N              
+mst_to_cross[1].data[8]      : Y22       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y23       : gnd    :                   :         :           :                
+VCCIO5                       : Y24       : power  :                   : 2.5V    : 5         :                
+mst_to_cross[0].data[7]      : Y25       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y26       : gnd    :                   :         :           :                
+mst_to_cross[0].data[13]     : Y27       : input  : 2.5 V             :         : 5         : N              
+rd_to_cross[0].data[7]       : Y28       : input  : 2.5 V             :         : 5         : N              
+GND                          : Y29       : gnd    :                   :         :           :                
+rd_to_cross[0].data[1]       : Y30       : input  : 2.5 V             :         : 5         : N              

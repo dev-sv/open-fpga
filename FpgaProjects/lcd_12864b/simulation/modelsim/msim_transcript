@@ -1,0 +1,75 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do lcd_12864b_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:34 on Aug 07,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:35 on Aug 07,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v 
+# -- Compiling module counter
+# 
+# Top level modules:
+# 	counter
+# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:35 on Aug 07,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:35 on Aug 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv 
+# -- Compiling module lcd_12864b
+# 
+# Top level modules:
+# 	lcd_12864b
+# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:35 on Aug 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv 
+# -- Compiling module queue
+# 
+# Top level modules:
+# 	queue
+# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 15:22:35 on Aug 07,2020
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv 
+# -- Compiling module lcd_12864b_top
+# 
+# Top level modules:
+# 	lcd_12864b_top
+# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# reading C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini
+# Loading project tb_lcd_12864b_top_sim

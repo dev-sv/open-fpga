@@ -1,0 +1,257 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/simulation/modelsim
+vat24c04
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 5 lcd_t 0 22 N;[f=Ul`IG?:em^o5:c<n0
+Z3 DXx4 work 6 enum_t 0 22 1<JB:f@1LhO`LdOE<k;zW3
+Z4 !s110 1610792461
+!i10b 1
+!s100 z7DVhk7`K5zm7`NWmaPg42
+IS;>3ZOh?U0W1mHf;28l_M2
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 at24c04_sv_unit
+S1
+R0
+w1601286049
+8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/at24c04.sv
+FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/at24c04.sv
+L0 7
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1610792461.000000
+!s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/at24c04.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/at24c04.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c
+Z10 tCvgOpt 0
+vcounter
+Z11 !s110 1610792460
+!i10b 1
+!s100 7@WgLBK[gC=d=RP?Q:YY02
+INEW3ZeehOH8KThVUYbBfY2
+R5
+R0
+w1602586139
+8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/counter.v
+FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/counter.v
+Z12 L0 39
+R6
+r1
+!s85 0
+31
+Z13 !s108 1610792460.000000
+!s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/counter.v|
+!i113 1
+Z14 o-vlog01compat -work work
+Z15 !s92 -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c
+R10
+vds1307
+R1
+R2
+R3
+R4
+!i10b 1
+!s100 z4Xla3klo[S@g^6engWbF1
+I0jMJO0Y7ZcYKad37^AHU=1
+R5
+!s105 ds1307_sv_unit
+S1
+R0
+w1601282335
+8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/ds1307.sv
+FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/ds1307.sv
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/ds1307.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/ds1307.sv|
+!i113 1
+R8
+R9
+R10
+Xenum_t
+R1
+R4
+!i10b 1
+!s100 AJUB>W]mZnXOGfgzGmX<W1
+I1<JB:f@1LhO`LdOE<k;zW3
+V1<JB:f@1LhO`LdOE<k;zW3
+S1
+R0
+Z16 w1602585911
+Z17 8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c.sv
+Z18 FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c.sv
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+Z19 !s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c.sv|
+Z20 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c.sv|
+!i113 1
+R8
+R9
+R10
+vi2c
+R1
+R3
+R4
+!i10b 1
+!s100 Z:bn?`YgoKFcM5jAWCz881
+I>ckgC7dL^dT:GV<_kF0o>0
+R5
+!s105 i2c_sv_unit
+S1
+R0
+R16
+R17
+R18
+L0 12
+R6
+r1
+!s85 0
+31
+R7
+R19
+R20
+!i113 1
+R8
+R9
+R10
+vi2c_top
+R1
+R2
+R4
+!i10b 1
+!s100 3IiRYAR_`Z7EP6[M06Hg12
+IHAIMXMH^KAITTLjY[>;IS2
+R5
+!s105 i2c_top_sv_unit
+S1
+R0
+w1602586292
+8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c_top.sv
+FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c_top.sv
+L0 4
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/i2c_top.sv|
+!i113 1
+R8
+R9
+R10
+vlcd_1602
+R1
+R2
+R3
+R4
+!i10b 1
+!s100 3FlX=8z2bNR82hnfh7`_P1
+I_h`lN15Q>08W<2AZZIG>o2
+R5
+!s105 lcd_1602_sv_unit
+S1
+R0
+Z21 w1602586326
+Z22 8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/lcd_1602.sv
+Z23 FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/lcd_1602.sv
+L0 14
+R6
+r1
+!s85 0
+31
+R7
+Z24 !s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/lcd_1602.sv|
+Z25 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/lcd_1602.sv|
+!i113 1
+R8
+R9
+R10
+Xlcd_t
+R1
+R4
+!i10b 1
+!s100 eV2Ii=R^Pb;d<z9ZZS_PN0
+IN;[f=Ul`IG?:em^o5:c<n0
+VN;[f=Ul`IG?:em^o5:c<n0
+S1
+R0
+R21
+R22
+R23
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R24
+R25
+!i113 1
+R8
+R9
+R10
+vpll
+R11
+!i10b 1
+!s100 lFaiz``S8mmb8S12SnoiL2
+IaPM:LKB0XNOf>0nF:I4OG1
+R5
+R0
+w1599735551
+8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/pll.v
+FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/pll.v
+R12
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/pll.v|
+!i113 1
+R14
+R15
+R10
+vpll_altpll
+R4
+!i10b 1
+!s100 [Id1a:16Pdm?Whj:cOI;`3
+I8=M>]z>]oQg>Qmi:9W`DE2
+R5
+R0
+w1599735586
+8C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/db/pll_altpll.v
+FC:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/db/pll_altpll.v
+L0 29
+R6
+r1
+!s85 0
+31
+R13
+!s107 C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/db|C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/db/pll_altpll.v|
+!i113 1
+R14
+!s92 -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GHRelease/FpgaProjects/i2c/db
+R10

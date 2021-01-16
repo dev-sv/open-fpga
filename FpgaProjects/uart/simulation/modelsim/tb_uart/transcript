@@ -1,0 +1,5 @@
+# Compile of uart.sv was successful.
+# Compile of tb_uart.sv was successful.
+# Compile of pll.v was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -gui -l msim_transcript work.tb_uart -L altera_mf_ver

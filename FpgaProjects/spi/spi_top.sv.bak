@@ -1,0 +1,14 @@
+
+
+
+module spi_top(input bit osc, miso, output bit sclk, ss, mosi);
+
+
+
+
+
+
+
+
+endmodule: spi_top
+

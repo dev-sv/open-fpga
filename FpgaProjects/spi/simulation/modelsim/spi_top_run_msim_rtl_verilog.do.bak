@@ -1,0 +1,14 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi {C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/pll.v}
+vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/db {C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/db/pll_altpll.v}
+vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi {C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/spi_top.sv}
+vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi {C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/max_7219.sv}
+vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi {C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/spi.sv}
+vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi {C:/Projects/FPGA/SystemVerilog/GitHubRelease/Spi/w25q32.sv}
+

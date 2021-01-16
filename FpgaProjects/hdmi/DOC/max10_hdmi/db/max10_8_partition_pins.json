@@ -1,0 +1,41 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "tmds[7]",
+					"strict" : false
+				},
+				{
+					"name" : "tmds[6]",
+					"strict" : false
+				},
+				{
+					"name" : "tmds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "tmds[4]",
+					"strict" : false
+				},
+				{
+					"name" : "tmds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "tmds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "tmds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "tmds[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

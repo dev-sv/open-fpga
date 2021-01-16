@@ -1,0 +1,11 @@
+
+
+
+module i2c_top(input bit osc);
+
+
+
+
+
+
+endmodule: i2c_top
