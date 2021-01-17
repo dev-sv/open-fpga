@@ -1,2 +1,0 @@
-Warning (10268): Verilog HDL information at tb_cross_bar.sv(79): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GHRelease/TrailTask_Syntacore/tb_cross_bar.sv Line: 79
-Info (10281): Verilog HDL Declaration information at slave.sv(8): object "rd" differs only in case from object "RD" in the same scope File: C:/Projects/FPGA/SystemVerilog/GHRelease/TrailTask_Syntacore/slave.sv Line: 8
