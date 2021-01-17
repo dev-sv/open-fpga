@@ -1,0 +1,53 @@
+C:/Projects/FPGA/SystemVerilog/TrailTask/pkg.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/TrailTask/pkg.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package pkg_mst
+-- Compiling package pkg_slv
+-- Compiling package pkg_st
+
+Top level modules:
+	--none--
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/TrailTask/cross_bar.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/TrailTask/cross_bar.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package cross_bar_sv_unit
+-- Importing package pkg_mst
+-- Importing package pkg_slv
+-- Importing package pkg_st
+-- Compiling module cross_bar
+
+Top level modules:
+	cross_bar
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/TrailTask/slave.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/TrailTask/slave.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package slave_sv_unit
+-- Importing package pkg_mst
+-- Importing package pkg_slv
+-- Compiling module slave
+
+Top level modules:
+	slave
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/TrailTask/tb_cross_bar.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/TrailTask/tb_cross_bar.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package tb_cross_bar_sv_unit
+-- Importing package pkg_mst
+-- Importing package pkg_slv
+-- Importing package pkg_st
+-- Compiling module tb_cross_bar
+
+Top level modules:
+	tb_cross_bar
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/TrailTask/master.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/TrailTask/master.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package master_sv_unit
+-- Importing package pkg_mst
+-- Importing package pkg_slv
+-- Importing package pkg_st
+-- Compiling module master
+
+Top level modules:
+	master
+
+} {} {}}
