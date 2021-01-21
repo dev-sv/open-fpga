@@ -1,7 +1,0 @@
-# Compile of tb_cross_bar.sv was successful.
-# Compile of cross_bar.sv was successful.
-# Compile of master.sv was successful.
-# Compile of pkg.sv was successful.
-# Compile of slave.sv was successful.
-# 5 compiles, 0 failed with no errors.
-vsim -gui -l msim_transcript work.tb_cross_bar
