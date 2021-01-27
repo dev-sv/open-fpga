@@ -1,1 +1,0 @@
-Warning (10268): Verilog HDL information at ls.sv(67): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/logic_slice/ls.sv Line: 67
