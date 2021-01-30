@@ -1,12 +1,12 @@
-Fitter Status : Successful - Sun Dec 13 17:35:55 2020
+Fitter Status : Successful - Sat Jan 30 20:46:32 2021
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : hdmi
 Top-level Entity Name : hdmi
 Family : Cyclone IV E
 Device : EP4CE6E22C8
 Timing Models : Final
-Total logic elements : 256 / 6,272 ( 4 % )
-    Total combinational functions : 244 / 6,272 ( 4 % )
+Total logic elements : 251 / 6,272 ( 4 % )
+    Total combinational functions : 239 / 6,272 ( 4 % )
     Dedicated logic registers : 71 / 6,272 ( 1 % )
 Total registers : 83
 Total pins : 55 / 92 ( 60 % )
