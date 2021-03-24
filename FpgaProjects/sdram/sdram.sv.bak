@@ -1,0 +1,10 @@
+
+
+
+module sdram(input bit clk);
+
+
+
+
+
+endmodule: sdram

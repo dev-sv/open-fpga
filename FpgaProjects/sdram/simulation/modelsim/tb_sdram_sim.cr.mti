@@ -1,0 +1,28 @@
+C:/Projects/FPGA/SystemVerilog/sdram/sdram.sv {2 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/sdram/sdram.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package pkg_ini
+** Warning: C:/Projects/FPGA/SystemVerilog/sdram/sdram.sv(36): (vlog-13233) Design unit "sdram_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+-- Compiling package sdram_sv_unit
+-- Importing package pkg_ini
+-- Compiling module sdram
+
+Top level modules:
+	sdram
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/sdram/tb_sdram.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/sdram/tb_sdram.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling package tb_sdram_sv_unit
+-- Importing package pkg_ini
+-- Compiling module tb_sdram
+
+Top level modules:
+	tb_sdram
+
+} {} {}} C:/Projects/FPGA/SystemVerilog/sdram/HY57V641620FTP-7.sv {1 {vlog -work work -sv -stats=none C:/Projects/FPGA/SystemVerilog/sdram/HY57V641620FTP-7.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module HY57V641620FTP_7
+
+Top level modules:
+	HY57V641620FTP_7
+
+} {} {}}

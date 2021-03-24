@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at HY57V641620FTP-7.sv(82): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/sdram/HY57V641620FTP-7.sv Line: 82
+Warning (10268): Verilog HDL information at sdram.sv(119): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/sdram/sdram.sv Line: 119
