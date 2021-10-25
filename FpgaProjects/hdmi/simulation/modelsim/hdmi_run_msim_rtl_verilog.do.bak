@@ -1,0 +1,12 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vlog -sv -work work +incdir+/home/user/Projects/max10/hdmi {/home/user/Projects/max10/hdmi/sync.sv}
+vlog -sv -work work +incdir+/home/user/Projects/max10/hdmi {/home/user/Projects/max10/hdmi/tmds_encoder.sv}
+vlog -sv -work work +incdir+/home/user/Projects/max10/hdmi {/home/user/Projects/max10/hdmi/tmds_serial.sv}
+vlog -sv -work work +incdir+/home/user/Projects/max10/hdmi {/home/user/Projects/max10/hdmi/hdmi.sv}
+

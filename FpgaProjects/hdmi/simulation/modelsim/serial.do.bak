@@ -1,0 +1,29 @@
+
+
+ transcript on
+#C:\Projects\Ls\max10\hdmi
+ set PRJ_DIR "c:/Projects/Ls/max10/hdmi"
+ set UVM_DIR "c:/Projects/uvm-1.2/src"
+ set WORK_LIB_DIR $PRJ_DIR/UTB/tmds_serial
+
+
+ vlib $WORK_LIB_DIR/work
+# vlib work
+
+ vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/tmds_serial.sv \
+           $PRJ_DIR/tmds_tb.sv $PRJ_DIR/ddio_sim/altera_gpio_lite/altera_gpio_lite.sv
+ 
+ vsim tb -L altera_ver -L fiftyfivenm_ver
+# vsim tb
+
+# add wave /tb/mif/*
+ 
+# add wave /tb/mif/clk_x10
+
+# add wave /tmds_serial_tb/d
+ 
+# add wave /tmds_serial_tb/p
+ 
+# add wave /tmds_serial_tb/n
+ 
+ run 1000

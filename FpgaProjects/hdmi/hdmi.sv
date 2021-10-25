@@ -1,49 +1,106 @@
 
 
+
+
+package pkg_disp;
+
+ typedef struct{
+
+	int horz_front_porch;
+	int horz_sync;
+	int horz_back_porch;
+	int horz_pix;
+
+	int vert_front_porch;
+	int vert_sync;
+	int vert_back_porch;
+	int vert_pix;
+
+ } t_sync;
+
+ 
+ const bit[9:0] code[4] = '{10'b0010101011, 10'b1101010100, 
+                            10'b0010101010, 10'b1101010101};                            
+endpackage
+
+
+
+interface hdmi_if();
+
+ import pkg_disp::t_sync;
+
+ 
+ t_sync sp;
+
+ bit clk_x10,
+     clk_pix;
+	  
+ bit[10:0] x, y;
+	  
+ logic[9:0] d;
+ 
+ logic[7:0] color; 
+ 
+ logic[9:0] out;
+ 
+ bit p, n;
+ 
+ bit        de; 
+ bit[1:0]   vh; 
+ 
+ modport pair(output p, n);
+ 
+ modport s_de_vh(output de, vh);
+ 
+ modport e_de_vh(input de, vh);
+
+endinterface: hdmi_if
+
+
+				
+module hdmi(input bit clk_x10, clk_pix, input bit[7:0] red, green, blue,  				
+            hdmi_if.pair red_p, hdmi_if.pair green_p, hdmi_if.pair blue_p, hdmi_if.pair clk_p, output bit[10:0] x, y);
+
+				
 import pkg_disp::t_sync;
-
-
-module hdmi(input bit osc, input bit[7:0] red, green, blue,  output  bit clk_p, clk_n, red_p, red_n, 
-														green_p, green_n, blue_p, blue_n, output bit[10:0] x, y); 
+				
 
 // sync params.
-t_sync sp = '{horz_front_porch:24, horz_sync:136, horz_back_porch:160, horz_pix:1024,
+t_sync sp = '{horz_front_porch:20, horz_sync:60, horz_back_porch:110, horz_pix:1024,
 
-				  vert_front_porch:10, vert_sync:8, vert_back_porch:30, vert_pix:600};
+				  vert_front_porch:30, vert_sync:80, vert_back_porch:110, vert_pix:600};
+				  
+				  
+hdmi_if _if();
+	  			
+wire[9:0] w_r,
+			 w_g,
+			 w_b;
 
+			 
+	always @(posedge clk_x10) begin
+	
+		clk_p.p <= clk_pix;
+		clk_p.n <= ~clk_pix;		
+	end
+	
 
-													
-wire  w_de,
-		w_clk, 
-		q_clk,  
-		w_clk_x10;
-			
+	sync sync_inst(.clk(clk_pix), .s(_if.s_de_vh), .sp(sp), .x(x), .y(y));
 
-wire [1:0]	w_vh;
-
-wire [9:0]  w_out_r,
-				w_out_g,
-				w_out_b;
-
-
-	pll	pll_inst(.inclk0(osc), .c0(w_clk), .c1(w_clk_x10));
+	
+	tmds_encoder tmds_encoder_red(.clk(clk_pix), .e(_if.e_de_vh), .color(red), .out(w_r));
 		
-	counter 	counter_inst(.clock(w_clk), .q(q_clk));
-			
-	assign clk_p = q_clk;
-	assign clk_n = ~q_clk;
+	tmds_serial  tmds_serial_red(.clk_x10(clk_x10), .d(w_r), .pair(red_p)); 
 
+	
+	tmds_encoder tmds_encoder_green(.clk(clk_pix), .e(_if.e_de_vh), .color(green), .out(w_g));
+	
+	tmds_serial  tmds_serial_green(.clk_x10(clk_x10), .d(w_g), .pair(green_p)); 
 
-	sync sync_inst(.clk(clk_p), .de(w_de), .vh(w_vh), .x(x), .y(y), .sp(sp));
-
-	tmds_encoder tmds_encoder_red(.clk(clk_p), .de(w_de), .vh(2'b00), .d(red), .d_out(w_out_r));
-	tmds_serial  tmds_serial_red(.clk_x10(w_clk_x10), .d(w_out_r), .p(red_p), .n(red_n)); 
-
-	tmds_encoder tmds_encoder_green(.clk(clk_p), .de(w_de), .vh(2'b00), .d(green), .d_out(w_out_g));
-	tmds_serial  tmds_serial_green(.clk_x10(w_clk_x10), .d(w_out_g), .p(green_p), .n(green_n)); 
-
-	tmds_encoder tmds_encoder_blue(.clk(clk_p), .de(w_de), .vh(w_vh), .d(blue), .d_out(w_out_b));
-	tmds_serial  tmds_serial_blue(.clk_x10(w_clk_x10), .d(w_out_b), .p(blue_p), .n(blue_n)); 
+	
+	tmds_encoder tmds_encoder_blue(.clk(clk_pix), .e(_if.e_de_vh), .color(blue), .out(w_b));
+		
+	tmds_serial  tmds_serial_blue(.clk_x10(clk_x10), .d(w_b), .pair(blue_p)); 
 
 	
 endmodule: hdmi
