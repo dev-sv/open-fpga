@@ -1,0 +1,963 @@
+
+UTTest_0
+
+UTScoreBoard ch[  0] = 1 reff[  0] = 1 pass
+UTScoreBoard ch[  1] = 0 reff[  1] = 0 pass
+UTScoreBoard ch[  2] = 0 reff[  2] = 0 pass
+UTScoreBoard ch[  3] = 0 reff[  3] = 0 pass
+UTScoreBoard ch[  4] = 0 reff[  4] = 0 pass
+UTScoreBoard ch[  5] = 0 reff[  5] = 0 pass
+UTScoreBoard ch[  6] = 0 reff[  6] = 0 pass
+UTScoreBoard ch[  7] = 0 reff[  7] = 0 pass
+UTScoreBoard ch[  8] = 0 reff[  8] = 0 pass
+UTScoreBoard ch[  9] = 1 reff[  9] = 1 pass
+UTScoreBoard ch[ 10] = 1 reff[ 10] = 1 pass
+UTScoreBoard ch[ 11] = 1 reff[ 11] = 1 pass
+UTScoreBoard ch[ 12] = 1 reff[ 12] = 1 pass
+UTScoreBoard ch[ 13] = 1 reff[ 13] = 1 pass
+UTScoreBoard ch[ 14] = 1 reff[ 14] = 1 pass
+UTScoreBoard ch[ 15] = 1 reff[ 15] = 1 pass
+UTScoreBoard ch[ 16] = 1 reff[ 16] = 1 pass
+UTScoreBoard ch[ 17] = 1 reff[ 17] = 1 pass
+UTScoreBoard ch[ 18] = 0 reff[ 18] = 0 pass
+UTScoreBoard ch[ 19] = 0 reff[ 19] = 0 pass
+UTScoreBoard ch[ 20] = 0 reff[ 20] = 0 pass
+UTScoreBoard ch[ 21] = 1 reff[ 21] = 1 pass
+UTScoreBoard ch[ 22] = 1 reff[ 22] = 1 pass
+UTScoreBoard ch[ 23] = 1 reff[ 23] = 1 pass
+UTScoreBoard ch[ 24] = 1 reff[ 24] = 1 pass
+UTScoreBoard ch[ 25] = 0 reff[ 25] = 0 pass
+UTScoreBoard ch[ 26] = 0 reff[ 26] = 0 pass
+UTScoreBoard ch[ 27] = 0 reff[ 27] = 0 pass
+UTScoreBoard ch[ 28] = 0 reff[ 28] = 0 pass
+UTScoreBoard ch[ 29] = 0 reff[ 29] = 0 pass
+UTScoreBoard ch[ 30] = 0 reff[ 30] = 0 pass
+UTScoreBoard ch[ 31] = 0 reff[ 31] = 0 pass
+UTScoreBoard ch[ 32] = 0 reff[ 32] = 0 pass
+UTScoreBoard ch[ 33] = 0 reff[ 33] = 0 pass
+UTScoreBoard ch[ 34] = 1 reff[ 34] = 1 pass
+UTScoreBoard ch[ 35] = 1 reff[ 35] = 1 pass
+UTScoreBoard ch[ 36] = 1 reff[ 36] = 1 pass
+UTScoreBoard ch[ 37] = 0 reff[ 37] = 0 pass
+UTScoreBoard ch[ 38] = 0 reff[ 38] = 0 pass
+UTScoreBoard ch[ 39] = 0 reff[ 39] = 0 pass
+UTScoreBoard ch[ 40] = 0 reff[ 40] = 0 pass
+UTScoreBoard ch[ 41] = 0 reff[ 41] = 0 pass
+UTScoreBoard ch[ 42] = 0 reff[ 42] = 0 pass
+UTScoreBoard ch[ 43] = 0 reff[ 43] = 0 pass
+UTScoreBoard ch[ 44] = 0 reff[ 44] = 0 pass
+UTScoreBoard ch[ 45] = 1 reff[ 45] = 1 pass
+UTScoreBoard ch[ 46] = 1 reff[ 46] = 1 pass
+UTScoreBoard ch[ 47] = 1 reff[ 47] = 1 pass
+UTScoreBoard ch[ 48] = 0 reff[ 48] = 0 pass
+UTScoreBoard ch[ 49] = 0 reff[ 49] = 0 pass
+UTScoreBoard ch[ 50] = 0 reff[ 50] = 0 pass
+UTScoreBoard ch[ 51] = 0 reff[ 51] = 0 pass
+UTScoreBoard ch[ 52] = 0 reff[ 52] = 0 pass
+UTScoreBoard ch[ 53] = 0 reff[ 53] = 0 pass
+UTScoreBoard ch[ 54] = 0 reff[ 54] = 0 pass
+UTScoreBoard ch[ 55] = 0 reff[ 55] = 0 pass
+UTScoreBoard ch[ 56] = 0 reff[ 56] = 0 pass
+UTScoreBoard ch[ 57] = 0 reff[ 57] = 0 pass
+UTScoreBoard ch[ 58] = 1 reff[ 58] = 1 pass
+UTScoreBoard ch[ 59] = 1 reff[ 59] = 1 pass
+UTScoreBoard ch[ 60] = 1 reff[ 60] = 1 pass
+UTScoreBoard ch[ 61] = 0 reff[ 61] = 0 pass
+UTScoreBoard ch[ 62] = 0 reff[ 62] = 0 pass
+UTScoreBoard ch[ 63] = 1 reff[ 63] = 1 pass
+UTScoreBoard ch[ 64] = 1 reff[ 64] = 1 pass
+UTScoreBoard ch[ 65] = 1 reff[ 65] = 1 pass
+UTScoreBoard ch[ 66] = 0 reff[ 66] = 0 pass
+UTScoreBoard ch[ 67] = 0 reff[ 67] = 0 pass
+UTScoreBoard ch[ 68] = 1 reff[ 68] = 1 pass
+UTScoreBoard ch[ 69] = 1 reff[ 69] = 1 pass
+UTScoreBoard ch[ 70] = 0 reff[ 70] = 0 pass
+UTScoreBoard ch[ 71] = 0 reff[ 71] = 0 pass
+UTScoreBoard ch[ 72] = 0 reff[ 72] = 0 pass
+UTScoreBoard ch[ 73] = 0 reff[ 73] = 0 pass
+UTScoreBoard ch[ 74] = 0 reff[ 74] = 0 pass
+UTScoreBoard ch[ 75] = 1 reff[ 75] = 1 pass
+UTScoreBoard ch[ 76] = 1 reff[ 76] = 1 pass
+UTScoreBoard ch[ 77] = 1 reff[ 77] = 1 pass
+UTScoreBoard ch[ 78] = 1 reff[ 78] = 1 pass
+UTScoreBoard ch[ 79] = 1 reff[ 79] = 1 pass
+UTScoreBoard ch[ 80] = 1 reff[ 80] = 1 pass
+UTScoreBoard ch[ 81] = 1 reff[ 81] = 1 pass
+UTScoreBoard ch[ 82] = 1 reff[ 82] = 1 pass
+UTScoreBoard ch[ 83] = 0 reff[ 83] = 0 pass
+UTScoreBoard ch[ 84] = 0 reff[ 84] = 0 pass
+UTScoreBoard ch[ 85] = 1 reff[ 85] = 1 pass
+UTScoreBoard ch[ 86] = 0 reff[ 86] = 0 pass
+UTScoreBoard ch[ 87] = 0 reff[ 87] = 0 pass
+UTScoreBoard ch[ 88] = 0 reff[ 88] = 0 pass
+UTScoreBoard ch[ 89] = 0 reff[ 89] = 0 pass
+UTScoreBoard ch[ 90] = 0 reff[ 90] = 0 pass
+UTScoreBoard ch[ 91] = 0 reff[ 91] = 0 pass
+UTScoreBoard ch[ 92] = 0 reff[ 92] = 0 pass
+UTScoreBoard ch[ 93] = 1 reff[ 93] = 1 pass
+UTScoreBoard ch[ 94] = 1 reff[ 94] = 1 pass
+UTScoreBoard ch[ 95] = 1 reff[ 95] = 1 pass
+UTScoreBoard ch[ 96] = 1 reff[ 96] = 1 pass
+UTScoreBoard ch[ 97] = 0 reff[ 97] = 0 pass
+UTScoreBoard ch[ 98] = 0 reff[ 98] = 0 pass
+UTScoreBoard ch[ 99] = 0 reff[ 99] = 0 pass
+UTScoreBoard ch[100] = 0 reff[100] = 0 pass
+UTScoreBoard ch[101] = 0 reff[101] = 0 pass
+UTScoreBoard ch[102] = 0 reff[102] = 0 pass
+UTScoreBoard ch[103] = 0 reff[103] = 0 pass
+UTScoreBoard ch[104] = 0 reff[104] = 0 pass
+UTScoreBoard ch[105] = 1 reff[105] = 1 pass
+UTScoreBoard ch[106] = 1 reff[106] = 1 pass
+UTScoreBoard ch[107] = 1 reff[107] = 1 pass
+UTScoreBoard ch[108] = 1 reff[108] = 1 pass
+UTScoreBoard ch[109] = 1 reff[109] = 1 pass
+UTScoreBoard ch[110] = 1 reff[110] = 1 pass
+UTScoreBoard ch[111] = 1 reff[111] = 1 pass
+UTScoreBoard ch[112] = 1 reff[112] = 1 pass
+UTScoreBoard ch[113] = 1 reff[113] = 1 pass
+UTScoreBoard ch[114] = 1 reff[114] = 1 pass
+UTScoreBoard ch[115] = 0 reff[115] = 0 pass
+UTScoreBoard ch[116] = 0 reff[116] = 0 pass
+UTScoreBoard ch[117] = 0 reff[117] = 0 pass
+UTScoreBoard ch[118] = 0 reff[118] = 0 pass
+UTScoreBoard ch[119] = 0 reff[119] = 0 pass
+UTScoreBoard ch[120] = 0 reff[120] = 0 pass
+UTScoreBoard ch[121] = 1 reff[121] = 1 pass
+UTScoreBoard ch[122] = 1 reff[122] = 1 pass
+UTScoreBoard ch[123] = 1 reff[123] = 1 pass
+UTScoreBoard ch[124] = 1 reff[124] = 1 pass
+UTScoreBoard ch[125] = 1 reff[125] = 1 pass
+UTScoreBoard ch[126] = 1 reff[126] = 1 pass
+UTScoreBoard ch[127] = 1 reff[127] = 1 pass
+UTScoreBoard ch[128] = 0 reff[128] = 0 pass
+UTScoreBoard ch[129] = 0 reff[129] = 0 pass
+UTScoreBoard ch[130] = 0 reff[130] = 0 pass
+UTScoreBoard ch[131] = 0 reff[131] = 0 pass
+UTScoreBoard ch[132] = 0 reff[132] = 0 pass
+UTScoreBoard ch[133] = 0 reff[133] = 0 pass
+UTScoreBoard ch[134] = 0 reff[134] = 0 pass
+UTScoreBoard ch[135] = 0 reff[135] = 0 pass
+UTScoreBoard ch[136] = 0 reff[136] = 0 pass
+UTScoreBoard ch[137] = 1 reff[137] = 1 pass
+UTScoreBoard ch[138] = 1 reff[138] = 1 pass
+UTScoreBoard ch[139] = 1 reff[139] = 1 pass
+UTScoreBoard ch[140] = 1 reff[140] = 1 pass
+UTScoreBoard ch[141] = 1 reff[141] = 1 pass
+UTScoreBoard ch[142] = 1 reff[142] = 1 pass
+UTScoreBoard ch[143] = 1 reff[143] = 1 pass
+UTScoreBoard ch[144] = 0 reff[144] = 0 pass
+UTScoreBoard ch[145] = 0 reff[145] = 0 pass
+UTScoreBoard ch[146] = 0 reff[146] = 0 pass
+UTScoreBoard ch[147] = 1 reff[147] = 1 pass
+UTScoreBoard ch[148] = 1 reff[148] = 1 pass
+UTScoreBoard ch[149] = 1 reff[149] = 1 pass
+UTScoreBoard ch[150] = 1 reff[150] = 1 pass
+UTScoreBoard ch[151] = 1 reff[151] = 1 pass
+UTScoreBoard ch[152] = 1 reff[152] = 1 pass
+UTScoreBoard ch[153] = 1 reff[153] = 1 pass
+UTScoreBoard ch[154] = 1 reff[154] = 1 pass
+UTScoreBoard ch[155] = 0 reff[155] = 0 pass
+UTScoreBoard ch[156] = 0 reff[156] = 0 pass
+UTScoreBoard ch[157] = 0 reff[157] = 0 pass
+UTScoreBoard ch[158] = 0 reff[158] = 0 pass
+UTScoreBoard ch[159] = 0 reff[159] = 0 pass
+UTScoreBoard ch[160] = 0 reff[160] = 0 pass
+UTScoreBoard ch[161] = 1 reff[161] = 1 pass
+UTScoreBoard ch[162] = 1 reff[162] = 1 pass
+UTScoreBoard ch[163] = 1 reff[163] = 1 pass
+UTScoreBoard ch[164] = 1 reff[164] = 1 pass
+UTScoreBoard ch[165] = 1 reff[165] = 1 pass
+UTScoreBoard ch[166] = 1 reff[166] = 1 pass
+UTScoreBoard ch[167] = 0 reff[167] = 0 pass
+UTScoreBoard ch[168] = 1 reff[168] = 1 pass
+UTScoreBoard ch[169] = 1 reff[169] = 1 pass
+UTScoreBoard ch[170] = 1 reff[170] = 1 pass
+UTScoreBoard ch[171] = 1 reff[171] = 1 pass
+UTScoreBoard ch[172] = 1 reff[172] = 1 pass
+UTScoreBoard ch[173] = 1 reff[173] = 1 pass
+UTScoreBoard ch[174] = 1 reff[174] = 1 pass
+UTScoreBoard ch[175] = 1 reff[175] = 1 pass
+UTScoreBoard ch[176] = 1 reff[176] = 1 pass
+UTScoreBoard ch[177] = 0 reff[177] = 0 pass
+UTScoreBoard ch[178] = 0 reff[178] = 0 pass
+UTScoreBoard ch[179] = 0 reff[179] = 0 pass
+UTScoreBoard ch[180] = 0 reff[180] = 0 pass
+UTScoreBoard ch[181] = 0 reff[181] = 0 pass
+UTScoreBoard ch[182] = 0 reff[182] = 0 pass
+UTScoreBoard ch[183] = 0 reff[183] = 0 pass
+UTScoreBoard ch[184] = 1 reff[184] = 1 pass
+UTScoreBoard ch[185] = 1 reff[185] = 1 pass
+UTScoreBoard ch[186] = 1 reff[186] = 1 pass
+UTScoreBoard ch[187] = 1 reff[187] = 1 pass
+UTScoreBoard ch[188] = 0 reff[188] = 0 pass
+UTScoreBoard ch[189] = 0 reff[189] = 0 pass
+UTScoreBoard ch[190] = 0 reff[190] = 0 pass
+UTScoreBoard ch[191] = 0 reff[191] = 0 pass
+UTScoreBoard ch[192] = 0 reff[192] = 0 pass
+UTScoreBoard ch[193] = 0 reff[193] = 0 pass
+UTScoreBoard ch[194] = 0 reff[194] = 0 pass
+UTScoreBoard ch[195] = 1 reff[195] = 1 pass
+UTScoreBoard ch[196] = 0 reff[196] = 0 pass
+UTScoreBoard ch[197] = 0 reff[197] = 0 pass
+UTScoreBoard ch[198] = 0 reff[198] = 0 pass
+UTScoreBoard ch[199] = 0 reff[199] = 0 pass
+UTScoreBoard ch[200] = 0 reff[200] = 0 pass
+UTScoreBoard ch[201] = 0 reff[201] = 0 pass
+UTScoreBoard ch[202] = 1 reff[202] = 1 pass
+UTScoreBoard ch[203] = 1 reff[203] = 1 pass
+UTScoreBoard ch[204] = 1 reff[204] = 1 pass
+UTScoreBoard ch[205] = 1 reff[205] = 1 pass
+UTScoreBoard ch[206] = 1 reff[206] = 1 pass
+UTScoreBoard ch[207] = 1 reff[207] = 1 pass
+UTScoreBoard ch[208] = 1 reff[208] = 1 pass
+UTScoreBoard ch[209] = 1 reff[209] = 1 pass
+UTScoreBoard ch[210] = 0 reff[210] = 0 pass
+UTScoreBoard ch[211] = 0 reff[211] = 0 pass
+UTScoreBoard ch[212] = 0 reff[212] = 0 pass
+UTScoreBoard ch[213] = 0 reff[213] = 0 pass
+UTScoreBoard ch[214] = 0 reff[214] = 0 pass
+UTScoreBoard ch[215] = 0 reff[215] = 0 pass
+UTScoreBoard ch[216] = 0 reff[216] = 0 pass
+UTScoreBoard ch[217] = 0 reff[217] = 0 pass
+UTScoreBoard ch[218] = 1 reff[218] = 1 pass
+UTScoreBoard ch[219] = 1 reff[219] = 1 pass
+UTScoreBoard ch[220] = 1 reff[220] = 1 pass
+UTScoreBoard ch[221] = 1 reff[221] = 1 pass
+UTScoreBoard ch[222] = 0 reff[222] = 0 pass
+UTScoreBoard ch[223] = 0 reff[223] = 0 pass
+UTScoreBoard ch[224] = 0 reff[224] = 0 pass
+UTScoreBoard ch[225] = 0 reff[225] = 0 pass
+UTScoreBoard ch[226] = 0 reff[226] = 0 pass
+UTScoreBoard ch[227] = 0 reff[227] = 0 pass
+UTScoreBoard ch[228] = 0 reff[228] = 0 pass
+UTScoreBoard ch[229] = 0 reff[229] = 0 pass
+UTScoreBoard ch[230] = 1 reff[230] = 1 pass
+UTScoreBoard ch[231] = 1 reff[231] = 1 pass
+UTScoreBoard ch[232] = 1 reff[232] = 1 pass
+UTScoreBoard ch[233] = 1 reff[233] = 1 pass
+UTScoreBoard ch[234] = 1 reff[234] = 1 pass
+UTScoreBoard ch[235] = 1 reff[235] = 1 pass
+UTScoreBoard ch[236] = 1 reff[236] = 1 pass
+UTScoreBoard ch[237] = 0 reff[237] = 0 pass
+UTScoreBoard ch[238] = 0 reff[238] = 0 pass
+UTScoreBoard ch[239] = 0 reff[239] = 0 pass
+UTScoreBoard ch[240] = 0 reff[240] = 0 pass
+UTScoreBoard ch[241] = 1 reff[241] = 1 pass
+UTScoreBoard ch[242] = 1 reff[242] = 1 pass
+UTScoreBoard ch[243] = 0 reff[243] = 0 pass
+UTScoreBoard ch[244] = 0 reff[244] = 0 pass
+UTScoreBoard ch[245] = 0 reff[245] = 0 pass
+UTScoreBoard ch[246] = 0 reff[246] = 0 pass
+UTScoreBoard ch[247] = 0 reff[247] = 0 pass
+UTScoreBoard ch[248] = 0 reff[248] = 0 pass
+UTScoreBoard ch[249] = 0 reff[249] = 0 pass
+UTScoreBoard ch[250] = 0 reff[250] = 0 pass
+UTScoreBoard ch[251] = 1 reff[251] = 1 pass
+UTScoreBoard ch[252] = 1 reff[252] = 1 pass
+UTScoreBoard ch[253] = 1 reff[253] = 1 pass
+UTScoreBoard ch[254] = 1 reff[254] = 1 pass
+UTScoreBoard ch[255] = 1 reff[255] = 1 pass
+UTScoreBoard ch[256] = 1 reff[256] = 1 pass
+UTScoreBoard ch[257] = 0 reff[257] = 0 pass
+UTScoreBoard ch[258] = 0 reff[258] = 0 pass
+UTScoreBoard ch[259] = 0 reff[259] = 0 pass
+UTScoreBoard ch[260] = 0 reff[260] = 0 pass
+UTScoreBoard ch[261] = 0 reff[261] = 0 pass
+UTScoreBoard ch[262] = 0 reff[262] = 0 pass
+UTScoreBoard ch[263] = 0 reff[263] = 0 pass
+UTScoreBoard ch[264] = 0 reff[264] = 0 pass
+UTScoreBoard ch[265] = 0 reff[265] = 0 pass
+UTScoreBoard ch[266] = 0 reff[266] = 0 pass
+UTScoreBoard ch[267] = 1 reff[267] = 1 pass
+UTScoreBoard ch[268] = 1 reff[268] = 1 pass
+UTScoreBoard ch[269] = 1 reff[269] = 1 pass
+UTScoreBoard ch[270] = 1 reff[270] = 1 pass
+UTScoreBoard ch[271] = 1 reff[271] = 1 pass
+UTScoreBoard ch[272] = 1 reff[272] = 1 pass
+UTScoreBoard ch[273] = 0 reff[273] = 0 pass
+UTScoreBoard ch[274] = 0 reff[274] = 0 pass
+UTScoreBoard ch[275] = 0 reff[275] = 0 pass
+UTScoreBoard ch[276] = 0 reff[276] = 0 pass
+UTScoreBoard ch[277] = 0 reff[277] = 0 pass
+UTScoreBoard ch[278] = 0 reff[278] = 0 pass
+UTScoreBoard ch[279] = 1 reff[279] = 1 pass
+UTScoreBoard ch[280] = 1 reff[280] = 1 pass
+UTScoreBoard ch[281] = 0 reff[281] = 0 pass
+UTScoreBoard ch[282] = 0 reff[282] = 0 pass
+UTScoreBoard ch[283] = 0 reff[283] = 0 pass
+UTScoreBoard ch[284] = 0 reff[284] = 0 pass
+UTScoreBoard ch[285] = 0 reff[285] = 0 pass
+UTScoreBoard ch[286] = 0 reff[286] = 0 pass
+UTScoreBoard ch[287] = 0 reff[287] = 0 pass
+UTScoreBoard ch[288] = 0 reff[288] = 0 pass
+UTScoreBoard ch[289] = 0 reff[289] = 0 pass
+UTScoreBoard ch[290] = 0 reff[290] = 0 pass
+UTScoreBoard ch[291] = 1 reff[291] = 1 pass
+UTScoreBoard ch[292] = 0 reff[292] = 0 pass
+UTScoreBoard ch[293] = 0 reff[293] = 0 pass
+UTScoreBoard ch[294] = 0 reff[294] = 0 pass
+UTScoreBoard ch[295] = 0 reff[295] = 0 pass
+UTScoreBoard ch[296] = 0 reff[296] = 0 pass
+UTScoreBoard ch[297] = 0 reff[297] = 0 pass
+UTScoreBoard ch[298] = 0 reff[298] = 0 pass
+UTScoreBoard ch[299] = 0 reff[299] = 0 pass
+UTScoreBoard ch[300] = 0 reff[300] = 0 pass
+UTScoreBoard ch[301] = 0 reff[301] = 0 pass
+UTScoreBoard ch[302] = 1 reff[302] = 1 pass
+UTScoreBoard ch[303] = 1 reff[303] = 1 pass
+UTScoreBoard ch[304] = 1 reff[304] = 1 pass
+UTScoreBoard ch[305] = 1 reff[305] = 1 pass
+UTScoreBoard ch[306] = 0 reff[306] = 0 pass
+UTScoreBoard ch[307] = 0 reff[307] = 0 pass
+UTScoreBoard ch[308] = 0 reff[308] = 0 pass
+UTScoreBoard ch[309] = 0 reff[309] = 0 pass
+UTScoreBoard ch[310] = 0 reff[310] = 0 pass
+UTScoreBoard ch[311] = 0 reff[311] = 0 pass
+UTScoreBoard ch[312] = 0 reff[312] = 0 pass
+UTScoreBoard ch[313] = 0 reff[313] = 0 pass
+UTScoreBoard ch[314] = 1 reff[314] = 1 pass
+UTScoreBoard ch[315] = 1 reff[315] = 1 pass
+UTScoreBoard ch[316] = 1 reff[316] = 1 pass
+UTScoreBoard ch[317] = 1 reff[317] = 1 pass
+UTScoreBoard ch[318] = 1 reff[318] = 1 pass
+UTScoreBoard ch[319] = 1 reff[319] = 1 pass
+UTScoreBoard ch[320] = 1 reff[320] = 1 pass
+UTScoreBoard ch[321] = 1 reff[321] = 1 pass
+UTScoreBoard ch[322] = 1 reff[322] = 1 pass
+UTScoreBoard ch[323] = 1 reff[323] = 1 pass
+UTScoreBoard ch[324] = 0 reff[324] = 0 pass
+UTScoreBoard ch[325] = 1 reff[325] = 1 pass
+UTScoreBoard ch[326] = 1 reff[326] = 1 pass
+UTScoreBoard ch[327] = 1 reff[327] = 1 pass
+UTScoreBoard ch[328] = 1 reff[328] = 1 pass
+UTScoreBoard ch[329] = 1 reff[329] = 1 pass
+UTScoreBoard ch[330] = 1 reff[330] = 1 pass
+UTScoreBoard ch[331] = 1 reff[331] = 1 pass
+UTScoreBoard ch[332] = 1 reff[332] = 1 pass
+UTScoreBoard ch[333] = 1 reff[333] = 1 pass
+UTScoreBoard ch[334] = 0 reff[334] = 0 pass
+UTScoreBoard ch[335] = 1 reff[335] = 1 pass
+UTScoreBoard ch[336] = 1 reff[336] = 1 pass
+UTScoreBoard ch[337] = 1 reff[337] = 1 pass
+UTScoreBoard ch[338] = 1 reff[338] = 1 pass
+UTScoreBoard ch[339] = 1 reff[339] = 1 pass
+UTScoreBoard ch[340] = 1 reff[340] = 1 pass
+UTScoreBoard ch[341] = 1 reff[341] = 1 pass
+UTScoreBoard ch[342] = 1 reff[342] = 1 pass
+UTScoreBoard ch[343] = 1 reff[343] = 1 pass
+UTScoreBoard ch[344] = 0 reff[344] = 0 pass
+UTScoreBoard ch[345] = 0 reff[345] = 0 pass
+UTScoreBoard ch[346] = 0 reff[346] = 0 pass
+UTScoreBoard ch[347] = 0 reff[347] = 0 pass
+UTScoreBoard ch[348] = 0 reff[348] = 0 pass
+UTScoreBoard ch[349] = 0 reff[349] = 0 pass
+UTScoreBoard ch[350] = 0 reff[350] = 0 pass
+UTScoreBoard ch[351] = 0 reff[351] = 0 pass
+UTScoreBoard ch[352] = 0 reff[352] = 0 pass
+UTScoreBoard ch[353] = 0 reff[353] = 0 pass
+UTScoreBoard ch[354] = 1 reff[354] = 1 pass
+UTScoreBoard ch[355] = 0 reff[355] = 0 pass
+UTScoreBoard ch[356] = 0 reff[356] = 0 pass
+UTScoreBoard ch[357] = 0 reff[357] = 0 pass
+UTScoreBoard ch[358] = 1 reff[358] = 1 pass
+UTScoreBoard ch[359] = 1 reff[359] = 1 pass
+UTScoreBoard ch[360] = 1 reff[360] = 1 pass
+UTScoreBoard ch[361] = 1 reff[361] = 1 pass
+UTScoreBoard ch[362] = 1 reff[362] = 1 pass
+UTScoreBoard ch[363] = 0 reff[363] = 0 pass
+UTScoreBoard ch[364] = 0 reff[364] = 0 pass
+UTScoreBoard ch[365] = 0 reff[365] = 0 pass
+UTScoreBoard ch[366] = 0 reff[366] = 0 pass
+UTScoreBoard ch[367] = 0 reff[367] = 0 pass
+UTScoreBoard ch[368] = 0 reff[368] = 0 pass
+UTScoreBoard ch[369] = 0 reff[369] = 0 pass
+UTScoreBoard ch[370] = 1 reff[370] = 1 pass
+UTScoreBoard ch[371] = 0 reff[371] = 0 pass
+UTScoreBoard ch[372] = 0 reff[372] = 0 pass
+UTScoreBoard ch[373] = 0 reff[373] = 0 pass
+UTScoreBoard ch[374] = 0 reff[374] = 0 pass
+UTScoreBoard ch[375] = 0 reff[375] = 0 pass
+UTScoreBoard ch[376] = 0 reff[376] = 0 pass
+UTScoreBoard ch[377] = 1 reff[377] = 1 pass
+UTScoreBoard ch[378] = 1 reff[378] = 1 pass
+UTScoreBoard ch[379] = 1 reff[379] = 1 pass
+UTScoreBoard ch[380] = 1 reff[380] = 1 pass
+UTScoreBoard ch[381] = 1 reff[381] = 1 pass
+UTScoreBoard ch[382] = 1 reff[382] = 1 pass
+UTScoreBoard ch[383] = 1 reff[383] = 1 pass
+UTScoreBoard ch[384] = 1 reff[384] = 1 pass
+UTScoreBoard ch[385] = 1 reff[385] = 1 pass
+UTScoreBoard ch[386] = 1 reff[386] = 1 pass
+UTScoreBoard ch[387] = 0 reff[387] = 0 pass
+UTScoreBoard ch[388] = 0 reff[388] = 0 pass
+UTScoreBoard ch[389] = 0 reff[389] = 0 pass
+UTScoreBoard ch[390] = 1 reff[390] = 1 pass
+UTScoreBoard ch[391] = 1 reff[391] = 1 pass
+UTScoreBoard ch[392] = 1 reff[392] = 1 pass
+UTScoreBoard ch[393] = 1 reff[393] = 1 pass
+UTScoreBoard ch[394] = 1 reff[394] = 1 pass
+UTScoreBoard ch[395] = 0 reff[395] = 0 pass
+UTScoreBoard ch[396] = 0 reff[396] = 0 pass
+UTScoreBoard ch[397] = 0 reff[397] = 0 pass
+UTScoreBoard ch[398] = 0 reff[398] = 0 pass
+UTScoreBoard ch[399] = 0 reff[399] = 0 pass
+UTScoreBoard ch[400] = 0 reff[400] = 0 pass
+UTScoreBoard ch[401] = 1 reff[401] = 1 pass
+UTScoreBoard ch[402] = 1 reff[402] = 1 pass
+UTScoreBoard ch[403] = 1 reff[403] = 1 pass
+UTScoreBoard ch[404] = 0 reff[404] = 0 pass
+UTScoreBoard ch[405] = 0 reff[405] = 0 pass
+UTScoreBoard ch[406] = 1 reff[406] = 1 pass
+UTScoreBoard ch[407] = 1 reff[407] = 1 pass
+UTScoreBoard ch[408] = 1 reff[408] = 1 pass
+UTScoreBoard ch[409] = 1 reff[409] = 1 pass
+UTScoreBoard ch[410] = 0 reff[410] = 0 pass
+UTScoreBoard ch[411] = 0 reff[411] = 0 pass
+UTScoreBoard ch[412] = 0 reff[412] = 0 pass
+UTScoreBoard ch[413] = 0 reff[413] = 0 pass
+UTScoreBoard ch[414] = 0 reff[414] = 0 pass
+UTScoreBoard ch[415] = 0 reff[415] = 0 pass
+UTScoreBoard ch[416] = 1 reff[416] = 1 pass
+UTScoreBoard ch[417] = 1 reff[417] = 1 pass
+UTScoreBoard ch[418] = 1 reff[418] = 1 pass
+UTScoreBoard ch[419] = 1 reff[419] = 1 pass
+UTScoreBoard ch[420] = 1 reff[420] = 1 pass
+UTScoreBoard ch[421] = 1 reff[421] = 1 pass
+UTScoreBoard ch[422] = 1 reff[422] = 1 pass
+UTScoreBoard ch[423] = 1 reff[423] = 1 pass
+UTScoreBoard ch[424] = 1 reff[424] = 1 pass
+UTScoreBoard ch[425] = 1 reff[425] = 1 pass
+UTScoreBoard ch[426] = 0 reff[426] = 0 pass
+UTScoreBoard ch[427] = 0 reff[427] = 0 pass
+UTScoreBoard ch[428] = 0 reff[428] = 0 pass
+UTScoreBoard ch[429] = 0 reff[429] = 0 pass
+UTScoreBoard ch[430] = 0 reff[430] = 0 pass
+UTScoreBoard ch[431] = 0 reff[431] = 0 pass
+UTScoreBoard ch[432] = 0 reff[432] = 0 pass
+UTScoreBoard ch[433] = 0 reff[433] = 0 pass
+UTScoreBoard ch[434] = 1 reff[434] = 1 pass
+UTScoreBoard ch[435] = 1 reff[435] = 1 pass
+UTScoreBoard ch[436] = 1 reff[436] = 1 pass
+UTScoreBoard ch[437] = 1 reff[437] = 1 pass
+UTScoreBoard ch[438] = 1 reff[438] = 1 pass
+UTScoreBoard ch[439] = 1 reff[439] = 1 pass
+UTScoreBoard ch[440] = 1 reff[440] = 1 pass
+UTScoreBoard ch[441] = 0 reff[441] = 0 pass
+UTScoreBoard ch[442] = 0 reff[442] = 0 pass
+UTScoreBoard ch[443] = 1 reff[443] = 1 pass
+UTScoreBoard ch[444] = 1 reff[444] = 1 pass
+UTScoreBoard ch[445] = 1 reff[445] = 1 pass
+UTScoreBoard ch[446] = 1 reff[446] = 1 pass
+UTScoreBoard ch[447] = 1 reff[447] = 1 pass
+UTScoreBoard ch[448] = 0 reff[448] = 0 pass
+UTScoreBoard ch[449] = 0 reff[449] = 0 pass
+UTScoreBoard ch[450] = 0 reff[450] = 0 pass
+UTScoreBoard ch[451] = 0 reff[451] = 0 pass
+UTScoreBoard ch[452] = 0 reff[452] = 0 pass
+UTScoreBoard ch[453] = 0 reff[453] = 0 pass
+UTScoreBoard ch[454] = 0 reff[454] = 0 pass
+UTScoreBoard ch[455] = 0 reff[455] = 0 pass
+UTScoreBoard ch[456] = 1 reff[456] = 1 pass
+UTScoreBoard ch[457] = 0 reff[457] = 0 pass
+UTScoreBoard ch[458] = 0 reff[458] = 0 pass
+UTScoreBoard ch[459] = 1 reff[459] = 1 pass
+UTScoreBoard ch[460] = 1 reff[460] = 1 pass
+UTScoreBoard ch[461] = 1 reff[461] = 1 pass
+UTScoreBoard ch[462] = 1 reff[462] = 1 pass
+UTScoreBoard ch[463] = 0 reff[463] = 0 pass
+UTScoreBoard ch[464] = 0 reff[464] = 0 pass
+UTScoreBoard ch[465] = 0 reff[465] = 0 pass
+UTScoreBoard ch[466] = 0 reff[466] = 0 pass
+UTScoreBoard ch[467] = 1 reff[467] = 1 pass
+UTScoreBoard ch[468] = 1 reff[468] = 1 pass
+UTScoreBoard ch[469] = 1 reff[469] = 1 pass
+UTScoreBoard ch[470] = 1 reff[470] = 1 pass
+UTScoreBoard ch[471] = 1 reff[471] = 1 pass
+UTScoreBoard ch[472] = 1 reff[472] = 1 pass
+UTScoreBoard ch[473] = 1 reff[473] = 1 pass
+UTScoreBoard ch[474] = 1 reff[474] = 1 pass
+UTScoreBoard ch[475] = 1 reff[475] = 1 pass
+UTScoreBoard ch[476] = 1 reff[476] = 1 pass
+UTScoreBoard ch[477] = 0 reff[477] = 0 pass
+UTScoreBoard ch[478] = 0 reff[478] = 0 pass
+UTScoreBoard ch[479] = 1 reff[479] = 1 pass
+UTScoreBoard ch[480] = 1 reff[480] = 1 pass
+UTScoreBoard ch[481] = 1 reff[481] = 1 pass
+UTScoreBoard ch[482] = 0 reff[482] = 0 pass
+UTScoreBoard ch[483] = 0 reff[483] = 0 pass
+UTScoreBoard ch[484] = 0 reff[484] = 0 pass
+UTScoreBoard ch[485] = 0 reff[485] = 0 pass
+UTScoreBoard ch[486] = 0 reff[486] = 0 pass
+UTScoreBoard ch[487] = 0 reff[487] = 0 pass
+UTScoreBoard ch[488] = 0 reff[488] = 0 pass
+UTScoreBoard ch[489] = 0 reff[489] = 0 pass
+UTScoreBoard ch[490] = 1 reff[490] = 1 pass
+UTScoreBoard ch[491] = 1 reff[491] = 1 pass
+UTScoreBoard ch[492] = 1 reff[492] = 1 pass
+UTScoreBoard ch[493] = 0 reff[493] = 0 pass
+UTScoreBoard ch[494] = 0 reff[494] = 0 pass
+UTScoreBoard ch[495] = 0 reff[495] = 0 pass
+UTScoreBoard ch[496] = 0 reff[496] = 0 pass
+UTScoreBoard ch[497] = 0 reff[497] = 0 pass
+UTScoreBoard ch[498] = 0 reff[498] = 0 pass
+UTScoreBoard ch[499] = 0 reff[499] = 0 pass
+UTScoreBoard ch[500] = 1 reff[500] = 1 pass
+UTScoreBoard ch[501] = 1 reff[501] = 1 pass
+UTScoreBoard ch[502] = 0 reff[502] = 0 pass
+UTScoreBoard ch[503] = 0 reff[503] = 0 pass
+UTScoreBoard ch[504] = 1 reff[504] = 1 pass
+UTScoreBoard ch[505] = 1 reff[505] = 1 pass
+UTScoreBoard ch[506] = 1 reff[506] = 1 pass
+UTScoreBoard ch[507] = 1 reff[507] = 1 pass
+UTScoreBoard ch[508] = 1 reff[508] = 1 pass
+UTScoreBoard ch[509] = 1 reff[509] = 1 pass
+UTScoreBoard ch[510] = 1 reff[510] = 1 pass
+UTScoreBoard ch[511] = 1 reff[511] = 1 pass
+UTScoreBoard ch[512] = 1 reff[512] = 1 pass
+UTScoreBoard ch[513] = 0 reff[513] = 0 pass
+UTScoreBoard ch[514] = 0 reff[514] = 0 pass
+UTScoreBoard ch[515] = 0 reff[515] = 0 pass
+UTScoreBoard ch[516] = 0 reff[516] = 0 pass
+UTScoreBoard ch[517] = 0 reff[517] = 0 pass
+UTScoreBoard ch[518] = 0 reff[518] = 0 pass
+UTScoreBoard ch[519] = 0 reff[519] = 0 pass
+UTScoreBoard ch[520] = 1 reff[520] = 1 pass
+UTScoreBoard ch[521] = 1 reff[521] = 1 pass
+UTScoreBoard ch[522] = 1 reff[522] = 1 pass
+UTScoreBoard ch[523] = 1 reff[523] = 1 pass
+UTScoreBoard ch[524] = 0 reff[524] = 0 pass
+UTScoreBoard ch[525] = 0 reff[525] = 0 pass
+UTScoreBoard ch[526] = 0 reff[526] = 0 pass
+UTScoreBoard ch[527] = 0 reff[527] = 0 pass
+UTScoreBoard ch[528] = 1 reff[528] = 1 pass
+UTScoreBoard ch[529] = 1 reff[529] = 1 pass
+UTScoreBoard ch[530] = 1 reff[530] = 1 pass
+UTScoreBoard ch[531] = 1 reff[531] = 1 pass
+UTScoreBoard ch[532] = 1 reff[532] = 1 pass
+UTScoreBoard ch[533] = 1 reff[533] = 1 pass
+UTScoreBoard ch[534] = 0 reff[534] = 0 pass
+UTScoreBoard ch[535] = 0 reff[535] = 0 pass
+UTScoreBoard ch[536] = 0 reff[536] = 0 pass
+UTScoreBoard ch[537] = 0 reff[537] = 0 pass
+UTScoreBoard ch[538] = 1 reff[538] = 1 pass
+UTScoreBoard ch[539] = 0 reff[539] = 0 pass
+UTScoreBoard ch[540] = 0 reff[540] = 0 pass
+UTScoreBoard ch[541] = 0 reff[541] = 0 pass
+UTScoreBoard ch[542] = 0 reff[542] = 0 pass
+UTScoreBoard ch[543] = 0 reff[543] = 0 pass
+UTScoreBoard ch[544] = 0 reff[544] = 0 pass
+UTScoreBoard ch[545] = 1 reff[545] = 1 pass
+UTScoreBoard ch[546] = 1 reff[546] = 1 pass
+UTScoreBoard ch[547] = 1 reff[547] = 1 pass
+UTScoreBoard ch[548] = 0 reff[548] = 0 pass
+UTScoreBoard ch[549] = 0 reff[549] = 0 pass
+UTScoreBoard ch[550] = 0 reff[550] = 0 pass
+UTScoreBoard ch[551] = 0 reff[551] = 0 pass
+UTScoreBoard ch[552] = 0 reff[552] = 0 pass
+UTScoreBoard ch[553] = 0 reff[553] = 0 pass
+UTScoreBoard ch[554] = 0 reff[554] = 0 pass
+UTScoreBoard ch[555] = 0 reff[555] = 0 pass
+UTScoreBoard ch[556] = 0 reff[556] = 0 pass
+UTScoreBoard ch[557] = 1 reff[557] = 1 pass
+UTScoreBoard ch[558] = 0 reff[558] = 0 pass
+UTScoreBoard ch[559] = 0 reff[559] = 0 pass
+UTScoreBoard ch[560] = 0 reff[560] = 0 pass
+UTScoreBoard ch[561] = 0 reff[561] = 0 pass
+UTScoreBoard ch[562] = 0 reff[562] = 0 pass
+UTScoreBoard ch[563] = 0 reff[563] = 0 pass
+UTScoreBoard ch[564] = 0 reff[564] = 0 pass
+UTScoreBoard ch[565] = 0 reff[565] = 0 pass
+UTScoreBoard ch[566] = 1 reff[566] = 1 pass
+UTScoreBoard ch[567] = 1 reff[567] = 1 pass
+UTScoreBoard ch[568] = 1 reff[568] = 1 pass
+UTScoreBoard ch[569] = 1 reff[569] = 1 pass
+UTScoreBoard ch[570] = 1 reff[570] = 1 pass
+UTScoreBoard ch[571] = 0 reff[571] = 0 pass
+UTScoreBoard ch[572] = 0 reff[572] = 0 pass
+UTScoreBoard ch[573] = 0 reff[573] = 0 pass
+UTScoreBoard ch[574] = 0 reff[574] = 0 pass
+UTScoreBoard ch[575] = 0 reff[575] = 0 pass
+UTScoreBoard ch[576] = 0 reff[576] = 0 pass
+UTScoreBoard ch[577] = 0 reff[577] = 0 pass
+UTScoreBoard ch[578] = 1 reff[578] = 1 pass
+UTScoreBoard ch[579] = 1 reff[579] = 1 pass
+UTScoreBoard ch[580] = 1 reff[580] = 1 pass
+UTScoreBoard ch[581] = 1 reff[581] = 1 pass
+UTScoreBoard ch[582] = 1 reff[582] = 1 pass
+UTScoreBoard ch[583] = 1 reff[583] = 1 pass
+UTScoreBoard ch[584] = 1 reff[584] = 1 pass
+UTScoreBoard ch[585] = 0 reff[585] = 0 pass
+UTScoreBoard ch[586] = 0 reff[586] = 0 pass
+UTScoreBoard ch[587] = 0 reff[587] = 0 pass
+UTScoreBoard ch[588] = 0 reff[588] = 0 pass
+UTScoreBoard ch[589] = 0 reff[589] = 0 pass
+UTScoreBoard ch[590] = 0 reff[590] = 0 pass
+UTScoreBoard ch[591] = 0 reff[591] = 0 pass
+UTScoreBoard ch[592] = 0 reff[592] = 0 pass
+UTScoreBoard ch[593] = 0 reff[593] = 0 pass
+UTScoreBoard ch[594] = 0 reff[594] = 0 pass
+UTScoreBoard ch[595] = 1 reff[595] = 1 pass
+UTScoreBoard ch[596] = 1 reff[596] = 1 pass
+UTScoreBoard ch[597] = 1 reff[597] = 1 pass
+UTScoreBoard ch[598] = 1 reff[598] = 1 pass
+UTScoreBoard ch[599] = 1 reff[599] = 1 pass
+UTScoreBoard ch[600] = 1 reff[600] = 1 pass
+UTScoreBoard ch[601] = 1 reff[601] = 1 pass
+UTScoreBoard ch[602] = 1 reff[602] = 1 pass
+UTScoreBoard ch[603] = 0 reff[603] = 0 pass
+UTScoreBoard ch[604] = 0 reff[604] = 0 pass
+UTScoreBoard ch[605] = 0 reff[605] = 0 pass
+UTScoreBoard ch[606] = 0 reff[606] = 0 pass
+UTScoreBoard ch[607] = 0 reff[607] = 0 pass
+UTScoreBoard ch[608] = 1 reff[608] = 1 pass
+UTScoreBoard ch[609] = 1 reff[609] = 1 pass
+UTScoreBoard ch[610] = 1 reff[610] = 1 pass
+UTScoreBoard ch[611] = 1 reff[611] = 1 pass
+UTScoreBoard ch[612] = 1 reff[612] = 1 pass
+UTScoreBoard ch[613] = 0 reff[613] = 0 pass
+UTScoreBoard ch[614] = 0 reff[614] = 0 pass
+UTScoreBoard ch[615] = 0 reff[615] = 0 pass
+UTScoreBoard ch[616] = 0 reff[616] = 0 pass
+UTScoreBoard ch[617] = 0 reff[617] = 0 pass
+UTScoreBoard ch[618] = 0 reff[618] = 0 pass
+UTScoreBoard ch[619] = 0 reff[619] = 0 pass
+UTScoreBoard ch[620] = 1 reff[620] = 1 pass
+UTScoreBoard ch[621] = 1 reff[621] = 1 pass
+UTScoreBoard ch[622] = 1 reff[622] = 1 pass
+UTScoreBoard ch[623] = 1 reff[623] = 1 pass
+UTScoreBoard ch[624] = 1 reff[624] = 1 pass
+UTScoreBoard ch[625] = 1 reff[625] = 1 pass
+UTScoreBoard ch[626] = 0 reff[626] = 0 pass
+UTScoreBoard ch[627] = 1 reff[627] = 1 pass
+UTScoreBoard ch[628] = 1 reff[628] = 1 pass
+UTScoreBoard ch[629] = 1 reff[629] = 1 pass
+UTScoreBoard ch[630] = 1 reff[630] = 1 pass
+UTScoreBoard ch[631] = 1 reff[631] = 1 pass
+UTScoreBoard ch[632] = 1 reff[632] = 1 pass
+UTScoreBoard ch[633] = 0 reff[633] = 0 pass
+UTScoreBoard ch[634] = 0 reff[634] = 0 pass
+UTScoreBoard ch[635] = 0 reff[635] = 0 pass
+UTScoreBoard ch[636] = 0 reff[636] = 0 pass
+UTScoreBoard ch[637] = 0 reff[637] = 0 pass
+UTScoreBoard ch[638] = 1 reff[638] = 1 pass
+UTScoreBoard ch[639] = 1 reff[639] = 1 pass
+UTScoreBoard ch[640] = 1 reff[640] = 1 pass
+UTScoreBoard ch[641] = 0 reff[641] = 0 pass
+UTScoreBoard ch[642] = 0 reff[642] = 0 pass
+UTScoreBoard ch[643] = 1 reff[643] = 1 pass
+UTScoreBoard ch[644] = 1 reff[644] = 1 pass
+UTScoreBoard ch[645] = 1 reff[645] = 1 pass
+UTScoreBoard ch[646] = 1 reff[646] = 1 pass
+UTScoreBoard ch[647] = 1 reff[647] = 1 pass
+UTScoreBoard ch[648] = 1 reff[648] = 1 pass
+UTScoreBoard ch[649] = 1 reff[649] = 1 pass
+UTScoreBoard ch[650] = 1 reff[650] = 1 pass
+UTScoreBoard ch[651] = 0 reff[651] = 0 pass
+UTScoreBoard ch[652] = 0 reff[652] = 0 pass
+UTScoreBoard ch[653] = 0 reff[653] = 0 pass
+UTScoreBoard ch[654] = 0 reff[654] = 0 pass
+UTScoreBoard ch[655] = 0 reff[655] = 0 pass
+UTScoreBoard ch[656] = 0 reff[656] = 0 pass
+UTScoreBoard ch[657] = 0 reff[657] = 0 pass
+UTScoreBoard ch[658] = 1 reff[658] = 1 pass
+UTScoreBoard ch[659] = 1 reff[659] = 1 pass
+UTScoreBoard ch[660] = 1 reff[660] = 1 pass
+UTScoreBoard ch[661] = 1 reff[661] = 1 pass
+UTScoreBoard ch[662] = 0 reff[662] = 0 pass
+UTScoreBoard ch[663] = 0 reff[663] = 0 pass
+UTScoreBoard ch[664] = 0 reff[664] = 0 pass
+UTScoreBoard ch[665] = 0 reff[665] = 0 pass
+UTScoreBoard ch[666] = 1 reff[666] = 1 pass
+UTScoreBoard ch[667] = 1 reff[667] = 1 pass
+UTScoreBoard ch[668] = 1 reff[668] = 1 pass
+UTScoreBoard ch[669] = 1 reff[669] = 1 pass
+UTScoreBoard ch[670] = 1 reff[670] = 1 pass
+UTScoreBoard ch[671] = 1 reff[671] = 1 pass
+UTScoreBoard ch[672] = 1 reff[672] = 1 pass
+UTScoreBoard ch[673] = 0 reff[673] = 0 pass
+UTScoreBoard ch[674] = 0 reff[674] = 0 pass
+UTScoreBoard ch[675] = 0 reff[675] = 0 pass
+UTScoreBoard ch[676] = 0 reff[676] = 0 pass
+UTScoreBoard ch[677] = 0 reff[677] = 0 pass
+UTScoreBoard ch[678] = 1 reff[678] = 1 pass
+UTScoreBoard ch[679] = 1 reff[679] = 1 pass
+UTScoreBoard ch[680] = 1 reff[680] = 1 pass
+UTScoreBoard ch[681] = 1 reff[681] = 1 pass
+UTScoreBoard ch[682] = 0 reff[682] = 0 pass
+UTScoreBoard ch[683] = 1 reff[683] = 1 pass
+UTScoreBoard ch[684] = 1 reff[684] = 1 pass
+UTScoreBoard ch[685] = 1 reff[685] = 1 pass
+UTScoreBoard ch[686] = 0 reff[686] = 0 pass
+UTScoreBoard ch[687] = 0 reff[687] = 0 pass
+UTScoreBoard ch[688] = 1 reff[688] = 1 pass
+UTScoreBoard ch[689] = 1 reff[689] = 1 pass
+UTScoreBoard ch[690] = 1 reff[690] = 1 pass
+UTScoreBoard ch[691] = 1 reff[691] = 1 pass
+UTScoreBoard ch[692] = 1 reff[692] = 1 pass
+UTScoreBoard ch[693] = 1 reff[693] = 1 pass
+UTScoreBoard ch[694] = 1 reff[694] = 1 pass
+UTScoreBoard ch[695] = 1 reff[695] = 1 pass
+UTScoreBoard ch[696] = 1 reff[696] = 1 pass
+UTScoreBoard ch[697] = 0 reff[697] = 0 pass
+UTScoreBoard ch[698] = 0 reff[698] = 0 pass
+UTScoreBoard ch[699] = 0 reff[699] = 0 pass
+UTScoreBoard ch[700] = 0 reff[700] = 0 pass
+UTScoreBoard ch[701] = 0 reff[701] = 0 pass
+UTScoreBoard ch[702] = 0 reff[702] = 0 pass
+UTScoreBoard ch[703] = 0 reff[703] = 0 pass
+UTScoreBoard ch[704] = 0 reff[704] = 0 pass
+UTScoreBoard ch[705] = 1 reff[705] = 1 pass
+UTScoreBoard ch[706] = 1 reff[706] = 1 pass
+UTScoreBoard ch[707] = 1 reff[707] = 1 pass
+UTScoreBoard ch[708] = 1 reff[708] = 1 pass
+UTScoreBoard ch[709] = 1 reff[709] = 1 pass
+UTScoreBoard ch[710] = 1 reff[710] = 1 pass
+UTScoreBoard ch[711] = 1 reff[711] = 1 pass
+UTScoreBoard ch[712] = 0 reff[712] = 0 pass
+UTScoreBoard ch[713] = 1 reff[713] = 1 pass
+UTScoreBoard ch[714] = 0 reff[714] = 0 pass
+UTScoreBoard ch[715] = 0 reff[715] = 0 pass
+UTScoreBoard ch[716] = 0 reff[716] = 0 pass
+UTScoreBoard ch[717] = 0 reff[717] = 0 pass
+UTScoreBoard ch[718] = 0 reff[718] = 0 pass
+UTScoreBoard ch[719] = 0 reff[719] = 0 pass
+UTScoreBoard ch[720] = 0 reff[720] = 0 pass
+UTScoreBoard ch[721] = 0 reff[721] = 0 pass
+UTScoreBoard ch[722] = 1 reff[722] = 1 pass
+UTScoreBoard ch[723] = 1 reff[723] = 1 pass
+UTScoreBoard ch[724] = 1 reff[724] = 1 pass
+UTScoreBoard ch[725] = 1 reff[725] = 1 pass
+UTScoreBoard ch[726] = 0 reff[726] = 0 pass
+UTScoreBoard ch[727] = 0 reff[727] = 0 pass
+UTScoreBoard ch[728] = 0 reff[728] = 0 pass
+UTScoreBoard ch[729] = 0 reff[729] = 0 pass
+UTScoreBoard ch[730] = 1 reff[730] = 1 pass
+UTScoreBoard ch[731] = 1 reff[731] = 1 pass
+UTScoreBoard ch[732] = 1 reff[732] = 1 pass
+UTScoreBoard ch[733] = 0 reff[733] = 0 pass
+UTScoreBoard ch[734] = 0 reff[734] = 0 pass
+UTScoreBoard ch[735] = 0 reff[735] = 0 pass
+UTScoreBoard ch[736] = 0 reff[736] = 0 pass
+UTScoreBoard ch[737] = 0 reff[737] = 0 pass
+UTScoreBoard ch[738] = 1 reff[738] = 1 pass
+UTScoreBoard ch[739] = 1 reff[739] = 1 pass
+UTScoreBoard ch[740] = 1 reff[740] = 1 pass
+UTScoreBoard ch[741] = 0 reff[741] = 0 pass
+UTScoreBoard ch[742] = 0 reff[742] = 0 pass
+UTScoreBoard ch[743] = 1 reff[743] = 1 pass
+UTScoreBoard ch[744] = 1 reff[744] = 1 pass
+UTScoreBoard ch[745] = 1 reff[745] = 1 pass
+UTScoreBoard ch[746] = 1 reff[746] = 1 pass
+UTScoreBoard ch[747] = 1 reff[747] = 1 pass
+UTScoreBoard ch[748] = 1 reff[748] = 1 pass
+UTScoreBoard ch[749] = 1 reff[749] = 1 pass
+UTScoreBoard ch[750] = 1 reff[750] = 1 pass
+UTScoreBoard ch[751] = 1 reff[751] = 1 pass
+UTScoreBoard ch[752] = 0 reff[752] = 0 pass
+UTScoreBoard ch[753] = 1 reff[753] = 1 pass
+UTScoreBoard ch[754] = 1 reff[754] = 1 pass
+UTScoreBoard ch[755] = 0 reff[755] = 0 pass
+UTScoreBoard ch[756] = 0 reff[756] = 0 pass
+UTScoreBoard ch[757] = 0 reff[757] = 0 pass
+UTScoreBoard ch[758] = 0 reff[758] = 0 pass
+UTScoreBoard ch[759] = 0 reff[759] = 0 pass
+UTScoreBoard ch[760] = 0 reff[760] = 0 pass
+UTScoreBoard ch[761] = 0 reff[761] = 0 pass
+UTScoreBoard ch[762] = 1 reff[762] = 1 pass
+UTScoreBoard ch[763] = 1 reff[763] = 1 pass
+UTScoreBoard ch[764] = 1 reff[764] = 1 pass
+UTScoreBoard ch[765] = 1 reff[765] = 1 pass
+UTScoreBoard ch[766] = 1 reff[766] = 1 pass
+UTScoreBoard ch[767] = 1 reff[767] = 1 pass
+UTScoreBoard ch[768] = 0 reff[768] = 0 pass
+UTScoreBoard ch[769] = 0 reff[769] = 0 pass
+UTScoreBoard ch[770] = 0 reff[770] = 0 pass
+UTScoreBoard ch[771] = 0 reff[771] = 0 pass
+UTScoreBoard ch[772] = 1 reff[772] = 1 pass
+UTScoreBoard ch[773] = 1 reff[773] = 1 pass
+UTScoreBoard ch[774] = 1 reff[774] = 1 pass
+UTScoreBoard ch[775] = 1 reff[775] = 1 pass
+UTScoreBoard ch[776] = 1 reff[776] = 1 pass
+UTScoreBoard ch[777] = 1 reff[777] = 1 pass
+UTScoreBoard ch[778] = 1 reff[778] = 1 pass
+UTScoreBoard ch[779] = 1 reff[779] = 1 pass
+UTScoreBoard ch[780] = 1 reff[780] = 1 pass
+UTScoreBoard ch[781] = 1 reff[781] = 1 pass
+UTScoreBoard ch[782] = 0 reff[782] = 0 pass
+UTScoreBoard ch[783] = 1 reff[783] = 1 pass
+UTScoreBoard ch[784] = 1 reff[784] = 1 pass
+UTScoreBoard ch[785] = 1 reff[785] = 1 pass
+UTScoreBoard ch[786] = 1 reff[786] = 1 pass
+UTScoreBoard ch[787] = 1 reff[787] = 1 pass
+UTScoreBoard ch[788] = 1 reff[788] = 1 pass
+UTScoreBoard ch[789] = 1 reff[789] = 1 pass
+UTScoreBoard ch[790] = 1 reff[790] = 1 pass
+UTScoreBoard ch[791] = 1 reff[791] = 1 pass
+UTScoreBoard ch[792] = 1 reff[792] = 1 pass
+UTScoreBoard ch[793] = 0 reff[793] = 0 pass
+UTScoreBoard ch[794] = 0 reff[794] = 0 pass
+UTScoreBoard ch[795] = 0 reff[795] = 0 pass
+UTScoreBoard ch[796] = 0 reff[796] = 0 pass
+UTScoreBoard ch[797] = 1 reff[797] = 1 pass
+UTScoreBoard ch[798] = 1 reff[798] = 1 pass
+UTScoreBoard ch[799] = 1 reff[799] = 1 pass
+UTScoreBoard ch[800] = 1 reff[800] = 1 pass
+UTScoreBoard ch[801] = 0 reff[801] = 0 pass
+UTScoreBoard ch[802] = 0 reff[802] = 0 pass
+UTScoreBoard ch[803] = 0 reff[803] = 0 pass
+UTScoreBoard ch[804] = 0 reff[804] = 0 pass
+UTScoreBoard ch[805] = 0 reff[805] = 0 pass
+UTScoreBoard ch[806] = 1 reff[806] = 1 pass
+UTScoreBoard ch[807] = 1 reff[807] = 1 pass
+UTScoreBoard ch[808] = 1 reff[808] = 1 pass
+UTScoreBoard ch[809] = 1 reff[809] = 1 pass
+UTScoreBoard ch[810] = 1 reff[810] = 1 pass
+UTScoreBoard ch[811] = 1 reff[811] = 1 pass
+UTScoreBoard ch[812] = 1 reff[812] = 1 pass
+UTScoreBoard ch[813] = 1 reff[813] = 1 pass
+UTScoreBoard ch[814] = 1 reff[814] = 1 pass
+UTScoreBoard ch[815] = 1 reff[815] = 1 pass
+UTScoreBoard ch[816] = 0 reff[816] = 0 pass
+UTScoreBoard ch[817] = 0 reff[817] = 0 pass
+UTScoreBoard ch[818] = 1 reff[818] = 1 pass
+UTScoreBoard ch[819] = 1 reff[819] = 1 pass
+UTScoreBoard ch[820] = 1 reff[820] = 1 pass
+UTScoreBoard ch[821] = 1 reff[821] = 1 pass
+UTScoreBoard ch[822] = 1 reff[822] = 1 pass
+UTScoreBoard ch[823] = 1 reff[823] = 1 pass
+UTScoreBoard ch[824] = 0 reff[824] = 0 pass
+UTScoreBoard ch[825] = 0 reff[825] = 0 pass
+UTScoreBoard ch[826] = 0 reff[826] = 0 pass
+UTScoreBoard ch[827] = 0 reff[827] = 0 pass
+UTScoreBoard ch[828] = 0 reff[828] = 0 pass
+UTScoreBoard ch[829] = 0 reff[829] = 0 pass
+UTScoreBoard ch[830] = 1 reff[830] = 1 pass
+UTScoreBoard ch[831] = 1 reff[831] = 1 pass
+UTScoreBoard ch[832] = 1 reff[832] = 1 pass
+UTScoreBoard ch[833] = 1 reff[833] = 1 pass
+UTScoreBoard ch[834] = 1 reff[834] = 1 pass
+UTScoreBoard ch[835] = 1 reff[835] = 1 pass
+UTScoreBoard ch[836] = 1 reff[836] = 1 pass
+UTScoreBoard ch[837] = 1 reff[837] = 1 pass
+UTScoreBoard ch[838] = 1 reff[838] = 1 pass
+UTScoreBoard ch[839] = 0 reff[839] = 0 pass
+UTScoreBoard ch[840] = 0 reff[840] = 0 pass
+UTScoreBoard ch[841] = 0 reff[841] = 0 pass
+UTScoreBoard ch[842] = 0 reff[842] = 0 pass
+UTScoreBoard ch[843] = 0 reff[843] = 0 pass
+UTScoreBoard ch[844] = 1 reff[844] = 1 pass
+UTScoreBoard ch[845] = 1 reff[845] = 1 pass
+UTScoreBoard ch[846] = 1 reff[846] = 1 pass
+UTScoreBoard ch[847] = 1 reff[847] = 1 pass
+UTScoreBoard ch[848] = 1 reff[848] = 1 pass
+UTScoreBoard ch[849] = 0 reff[849] = 0 pass
+UTScoreBoard ch[850] = 0 reff[850] = 0 pass
+UTScoreBoard ch[851] = 0 reff[851] = 0 pass
+UTScoreBoard ch[852] = 0 reff[852] = 0 pass
+UTScoreBoard ch[853] = 0 reff[853] = 0 pass
+UTScoreBoard ch[854] = 0 reff[854] = 0 pass
+UTScoreBoard ch[855] = 0 reff[855] = 0 pass
+UTScoreBoard ch[856] = 0 reff[856] = 0 pass
+UTScoreBoard ch[857] = 1 reff[857] = 1 pass
+UTScoreBoard ch[858] = 1 reff[858] = 1 pass
+UTScoreBoard ch[859] = 1 reff[859] = 1 pass
+UTScoreBoard ch[860] = 1 reff[860] = 1 pass
+UTScoreBoard ch[861] = 1 reff[861] = 1 pass
+UTScoreBoard ch[862] = 1 reff[862] = 1 pass
+UTScoreBoard ch[863] = 1 reff[863] = 1 pass
+UTScoreBoard ch[864] = 0 reff[864] = 0 pass
+UTScoreBoard ch[865] = 0 reff[865] = 0 pass
+UTScoreBoard ch[866] = 0 reff[866] = 0 pass
+UTScoreBoard ch[867] = 0 reff[867] = 0 pass
+UTScoreBoard ch[868] = 0 reff[868] = 0 pass
+UTScoreBoard ch[869] = 0 reff[869] = 0 pass
+UTScoreBoard ch[870] = 0 reff[870] = 0 pass
+UTScoreBoard ch[871] = 0 reff[871] = 0 pass
+UTScoreBoard ch[872] = 1 reff[872] = 1 pass
+UTScoreBoard ch[873] = 1 reff[873] = 1 pass
+UTScoreBoard ch[874] = 1 reff[874] = 1 pass
+UTScoreBoard ch[875] = 1 reff[875] = 1 pass
+UTScoreBoard ch[876] = 1 reff[876] = 1 pass
+UTScoreBoard ch[877] = 1 reff[877] = 1 pass
+UTScoreBoard ch[878] = 1 reff[878] = 1 pass
+UTScoreBoard ch[879] = 0 reff[879] = 0 pass
+UTScoreBoard ch[880] = 0 reff[880] = 0 pass
+UTScoreBoard ch[881] = 0 reff[881] = 0 pass
+UTScoreBoard ch[882] = 0 reff[882] = 0 pass
+UTScoreBoard ch[883] = 0 reff[883] = 0 pass
+UTScoreBoard ch[884] = 0 reff[884] = 0 pass
+UTScoreBoard ch[885] = 0 reff[885] = 0 pass
+UTScoreBoard ch[886] = 0 reff[886] = 0 pass
+UTScoreBoard ch[887] = 0 reff[887] = 0 pass
+UTScoreBoard ch[888] = 0 reff[888] = 0 pass
+UTScoreBoard ch[889] = 1 reff[889] = 1 pass
+UTScoreBoard ch[890] = 1 reff[890] = 1 pass
+UTScoreBoard ch[891] = 1 reff[891] = 1 pass
+UTScoreBoard ch[892] = 1 reff[892] = 1 pass
+UTScoreBoard ch[893] = 1 reff[893] = 1 pass
+UTScoreBoard ch[894] = 1 reff[894] = 1 pass
+UTScoreBoard ch[895] = 1 reff[895] = 1 pass
+UTScoreBoard ch[896] = 1 reff[896] = 1 pass
+UTScoreBoard ch[897] = 0 reff[897] = 0 pass
+UTScoreBoard ch[898] = 0 reff[898] = 0 pass
+UTScoreBoard ch[899] = 0 reff[899] = 0 pass
+UTScoreBoard ch[900] = 0 reff[900] = 0 pass
+UTScoreBoard ch[901] = 0 reff[901] = 0 pass
+UTScoreBoard ch[902] = 0 reff[902] = 0 pass
+UTScoreBoard ch[903] = 1 reff[903] = 1 pass
+UTScoreBoard ch[904] = 1 reff[904] = 1 pass
+UTScoreBoard ch[905] = 1 reff[905] = 1 pass
+UTScoreBoard ch[906] = 1 reff[906] = 1 pass
+UTScoreBoard ch[907] = 1 reff[907] = 1 pass
+UTScoreBoard ch[908] = 1 reff[908] = 1 pass
+UTScoreBoard ch[909] = 1 reff[909] = 1 pass
+UTScoreBoard ch[910] = 1 reff[910] = 1 pass
+UTScoreBoard ch[911] = 0 reff[911] = 0 pass
+UTScoreBoard ch[912] = 0 reff[912] = 0 pass
+UTScoreBoard ch[913] = 0 reff[913] = 0 pass
+UTScoreBoard ch[914] = 0 reff[914] = 0 pass
+UTScoreBoard ch[915] = 0 reff[915] = 0 pass
+UTScoreBoard ch[916] = 0 reff[916] = 0 pass
+UTScoreBoard ch[917] = 0 reff[917] = 0 pass
+UTScoreBoard ch[918] = 1 reff[918] = 1 pass
+UTScoreBoard ch[919] = 0 reff[919] = 0 pass
+UTScoreBoard ch[920] = 0 reff[920] = 0 pass
+UTScoreBoard ch[921] = 0 reff[921] = 0 pass
+UTScoreBoard ch[922] = 0 reff[922] = 0 pass
+UTScoreBoard ch[923] = 0 reff[923] = 0 pass
+UTScoreBoard ch[924] = 0 reff[924] = 0 pass
+UTScoreBoard ch[925] = 1 reff[925] = 1 pass
+UTScoreBoard ch[926] = 1 reff[926] = 1 pass
+UTScoreBoard ch[927] = 1 reff[927] = 1 pass
+UTScoreBoard ch[928] = 0 reff[928] = 0 pass
+UTScoreBoard ch[929] = 0 reff[929] = 0 pass
+UTScoreBoard ch[930] = 1 reff[930] = 1 pass
+UTScoreBoard ch[931] = 1 reff[931] = 1 pass
+UTScoreBoard ch[932] = 1 reff[932] = 1 pass
+UTScoreBoard ch[933] = 1 reff[933] = 1 pass
+UTScoreBoard ch[934] = 1 reff[934] = 1 pass
+UTScoreBoard ch[935] = 1 reff[935] = 1 pass
+UTScoreBoard ch[936] = 1 reff[936] = 1 pass
+UTScoreBoard ch[937] = 0 reff[937] = 0 pass
+UTScoreBoard ch[938] = 0 reff[938] = 0 pass
+UTScoreBoard ch[939] = 0 reff[939] = 0 pass
+UTScoreBoard ch[940] = 0 reff[940] = 0 pass
+UTScoreBoard ch[941] = 0 reff[941] = 0 pass
+UTScoreBoard ch[942] = 0 reff[942] = 0 pass
+UTScoreBoard ch[943] = 0 reff[943] = 0 pass
+UTScoreBoard ch[944] = 0 reff[944] = 0 pass
+UTScoreBoard ch[945] = 1 reff[945] = 1 pass
+UTScoreBoard ch[946] = 1 reff[946] = 1 pass
+UTScoreBoard ch[947] = 1 reff[947] = 1 pass
+UTScoreBoard ch[948] = 1 reff[948] = 1 pass
+UTScoreBoard ch[949] = 0 reff[949] = 0 pass
+UTScoreBoard ch[950] = 0 reff[950] = 0 pass
+UTScoreBoard ch[951] = 0 reff[951] = 0 pass
+UTScoreBoard ch[952] = 0 reff[952] = 0 pass
+UTScoreBoard ch[953] = 1 reff[953] = 1 pass
+UTScoreBoard ch[954] = 1 reff[954] = 1 pass
+UTScoreBoard ch[955] = 1 reff[955] = 1 pass
+UTScoreBoard ch[956] = 1 reff[956] = 1 pass
+UTScoreBoard ch[957] = 1 reff[957] = 1 pass
+UTScoreBoard ch[958] = 0 reff[958] = 0 pass
+UTScoreBoard ch[959] = 0 reff[959] = 0 pass

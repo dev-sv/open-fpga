@@ -1,0 +1,1172 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do ls_run_msim_rtl_systemverilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Projects/max10/hdmi {C:/Projects/max10/hdmi/ddio.vo}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:17 on Oct 21,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/max10/hdmi" C:/Projects/max10/hdmi/ddio.vo 
+# ** Error: (vlog-7) Failed to open design unit file "C:/Projects/max10/hdmi/ddio.vo" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 12:38:17 on Oct 21,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./ls_run_msim_rtl_systemverilog.do line 8
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -vlog01compat -work work +incdir+C:/Projects/max10/hdmi {C:/Projects/max10/hdmi/ddio.vo}"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:38:21 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/display_data.sv(45)
+# ** at c:\Projects\max10\LogicSlice\ascii.inc(3): (vlog-2730) Undefined variable: 'Lx'.
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/display_data.sv(45)
+# ** at c:\Projects\max10\LogicSlice\ascii.inc(3): (vlog-2730) Undefined variable: 'Hy'.
+# ** Error: c:/Projects/max10/LogicSlice/display_data.sv(47): (vlog-13006) Could not find the package (t_string).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(68): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(76): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(84): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(92): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(100): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(108): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(116): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(124): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(132): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(140): near "=": syntax error, unexpected '=', expecting ';'.
+# -- Compiling module tb_display_data
+# ** Error: c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv(34): (vlog-2730) Undefined variable: 'uvm_config_db'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv(34): near "#": syntax error, unexpected '#'.
+# End time: 12:38:22 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 15, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:39:26 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/display_data.sv(45)
+# ** at c:\Projects\max10\LogicSlice\ascii.inc(3): (vlog-2730) Undefined variable: 'Lx'.
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/display_data.sv(45)
+# ** at c:\Projects\max10\LogicSlice\ascii.inc(3): (vlog-2730) Undefined variable: 'Hy'.
+# ** Error: c:/Projects/max10/LogicSlice/display_data.sv(47): (vlog-13006) Could not find the package (t_string).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(68): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(76): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(84): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(92): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(100): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(108): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(116): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(124): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(132): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(140): near "=": syntax error, unexpected '=', expecting ';'.
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv(7)
+# ** at ../../UTB/display_data/UTTestDisplayData.svh(193):  Failed to find the name 'check_display_data' in scope 'UTScoreBoard' at ../../UTB/display_data/UTTestDisplayData.svh(148).
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv(7)
+# ** at ../../UTB/display_data/UTTestDisplayData.svh(193): Class 'UTScoreBoard' does not declare a prototype for function 'check_display_data'.
+# End time: 12:39:27 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 15, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:40:10 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/display_data.sv(45)
+# ** at c:\Projects\max10\LogicSlice\ascii.inc(3): (vlog-2730) Undefined variable: 'Lx'.
+# ** Error: ** while parsing file included at c:/Projects/max10/LogicSlice/display_data.sv(45)
+# ** at c:\Projects\max10\LogicSlice\ascii.inc(3): (vlog-2730) Undefined variable: 'Hy'.
+# ** Error: c:/Projects/max10/LogicSlice/display_data.sv(47): (vlog-13006) Could not find the package (t_string).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(68): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(76): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(84): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(92): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(100): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(108): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(116): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(124): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(132): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(140): near "=": syntax error, unexpected '=', expecting ';'.
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 12:40:11 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 13, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:02:01 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# ** Error: c:/Projects/max10/LogicSlice/display_data.sv(47): (vlog-13006) Could not find the package (t_string).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(68): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(76): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(84): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(92): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(100): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(108): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(116): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(124): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(132): near "=": syntax error, unexpected '=', expecting ';'.
+# ** Error: (vlog-13069) c:/Projects/max10/LogicSlice/display_data.sv(140): near "=": syntax error, unexpected '=', expecting ';'.
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:02:03 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 11, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:04:51 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(98): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(105): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(112): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(119): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(123): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(57): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(59): Variable 'diff_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(153). 
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(61): Variable 'curr_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(150). 
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:04:53 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 3, Warnings: 8
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:17:30 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(57): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(59): Variable 'diff_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(153). 
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(61): Variable 'curr_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(150). 
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:17:32 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 3, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:18:48 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(99): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(106): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(113): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(120): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(124): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(59): Variable 'diff_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(153). 
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(61): Variable 'curr_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(150). 
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:18:49 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 8
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:21:32 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(99): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(106): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(113): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(120): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(124): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(59): Variable 'diff_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(153). 
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(61): Variable 'curr_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(150). 
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:21:33 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 8
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:23:14 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(106): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(113): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(120): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(124): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(59): Variable 'diff_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(153). 
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(61): Variable 'curr_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(150). 
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:23:15 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 7
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:23:46 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(106): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(113): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(120): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Warning: c:/Projects/max10/LogicSlice/ls_if.sv(124): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(59): Variable 'diff_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(153). 
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(61): Variable 'curr_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(150). 
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:23:48 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 3, Warnings: 7
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:24:09 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(59): Variable 'diff_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(153). 
+# ** Error (suppressible): (vlog-12003) c:/Projects/max10/LogicSlice/display_data.sv(61): Variable 'curr_val' written by continuous and procedural assignments. See c:/Projects/max10/LogicSlice/display_data.sv(150). 
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:24:11 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 3, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:25:35 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:25:36 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:31:50 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(62): (vlog-2244) Variable 'len' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(63): (vlog-2244) Variable 'tmp' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(64): (vlog-2244) Variable 'e0_1000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(65): (vlog-2244) Variable 'e1_1000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(66): (vlog-2244) Variable 'e0_10000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(67): (vlog-2244) Variable 'e1_10000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:31:51 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:17 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:35:18 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:35:34 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(59): The task or function 'set_string' with ref arguments must be automatic.
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:35:35 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:36:17 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_display_data_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# -- Compiling module tb_display_data
+# 
+# Top level modules:
+# 	display_data
+# 	tb_display_data
+# End time: 13:36:19 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 3
+#  
+#  
+#  vsim tb_display_data
+# vsim tb_display_data 
+# Start time: 13:36:19 on Oct 21,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_10420\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_display_data_sv_unit
+# Loading work.tb_display_data
+# Loading work.pkg_wave
+# Loading work.pkg_encoder
+# Loading work.ls_if
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_10420\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_10420\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53166 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+# add wave /tb_display_data/display_data/clk
+#  
+# add wave /tb_channel/channel/in
+#   
+# add wave /tb_channel/channel/ch
+#       
+# run 1000
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:39:18 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(58): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(214). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:39:19 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:47:50 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# ** Error: c:/Projects/max10/LogicSlice/display_data.sv(290): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(118). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 13:47:52 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:06:34 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(57): Questa has encountered an unexpected internal error: ../../src/vlog/vgencode.c(214). Please contact Questa support at http://supportnet.mentor.com/
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 14:06:36 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:01 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(62): (vlog-2244) Variable 'len' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(63): (vlog-2244) Variable 'tmp' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(64): (vlog-2244) Variable 'e0_1000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(65): (vlog-2244) Variable 'e1_1000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(66): (vlog-2244) Variable 'e0_10000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# ** Error (suppressible): c:/Projects/max10/LogicSlice/ls_if.sv(67): (vlog-2244) Variable 'e1_10000' is implicitly static. You must either explicitly declare it as static or automatic
+# or remove the initialization in the declaration of variable.
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 14:07:02 on Oct 21,2021, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+do dd.do
+# 
+#  set PRJ_DIR "c:/Projects/max10/LogicSlice"
+# c:/Projects/max10/LogicSlice
+#  set UVM_DIR "c:/Projects/uvm-1.2/src"
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/display_data
+# c:/Projects/max10/LogicSlice/UTB/display_data
+# 
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/max10/LogicSlice/UTB/display_data/work".
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:07:28 on Oct 21,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/max10/LogicSlice/ls_if.sv c:/Projects/max10/LogicSlice/display_data.sv c:/Projects/max10/LogicSlice/UTB/display_data/tb_display_data.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling package pkg_encoder
+# -- Compiling package pkg_wave
+# -- Compiling package t_string
+# ** Error: c:/Projects/max10/LogicSlice/ls_if.sv(59): The task or function 'set_string' with ref arguments must be automatic.
+# -- Compiling interface ls_if
+# -- Importing package pkg_encoder
+# -- Importing package pkg_wave
+# -- Compiling module display_data
+# -- Importing package t_string
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# End time: 14:07:30 on Oct 21,2021, Elapsed time: 0:00:02
+# Errors: 1, Warnings: 3
+# ** Error: C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+# Error in macro ./dd.do line 12
+# C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/vlog failed.
+#     while executing
+# "vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/ls_if.sv $PRJ_DIR/display_data.sv $TB_DIR/tb_display_data.sv"
+# End time: 14:31:39 on Oct 21,2021, Elapsed time: 0:55:20
+# Errors: 19, Warnings: 16

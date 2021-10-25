@@ -1,0 +1,125 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -111.893
+TNS   : -2258.002
+
+Type  : Slow 1200mV 85C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -7.464
+TNS   : -18904.882
+
+Type  : Slow 1200mV 85C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.272
+TNS   : -22.929
+
+Type  : Slow 1200mV 85C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.296
+TNS   : -0.573
+
+Type  : Slow 1200mV 85C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.352
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.030
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'osc'
+Slack : 4.936
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.945
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -101.586
+TNS   : -2020.928
+
+Type  : Slow 1200mV 0C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -6.705
+TNS   : -17764.563
+
+Type  : Slow 1200mV 0C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -2.106
+TNS   : -20.677
+
+Type  : Slow 1200mV 0C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.259
+TNS   : -0.499
+
+Type  : Slow 1200mV 0C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.299
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.315
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.887
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'osc'
+Slack : 4.806
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.908
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : -34.648
+TNS   : -531.134
+
+Type  : Fast 1200mV 0C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : -1.225
+TNS   : -862.484
+
+Type  : Fast 1200mV 0C Model Setup 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.644
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : -0.218
+TNS   : -0.432
+
+Type  : Fast 1200mV 0C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.158
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'osc'
+Slack : 4.662
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_hdmi_inst|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.999
+TNS   : 0.000
+
+------------------------------------------------------------
