@@ -1,8 +1,0 @@
-# Compile of tb_lcd_12864b_top.sv was successful.
-# Compile of counter.v was successful.
-# Compile of pll.v was successful.
-# Compile of lcd_12864b.sv was successful.
-# Compile of queue.sv was successful.
-# Compile of lcd_12864b_top.sv was successful.
-# 6 compiles, 0 failed with no errors.
-vsim -gui -l msim_transcript work.tb_lcd_12864b_top -L altera_mf_ver -L lpm_ver
