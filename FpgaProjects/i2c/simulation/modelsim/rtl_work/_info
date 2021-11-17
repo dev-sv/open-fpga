@@ -1,0 +1,307 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Projects/i2c/simulation/modelsim
+vat24c04
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 DXx4 work 5 lcd_t 0 22 b[3HnYmI9aOezI]1h5QP=0
+Z3 DXx4 work 6 enum_t 0 22 SU6ffTmBYmEWKl>MjoE@:2
+Z4 !s110 1637154352
+!i10b 1
+!s100 nZBg0]P3`gCCjJeE<LBJK1
+IoI:lbl6T@>dS2o6SkE78^3
+Z5 VDg1SIo80bB@j0V0VzS_@n1
+!s105 at24c04_sv_unit
+S1
+R0
+w1636991317
+8C:/Projects/i2c/at24c04.sv
+FC:/Projects/i2c/at24c04.sv
+L0 7
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1637154352.000000
+!s107 C:/Projects/i2c/at24c04.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/i2c|C:/Projects/i2c/at24c04.sv|
+!i113 1
+Z8 o-sv -work work
+Z9 !s92 -sv -work work +incdir+C:/Projects/i2c
+Z10 tCvgOpt 0
+vcounter
+Z11 !s110 1637154351
+!i10b 1
+!s100 7@WgLBK[gC=d=RP?Q:YY02
+I=HFL<0c9`D82ZKI0PDG7V0
+R5
+R0
+Z12 w1636975077
+8C:/Projects/i2c/counter.v
+FC:/Projects/i2c/counter.v
+Z13 L0 39
+R6
+r1
+!s85 0
+31
+Z14 !s108 1637154351.000000
+!s107 C:/Projects/i2c/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/i2c|C:/Projects/i2c/counter.v|
+!i113 1
+Z15 o-vlog01compat -work work
+Z16 !s92 -vlog01compat -work work +incdir+C:/Projects/i2c
+R10
+vds1307
+R1
+R2
+R3
+R4
+!i10b 1
+!s100 N]Vc^1lPKdMK?Y_QBBQff2
+I7EzG>Ba9lm3VnzPA3oUT_2
+R5
+!s105 ds1307_sv_unit
+S1
+R0
+w1636986443
+8C:/Projects/i2c/ds1307.sv
+FC:/Projects/i2c/ds1307.sv
+L0 5
+R6
+r1
+!s85 0
+31
+R7
+!s107 C:/Projects/i2c/ds1307.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/i2c|C:/Projects/i2c/ds1307.sv|
+!i113 1
+R8
+R9
+R10
+Xenum_t
+R1
+Z17 !s110 1637154915
+!i10b 1
+!s100 XQ;dmg:G_ddb1_KQ=:jce0
+IgP=h]Q^AioKASP3?O[2QM1
+VgP=h]Q^AioKASP3?O[2QM1
+S1
+R0
+Z18 w1637000355
+Z19 8c:/Projects/i2c/i2c.sv
+Z20 Fc:/Projects/i2c/i2c.sv
+L0 3
+R6
+r1
+!s85 0
+31
+Z21 !s108 1637154915.000000
+Z22 !s107 c:\Projects\i2c\..\tb.h|c:/Projects/i2c/tb_i2c_read.sv|c:/Projects/i2c/i2c.sv|
+Z23 !s90 -reportprogress|300|-sv|-novopt|c:/Projects/i2c/i2c.sv|c:/Projects/i2c/tb_i2c_read.sv|
+!i113 1
+o-sv
+R10
+vi2c
+R1
+Z24 DXx4 work 6 enum_t 0 22 gP=h]Q^AioKASP3?O[2QM1
+R17
+!i10b 1
+!s100 lT=5dV]B_Uzlh8M8@iWca3
+IJ0P:8hhR63JTC::7mcEz;0
+R5
+!s105 i2c_sv_unit
+S1
+R0
+R18
+R19
+R20
+L0 12
+R6
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 1
+o-sv
+R10
+vi2c_top
+R1
+R2
+R11
+!i10b 1
+!s100 3IiRYAR_`Z7EP6[M06Hg12
+IF8[gK:TQ;J<MPfBean>FO1
+R5
+!s105 i2c_top_sv_unit
+S1
+R0
+R12
+8C:/Projects/i2c/i2c_top.sv
+FC:/Projects/i2c/i2c_top.sv
+L0 4
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Projects/i2c/i2c_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/i2c|C:/Projects/i2c/i2c_top.sv|
+!i113 1
+R8
+R9
+R10
+vlcd_1602
+R1
+R2
+R3
+R11
+!i10b 1
+!s100 2md2[loX`5n`R:U3z7b[11
+I2:k`GlIm[2m`D>a2>WB6F0
+R5
+!s105 lcd_1602_sv_unit
+S1
+R0
+Z25 w1636986142
+Z26 8C:/Projects/i2c/lcd_1602.sv
+Z27 FC:/Projects/i2c/lcd_1602.sv
+L0 14
+R6
+r1
+!s85 0
+31
+R14
+Z28 !s107 C:/Projects/i2c/lcd_1602.sv|
+Z29 !s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/i2c|C:/Projects/i2c/lcd_1602.sv|
+!i113 1
+R8
+R9
+R10
+Xlcd_t
+R1
+R11
+!i10b 1
+!s100 eV2Ii=R^Pb;d<z9ZZS_PN0
+Ib[3HnYmI9aOezI]1h5QP=0
+Vb[3HnYmI9aOezI]1h5QP=0
+S1
+R0
+R25
+R26
+R27
+L0 2
+R6
+r1
+!s85 0
+31
+R14
+R28
+R29
+!i113 1
+R8
+R9
+R10
+vpll
+R11
+!i10b 1
+!s100 lFaiz``S8mmb8S12SnoiL2
+I_NgZ2KMYJf:Ajk1BmnAz93
+R5
+R0
+R12
+8C:/Projects/i2c/pll.v
+FC:/Projects/i2c/pll.v
+R13
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Projects/i2c/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/i2c|C:/Projects/i2c/pll.v|
+!i113 1
+R15
+R16
+R10
+vpll_altpll
+R11
+!i10b 1
+!s100 [Id1a:16Pdm?Whj:cOI;`3
+IJ[DabX<HoR`R47fjV3>VY2
+R5
+R0
+R12
+8C:/Projects/i2c/db/pll_altpll.v
+FC:/Projects/i2c/db/pll_altpll.v
+L0 29
+R6
+r1
+!s85 0
+31
+R14
+!s107 C:/Projects/i2c/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/i2c/db|C:/Projects/i2c/db/pll_altpll.v|
+!i113 1
+R15
+!s92 -vlog01compat -work work +incdir+C:/Projects/i2c/db
+R10
+vtb_i2c_read
+R1
+R24
+R17
+!i10b 1
+!s100 TbV<^kj@L]dFdHWK:WBRz3
+IGUIa?Vg@oLle]3;AHz6cl2
+R5
+!s105 tb_i2c_read_sv_unit
+S1
+R0
+w1637154912
+8c:/Projects/i2c/tb_i2c_read.sv
+Fc:/Projects/i2c/tb_i2c_read.sv
+Z30 Fc:\Projects\i2c\..\tb.h
+L0 9
+R6
+r1
+!s85 0
+31
+R21
+R22
+R23
+!i113 1
+o-sv
+R10
+vtb_i2c_write
+R1
+R24
+!s110 1637154697
+!i10b 1
+!s100 ]9`nA>l8:aD_aI=YMY@Ok2
+Ijzk2@_^d0mT7N7l61mUXM3
+R5
+!s105 tb_i2c_write_sv_unit
+S1
+R0
+w1637154692
+8c:/Projects/i2c/tb_i2c_write.sv
+Fc:/Projects/i2c/tb_i2c_write.sv
+R30
+L0 9
+R6
+r1
+!s85 0
+31
+!s108 1637154697.000000
+!s107 c:\Projects\i2c\..\tb.h|c:/Projects/i2c/tb_i2c_write.sv|c:/Projects/i2c/i2c.sv|
+!s90 -reportprogress|300|-sv|-novopt|c:/Projects/i2c/i2c.sv|c:/Projects/i2c/tb_i2c_write.sv|
+!i113 1
+o-sv
+R10

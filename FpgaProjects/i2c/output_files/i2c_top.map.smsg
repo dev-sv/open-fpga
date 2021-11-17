@@ -1,0 +1,7 @@
+Warning (10268): Verilog HDL information at lcd_1602.sv(48): always construct contains both blocking and non-blocking assignments File: C:/Projects/i2c/lcd_1602.sv Line: 48
+Info (10281): Verilog HDL Declaration information at lcd_1602.sv(22): object "N" differs only in case from object "n" in the same scope File: C:/Projects/i2c/lcd_1602.sv Line: 22
+Warning (10268): Verilog HDL information at i2c.sv(35): always construct contains both blocking and non-blocking assignments File: C:/Projects/i2c/i2c.sv Line: 35
+Warning (10268): Verilog HDL information at ds1307.sv(32): always construct contains both blocking and non-blocking assignments File: C:/Projects/i2c/ds1307.sv Line: 32
+Info (10281): Verilog HDL Declaration information at ds1307.sv(15): object "ADDR" differs only in case from object "addr" in the same scope File: C:/Projects/i2c/ds1307.sv Line: 15
+Warning (10268): Verilog HDL information at at24c04.sv(39): always construct contains both blocking and non-blocking assignments File: C:/Projects/i2c/at24c04.sv Line: 39
+Info (10281): Verilog HDL Declaration information at at24c04.sv(16): object "RD_ADDR" differs only in case from object "rd_addr" in the same scope File: C:/Projects/i2c/at24c04.sv Line: 16
