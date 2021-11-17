@@ -2,7 +2,7 @@
 
  transcript on
 
- set PRJ_DIR "c:/git/open-fpga/FpgaProjects/lcd_12864b"
+ set PRJ_DIR "c:/Projects/lcd_12864b"
  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_lcd_12864b
 
  vlib $TB_DIR/work

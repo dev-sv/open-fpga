@@ -22,6 +22,30 @@ data[6]	7
 data[7]	11
 
 
-Scripts path
+In order to run testbench: 
 
-C:\git\open-fpga\FpgaProjects\lcd_12864b\simulation\modelsim\*.do
+ 1. Create some folder (for example c:/git)
+ 
+ 2. cd git
+ 
+ 3. git clone https://github.com/dev-sv/open-fpga.git
+ 
+ 4. load project in Quartus
+ 
+ 5. run ModelSim
+
+ 6. run do script
+
+	> do lcd.do
+   > do queue.do	
+
+	
+Path tp scripts:
+	
+C:/git/open-fpga/FpgaProjects/lcd_12864b/simulation/modelsim/*.do
+
+
+If you create your own folder insted of "git", then change variable  PRJ_DIR
+
+set PRJ_DIR "c:/your_own_folder/open-fpga/FpgaProjects/lcd_12864b"
+ 
