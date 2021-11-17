@@ -1,9 +1,0 @@
-
-
-
-module at24c32(input bit clk);
-
-
-
-
-endmodule: at24c32
