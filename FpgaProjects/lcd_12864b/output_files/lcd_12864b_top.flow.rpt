@@ -1,5 +1,5 @@
 Flow report for lcd_12864b_top
-Wed Aug 19 15:38:52 2020
+Tue Nov 16 18:15:29 2021
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,15 +40,15 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Aug 19 15:38:52 2020       ;
+; Flow Status                        ; Successful - Tue Nov 16 18:15:29 2021       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; lcd_12864b_top                              ;
 ; Top-level Entity Name              ; lcd_12864b_top                              ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE6E22C8                                 ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 422 / 6,272 ( 7 % )                         ;
-;     Total combinational functions  ; 419 / 6,272 ( 7 % )                         ;
+; Total logic elements               ; 392 / 6,272 ( 6 % )                         ;
+;     Total combinational functions  ; 355 / 6,272 ( 6 % )                         ;
 ;     Dedicated logic registers      ; 260 / 6,272 ( 4 % )                         ;
 ; Total registers                    ; 260                                         ;
 ; Total pins                         ; 12 / 92 ( 13 % )                            ;
@@ -64,7 +64,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/19/2020 15:38:23 ;
+; Start date & time ; 11/16/2021 18:14:53 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; lcd_12864b_top      ;
 +-------------------+---------------------+
@@ -75,13 +75,13 @@ refer to the applicable agreement for further details.
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+----------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 136480445568.159784070311652           ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 136480445568.163707569211828           ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl                      ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog)        ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --             ;
-; MISC_FILE                           ; pll_bb.v                               ; --            ; --          ; --             ;
-; MISC_FILE                           ; pll.ppf                                ; --            ; --          ; --             ;
+; MISC_FILE                           ; pll_osc_bb.v                           ; --            ; --          ; --             ;
+; MISC_FILE                           ; pll_osc.ppf                            ; --            ; --          ; --             ;
 ; MISC_FILE                           ; counter_bb.v                           ; --            ; --          ; --             ;
 ; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --            ; --          ; --             ;
 ; NUM_PARALLEL_PROCESSORS             ; All                                    ; --            ; --          ; --             ;
@@ -99,12 +99,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4778 MB             ; 00:00:25                           ;
-; Fitter               ; 00:00:05     ; 1.0                     ; 5495 MB             ; 00:00:06                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4675 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.1                     ; 4755 MB             ; 00:00:03                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 4647 MB             ; 00:00:02                           ;
-; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4776 MB             ; 00:00:29                           ;
+; Fitter               ; 00:00:07     ; 1.0                     ; 5495 MB             ; 00:00:10                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 4680 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 4761 MB             ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:03     ; 1.0                     ; 4646 MB             ; 00:00:04                           ;
+; Total                ; 00:00:31     ; --                      ; --                  ; 00:00:50                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,11 +113,11 @@ refer to the applicable agreement for further details.
 +----------------------+------------------+------------+------------+----------------+
 ; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-BSIDHC8  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-BSIDHC8  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-BSIDHC8  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-BSIDHC8  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-BSIDHC8  ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis ; DESKTOP-K7IUQ5A  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter               ; DESKTOP-K7IUQ5A  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler            ; DESKTOP-K7IUQ5A  ; Windows 10 ; 10.0       ; x86_64         ;
+; Timing Analyzer      ; DESKTOP-K7IUQ5A  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer   ; DESKTOP-K7IUQ5A  ; Windows 10 ; 10.0       ; x86_64         ;
 +----------------------+------------------+------------+------------+----------------+
 
 

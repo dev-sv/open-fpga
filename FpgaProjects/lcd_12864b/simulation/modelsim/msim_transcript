@@ -7,69 +7,139 @@
 # vmap work rtl_work
 # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
-# Modifying modelsim.ini
+# Modifying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v}
+# vlog -vlog01compat -work work +incdir+C:/Projects/lcd_12864b {C:/Projects/lcd_12864b/pll_osc.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:34 on Aug 07,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v 
-# -- Compiling module pll
+# Start time: 18:25:24 on Nov 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/lcd_12864b" C:/Projects/lcd_12864b/pll_osc.v 
+# -- Compiling module pll_osc
 # 
 # Top level modules:
-# 	pll
-# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:01
+# 	pll_osc
+# End time: 18:25:24 on Nov 16,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v}
+# vlog -vlog01compat -work work +incdir+C:/Projects/lcd_12864b {C:/Projects/lcd_12864b/counter.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:35 on Aug 07,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v 
+# Start time: 18:25:24 on Nov 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/lcd_12864b" C:/Projects/lcd_12864b/counter.v 
 # -- Compiling module counter
 # 
 # Top level modules:
 # 	counter
-# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 18:25:25 on Nov 16,2021, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v}
+# vlog -vlog01compat -work work +incdir+C:/Projects/lcd_12864b/db {C:/Projects/lcd_12864b/db/pll_osc_altpll.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:35 on Aug 07,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v 
-# -- Compiling module pll_altpll
+# Start time: 18:25:25 on Nov 16,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/lcd_12864b/db" C:/Projects/lcd_12864b/db/pll_osc_altpll.v 
+# -- Compiling module pll_osc_altpll
 # 
 # Top level modules:
-# 	pll_altpll
-# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# 	pll_osc_altpll
+# End time: 18:25:25 on Nov 16,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv}
+# vlog -sv -work work +incdir+C:/Projects/lcd_12864b {C:/Projects/lcd_12864b/lcd_12864b.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:35 on Aug 07,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv 
+# Start time: 18:25:25 on Nov 16,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/lcd_12864b" C:/Projects/lcd_12864b/lcd_12864b.sv 
 # -- Compiling module lcd_12864b
 # 
 # Top level modules:
 # 	lcd_12864b
-# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 18:25:25 on Nov 16,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv}
+# vlog -sv -work work +incdir+C:/Projects/lcd_12864b {C:/Projects/lcd_12864b/queue.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:35 on Aug 07,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv 
+# Start time: 18:25:25 on Nov 16,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/lcd_12864b" C:/Projects/lcd_12864b/queue.sv 
 # -- Compiling module queue
 # 
 # Top level modules:
 # 	queue
-# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 18:25:25 on Nov 16,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b {C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv}
+# vlog -sv -work work +incdir+C:/Projects/lcd_12864b {C:/Projects/lcd_12864b/lcd_12864b_top.sv}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 15:22:35 on Aug 07,2020
-# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b" C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv 
+# Start time: 18:25:25 on Nov 16,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/lcd_12864b" C:/Projects/lcd_12864b/lcd_12864b_top.sv 
 # -- Compiling module lcd_12864b_top
 # 
 # Top level modules:
 # 	lcd_12864b_top
-# End time: 15:22:35 on Aug 07,2020, Elapsed time: 0:00:00
+# End time: 18:25:25 on Nov 16,2021, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# reading C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini
-# Loading project tb_lcd_12864b_top_sim
+do queue.do
+# 
+#  set PRJ_DIR "c:/Projects/lcd_12864b"
+# c:/Projects/lcd_12864b
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_queue
+# c:/Projects/lcd_12864b/simulation/modelsim/tb_queue
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/lcd_12864b/simulation/modelsim/tb_queue/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/queue.sv $PRJ_DIR/tb_queue.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 18:25:30 on Nov 16,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/lcd_12864b/queue.sv c:/Projects/lcd_12864b/tb_queue.sv 
+# -- Compiling module queue
+# -- Compiling module tb_queue
+# 
+# Top level modules:
+# 	tb_queue
+# End time: 18:25:31 on Nov 16,2021, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+#  vsim tb_queue
+# vsim tb_queue 
+# Start time: 18:25:31 on Nov 16,2021
+# Loading sv_std.std
+# Loading work.tb_queue
+# Loading work.queue
+#  
+#  add wave /tb_queue/clk
+#  add wave /tb_queue/query
+#  add wave /tb_queue/full
+#  add wave /tb_queue/in_data
+#  add wave /tb_queue/out_queue
+# 
+#  run 2000
+# 
+#  Testbench queue.
+# 
+# op: EQ  a = 00 b = 00 OK.
+# op: EQ  a = 01 b = 01 OK.
+# op: EQ  a = 02 b = 02 OK.
+# op: EQ  a = 03 b = 03 OK.
+# op: EQ  a = 04 b = 04 OK.
+# op: EQ  a = 05 b = 05 OK.
+# op: EQ  a = 06 b = 06 OK.
+# op: EQ  a = 07 b = 07 OK.
+# op: EQ  a = 08 b = 08 OK.
+# op: EQ  a = 09 b = 09 OK.
+# op: EQ  a = 0a b = 0a OK.
+# op: EQ  a = 0b b = 0b OK.
+# op: EQ  a = 0c b = 0c OK.
+# op: EQ  a = 0d b = 0d OK.
+# op: EQ  a = 0e b = 0e OK.
+# op: EQ  a = 0f b = 0f OK.
+# op: EQ  a = 10 b = 10 OK.
+# op: EQ  a = 11 b = 11 OK.
+# op: EQ  a = 12 b = 12 OK.
+# op: EQ  a = 13 b = 13 OK.
+# op: EQ  a = 14 b = 14 OK.
+# op: EQ  a = 15 b = 15 OK.
+# op: EQ  a = 16 b = 16 OK.
+# op: EQ  a = 17 b = 17 OK.
+# op: EQ  a = 18 b = 18 OK.
+# op: EQ  a = 19 b = 19 OK.
+# op: EQ  a = 1a b = 1a OK.
+# op: EQ  a = 1b b = 1b OK.
+# op: EQ  a = 1c b = 1c OK.
+# op: EQ  a = 1d b = 1d OK.
+# op: EQ  a = 1e b = 1e OK.
+# op: EQ  a = 1f b = 1f OK.
+# End time: 18:25:51 on Nov 16,2021, Elapsed time: 0:00:20
+# Errors: 0, Warnings: 0

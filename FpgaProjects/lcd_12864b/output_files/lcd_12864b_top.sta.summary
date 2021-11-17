@@ -7,11 +7,11 @@ Slack : 17.981
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'virt_clk_out'
-Slack : 986.142
+Slack : 985.576
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Setup 'counter_clk'
-Slack : 988.109
+Slack : 988.555
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'counter_clk'
@@ -23,11 +23,11 @@ Slack : 0.737
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'virt_clk_out'
-Slack : 10.893
+Slack : 10.593
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'pll_osc'
-Slack : 9.718
+Slack : 9.720
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'osc'
@@ -35,19 +35,19 @@ Slack : 9.934
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'counter_clk'
-Slack : 499.784
+Slack : 499.785
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'pll_osc'
-Slack : 18.099
+Slack : 18.185
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'virt_clk_out'
-Slack : 987.426
+Slack : 986.863
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'counter_clk'
-Slack : 988.885
+Slack : 989.330
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'counter_clk'
@@ -55,15 +55,15 @@ Slack : 0.401
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'pll_osc'
-Slack : 0.686
+Slack : 0.685
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'virt_clk_out'
-Slack : 9.714
+Slack : 9.457
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'pll_osc'
-Slack : 9.718
+Slack : 9.717
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'osc'
@@ -71,7 +71,7 @@ Slack : 9.943
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'counter_clk'
-Slack : 499.771
+Slack : 499.768
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'pll_osc'
@@ -79,11 +79,11 @@ Slack : 19.129
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'virt_clk_out'
-Slack : 992.609
+Slack : 992.354
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'counter_clk'
-Slack : 994.576
+Slack : 994.969
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'counter_clk'
@@ -95,7 +95,7 @@ Slack : 0.293
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'virt_clk_out'
-Slack : 5.139
+Slack : 5.017
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'osc'
@@ -103,11 +103,11 @@ Slack : 9.594
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'pll_osc'
-Slack : 9.797
+Slack : 9.798
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'counter_clk'
-Slack : 499.763
+Slack : 499.760
 TNS   : 0.000
 
 ------------------------------------------------------------

@@ -7,146 +7,170 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/simulation/modelsim
+Z0 dC:/Projects/lcd_12864b/simulation/modelsim
 vcounter
-Z1 !s110 1596802955
+Z1 !s110 1637076325
 !i10b 1
 !s100 UXj9Ld6_PG>c67bfoMf641
-IVQ>Bk]]igUEWQbbRN0`MF0
+ITJNlAgM4=P7S?Knh1507C3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1596195501
-8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v
-FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v
+w1637074015
+8C:/Projects/lcd_12864b/counter.v
+FC:/Projects/lcd_12864b/counter.v
 Z3 L0 39
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1596802955.000000
-!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/counter.v|
+Z5 !s108 1637076324.000000
+!s107 C:/Projects/lcd_12864b/counter.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/lcd_12864b|C:/Projects/lcd_12864b/counter.v|
 !i113 1
 Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b
+Z7 !s92 -vlog01compat -work work +incdir+C:/Projects/lcd_12864b
 Z8 tCvgOpt 0
 vlcd_12864b
 Z9 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
 R1
 !i10b 1
-!s100 PHKWS;b=OFgci4S5@Zm>L3
-Id=SiFY6b1USzV_i:@NW1f2
+!s100 Za?3GbX<zd`Nj>AAZMVlI3
+I`E@aiz3Ul?SehI[:TZO0`0
 R2
 !s105 lcd_12864b_sv_unit
 S1
 R0
-w1596802912
-8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv
-FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv
+w1636975078
+8C:/Projects/lcd_12864b/lcd_12864b.sv
+FC:/Projects/lcd_12864b/lcd_12864b.sv
 L0 4
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv|
+Z10 !s108 1637076325.000000
+!s107 C:/Projects/lcd_12864b/lcd_12864b.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/lcd_12864b|C:/Projects/lcd_12864b/lcd_12864b.sv|
 !i113 1
-Z10 o-sv -work work
-Z11 !s92 -sv -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b
+Z11 o-sv -work work
+Z12 !s92 -sv -work work +incdir+C:/Projects/lcd_12864b
 R8
 vlcd_12864b_top
 R9
 R1
 !i10b 1
-!s100 ==KR7:IZkSco^ZlRl]mWW1
-Idc_R7f7<MieGNo^1fVc;o3
+!s100 I6eQDOQYin=DFQBbYCAb?1
+I`gMf@P30XnKT2PUDe<Q:Q0
 R2
 !s105 lcd_12864b_top_sv_unit
 S1
 R0
-w1596802645
-8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv
-FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv
-FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/type.h
+w1637073714
+8C:/Projects/lcd_12864b/lcd_12864b_top.sv
+FC:/Projects/lcd_12864b/lcd_12864b_top.sv
+FC:/Projects/lcd_12864b/type.h
 L0 3
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/type.h|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv|
-!i113 1
 R10
+!s107 C:/Projects/lcd_12864b/type.h|C:/Projects/lcd_12864b/lcd_12864b_top.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/lcd_12864b|C:/Projects/lcd_12864b/lcd_12864b_top.sv|
+!i113 1
 R11
+R12
 R8
-vpll
-R1
+vpll_osc
+!s110 1637076324
 !i10b 1
-!s100 M^BB0I;e6420[6_ZRWADH1
-Ie1SU];8WBAObE<BC=nkhE1
+!s100 S2jYVSQ4ji6a^M@;[5km[2
+If5cb;G@;1clhA`;8HWOeS2
 R2
 R0
-w1596294272
-8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v
-FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v
+w1637073414
+8C:/Projects/lcd_12864b/pll_osc.v
+FC:/Projects/lcd_12864b/pll_osc.v
 R3
 R4
 r1
 !s85 0
 31
-!s108 1596802954.000000
-!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/pll.v|
+R5
+!s107 C:/Projects/lcd_12864b/pll_osc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/lcd_12864b|C:/Projects/lcd_12864b/pll_osc.v|
 !i113 1
 R6
 R7
 R8
-vpll_altpll
+vpll_osc_altpll
 R1
 !i10b 1
-!s100 d;]F4R3nh?c8hPBiVQ5om1
-Ig81k0Z8h<R?PH3CjFH=RP1
+!s100 RBe<]<>UUiZ@;]`S]33eL1
+Im4BEUC90obN?f?`S5n=hJ1
 R2
 R0
-w1596294303
-8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v
-FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v
+w1637073476
+8C:/Projects/lcd_12864b/db/pll_osc_altpll.v
+FC:/Projects/lcd_12864b/db/pll_osc_altpll.v
 L0 29
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db/pll_altpll.v|
+R10
+!s107 C:/Projects/lcd_12864b/db/pll_osc_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Projects/lcd_12864b/db|C:/Projects/lcd_12864b/db/pll_osc_altpll.v|
 !i113 1
 R6
-!s92 -vlog01compat -work work +incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/db
+!s92 -vlog01compat -work work +incdir+C:/Projects/lcd_12864b/db
 R8
 vqueue
 R9
-R1
+Z13 !s110 1637076330
 !i10b 1
-!s100 7KJY@?7ool;CQXT96h48<2
-IUMb<:83f8FIPoDk^DdZOC2
+!s100 <8azRn5LZbE<BAzT<^f]J3
+INJ`C4;J00AX^R>H<>;;9E1
 R2
 !s105 queue_sv_unit
 S1
 R0
-w1596461525
-8C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv
-FC:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv
+w1637066662
+8c:/Projects/lcd_12864b/queue.sv
+Fc:/Projects/lcd_12864b/queue.sv
 L0 4
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv|
-!s90 -reportprogress|300|-sv|-work|work|+incdir+C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b|C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv|
+Z14 !s108 1637076330.000000
+Z15 !s107 c:\Projects\lcd_12864b\..\tb.h|c:/Projects/lcd_12864b/tb_queue.sv|c:/Projects/lcd_12864b/queue.sv|
+Z16 !s90 -reportprogress|300|-sv|-novopt|c:/Projects/lcd_12864b/queue.sv|c:/Projects/lcd_12864b/tb_queue.sv|
 !i113 1
-R10
-R11
+o-sv
+R8
+vtb_queue
+R9
+R13
+!i10b 1
+!s100 ZbVSBQ7CR7Q>4AL1V9SOh3
+INN6;lI;T`d<W94G4Mdkzd1
+R2
+!s105 tb_queue_sv_unit
+S1
+R0
+w1636975080
+8c:/Projects/lcd_12864b/tb_queue.sv
+Fc:/Projects/lcd_12864b/tb_queue.sv
+Fc:\Projects\lcd_12864b\..\tb.h
+L0 5
+R4
+r1
+!s85 0
+31
+R14
+R15
+R16
+!i113 1
+o-sv
 R8

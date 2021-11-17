@@ -20,3 +20,8 @@ data[4]	2
 data[5]	10
 data[6]	7
 data[7]	11
+
+
+Scripts path
+
+C:\git\open-fpga\FpgaProjects\lcd_12864b\simulation\modelsim\*.do

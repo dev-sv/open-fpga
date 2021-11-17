@@ -1,26 +1,26 @@
 |lcd_12864b_top
 osc => osc.IN1
-rs <= lcd_12864b:lcd_12864b_inst.rs
-rw <= lcd_12864b:lcd_12864b_inst.rw
-e <= lcd_12864b:lcd_12864b_inst.e
-data[0] <= lcd_12864b:lcd_12864b_inst.out_data[0]
-data[1] <= lcd_12864b:lcd_12864b_inst.out_data[1]
-data[2] <= lcd_12864b:lcd_12864b_inst.out_data[2]
-data[3] <= lcd_12864b:lcd_12864b_inst.out_data[3]
-data[4] <= lcd_12864b:lcd_12864b_inst.out_data[4]
-data[5] <= lcd_12864b:lcd_12864b_inst.out_data[5]
-data[6] <= lcd_12864b:lcd_12864b_inst.out_data[6]
-data[7] <= lcd_12864b:lcd_12864b_inst.out_data[7]
+rs << lcd_12864b:lcd_12864b_inst.rs
+rw << lcd_12864b:lcd_12864b_inst.rw
+e << lcd_12864b:lcd_12864b_inst.e
+data[0] << lcd_12864b:lcd_12864b_inst.out_data[0]
+data[1] << lcd_12864b:lcd_12864b_inst.out_data[1]
+data[2] << lcd_12864b:lcd_12864b_inst.out_data[2]
+data[3] << lcd_12864b:lcd_12864b_inst.out_data[3]
+data[4] << lcd_12864b:lcd_12864b_inst.out_data[4]
+data[5] << lcd_12864b:lcd_12864b_inst.out_data[5]
+data[6] << lcd_12864b:lcd_12864b_inst.out_data[6]
+data[7] << lcd_12864b:lcd_12864b_inst.out_data[7]
 
 
-|lcd_12864b_top|pll:pll_inst
+|lcd_12864b_top|pll_osc:pll_inst
 inclk0 => sub_wire1[0].IN1
 c0 <= altpll:altpll_component.clk
 
 
-|lcd_12864b_top|pll:pll_inst|altpll:altpll_component
-inclk[0] => pll_altpll:auto_generated.inclk[0]
-inclk[1] => pll_altpll:auto_generated.inclk[1]
+|lcd_12864b_top|pll_osc:pll_inst|altpll:altpll_component
+inclk[0] => pll_osc_altpll:auto_generated.inclk[0]
+inclk[1] => pll_osc_altpll:auto_generated.inclk[1]
 fbin => ~NO_FANOUT~
 pllena => ~NO_FANOUT~
 clkswitch => ~NO_FANOUT~
@@ -78,7 +78,7 @@ fref <= <GND>
 icdrclk <= <GND>
 
 
-|lcd_12864b_top|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated
+|lcd_12864b_top|pll_osc:pll_inst|altpll:altpll_component|pll_osc_altpll:auto_generated
 clk[0] <= pll1.CLK
 clk[1] <= pll1.CLK1
 clk[2] <= pll1.CLK2

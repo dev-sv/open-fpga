@@ -1,6 +1,5 @@
-Warning (10268): Verilog HDL information at lcd_12864b_top.sv(73): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv Line: 73
-Info (10281): Verilog HDL Declaration information at lcd_12864b_top.sv(3): object "data" differs only in case from object "DATA" in the same scope File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv Line: 3
-Info (10281): Verilog HDL Declaration information at lcd_12864b_top.sv(10): object "N" differs only in case from object "n" in the same scope File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b_top.sv Line: 10
-Warning (10268): Verilog HDL information at lcd_12864b.sv(23): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/lcd_12864b.sv Line: 23
-Warning (10268): Verilog HDL information at queue.sv(26): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/queue.sv Line: 26
-Warning (10268): Verilog HDL information at tb_queue.sv(51): always construct contains both blocking and non-blocking assignments File: C:/Projects/FPGA/SystemVerilog/GitHubRelease/lcd_12864b/tb_queue.sv Line: 51
+Warning (10268): Verilog HDL information at lcd_12864b_top.sv(58): always construct contains both blocking and non-blocking assignments File: C:/Projects/lcd_12864b/lcd_12864b_top.sv Line: 58
+Info (10281): Verilog HDL Declaration information at lcd_12864b_top.sv(3): object "data" differs only in case from object "DATA" in the same scope File: C:/Projects/lcd_12864b/lcd_12864b_top.sv Line: 3
+Info (10281): Verilog HDL Declaration information at lcd_12864b_top.sv(10): object "N" differs only in case from object "n" in the same scope File: C:/Projects/lcd_12864b/lcd_12864b_top.sv Line: 10
+Warning (10268): Verilog HDL information at lcd_12864b.sv(23): always construct contains both blocking and non-blocking assignments File: C:/Projects/lcd_12864b/lcd_12864b.sv Line: 23
+Warning (10268): Verilog HDL information at queue.sv(15): always construct contains both blocking and non-blocking assignments File: C:/Projects/lcd_12864b/queue.sv Line: 15

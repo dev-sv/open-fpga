@@ -54,7 +54,7 @@ begin
 end
 
 
-	lcd_12864b_top		lcd_12864b_top_mut(.osc(clk), .rs(rs), .rw(rw), .e(e), .data(data));
+	lcd_12864b_top		lcd_12864b_top_dut(.osc(clk), .rs(rs), .rw(rw), .e(e), .data(data));
 
 	
 	always @(negedge e) begin

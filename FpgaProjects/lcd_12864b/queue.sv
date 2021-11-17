@@ -11,17 +11,6 @@ logic[$clog2(N) - 1:0] pRD = (N - 1),
                        wr = 0,                       
                        prv = 1;
                        				 	
-	
-initial
- begin
-
-	for(int i = 0; i < N; ++i)	
-	    buff[i] = 8'hFF;
-
-	qcount = 0; 
-   full = 0;
- end 
-				
 		
 		always @(posedge clk) begin
 			

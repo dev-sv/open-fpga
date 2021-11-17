@@ -6,15 +6,18 @@ module lcd_12864b_top(input bit osc, output bit rs, rw, e, output logic [7:0] da
 `include "type.h"
 	
 localparam int MaxDelay = 300000;
-localparam int QS = 8;	   //	queue size.				  
-localparam int N = 16;	   //	buffer size.				  
+localparam int QS = 8;	   			//	queue size.				  
+localparam int N = 16;	   			//	buffer size.				  
 
 enum {READY, BUSY}           state_lcd = READY;
 enum {POS, DATA, LOAD, PAGE} state_data = POS;
 
 
 logic[7:0] buff = 0,
-	        pos_curs[4]; 
+
+// Start of strings.		
+	        pos_curs[4] = '{8'b10000000, 8'b10010000,
+									8'b10001000, 8'b10011000}; 
 			  			  
 logic[$clog2(QS) - 1:0] pWR, 
                         p = 0;			  
@@ -33,35 +36,17 @@ int   i = 0,
 	   delay = 0;
 
 		
-// Test data.
-t_str    lcd_data;
+// Test data. 
+t_str    lcd_data = '{8'b00110000, 8'b00001100, 8'b00110000, 
+                      8'b00000001, 8'b00000110, 8'hFF, 8'hFF, 
+							 8'hFF, 8'hFF, 8'hFF, 8'hFF, 8'hFF, 8'hFF,
+			   			 8'hFF, 8'hFF, 8'hFF};
 bit[6:0] ascii = 0;
 bit[1:0]	str = 0; 
 		
+
 		
-initial
-
- begin
- 	
-	for(int i = 0; i < N; ++i)
-		 lcd_data[i] = 8'hFF;
-
-// Start of strings.		
-	pos_curs[0] = 8'b10000000;
-	pos_curs[1] = 8'b10010000;
-	pos_curs[2] = 8'b10001000;
-	pos_curs[3] = 8'b10011000;
- 
-// Init data. 
-	lcd_data[0] = 8'b00110000;
-	lcd_data[1] = 8'b00001100;
-	lcd_data[2] = 8'b00110000;
-	lcd_data[3] = 8'b00000001;
-	lcd_data[4] = 8'b00000110;				
-end
-
-
-	pll	pll_inst(.inclk0(osc), .c0(w_c0));
+	pll_osc	pll_inst(.inclk0(osc), .c0(w_c0));
 		
 	counter	counter_inst(.clock(w_c0), .q(w_q));
 
@@ -110,7 +95,7 @@ end
 		
 
 		   case(state_data)
-			
+						
 
 		        POS:  begin									  
 			
