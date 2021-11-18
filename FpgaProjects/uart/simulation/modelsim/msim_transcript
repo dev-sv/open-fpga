@@ -1,0 +1,924 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do uart_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Projects/uart {C:/Projects/uart/pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:15:53 on Nov 18,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/uart" C:/Projects/uart/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 20:15:53 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Projects/uart/db {C:/Projects/uart/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:15:53 on Nov 18,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/uart/db" C:/Projects/uart/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 20:15:53 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/uart {C:/Projects/uart/uart.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:15:53 on Nov 18,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/uart" C:/Projects/uart/uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# 
+# Top level modules:
+# 	uart
+# End time: 20:15:53 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:15:57 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:15:57 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:15:57 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlftqn544t".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftqn544t
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 8b Error.
+# op: EQ  a = 32 b = 92 Error.
+# op: EQ  a = 33 b = 9a Error.
+# op: EQ  a = 34 b = a2 Error.
+# op: EQ  a = 35 b = 56 Error.
+# op: EQ  a = 36 b = b2 Error.
+# op: EQ  a = 37 b = ba Error.
+# op: EQ  a = 38 b = c2 Error.
+# op: EQ  a = 39 b = 96 Error.
+# op: EQ  a = 3a b = d2 Error.
+# op: EQ  a = 3b b = da Error.
+# op: EQ  a = 3c b = e2 Error.
+# op: EQ  a = 3d b = d6 Error.
+# op: EQ  a = 3e b = f2 Error.
+# op: EQ  a = 3f b = fa Error.
+# op: EQ  a = 40 b = 02 Error.
+# op: EQ  a = 41 b = 0b Error.
+# op: EQ  a = 42 b = 09 Error.
+# op: EQ  a = 43 b = 0d Error.
+# op: EQ  a = 44 b = 11 Error.
+# op: EQ  a = 45 b = 2b Error.
+# op: EQ  a = 46 b = 19 Error.
+# op: EQ  a = 47 b = 1d Error.
+# op: EQ  a = 48 b = 21 Error.
+# op: EQ  a = 49 b = 4b Error.
+# op: EQ  a = 4a b = 29 Error.
+# op: EQ  a = 4b b = 2d Error.
+# op: EQ  a = 4c b = 31 Error.
+# op: EQ  a = 4d b = 6b Error.
+# op: EQ  a = 4e b = 39 Error.
+# op: EQ  a = 4f b = 3d Error.
+# op: EQ  a = 50 b = 41 Error.
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:16:49 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:16:49 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:16:50 on Nov 18,2021, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:16:50 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlftfahb1e".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftfahb1e
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 3000  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:17:14 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:17:14 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:17:15 on Nov 18,2021, Elapsed time: 0:00:25
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:17:15 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlftxbqet9".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxbqet9
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21500  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:17:45 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:17:45 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:17:46 on Nov 18,2021, Elapsed time: 0:00:31
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:17:46 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlftjdczqk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftjdczqk
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21500  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:03 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:18:03 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:18:04 on Nov 18,2021, Elapsed time: 0:00:18
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:18:04 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlftxrgey0".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftxrgey0
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = c4 Error.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# op: EQ  a = 45 b = 45 OK.
+# op: EQ  a = 46 b = 46 OK.
+# op: EQ  a = 47 b = 47 OK.
+# op: EQ  a = 48 b = 48 OK.
+# op: EQ  a = 49 b = 49 OK.
+# op: EQ  a = 4a b = 4a OK.
+# op: EQ  a = 4b b = 4b OK.
+# op: EQ  a = 4c b = 4c OK.
+# op: EQ  a = 4d b = 4d OK.
+# op: EQ  a = 4e b = 4e OK.
+# op: EQ  a = 4f b = 4f OK.
+# op: EQ  a = 50 b = 50 OK.
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:18:48 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:18:48 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:18:50 on Nov 18,2021, Elapsed time: 0:00:46
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:18:50 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlft0hxr72".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft0hxr72
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 31 OK.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# op: EQ  a = 45 b = 45 OK.
+# op: EQ  a = 46 b = 46 OK.
+# op: EQ  a = 47 b = 47 OK.
+# op: EQ  a = 48 b = 48 OK.
+# op: EQ  a = 49 b = 49 OK.
+# op: EQ  a = 4a b = 4a OK.
+# op: EQ  a = 4b b = 4b OK.
+# op: EQ  a = 4c b = 4c OK.
+# op: EQ  a = 4d b = 4d OK.
+# op: EQ  a = 4e b = 4e OK.
+# op: EQ  a = 4f b = 4f OK.
+# op: EQ  a = 50 b = 50 OK.
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:30:49 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:30:49 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:30:51 on Nov 18,2021, Elapsed time: 0:12:01
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:30:51 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlftwjm8rg".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftwjm8rg
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 31 OK.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# op: EQ  a = 45 b = 45 OK.
+# op: EQ  a = 46 b = 46 OK.
+# op: EQ  a = 47 b = 47 OK.
+# op: EQ  a = 48 b = 48 OK.
+# op: EQ  a = 49 b = 49 OK.
+# op: EQ  a = 4a b = 4a OK.
+# op: EQ  a = 4b b = 4b OK.
+# op: EQ  a = 4c b = 4c OK.
+# op: EQ  a = 4d b = 4d OK.
+# op: EQ  a = 4e b = 4e OK.
+# op: EQ  a = 4f b = 4f OK.
+# op: EQ  a = 50 b = 50 OK.
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:35:05 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:35:05 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:35:06 on Nov 18,2021, Elapsed time: 0:04:15
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:35:06 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlftadr5cc".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftadr5cc
+#  add wave /tb_uart/tx_busy
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 31 OK.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# op: EQ  a = 45 b = 45 OK.
+# op: EQ  a = 46 b = 46 OK.
+# op: EQ  a = 47 b = 47 OK.
+# op: EQ  a = 48 b = 48 OK.
+# op: EQ  a = 49 b = 49 OK.
+# op: EQ  a = 4a b = 4a OK.
+# op: EQ  a = 4b b = 4b OK.
+# op: EQ  a = 4c b = 4c OK.
+# op: EQ  a = 4d b = 4d OK.
+# op: EQ  a = 4e b = 4e OK.
+# op: EQ  a = 4f b = 4f OK.
+# op: EQ  a = 50 b = 50 OK.
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:36:37 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 20:36:37 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 20:36:38 on Nov 18,2021, Elapsed time: 0:01:32
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 20:36:38 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: user  Hostname: DESKTOP-K7IUQ5A  ProcessID: 8188
+#           Attempting to use alternate WLF file "./wlft4cnhri".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft4cnhri
+#  add wave /tb_uart/tx_busy
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+#  add wave /tb_uart/val
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 31 OK.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# op: EQ  a = 45 b = 45 OK.
+# op: EQ  a = 46 b = 46 OK.
+# op: EQ  a = 47 b = 47 OK.
+# op: EQ  a = 48 b = 48 OK.
+# op: EQ  a = 49 b = 49 OK.
+# op: EQ  a = 4a b = 4a OK.
+# op: EQ  a = 4b b = 4b OK.
+# op: EQ  a = 4c b = 4c OK.
+# op: EQ  a = 4d b = 4d OK.
+# op: EQ  a = 4e b = 4e OK.
+# op: EQ  a = 4f b = 4f OK.
+# op: EQ  a = 50 b = 50 OK.
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:37:20 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 21:37:20 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 21:37:22 on Nov 18,2021, Elapsed time: 1:00:44
+# Errors: 0, Warnings: 2
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 21:37:22 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+#  add wave /tb_uart/tx_busy
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+#  add wave /tb_uart/val
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 31 OK.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# op: EQ  a = 45 b = 45 OK.
+# op: EQ  a = 46 b = 46 OK.
+# op: EQ  a = 47 b = 47 OK.
+# op: EQ  a = 48 b = 48 OK.
+# op: EQ  a = 49 b = 49 OK.
+# op: EQ  a = 4a b = 4a OK.
+# op: EQ  a = 4b b = 4b OK.
+# op: EQ  a = 4c b = 4c OK.
+# op: EQ  a = 4d b = 4d OK.
+# op: EQ  a = 4e b = 4e OK.
+# op: EQ  a = 4f b = 4f OK.
+# op: EQ  a = 50 b = 50 OK.
+do uart.do
+# 
+#  set PRJ_DIR "c:/Projects/uart"
+# c:/Projects/uart
+#  set TB_DIR $PRJ_DIR/simulation/modelsim/tb_uart
+# c:/Projects/uart/simulation/modelsim/tb_uart
+# 
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/uart/simulation/modelsim/tb_uart/work".
+# 
+#  vlog -sv -novopt $PRJ_DIR/uart.sv $PRJ_DIR/tb_uart.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:38:04 on Nov 18,2021
+# vlog -reportprogress 300 -sv -novopt c:/Projects/uart/uart.sv c:/Projects/uart/tb_uart.sv 
+# -- Compiling package conf_t
+# -- Compiling module uart
+# -- Importing package conf_t
+# -- Compiling module tb_uart
+# 
+# Top level modules:
+# 	tb_uart
+# End time: 21:38:04 on Nov 18,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+#   
+#  vsim tb_uart -L altera_mf_ver
+# End time: 21:38:05 on Nov 18,2021, Elapsed time: 0:00:43
+# Errors: 0, Warnings: 0
+# vsim tb_uart -L altera_mf_ver 
+# Start time: 21:38:05 on Nov 18,2021
+# Loading sv_std.std
+# Loading work.conf_t
+# Loading work.tb_uart
+# Loading work.uart
+# Loading work.pll
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+#  
+#  add wave /tb_uart/tx
+#  add wave /tb_uart/tx_busy
+#  add wave /tb_uart/rx
+#  add wave /tb_uart/rx_full
+#  add wave /tb_uart/val
+# 
+#  run 3000000
+# 
+# Testbench uart Tx -> Rx null modem test.
+# 
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 21070  Instance: tb_uart.uart_mut.pll_inst.altpll_component.cycloneiii_pll.pll3
+# op: EQ  a = 31 b = 31 OK.
+# op: EQ  a = 32 b = 32 OK.
+# op: EQ  a = 33 b = 33 OK.
+# op: EQ  a = 34 b = 34 OK.
+# op: EQ  a = 35 b = 35 OK.
+# op: EQ  a = 36 b = 36 OK.
+# op: EQ  a = 37 b = 37 OK.
+# op: EQ  a = 38 b = 38 OK.
+# op: EQ  a = 39 b = 39 OK.
+# op: EQ  a = 3a b = 3a OK.
+# op: EQ  a = 3b b = 3b OK.
+# op: EQ  a = 3c b = 3c OK.
+# op: EQ  a = 3d b = 3d OK.
+# op: EQ  a = 3e b = 3e OK.
+# op: EQ  a = 3f b = 3f OK.
+# op: EQ  a = 40 b = 40 OK.
+# op: EQ  a = 41 b = 41 OK.
+# op: EQ  a = 42 b = 42 OK.
+# op: EQ  a = 43 b = 43 OK.
+# op: EQ  a = 44 b = 44 OK.
+# op: EQ  a = 45 b = 45 OK.
+# op: EQ  a = 46 b = 46 OK.
+# op: EQ  a = 47 b = 47 OK.
+# op: EQ  a = 48 b = 48 OK.
+# op: EQ  a = 49 b = 49 OK.
+# op: EQ  a = 4a b = 4a OK.
+# op: EQ  a = 4b b = 4b OK.
+# op: EQ  a = 4c b = 4c OK.
+# op: EQ  a = 4d b = 4d OK.
+# op: EQ  a = 4e b = 4e OK.
+# op: EQ  a = 4f b = 4f OK.
+# op: EQ  a = 50 b = 50 OK.
+# End time: 21:39:20 on Nov 18,2021, Elapsed time: 0:01:15
+# Errors: 0, Warnings: 0
