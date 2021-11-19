@@ -54,6 +54,8 @@ typedef struct {
 
 
 
+// comment this task before running scripts .do
+
 task automatic set_string(input bit[16:0] v, input string s, input bit[10:0] x, y, input bit[Lx - 1:0] charr[8][16][Hy], 
                           input bit[3:0] ch, ref t_str st, input bit[9:0] x0, y0);			
 
@@ -163,6 +165,7 @@ bit[3:0] ls[ln];	// less significant tetrad.
 	    else st.en <= 1'b0;
 					
 endtask
+	
 		
 endpackage
 

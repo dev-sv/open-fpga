@@ -1,9 +1,9 @@
 
 
  transcript on
-
- set PRJ_DIR "c:/Projects/Ls/max10/hdmi"
- set UVM_DIR "c:/Projects/uvm-1.2/src"
+ 
+ set PRJ_DIR "c:/git/open-fpga/FpgaProjects/hdmi" 
+ set UVM_DIR "c:/git/open-fpga/FpgaProjects/uvm-1.2/src" 
  set TB_DIR $PRJ_DIR/UTB/tmds_serial
 
 

@@ -1,13 +1,13 @@
 |ls
 osc => osc.IN1
-clk_p.n << hdmi:hdmi_inst.clk_p.n
-clk_p.p << hdmi:hdmi_inst.clk_p.p
-red_p.n << hdmi:hdmi_inst.red_p.n
-red_p.p << hdmi:hdmi_inst.red_p.p
-green_p.n << hdmi:hdmi_inst.green_p.n
-green_p.p << hdmi:hdmi_inst.green_p.p
-blue_p.n << hdmi:hdmi_inst.blue_p.n
-blue_p.p << hdmi:hdmi_inst.blue_p.p
+clk_p.n <= hdmi:hdmi_inst.clk_p.n
+clk_p.p <= hdmi:hdmi_inst.clk_p.p
+red_p.n <= hdmi:hdmi_inst.red_p.n
+red_p.p <= hdmi:hdmi_inst.red_p.p
+green_p.n <= hdmi:hdmi_inst.green_p.n
+green_p.p <= hdmi:hdmi_inst.green_p.p
+blue_p.n <= hdmi:hdmi_inst.blue_p.n
+blue_p.p <= hdmi:hdmi_inst.blue_p.p
 ec0_sw => debouncer:debouncer_sw0.in
 ec0_dt => ec0_dt.IN1
 ec0_clk => ec0_clk.IN1

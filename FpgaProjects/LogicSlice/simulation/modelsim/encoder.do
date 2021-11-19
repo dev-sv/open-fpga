@@ -2,9 +2,9 @@
 
 
  transcript on
-
- set PRJ_DIR "c:/Projects/max10/LogicSlice"
- set UVM_DIR "c:/Projects/uvm-1.2/src"
+ 
+ set PRJ_DIR "c:/git/open-fpga/FpgaProjects/LogicSlice" 
+ set UVM_DIR "c:/git/open-fpga/FpgaProjects/uvm-1.2/src"  
  set TB_DIR $PRJ_DIR/UTB/encoder
 
 
@@ -25,5 +25,4 @@
  
  add wave /tb_encoder/encoder/p
     
-# run 8192
  run 16384

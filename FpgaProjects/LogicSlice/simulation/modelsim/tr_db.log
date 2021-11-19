@@ -1409,3 +1409,16 @@
   CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
   CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
   CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}
+  CREATE_STREAM @0 {NAME:t_seq T:Transactions SCOPE:uvm_test_top.env.seq STREAM:599}

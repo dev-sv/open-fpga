@@ -292,8 +292,10 @@
 				
 		status = (cmp.compare_field_int("bit", !item.clk, item.dt, 1)) ? "pass" : "error";
 				
-	   `uvm_info(get_type_name(), $sformatf("[%4d] v = %4d data = %4d %s", num++, v, item.data, status), UVM_LOW);
-				
+	   `uvm_info(get_type_name(), $sformatf("[%4d] v = %4d data = %4d %s", num, v, item.data, status), UVM_LOW);
+		
+		 $fwrite(fd, "%s [%4d] v = %4d data = %4d %s\n", get_type_name(), num++, v, item.data, status);
+			
 		++v;
 	end
 	
@@ -304,7 +306,10 @@
 	
 		status = (cmp.compare_field_int("int", v, item.data, 10)) ? "pass" : "error";	
 		
-	   `uvm_info(get_type_name(), $sformatf("[%4d] v = %4d data = %4d %s", num++,  v, item.data, status), UVM_LOW);
+	   `uvm_info(get_type_name(), $sformatf("[%4d] v = %4d data = %4d %s", num,  v, item.data, status), UVM_LOW);
+		
+		 $fwrite(fd, "%s [%4d] v = %4d data = %4d %s\n", get_type_name(), num++, v, item.data, status);
+		
 	end
 	    
 		 
