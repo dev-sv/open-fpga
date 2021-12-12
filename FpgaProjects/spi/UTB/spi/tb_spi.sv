@@ -29,7 +29,7 @@ initial begin
  
  uvm_config_db #(virtual spi_if)::set(null, "*", "_if", _if);
 
- run_test("UTTest_3");
+ run_test("UTTest_0");
   
 end
 		

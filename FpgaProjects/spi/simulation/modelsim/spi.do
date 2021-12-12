@@ -4,7 +4,7 @@
 
  transcript on
 
- set PRJ_DIR "c:/Projects/spi"
+ set PRJ_DIR "c:/git/open-fpga/FpgaProjects/spi"
  set UVM_DIR "c:/Projects/uvm-1.2/src" 
  set TB_DIR $PRJ_DIR/UTB/spi
  
