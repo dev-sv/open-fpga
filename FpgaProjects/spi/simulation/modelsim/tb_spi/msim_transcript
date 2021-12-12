@@ -1,7 +1,0 @@
-# vsim -gui -l msim_transcript work.tb_spi 
-# Start time: 13:11:22 on Oct 29,2020
-# Loading sv_std.std
-# Loading work.tb_spi
-# Loading work.spi
-# End time: 13:11:29 on Oct 29,2020, Elapsed time: 0:00:07
-# Errors: 0, Warnings: 0

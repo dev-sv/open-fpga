@@ -1,5 +1,0 @@
-# Compile of tb_w25q32.sv was successful.
-# Compile of spi.sv was successful.
-# Compile of w25q32.sv was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui -l msim_transcript work.tb_w25q32

@@ -1,2 +1,0 @@
-create_clock -name virt_clk_in -period 200.000 -waveform {0 100}
-create_clock -name virt_clk_out -period 200.000 -waveform {0 100}
