@@ -1,0 +1,316 @@
+# Current time Wed Dec 01 19:36:53 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x01287920: '<unknown (@0x1287920)>'
+# 1    0x0075512a: '<unknown (@0x75512a)>'
+# End of Stack Trace
+
+
+# Current time Thu Dec 02 14:24:48 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x01287920: '<unknown (@0x1287920)>'
+# 1    0x0075512a: '<unknown (@0x75512a)>'
+# End of Stack Trace
+
+
+# Current time Thu Dec 02 14:25:36 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x01287920: '<unknown (@0x1287920)>'
+# 1    0x0075512a: '<unknown (@0x75512a)>'
+# End of Stack Trace
+
+
+# Current time Thu Dec 02 14:48:26 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x01287920: '<unknown (@0x1287920)>'
+# 1    0x0075512a: '<unknown (@0x75512a)>'
+# End of Stack Trace
+
+
+# Current time Thu Dec 02 21:11:20 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x94d00000: '<unknown (@0x94d00000)>'
+# 1    0x032c1277: '<unknown (@0x32c1277)>'
+# 2    0x032c10f3: '<unknown (@0x32c10f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Fri Dec 03 17:43:02 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x99730000: '<unknown (@0x99730000)>'
+# 1    0x07b71277: '<unknown (@0x7b71277)>'
+# 2    0x07b710f3: '<unknown (@0x7b710f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Fri Dec 03 20:42:39 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x94ea0000: '<unknown (@0x94ea0000)>'
+# 1    0x032e1277: '<unknown (@0x32e1277)>'
+# 2    0x032e10f3: '<unknown (@0x32e10f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Sun Dec 05 00:22:27 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x01287920: '<unknown (@0x1287920)>'
+# 1    0x0075512a: '<unknown (@0x75512a)>'
+# End of Stack Trace
+
+
+# Current time Mon Dec 06 16:29:27 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x997e0000: '<unknown (@0x997e0000)>'
+# 1    0x07ba1277: '<unknown (@0x7ba1277)>'
+# 2    0x07ba10f3: '<unknown (@0x7ba10f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Mon Dec 06 16:47:04 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x94ef0000: '<unknown (@0x94ef0000)>'
+# 1    0x032b1277: '<unknown (@0x32b1277)>'
+# 2    0x032b10f3: '<unknown (@0x32b10f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Mon Dec 06 23:10:39 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x997e0000: '<unknown (@0x997e0000)>'
+# 1    0x07ba1277: '<unknown (@0x7ba1277)>'
+# 2    0x07ba10f3: '<unknown (@0x7ba10f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Tue Dec 07 18:12:27 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x95060000: '<unknown (@0x95060000)>'
+# 1    0x032e1277: '<unknown (@0x32e1277)>'
+# 2    0x032e10f3: '<unknown (@0x32e10f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Tue Dec 07 19:04:22 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x94ba0000: '<unknown (@0x94ba0000)>'
+# 1    0x032e1277: '<unknown (@0x32e1277)>'
+# 2    0x032e10f3: '<unknown (@0x32e10f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+
+# Current time Sat Dec 11 14:52:11 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x01287920: '<unknown (@0x1287920)>'
+# 1    0x0075512a: '<unknown (@0x75512a)>'
+# End of Stack Trace
+
+
+# Current time Sat Dec 11 14:55:01 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x01287920: '<unknown (@0x1287920)>'
+# 1    0x0075512a: '<unknown (@0x75512a)>'
+# End of Stack Trace
+
+
+# Current time Sun Dec 12 00:29:45 2021
+# ModelSim - Intel FPGA Edition Stack Trace
+# Program = vsim
+# Id = "10.5b"
+# Version = "2016.10"
+# Date = "Oct  5 2016"
+# Platform = win32pe
+# Signature = a4da31216fa3031746f0a74423efc007
+# 0    0x997b0000: '<unknown (@0x997b0000)>'
+# 1    0x07b71277: '<unknown (@0x7b71277)>'
+# 2    0x07b710f3: '<unknown (@0x7b710f3)>'
+# 3    0x779f2996: '<unknown (@0x779f2996)>'
+# 4    0x779cdd42: '<unknown (@0x779cdd42)>'
+# 5    0x779d1843: '<unknown (@0x779d1843)>'
+# 6    0x779d19b1: '<unknown (@0x779d19b1)>'
+# 7    0x779d2255: '<unknown (@0x779d2255)>'
+# 8    0x779ce272: '<unknown (@0x779ce272)>'
+# 9    0x779cdeb6: '<unknown (@0x779cdeb6)>'
+# 10   0x76b606e6: '<unknown (@0x76b606e6)>'
+# 11   0x76b61202: '<unknown (@0x76b61202)>'
+# 12   0x0113b7f4: '<unknown (@0x113b7f4)>'
+# 13   0x0113af10: '<unknown (@0x113af10)>'
+# End of Stack Trace
+
+

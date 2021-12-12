@@ -1,0 +1,1210 @@
+# Reading C:/intelFPGA_lite/18.0/modelsim_ase/tcl/vsim/pref.tcl
+# do spi_top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Projects/spi {C:/Projects/spi/pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:13 on Dec 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/spi" C:/Projects/spi/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 14:21:13 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Projects/spi/db {C:/Projects/spi/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:13 on Dec 12,2021
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Projects/spi/db" C:/Projects/spi/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 14:21:13 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/spi {C:/Projects/spi/spi_if.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:14 on Dec 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/spi" C:/Projects/spi/spi_if.sv 
+# -- Compiling interface spi_if
+# 
+# Top level modules:
+# 	--none--
+# End time: 14:21:14 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/spi {C:/Projects/spi/max7219.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:14 on Dec 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/spi" C:/Projects/spi/max7219.sv 
+# -- Compiling module max7219
+# 
+# Top level modules:
+# 	max7219
+# End time: 14:21:14 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/spi {C:/Projects/spi/spi_top.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:14 on Dec 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/spi" C:/Projects/spi/spi_top.sv 
+# -- Compiling module spi_top
+# 
+# Top level modules:
+# 	spi_top
+# End time: 14:21:14 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/spi {C:/Projects/spi/spi.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:14 on Dec 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/spi" C:/Projects/spi/spi.sv 
+# -- Compiling module spi
+# 
+# Top level modules:
+# 	spi
+# End time: 14:21:14 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/Projects/spi {C:/Projects/spi/w25q32.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:14 on Dec 12,2021
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/Projects/spi" C:/Projects/spi/w25q32.sv 
+# -- Compiling module w25q32
+# 
+# Top level modules:
+# 	w25q32
+# End time: 14:21:14 on Dec 12,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:21:19 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(172): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:21:21 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# vsim tb_spi 
+# Start time: 14:21:22 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_17380\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_17380\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_17380\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53323 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_0...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(103) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(184) @ 0: uvm_test_top [UTTest_0] 
+# 
+# 
+# ********** UTTest_mode 0 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 9234969b  out_data = 9234969b  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 9234969c  out_data = 9234969c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 9234969d  out_data = 9234969d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 9234969e  out_data = 9234969e  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = 9234969f  out_data = 9234969f  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = 923496a0  out_data = 923496a0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = 923496a1  out_data = 923496a1  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = 923496a2  out_data = 923496a2  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 923496a3  out_data = 923496a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 923496a4  out_data = 923496a4  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = 923496a5  out_data = 923496a5  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 923496a6  out_data = 923496a6  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 923496a7  out_data = 923496a7  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 923496a8  out_data = 923496a8  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = 923496a9  out_data = 923496a9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 923496aa  out_data = 923496aa  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = 923496ab  out_data = 923496ab  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 923496ac  out_data = 923496ac  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 923496ad  out_data = 923496ad  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = 923496ae  out_data = 923496ae  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 923496af  out_data = 923496af  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = 923496b0  out_data = 923496b0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = 923496b1  out_data = 923496b1  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 923496b2  out_data = 923496b2  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 923496b3  out_data = 923496b3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 923496b4  out_data = 923496b4  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 923496b5  out_data = 923496b5  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = 923496b6  out_data = 923496b6  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 923496b7  out_data = 923496b7  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 923496b8  out_data = 923496b8  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(318) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 923496b9  out_data = 923496b9  pass
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:23:57 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(172): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:23:59 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# End time: 14:24:00 on Dec 12,2021, Elapsed time: 0:02:38
+# Errors: 1, Warnings: 5
+# vsim tb_spi 
+# Start time: 14:24:00 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_18288\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_18288\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_18288\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53325 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_0...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(103) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(184) @ 0: uvm_test_top [UTTest_0] 
+# 
+# 
+# ********** UTTest_mode 0 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 9234969a  out_data = 9234969a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 9234969a  out_data = 9234969a  pass
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:24:18 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(172): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:24:20 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# End time: 14:24:21 on Dec 12,2021, Elapsed time: 0:00:21
+# Errors: 1, Warnings: 5
+# vsim tb_spi 
+# Start time: 14:24:21 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_9732\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_9732\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_9732\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53325 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_0...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(103) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(184) @ 0: uvm_test_top [UTTest_0] 
+# 
+# 
+# ********** UTTest_mode 0 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 00  out_data = 00  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 00  out_data = 00  pass
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:08 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(172): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:25:10 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# End time: 14:25:11 on Dec 12,2021, Elapsed time: 0:00:50
+# Errors: 1, Warnings: 5
+# vsim tb_spi 
+# Start time: 14:25:11 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_25816\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_25816\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_25816\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53322 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_0...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(103) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(184) @ 0: uvm_test_top [UTTest_0] 
+# 
+# 
+# ********** UTTest_mode 0 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 7716d85d  out_data = 7716d85d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 200c78cc  out_data = 200c78cc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 793707a0  out_data = 793707a0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 20d57ca0  out_data = 20d57ca0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 1c585661  out_data = 1c585661  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = c247a5dc  out_data = c247a5dc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = d35476b9  out_data = d35476b9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = f0822596  out_data = f0822596  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = dd82001c  out_data = dd82001c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 1aff5261  out_data = 1aff5261  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 675d569b  out_data = 675d569b  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = dbe2ec8c  out_data = dbe2ec8c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 7bc9c8e7  out_data = 7bc9c8e7  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 84830f86  out_data = 84830f86  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 5479b505  out_data = 5479b505  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = a037e4b8  out_data = a037e4b8  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 87c525a3  out_data = 87c525a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = f36ad243  out_data = f36ad243  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 3d16536a  out_data = 3d16536a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 75518718  out_data = 75518718  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = c065f135  out_data = c065f135  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 72535eda  out_data = 72535eda  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = f6f5bc31  out_data = f6f5bc31  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = d1150e4d  out_data = d1150e4d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 38de3f3a  out_data = 38de3f3a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 5963dbb4  out_data = 5963dbb4  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 35d4756c  out_data = 35d4756c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 73c75ee9  out_data = 73c75ee9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = a4055620  out_data = a4055620  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 5adf2720  out_data = 5adf2720  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 684b89a3  out_data = 684b89a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 658b7d69  out_data = 658b7d69  pass
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:25:54 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(172): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:25:56 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# End time: 14:25:57 on Dec 12,2021, Elapsed time: 0:00:46
+# Errors: 1, Warnings: 5
+# vsim tb_spi 
+# Start time: 14:25:57 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_1036\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_1036\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_1036\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53321 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_0...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(103) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(184) @ 0: uvm_test_top [UTTest_0] 
+# 
+# 
+# ********** UTTest_mode 0 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 7716d85d  out_data = 7716d85d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 200c78cc  out_data = 200c78cc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 793707a0  out_data = 793707a0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 20d57ca0  out_data = 20d57ca0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 1c585661  out_data = 1c585661  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = c247a5dc  out_data = c247a5dc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = d35476b9  out_data = d35476b9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = f0822596  out_data = f0822596  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = dd82001c  out_data = dd82001c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 1aff5261  out_data = 1aff5261  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 675d569b  out_data = 675d569b  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = dbe2ec8c  out_data = dbe2ec8c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 7bc9c8e7  out_data = 7bc9c8e7  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 84830f86  out_data = 84830f86  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 5479b505  out_data = 5479b505  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = a037e4b8  out_data = a037e4b8  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 87c525a3  out_data = 87c525a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = f36ad243  out_data = f36ad243  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 3d16536a  out_data = 3d16536a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 75518718  out_data = 75518718  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = c065f135  out_data = c065f135  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 72535eda  out_data = 72535eda  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = f6f5bc31  out_data = f6f5bc31  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = d1150e4d  out_data = d1150e4d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 38de3f3a  out_data = 38de3f3a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 5963dbb4  out_data = 5963dbb4  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 35d4756c  out_data = 35d4756c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 73c75ee9  out_data = 73c75ee9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = a4055620  out_data = a4055620  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 5adf2720  out_data = 5adf2720  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 684b89a3  out_data = 684b89a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 658b7d69  out_data = 658b7d69  pass
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:34:14 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(169): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:34:16 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# End time: 14:34:17 on Dec 12,2021, Elapsed time: 0:08:20
+# Errors: 1, Warnings: 5
+# vsim tb_spi 
+# Start time: 14:34:17 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_18628\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_18628\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_18628\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53321 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_1...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(100) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(181) @ 0: uvm_test_top [UTTest_1] 
+# 
+# 
+# ********** UTTest_mode 1 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 7716d85d  out_data = 7716d85d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 200c78cc  out_data = 200c78cc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 793707a0  out_data = 793707a0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 20d57ca0  out_data = 20d57ca0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 1c585661  out_data = 1c585661  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = c247a5dc  out_data = c247a5dc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = d35476b9  out_data = d35476b9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = f0822596  out_data = f0822596  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = dd82001c  out_data = dd82001c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 1aff5261  out_data = 1aff5261  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 675d569b  out_data = 675d569b  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = dbe2ec8c  out_data = dbe2ec8c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 7bc9c8e7  out_data = 7bc9c8e7  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 84830f86  out_data = 84830f86  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 5479b505  out_data = 5479b505  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = a037e4b8  out_data = a037e4b8  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 87c525a3  out_data = 87c525a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = f36ad243  out_data = f36ad243  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 3d16536a  out_data = 3d16536a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 75518718  out_data = 75518718  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = c065f135  out_data = c065f135  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 72535eda  out_data = 72535eda  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = f6f5bc31  out_data = f6f5bc31  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = d1150e4d  out_data = d1150e4d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 38de3f3a  out_data = 38de3f3a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 5963dbb4  out_data = 5963dbb4  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 35d4756c  out_data = 35d4756c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 73c75ee9  out_data = 73c75ee9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = a4055620  out_data = a4055620  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 5adf2720  out_data = 5adf2720  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 684b89a3  out_data = 684b89a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 658b7d69  out_data = 658b7d69  pass
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:34:59 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(169): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:35:01 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# End time: 14:35:02 on Dec 12,2021, Elapsed time: 0:00:45
+# Errors: 1, Warnings: 5
+# vsim tb_spi 
+# Start time: 14:35:02 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_22400\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_22400\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_22400\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53321 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_2...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(100) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(181) @ 0: uvm_test_top [UTTest_2] 
+# 
+# 
+# ********** UTTest_mode 2 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 7716d85d  out_data = 7716d85d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 200c78cc  out_data = 200c78cc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 793707a0  out_data = 793707a0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 20d57ca0  out_data = 20d57ca0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 1c585661  out_data = 1c585661  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = c247a5dc  out_data = c247a5dc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = d35476b9  out_data = d35476b9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = f0822596  out_data = f0822596  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = dd82001c  out_data = dd82001c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 1aff5261  out_data = 1aff5261  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 675d569b  out_data = 675d569b  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = dbe2ec8c  out_data = dbe2ec8c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 7bc9c8e7  out_data = 7bc9c8e7  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 84830f86  out_data = 84830f86  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 5479b505  out_data = 5479b505  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = a037e4b8  out_data = a037e4b8  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 87c525a3  out_data = 87c525a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = f36ad243  out_data = f36ad243  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 3d16536a  out_data = 3d16536a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 75518718  out_data = 75518718  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = c065f135  out_data = c065f135  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 72535eda  out_data = 72535eda  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = f6f5bc31  out_data = f6f5bc31  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = d1150e4d  out_data = d1150e4d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 38de3f3a  out_data = 38de3f3a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 5963dbb4  out_data = 5963dbb4  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 35d4756c  out_data = 35d4756c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 73c75ee9  out_data = 73c75ee9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = a4055620  out_data = a4055620  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 5adf2720  out_data = 5adf2720  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 684b89a3  out_data = 684b89a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 658b7d69  out_data = 658b7d69  pass
+# 
+do spi.do
+# 
+#  set PRJ_DIR "c:/Projects/spi"
+# c:/Projects/spi
+#  set UVM_DIR "c:/Projects/uvm-1.2/src" 
+# c:/Projects/uvm-1.2/src
+#  set TB_DIR $PRJ_DIR/UTB/spi
+# c:/Projects/spi/UTB/spi
+#  
+#  vlib $TB_DIR/work
+# ** Warning: (vlib-34) Library already exists at "c:/Projects/spi/UTB/spi/work".
+# 
+# 
+#  vlog -sv -novopt +define+UVM_NO_DPI +incdir+$UVM_DIR $UVM_DIR/uvm.sv $PRJ_DIR/spi_if.sv $PRJ_DIR/spi.sv $TB_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 14:36:20 on Dec 12,2021
+# vlog -reportprogress 300 -sv -novopt "+define+UVM_NO_DPI" "+incdir+c:/Projects/uvm-1.2/src" c:/Projects/uvm-1.2/src/uvm.sv c:/Projects/spi/spi_if.sv c:/Projects/spi/spi.sv c:/Projects/spi/UTB/spi/tb_spi.sv 
+# -- Compiling package uvm_pkg
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1499): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequencer_base.svh(1662): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: ** while parsing file included at c:/Projects/uvm-1.2/src/uvm.sv(23)
+# ** at c:/Projects/uvm-1.2/src/seq/uvm_sequence_base.svh(1333): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling interface spi_if
+# -- Compiling module spi
+# -- Compiling package tb_pkg
+# -- Importing package uvm_pkg
+# -- Compiling package tb_spi_sv_unit
+# -- Importing package uvm_pkg
+# -- Importing package tb_pkg
+# ** Warning: ../../UTB/spi/UTestSpi.svh(169): (vlog-2240) Treating stand-alone use of function 'set_mode' as an implicit VOID cast.
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 14:36:22 on Dec 12,2021, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 4
+#  
+#  
+#  vsim tb_spi
+# End time: 14:36:23 on Dec 12,2021, Elapsed time: 0:01:21
+# Errors: 1, Warnings: 5
+# vsim tb_spi 
+# Start time: 14:36:23 on Dec 12,2021
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_25296\win32pe_gcc-4.2.1\export_tramp.dll
+# Loading sv_std.std
+# Loading work.spi_if
+# Loading work.uvm_pkg
+# Loading work.tb_pkg
+# ** Error (suppressible): (vsim-19) Failed to access library 'c:/Projects/tst/work' at "c:/Projects/tst/work".
+# No such file or directory. (errno = ENOENT)
+# ** Note: (vsim-8785) UVM-aware debugging capabilities will be disabled since no compiled "questa_uvm_pkg" can be found.
+# This also means that later if you turn on UVM-aware debugging your debug simulations may have
+# different random seeds from your non-debug simulations.
+# Loading work.tb_spi_sv_unit
+# Loading work.tb_spi
+# Loading work.spi
+# Compiling C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_25296\win32pe_gcc-4.2.1\exportwrapper.c
+# Loading C:/Users/user/AppData/Local/Temp\user@DESKTOP-K7IUQ5A_dpi_25296\win32pe_gcc-4.2.1\vsim_auto_compile.dll
+# ** Warning: Design size of 53321 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+#  
+#  add wave /tb_spi/clk
+#  add wave /tb_spi/_if/sclk
+#  add wave /tb_spi/_if/ss
+#  add wave /tb_spi/_if/mosi
+#  add wave /tb_spi/_if/miso
+#  add wave /tb_spi/_if/in_data
+#  add wave /tb_spi/_if/out_data
+# 
+#  run 84000
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_root.svh(392) @ 0: reporter [UVM/RELNOTES] 
+# ----------------------------------------------------------------
+# UVM-1.2
+# (C) 2007-2014 Mentor Graphics Corporation
+# (C) 2007-2014 Cadence Design Systems, Inc.
+# (C) 2006-2014 Synopsys, Inc.
+# (C) 2011-2013 Cypress Semiconductor Corp.
+# (C) 2013-2014 NVIDIA Corporation
+# ----------------------------------------------------------------
+# 
+#   ***********       IMPORTANT RELEASE NOTES         ************
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_NO_DEPRECATED undefined.
+#   See http://www.eda.org/svdb/view.php?id=3313 for more details.
+# 
+#   You are using a version of the UVM library that has been compiled
+#   with `UVM_OBJECT_DO_NOT_NEED_CONSTRUCTOR undefined.
+#   See http://www.eda.org/svdb/view.php?id=3770 for more details.
+# 
+#       (Specify +UVM_NO_RELNOTES to turn off this notice)
+# 
+# UVM_INFO @ 0: reporter [RNTST] Running test UTTest_3...
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(100) @ 0: uvm_test_top.env [UTEnv] DUT interface found: /tb_spi/_if
+# UVM_INFO c:/Projects/uvm-1.2/src/base/uvm_traversal.svh(279) @ 0: reporter [UVM/COMP/NAMECHECK] This implementation of the component name checks requires DPI to be enabled
+# UVM_INFO ../../UTB/spi/UTestSpi.svh(181) @ 0: uvm_test_top [UTTest_3] 
+# 
+# 
+# ********** UTTest_mode 3 **********
+# 
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 2590: uvm_test_top.env.scoreboard [UTScoreBoard] [0] in_data = 7716d85d  out_data = 7716d85d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 5190: uvm_test_top.env.scoreboard [UTScoreBoard] [1] in_data = 200c78cc  out_data = 200c78cc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 7790: uvm_test_top.env.scoreboard [UTScoreBoard] [2] in_data = 793707a0  out_data = 793707a0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 10390: uvm_test_top.env.scoreboard [UTScoreBoard] [3] in_data = 20d57ca0  out_data = 20d57ca0  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 12990: uvm_test_top.env.scoreboard [UTScoreBoard] [4] in_data = 1c585661  out_data = 1c585661  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 15590: uvm_test_top.env.scoreboard [UTScoreBoard] [5] in_data = c247a5dc  out_data = c247a5dc  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 18190: uvm_test_top.env.scoreboard [UTScoreBoard] [6] in_data = d35476b9  out_data = d35476b9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 20790: uvm_test_top.env.scoreboard [UTScoreBoard] [7] in_data = f0822596  out_data = f0822596  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 23390: uvm_test_top.env.scoreboard [UTScoreBoard] [8] in_data = dd82001c  out_data = dd82001c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 25990: uvm_test_top.env.scoreboard [UTScoreBoard] [9] in_data = 1aff5261  out_data = 1aff5261  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 28590: uvm_test_top.env.scoreboard [UTScoreBoard] [10] in_data = 675d569b  out_data = 675d569b  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 31190: uvm_test_top.env.scoreboard [UTScoreBoard] [11] in_data = dbe2ec8c  out_data = dbe2ec8c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 33790: uvm_test_top.env.scoreboard [UTScoreBoard] [12] in_data = 7bc9c8e7  out_data = 7bc9c8e7  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 36390: uvm_test_top.env.scoreboard [UTScoreBoard] [13] in_data = 84830f86  out_data = 84830f86  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 38990: uvm_test_top.env.scoreboard [UTScoreBoard] [14] in_data = 5479b505  out_data = 5479b505  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 41590: uvm_test_top.env.scoreboard [UTScoreBoard] [15] in_data = a037e4b8  out_data = a037e4b8  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 44190: uvm_test_top.env.scoreboard [UTScoreBoard] [16] in_data = 87c525a3  out_data = 87c525a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 46790: uvm_test_top.env.scoreboard [UTScoreBoard] [17] in_data = f36ad243  out_data = f36ad243  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 49390: uvm_test_top.env.scoreboard [UTScoreBoard] [18] in_data = 3d16536a  out_data = 3d16536a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 51990: uvm_test_top.env.scoreboard [UTScoreBoard] [19] in_data = 75518718  out_data = 75518718  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 54590: uvm_test_top.env.scoreboard [UTScoreBoard] [20] in_data = c065f135  out_data = c065f135  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 57190: uvm_test_top.env.scoreboard [UTScoreBoard] [21] in_data = 72535eda  out_data = 72535eda  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 59790: uvm_test_top.env.scoreboard [UTScoreBoard] [22] in_data = f6f5bc31  out_data = f6f5bc31  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 62390: uvm_test_top.env.scoreboard [UTScoreBoard] [23] in_data = d1150e4d  out_data = d1150e4d  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 64990: uvm_test_top.env.scoreboard [UTScoreBoard] [24] in_data = 38de3f3a  out_data = 38de3f3a  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 67590: uvm_test_top.env.scoreboard [UTScoreBoard] [25] in_data = 5963dbb4  out_data = 5963dbb4  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 70190: uvm_test_top.env.scoreboard [UTScoreBoard] [26] in_data = 35d4756c  out_data = 35d4756c  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 72790: uvm_test_top.env.scoreboard [UTScoreBoard] [27] in_data = 73c75ee9  out_data = 73c75ee9  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 75390: uvm_test_top.env.scoreboard [UTScoreBoard] [28] in_data = a4055620  out_data = a4055620  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 77990: uvm_test_top.env.scoreboard [UTScoreBoard] [29] in_data = 5adf2720  out_data = 5adf2720  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 80590: uvm_test_top.env.scoreboard [UTScoreBoard] [30] in_data = 684b89a3  out_data = 684b89a3  pass
+# UVM_INFO ../../UTB/tb_pkg.svh(310) @ 83190: uvm_test_top.env.scoreboard [UTScoreBoard] [31] in_data = 658b7d69  out_data = 658b7d69  pass
+# 
+# End time: 14:38:25 on Dec 12,2021, Elapsed time: 0:02:02
+# Errors: 1, Warnings: 1

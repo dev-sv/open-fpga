@@ -1,0 +1,6 @@
+
+State Machine - |spi_top|w25q32:w25q32|z
+Name z.00 z.10 z.01 
+z.00 0 0 0 
+z.01 1 0 1 
+z.10 1 1 0 

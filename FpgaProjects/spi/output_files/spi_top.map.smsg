@@ -1,0 +1,3 @@
+Warning (10268): Verilog HDL information at max7219.sv(41): always construct contains both blocking and non-blocking assignments File: C:/Projects/spi/max7219.sv Line: 41
+Warning (10268): Verilog HDL information at spi.sv(32): always construct contains both blocking and non-blocking assignments File: C:/Projects/spi/spi.sv Line: 32
+Warning (10268): Verilog HDL information at w25q32.sv(55): always construct contains both blocking and non-blocking assignments File: C:/Projects/spi/w25q32.sv Line: 55
