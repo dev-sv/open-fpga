@@ -1,0 +1,11 @@
+
+
+module avalon_mm(input bit clk);
+
+
+
+
+
+
+
+endmodule: avalon_mm

@@ -1,0 +1,17 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "sclk.n",
+					"strict" : false
+				},
+				{
+					"name" : "sclk.p",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
