@@ -1,5 +1,0 @@
-# Compile of sdram.sv was successful with warnings.
-# Compile of tb_sdram.sv was successful.
-# Compile of HY57V641620FTP-7.sv was successful.
-# 3 compiles, 0 failed with no errors.
-vsim -gui -l msim_transcript work.tb_sdram
