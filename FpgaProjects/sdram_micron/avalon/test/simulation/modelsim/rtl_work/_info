@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/ip/sdram_micron/avalon/test/simulation/modelsim
+vpll
+Z1 !s110 1674564649
+!i10b 1
+!s100 _3He>QlQ7oe1RYMDM]3l`0
+I3WlHj5;XFUE86IWj?mI;83
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1674563339
+8/home/user/Projects/ip/sdram_micron/avalon/test/pll.v
+F/home/user/Projects/ip/sdram_micron/avalon/test/pll.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1674564649.000000
+!s107 /home/user/Projects/ip/sdram_micron/avalon/test/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/ip/sdram_micron/avalon/test|/home/user/Projects/ip/sdram_micron/avalon/test/pll.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/ip/sdram_micron/avalon/test
+Z6 tCvgOpt 0
+vpll_altpll
+R1
+!i10b 1
+!s100 Ic2]JE>GUKf3ih=QZ<Ak?0
+IHR;IQ[?FcmJTn`1cF^iVj0
+R2
+R0
+w1674563350
+8/home/user/Projects/ip/sdram_micron/avalon/test/db/pll_altpll.v
+F/home/user/Projects/ip/sdram_micron/avalon/test/db/pll_altpll.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/user/Projects/ip/sdram_micron/avalon/test/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/ip/sdram_micron/avalon/test/db|/home/user/Projects/ip/sdram_micron/avalon/test/db/pll_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/ip/sdram_micron/avalon/test/db
+R6

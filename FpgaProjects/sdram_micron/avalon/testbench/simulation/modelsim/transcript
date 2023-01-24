@@ -1,0 +1,5 @@
+# Compile of mt48lc4m16a2.v was successful.
+# Compile of tb_sdram.sv was successful.
+# Compile of sdram.sv was successful.
+# 3 compiles, 0 failed with no errors.
+vsim -i -l msim_transcript work.tb_sdram
