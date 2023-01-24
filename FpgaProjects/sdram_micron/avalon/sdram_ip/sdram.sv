@@ -121,20 +121,13 @@ bit[15:0] buff_wr,
 									
 										cmd <= PRECHARGE;
 
-										//if(burst_length != 3'b111)
 										t_count <= t_RP;
 
 										if(new_burstcount || power_up)begin
 
-											//if(power_up) begin
-											
-												power_up <= 1'b0;
-												count_auto_ref <= 0;
-												
-												//st <= CMD_REF_INI;
-											//end
-											//else st <= CMD_LMR;
-											
+											power_up <= 1'b0;
+											count_auto_ref <= 0;
+																							
 										   address[10] <= 1'b1;
 
 											st <= CMD_REF_INI;
@@ -250,10 +243,7 @@ bit[15:0] buff_wr,
 												dqm <= 2'b11;
 							  							  
 												sw <= `EN_RD;
-												
-												//if(bc == `PAGE)
-													//cmd <= BURST_TERMINATE;
-																									
+																																					
 												t_count <= t_WR;
 
 												st <= CMD_PRECHARGE;	
@@ -267,14 +257,12 @@ bit[15:0] buff_wr,
 										if(j <  bc) begin
 														
 											cmd <= NOP;
+																						
+											s_readdatavalid <= 1'b1;
 											
-											//rd_data[j] <= dq;
+											s_readdata <= dq;
 											
-												s_readdatavalid <= 1'b1;
-											
-												s_readdata <= dq;
-											
-												j <= j + 1'b1;
+											j <= j + 1'b1;
 											
 										end
 										else begin
