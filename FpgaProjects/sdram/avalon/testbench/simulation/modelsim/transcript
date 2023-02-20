@@ -1,0 +1,5 @@
+# Compile of tb_sdram.sv was successful.
+# Compile of sdram.sv was successful.
+# 2 compiles, 0 failed with no errors.
+# Load canceled
+vsim -i -l msim_transcript work.tb_sdram
