@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at sdram.sv(128): always construct contains both blocking and non-blocking assignments File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 128

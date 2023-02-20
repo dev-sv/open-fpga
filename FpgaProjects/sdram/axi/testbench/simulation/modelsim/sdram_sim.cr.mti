@@ -1,0 +1,15 @@
+/home/user/Projects/ip/sdram_micron/axi/sdram_ip/sdram.sv {1 {vlog -work work -sv -stats=none /home/user/Projects/ip/sdram_micron/axi/sdram_ip/sdram.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module sdram
+
+Top level modules:
+	sdram
+
+} {} {}} /home/user/Projects/ip/sdram_micron/axi/testbench/tb_sdram.sv {1 {vlog -work work -sv -stats=none /home/user/Projects/ip/sdram_micron/axi/testbench/tb_sdram.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_sdram
+
+Top level modules:
+	tb_sdram
+
+} {} {}}

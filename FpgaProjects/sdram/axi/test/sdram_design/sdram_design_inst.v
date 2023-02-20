@@ -1,0 +1,44 @@
+	sdram_design u0 (
+		.clk_clk       (<connected-to-clk_clk>),       //   clk.clk
+		.reset_reset_n (<connected-to-reset_reset_n>), // reset.reset_n
+		.sdram_dq      (<connected-to-sdram_dq>),      // sdram.dq
+		.sdram_address (<connected-to-sdram_address>), //      .address
+		.sdram_ba      (<connected-to-sdram_ba>),      //      .ba
+		.sdram_dqm     (<connected-to-sdram_dqm>),     //      .dqm
+		.sdram_osc     (<connected-to-sdram_osc>),     //      .osc
+		.sdram_cs      (<connected-to-sdram_cs>),      //      .cs
+		.sdram_we      (<connected-to-sdram_we>),      //      .we
+		.sdram_ras     (<connected-to-sdram_ras>),     //      .ras
+		.sdram_cas     (<connected-to-sdram_cas>),     //      .cas
+		.sdram_led     (<connected-to-sdram_led>),     //      .led
+		.user_awid     (<connected-to-user_awid>),     //  user.awid
+		.user_awaddr   (<connected-to-user_awaddr>),   //      .awaddr
+		.user_awlen    (<connected-to-user_awlen>),    //      .awlen
+		.user_awsize   (<connected-to-user_awsize>),   //      .awsize
+		.user_awburst  (<connected-to-user_awburst>),  //      .awburst
+		.user_awvalid  (<connected-to-user_awvalid>),  //      .awvalid
+		.user_awready  (<connected-to-user_awready>),  //      .awready
+		.user_wdata    (<connected-to-user_wdata>),    //      .wdata
+		.user_wstrb    (<connected-to-user_wstrb>),    //      .wstrb
+		.user_wlast    (<connected-to-user_wlast>),    //      .wlast
+		.user_wvalid   (<connected-to-user_wvalid>),   //      .wvalid
+		.user_wready   (<connected-to-user_wready>),   //      .wready
+		.user_bid      (<connected-to-user_bid>),      //      .bid
+		.user_bresp    (<connected-to-user_bresp>),    //      .bresp
+		.user_bvalid   (<connected-to-user_bvalid>),   //      .bvalid
+		.user_bready   (<connected-to-user_bready>),   //      .bready
+		.user_arid     (<connected-to-user_arid>),     //      .arid
+		.user_araddr   (<connected-to-user_araddr>),   //      .araddr
+		.user_arlen    (<connected-to-user_arlen>),    //      .arlen
+		.user_arsize   (<connected-to-user_arsize>),   //      .arsize
+		.user_arburst  (<connected-to-user_arburst>),  //      .arburst
+		.user_arvalid  (<connected-to-user_arvalid>),  //      .arvalid
+		.user_arready  (<connected-to-user_arready>),  //      .arready
+		.user_rid      (<connected-to-user_rid>),      //      .rid
+		.user_rdata    (<connected-to-user_rdata>),    //      .rdata
+		.user_rresp    (<connected-to-user_rresp>),    //      .rresp
+		.user_rlast    (<connected-to-user_rlast>),    //      .rlast
+		.user_rvalid   (<connected-to-user_rvalid>),   //      .rvalid
+		.user_rready   (<connected-to-user_rready>)    //      .rready
+	);
+

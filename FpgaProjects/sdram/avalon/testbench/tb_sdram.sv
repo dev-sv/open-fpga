@@ -256,7 +256,7 @@ module tb_sdram;
 								
 										i <= i + 1;
 										
-										$display("wr_data[%d] = %x  rd_data[%d] = %x  bc_wr = %d  bc_rd = %d start = %d  pass", i, wr_data[i], i, rd_data[i], bc_wr, bc_rd, start);
+										$display("wr_data[%d] = %x  rd_data[%d] = %x  bc_wr = %d  bc_rd = %d start = %x  pass", i, wr_data[i], i, rd_data[i], bc_wr, bc_rd, start);
 								end		
 								
 							end

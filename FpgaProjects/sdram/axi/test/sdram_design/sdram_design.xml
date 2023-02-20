@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2023.02.20.15:04:33"
+ outputDirectory="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="MAX 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10M50SAE144C8G"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="8"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_RATE"
+     type="Long"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_CLOCK_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_CLK_RESET_DOMAIN"
+     type="Integer"
+     defaultValue="-1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="clk" kind="clock" start="0">
+   <property name="clockRate" value="100000000" />
+   <property name="externallyDriven" value="false" />
+   <property name="ptfSchematicName" value="" />
+   <port name="clk_clk" direction="input" role="clk" width="1" />
+  </interface>
+  <interface name="reset" kind="reset" start="0">
+   <property name="associatedClock" value="" />
+   <property name="synchronousEdges" value="NONE" />
+   <port name="reset_reset_n" direction="input" role="reset_n" width="1" />
+  </interface>
+  <interface name="sdram" kind="conduit" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <port name="sdram_dq" direction="bidir" role="dq" width="16" />
+   <port name="sdram_address" direction="output" role="address" width="12" />
+   <port name="sdram_ba" direction="output" role="ba" width="2" />
+   <port name="sdram_dqm" direction="output" role="dqm" width="2" />
+   <port name="sdram_osc" direction="output" role="osc" width="1" />
+   <port name="sdram_cs" direction="output" role="cs" width="1" />
+   <port name="sdram_we" direction="output" role="we" width="1" />
+   <port name="sdram_ras" direction="output" role="ras" width="1" />
+   <port name="sdram_cas" direction="output" role="cas" width="1" />
+   <port name="sdram_led" direction="output" role="led" width="8" />
+  </interface>
+  <interface name="user" kind="axi4" start="0">
+   <property name="associatedClock" value="clk" />
+   <property name="associatedReset" value="reset" />
+   <property name="trustzoneAware" value="true" />
+   <property name="maximumOutstandingReads" value="1" />
+   <property name="maximumOutstandingWrites" value="1" />
+   <property name="maximumOutstandingTransactions" value="1" />
+   <property name="readAcceptanceCapability" value="16" />
+   <property name="writeAcceptanceCapability" value="16" />
+   <property name="combinedAcceptanceCapability" value="16" />
+   <property name="readDataReorderingDepth" value="1" />
+   <property name="bridgesToMaster" value="" />
+   <port name="user_awid" direction="input" role="awid" width="8" />
+   <port name="user_awaddr" direction="input" role="awaddr" width="22" />
+   <port name="user_awlen" direction="input" role="awlen" width="8" />
+   <port name="user_awsize" direction="input" role="awsize" width="3" />
+   <port name="user_awburst" direction="input" role="awburst" width="2" />
+   <port name="user_awvalid" direction="input" role="awvalid" width="1" />
+   <port name="user_awready" direction="output" role="awready" width="1" />
+   <port name="user_wdata" direction="input" role="wdata" width="16" />
+   <port name="user_wstrb" direction="input" role="wstrb" width="2" />
+   <port name="user_wlast" direction="input" role="wlast" width="1" />
+   <port name="user_wvalid" direction="input" role="wvalid" width="1" />
+   <port name="user_wready" direction="output" role="wready" width="1" />
+   <port name="user_bid" direction="output" role="bid" width="8" />
+   <port name="user_bresp" direction="output" role="bresp" width="2" />
+   <port name="user_bvalid" direction="output" role="bvalid" width="1" />
+   <port name="user_bready" direction="input" role="bready" width="1" />
+   <port name="user_arid" direction="input" role="arid" width="8" />
+   <port name="user_araddr" direction="input" role="araddr" width="22" />
+   <port name="user_arlen" direction="input" role="arlen" width="8" />
+   <port name="user_arsize" direction="input" role="arsize" width="3" />
+   <port name="user_arburst" direction="input" role="arburst" width="2" />
+   <port name="user_arvalid" direction="input" role="arvalid" width="1" />
+   <port name="user_arready" direction="output" role="arready" width="1" />
+   <port name="user_rid" direction="output" role="rid" width="8" />
+   <port name="user_rdata" direction="output" role="rdata" width="16" />
+   <port name="user_rresp" direction="output" role="rresp" width="2" />
+   <port name="user_rlast" direction="output" role="rlast" width="1" />
+   <port name="user_rvalid" direction="output" role="rvalid" width="1" />
+   <port name="user_rready" direction="input" role="rready" width="1" />
+  </interface>
+ </perimeter>
+ <entity
+   path=""
+   parameterizationKey="sdram_design:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10M50SAE144C8G,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1676891072,AUTO_UNIQUE_ID=(MT48LC4M16A2_AXI:1.0:)(altera_axi_bridge:18.0:ADDR_WIDTH=22,AXI_VERSION=AXI4,BURST_LENGTH_WIDTH=8,COMBINED_ACCEPTANCE_CAPABILITY=16,COMBINED_ISSUING_CAPABILITY=16,DATA_WIDTH=16,LOCK_WIDTH=1,M0_ID_WIDTH=8,READ_ACCEPTANCE_CAPABILITY=16,READ_ADDR_USER_WIDTH=64,READ_DATA_REORDERING_DEPTH=1,READ_DATA_USER_WIDTH=64,READ_ISSUING_CAPABILITY=16,S0_ID_WIDTH=8,USE_M0_ARBURST=1,USE_M0_ARCACHE=0,USE_M0_ARID=1,USE_M0_ARLEN=1,USE_M0_ARLOCK=0,USE_M0_ARQOS=0,USE_M0_ARREGION=0,USE_M0_ARSIZE=1,USE_M0_ARUSER=0,USE_M0_AWBURST=1,USE_M0_AWCACHE=0,USE_M0_AWID=1,USE_M0_AWLEN=1,USE_M0_AWLOCK=0,USE_M0_AWQOS=0,USE_M0_AWREGION=0,USE_M0_AWSIZE=1,USE_M0_AWUSER=0,USE_M0_BID=1,USE_M0_BRESP=1,USE_M0_BUSER=0,USE_M0_RID=1,USE_M0_RLAST=1,USE_M0_RRESP=1,USE_M0_RUSER=0,USE_M0_WSTRB=1,USE_M0_WUSER=0,USE_PIPELINE=1,USE_S0_ARCACHE=0,USE_S0_ARLOCK=0,USE_S0_ARPROT=0,USE_S0_ARQOS=0,USE_S0_ARREGION=0,USE_S0_ARUSER=0,USE_S0_AWCACHE=0,USE_S0_AWLOCK=0,USE_S0_AWPROT=0,USE_S0_AWQOS=0,USE_S0_AWREGION=0,USE_S0_AWUSER=0,USE_S0_BRESP=1,USE_S0_BUSER=0,USE_S0_RRESP=1,USE_S0_RUSER=0,USE_S0_WLAST=1,USE_S0_WUSER=0,WRITE_ACCEPTANCE_CAPABILITY=16,WRITE_ADDR_USER_WIDTH=64,WRITE_DATA_USER_WIDTH=64,WRITE_ISSUING_CAPABILITY=16,WRITE_RESP_USER_WIDTH=64)(clock_source:18.0:clockFrequency=100000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(avalon:18.0:arbitrationPriority=1,baseAddress=0x0000,defaultConnection=false)(clock:18.0:)(clock:18.0:)(reset:18.0:)(reset:18.0:)"
+   instancePathKey="sdram_design"
+   kind="sdram_design"
+   version="1.0"
+   name="sdram_design">
+  <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
+  <parameter name="AUTO_GENERATION_ID" value="1676891072" />
+  <parameter name="AUTO_DEVICE" value="10M50SAE144C8G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
+  <parameter name="AUTO_CLK_CLOCK_DOMAIN" value="-1" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
+  <generatedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv"
+       type="SYSTEM_VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v"
+       type="VERILOG" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/sdram_ip/MT48LC4M16A2_AXI_hw.tcl" />
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_axi_bridge/altera_axi_bridge_hw.tcl" />
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_merlin_axi_translator/altera_merlin_axi_translator_hw.tcl" />
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Debug" culprit="sdram_design">queue size: 0 starting:sdram_design "sdram_design"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>5</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InitialInterconnectTransform</message>
+   <message level="Info">Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has awprot signal 3 bit wide, but the slave is 0 bit wide.</message>
+   <message level="Info">Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has bresp signal 2 bit wide, but the slave is 0 bit wide.</message>
+   <message level="Info">Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has arprot signal 3 bit wide, but the slave is 0 bit wide.</message>
+   <message level="Info">Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has rresp signal 2 bit wide, but the slave is 0 bit wide.</message>
+   <message level="Debug" culprit="merlin_initial_interconnect_transform"><![CDATA[After transform: <b>3</b> modules, <b>5</b> connections]]></message>
+   <message level="Debug">Transform: TerminalIdAssignmentUpdateTransform</message>
+   <message level="Debug">Transform: DefaultSlaveTransform</message>
+   <message level="Debug">Transform: TranslatorTransform</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="merlin_translator_transform"><![CDATA[After transform: <b>5</b> modules, <b>11</b> connections]]></message>
+   <message level="Debug">Transform: IDPadTransform</message>
+   <message level="Debug">Transform: DomainTransform</message>
+   <message level="Debug">Transform merlin_domain_transform not run on matched interfaces axi_bridge_0.m0 and axi_bridge_0_m0_translator.s0</message>
+   <message level="Debug">Transform merlin_domain_transform not run on matched interfaces axi_bridge_0_m0_translator.m0 and MT48LC4M16A2_AXI_0_axi_translator.s0</message>
+   <message level="Debug">Transform merlin_domain_transform not run on matched interfaces MT48LC4M16A2_AXI_0_axi_translator.m0 and MT48LC4M16A2_AXI_0.axi</message>
+   <message level="Debug">Transform: RouterTransform</message>
+   <message level="Debug">Transform: TrafficLimiterTransform</message>
+   <message level="Debug">Transform: BurstTransform</message>
+   <message level="Debug">Transform: TreeTransform</message>
+   <message level="Debug">Transform: NetworkToSwitchTransform</message>
+   <message level="Debug">Transform: WidthTransform</message>
+   <message level="Debug">Transform: RouterTableTransform</message>
+   <message level="Debug">Transform: ThreadIDMappingTableTransform</message>
+   <message level="Debug">Transform: ClockCrossingTransform</message>
+   <message level="Debug">Transform: PipelineTransform</message>
+   <message level="Debug">Transform: SpotPipelineTransform</message>
+   <message level="Debug">Transform: PerformanceMonitorTransform</message>
+   <message level="Debug">Transform: TrafficLimiterUpdateTransform</message>
+   <message level="Debug">Transform: InsertClockAndResetBridgesTransform</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="merlin_clock_and_reset_bridge_transform"><![CDATA[After transform: <b>7</b> modules, <b>17</b> connections]]></message>
+   <message level="Debug">Transform: InterconnectConnectionsTagger</message>
+   <message level="Debug">Transform: HierarchyTransform</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="merlin_hierarchy_transform"><![CDATA[After transform: <b>4</b> modules, <b>8</b> connections]]></message>
+   <message level="Debug" culprit="merlin_mm_transform"><![CDATA[After transform: <b>4</b> modules, <b>8</b> connections]]></message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>5</b> modules, <b>10</b> connections]]></message>
+   <message level="Debug" culprit="sdram_design"><![CDATA["<b>sdram_design</b>" reuses <b>MT48LC4M16A2_AXI</b> "<b>submodules/sdram</b>"]]></message>
+   <message level="Debug" culprit="sdram_design"><![CDATA["<b>sdram_design</b>" reuses <b>altera_axi_bridge</b> "<b>submodules/altera_axi_bridge</b>"]]></message>
+   <message level="Debug" culprit="sdram_design"><![CDATA["<b>sdram_design</b>" reuses <b>altera_mm_interconnect</b> "<b>submodules/sdram_design_mm_interconnect_0</b>"]]></message>
+   <message level="Debug" culprit="sdram_design"><![CDATA["<b>sdram_design</b>" reuses <b>altera_reset_controller</b> "<b>submodules/altera_reset_controller</b>"]]></message>
+   <message level="Debug" culprit="sdram_design">queue size: 3 starting:MT48LC4M16A2_AXI "submodules/sdram"</message>
+   <message level="Info" culprit="MT48LC4M16A2_AXI_0"><![CDATA["<b>sdram_design</b>" instantiated <b>MT48LC4M16A2_AXI</b> "<b>MT48LC4M16A2_AXI_0</b>"]]></message>
+   <message level="Debug" culprit="sdram_design">queue size: 2 starting:altera_axi_bridge "submodules/altera_axi_bridge"</message>
+   <message level="Info" culprit="axi_bridge_0"><![CDATA["<b>sdram_design</b>" instantiated <b>altera_axi_bridge</b> "<b>axi_bridge_0</b>"]]></message>
+   <message level="Debug" culprit="sdram_design">queue size: 1 starting:altera_mm_interconnect "submodules/sdram_design_mm_interconnect_0"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>4</b> modules, <b>6</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InitialInterconnectTransform</message>
+   <message level="Debug" culprit="merlin_initial_interconnect_transform"><![CDATA[After transform: <b>0</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: TerminalIdAssignmentUpdateTransform</message>
+   <message level="Debug">Transform: DefaultSlaveTransform</message>
+   <message level="Debug">Transform: TranslatorTransform</message>
+   <message level="Debug">No Avalon connections, skipping transform </message>
+   <message level="Debug">Transform: IDPadTransform</message>
+   <message level="Debug">Transform: DomainTransform</message>
+   <message level="Debug">Transform: RouterTransform</message>
+   <message level="Debug">Transform: TrafficLimiterTransform</message>
+   <message level="Debug">Transform: BurstTransform</message>
+   <message level="Debug">Transform: TreeTransform</message>
+   <message level="Debug">Transform: NetworkToSwitchTransform</message>
+   <message level="Debug">Transform: WidthTransform</message>
+   <message level="Debug">Transform: RouterTableTransform</message>
+   <message level="Debug">Transform: ThreadIDMappingTableTransform</message>
+   <message level="Debug">Transform: ClockCrossingTransform</message>
+   <message level="Debug">Transform: PipelineTransform</message>
+   <message level="Debug">Transform: SpotPipelineTransform</message>
+   <message level="Debug">Transform: PerformanceMonitorTransform</message>
+   <message level="Debug">Transform: TrafficLimiterUpdateTransform</message>
+   <message level="Debug">Transform: InsertClockAndResetBridgesTransform</message>
+   <message level="Debug">Transform: InterconnectConnectionsTagger</message>
+   <message level="Debug">Transform: HierarchyTransform</message>
+   <message level="Debug" culprit="merlin_hierarchy_transform"><![CDATA[After transform: <b>4</b> modules, <b>6</b> connections]]></message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="mm_interconnect_0"><![CDATA["<b>mm_interconnect_0</b>" reuses <b>altera_merlin_axi_translator</b> "<b>submodules/altera_merlin_axi_translator</b>"]]></message>
+   <message level="Debug" culprit="mm_interconnect_0"><![CDATA["<b>mm_interconnect_0</b>" reuses <b>altera_merlin_axi_translator</b> "<b>submodules/altera_merlin_axi_translator</b>"]]></message>
+   <message level="Info" culprit="mm_interconnect_0"><![CDATA["<b>sdram_design</b>" instantiated <b>altera_mm_interconnect</b> "<b>mm_interconnect_0</b>"]]></message>
+   <message level="Debug" culprit="sdram_design">queue size: 1 starting:altera_merlin_axi_translator "submodules/altera_merlin_axi_translator"</message>
+   <message level="Info" culprit="axi_bridge_0_m0_translator"><![CDATA["<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_axi_translator</b> "<b>axi_bridge_0_m0_translator</b>"]]></message>
+   <message level="Debug" culprit="sdram_design">queue size: 2 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>sdram_design</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="MT48LC4M16A2_AXI:1.0:"
+   instancePathKey="sdram_design:.:MT48LC4M16A2_AXI_0"
+   kind="MT48LC4M16A2_AXI"
+   version="1.0"
+   name="sdram">
+  <generatedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv"
+       type="SYSTEM_VERILOG"
+       attributes="TOP_LEVEL_FILE" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/sdram_ip/MT48LC4M16A2_AXI_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sdram_design" as="MT48LC4M16A2_AXI_0" />
+  <messages>
+   <message level="Debug" culprit="sdram_design">queue size: 3 starting:MT48LC4M16A2_AXI "submodules/sdram"</message>
+   <message level="Info" culprit="MT48LC4M16A2_AXI_0"><![CDATA["<b>sdram_design</b>" instantiated <b>MT48LC4M16A2_AXI</b> "<b>MT48LC4M16A2_AXI_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_axi_bridge:18.0:ADDR_WIDTH=22,AXI_VERSION=AXI4,BURST_LENGTH_WIDTH=8,COMBINED_ACCEPTANCE_CAPABILITY=16,COMBINED_ISSUING_CAPABILITY=16,DATA_WIDTH=16,LOCK_WIDTH=1,M0_ID_WIDTH=8,READ_ACCEPTANCE_CAPABILITY=16,READ_ADDR_USER_WIDTH=64,READ_DATA_REORDERING_DEPTH=1,READ_DATA_USER_WIDTH=64,READ_ISSUING_CAPABILITY=16,S0_ID_WIDTH=8,USE_M0_ARBURST=1,USE_M0_ARCACHE=0,USE_M0_ARID=1,USE_M0_ARLEN=1,USE_M0_ARLOCK=0,USE_M0_ARQOS=0,USE_M0_ARREGION=0,USE_M0_ARSIZE=1,USE_M0_ARUSER=0,USE_M0_AWBURST=1,USE_M0_AWCACHE=0,USE_M0_AWID=1,USE_M0_AWLEN=1,USE_M0_AWLOCK=0,USE_M0_AWQOS=0,USE_M0_AWREGION=0,USE_M0_AWSIZE=1,USE_M0_AWUSER=0,USE_M0_BID=1,USE_M0_BRESP=1,USE_M0_BUSER=0,USE_M0_RID=1,USE_M0_RLAST=1,USE_M0_RRESP=1,USE_M0_RUSER=0,USE_M0_WSTRB=1,USE_M0_WUSER=0,USE_PIPELINE=1,USE_S0_ARCACHE=0,USE_S0_ARLOCK=0,USE_S0_ARPROT=0,USE_S0_ARQOS=0,USE_S0_ARREGION=0,USE_S0_ARUSER=0,USE_S0_AWCACHE=0,USE_S0_AWLOCK=0,USE_S0_AWPROT=0,USE_S0_AWQOS=0,USE_S0_AWREGION=0,USE_S0_AWUSER=0,USE_S0_BRESP=1,USE_S0_BUSER=0,USE_S0_RRESP=1,USE_S0_RUSER=0,USE_S0_WLAST=1,USE_S0_WUSER=0,WRITE_ACCEPTANCE_CAPABILITY=16,WRITE_ADDR_USER_WIDTH=64,WRITE_DATA_USER_WIDTH=64,WRITE_ISSUING_CAPABILITY=16,WRITE_RESP_USER_WIDTH=64"
+   instancePathKey="sdram_design:.:axi_bridge_0"
+   kind="altera_axi_bridge"
+   version="18.0"
+   name="altera_axi_bridge">
+  <parameter name="BURST_LENGTH_WIDTH" value="8" />
+  <parameter name="LOCK_WIDTH" value="1" />
+  <generatedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_axi_bridge/altera_axi_bridge_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sdram_design" as="axi_bridge_0" />
+  <messages>
+   <message level="Debug" culprit="sdram_design">queue size: 2 starting:altera_axi_bridge "submodules/altera_axi_bridge"</message>
+   <message level="Info" culprit="axi_bridge_0"><![CDATA["<b>sdram_design</b>" instantiated <b>altera_axi_bridge</b> "<b>axi_bridge_0</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_mm_interconnect:18.0:AUTO_DEVICE=10M50SAE144C8G,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=,COMPOSE_CONTENTS=add_instance {axi_bridge_0_m0_translator} {altera_merlin_axi_translator};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWREGION} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWREGION} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWLEN} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWSIZE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWBURST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWLOCK} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWLOCK} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWCACHE} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWCACHE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWPROT} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWQOS} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWQOS} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_WSTRB} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_WLAST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_BID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_BRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_BRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARREGION} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARREGION} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARLEN} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARSIZE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARBURST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARLOCK} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARLOCK} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARCACHE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARQOS} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARPROT} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARCACHE} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARQOS} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_RRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RLAST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_ID_WIDTH} {8};set_instance_parameter_value {axi_bridge_0_m0_translator} {DATA_WIDTH} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_ID_WIDTH} {8};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_ADDR_WIDTH} {22};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_ADDR_WIDTH} {22};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_WUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_BUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_WUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_RUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_BUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_AXI_VERSION} {AXI4};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_AXI_VERSION} {AXI4};set_instance_parameter_value {axi_bridge_0_m0_translator} {WRITE_ISSUING_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {READ_ISSUING_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {COMBINED_ISSUING_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {WRITE_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {READ_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {COMBINED_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {READ_DATA_REORDERING_DEPTH} {1};add_instance {MT48LC4M16A2_AXI_0_axi_translator} {altera_merlin_axi_translator};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWREGION} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWREGION} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWLEN} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWSIZE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWBURST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWLOCK} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWLOCK} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWCACHE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWCACHE} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWPROT} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWQOS} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWQOS} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_WSTRB} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_WLAST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_BID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_BRESP} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_BRESP} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARREGION} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARREGION} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARLEN} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARSIZE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARBURST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARLOCK} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARLOCK} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARCACHE} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARQOS} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARPROT} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARCACHE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARQOS} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RRESP} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_RRESP} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RLAST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_ID_WIDTH} {8};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {DATA_WIDTH} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_ID_WIDTH} {8};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_ADDR_WIDTH} {22};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_ADDR_WIDTH} {22};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_WUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_BUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_WUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_RUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_BUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_AXI_VERSION} {AXI4};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_AXI_VERSION} {AXI4};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {WRITE_ISSUING_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {READ_ISSUING_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {COMBINED_ISSUING_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {WRITE_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {READ_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {COMBINED_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {READ_DATA_REORDERING_DEPTH} {16};add_instance {axi_bridge_0_clk_reset_reset_bridge} {altera_reset_bridge};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {ACTIVE_LOW_RESET} {0};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {SYNCHRONOUS_EDGES} {deassert};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {NUM_RESET_OUTPUTS} {1};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {USE_RESET_REQUEST} {0};add_instance {clk_0_clk_clock_bridge} {altera_clock_bridge};set_instance_parameter_value {clk_0_clk_clock_bridge} {EXPLICIT_CLOCK_RATE} {100000000};set_instance_parameter_value {clk_0_clk_clock_bridge} {NUM_CLOCK_OUTPUTS} {1};add_connection {axi_bridge_0_m0_translator.m0} {MT48LC4M16A2_AXI_0_axi_translator.s0} {avalon};set_connection_parameter_value {axi_bridge_0_m0_translator.m0/MT48LC4M16A2_AXI_0_axi_translator.s0} {arbitrationPriority} {1};set_connection_parameter_value {axi_bridge_0_m0_translator.m0/MT48LC4M16A2_AXI_0_axi_translator.s0} {baseAddress} {0x0000};set_connection_parameter_value {axi_bridge_0_m0_translator.m0/MT48LC4M16A2_AXI_0_axi_translator.s0} {defaultConnection} {false};add_connection {axi_bridge_0_clk_reset_reset_bridge.out_reset} {axi_bridge_0_m0_translator.clk_reset} {reset};add_connection {axi_bridge_0_clk_reset_reset_bridge.out_reset} {MT48LC4M16A2_AXI_0_axi_translator.clk_reset} {reset};add_connection {clk_0_clk_clock_bridge.out_clk} {axi_bridge_0_m0_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {MT48LC4M16A2_AXI_0_axi_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {axi_bridge_0_clk_reset_reset_bridge.clk} {clock};add_interface {axi_bridge_0_m0} {axi4} {slave};set_interface_property {axi_bridge_0_m0} {EXPORT_OF} {axi_bridge_0_m0_translator.s0};add_interface {MT48LC4M16A2_AXI_0_axi} {axi4} {master};set_interface_property {MT48LC4M16A2_AXI_0_axi} {EXPORT_OF} {MT48LC4M16A2_AXI_0_axi_translator.m0};add_interface {clk_0_clk} {clock} {slave};set_interface_property {clk_0_clk} {EXPORT_OF} {clk_0_clk_clock_bridge.in_clk};add_interface {axi_bridge_0_clk_reset_reset_bridge_in_reset} {reset} {slave};set_interface_property {axi_bridge_0_clk_reset_reset_bridge_in_reset} {EXPORT_OF} {axi_bridge_0_clk_reset_reset_bridge.in_reset};set_module_assignment {interconnect_id.MT48LC4M16A2_AXI_0.axi} {0};set_module_assignment {interconnect_id.axi_bridge_0.m0} {0};(altera_merlin_axi_translator:18.0:COMBINED_ACCEPTANCE_CAPABILITY=16,COMBINED_ISSUING_CAPABILITY=16,DATA_WIDTH=16,M0_ADDR_WIDTH=22,M0_AXI_VERSION=AXI4,M0_BURST_LENGTH_WIDTH=8,M0_ID_WIDTH=8,M0_LOCK_WIDTH=1,M0_READ_ADDR_USER_WIDTH=1,M0_READ_DATA_USER_WIDTH=1,M0_WRITE_ADDR_USER_WIDTH=1,M0_WRITE_DATA_USER_WIDTH=1,M0_WRITE_RESPONSE_DATA_USER_WIDTH=1,READ_ACCEPTANCE_CAPABILITY=16,READ_DATA_REORDERING_DEPTH=1,READ_ISSUING_CAPABILITY=16,S0_ADDR_WIDTH=22,S0_AXI_VERSION=AXI4,S0_BURST_LENGTH_WIDTH=8,S0_ID_WIDTH=8,S0_LOCK_WIDTH=1,S0_READ_ADDR_USER_WIDTH=1,S0_READ_DATA_USER_WIDTH=1,S0_WRITE_ADDR_USER_WIDTH=1,S0_WRITE_DATA_USER_WIDTH=1,S0_WRITE_RESPONSE_DATA_USER_WIDTH=1,USE_M0_ARCACHE=1,USE_M0_ARLOCK=1,USE_M0_ARPROT=1,USE_M0_ARQOS=1,USE_M0_ARREGION=1,USE_M0_ARUSER=1,USE_M0_AWCACHE=1,USE_M0_AWLOCK=1,USE_M0_AWPROT=1,USE_M0_AWQOS=1,USE_M0_AWREGION=1,USE_M0_AWUSER=1,USE_M0_BRESP=1,USE_M0_BUSER=1,USE_M0_RRESP=1,USE_M0_RUSER=1,USE_M0_WLAST=1,USE_M0_WUSER=1,USE_S0_ARBURST=1,USE_S0_ARCACHE=0,USE_S0_ARID=1,USE_S0_ARLEN=1,USE_S0_ARLOCK=0,USE_S0_ARQOS=0,USE_S0_ARREGION=0,USE_S0_ARSIZE=1,USE_S0_ARUSER=0,USE_S0_AWBURST=1,USE_S0_AWCACHE=0,USE_S0_AWID=1,USE_S0_AWLEN=1,USE_S0_AWLOCK=0,USE_S0_AWQOS=0,USE_S0_AWREGION=0,USE_S0_AWSIZE=1,USE_S0_AWUSER=0,USE_S0_BID=1,USE_S0_BRESP=1,USE_S0_BUSER=0,USE_S0_RID=1,USE_S0_RLAST=1,USE_S0_RRESP=1,USE_S0_RUSER=0,USE_S0_WSTRB=1,USE_S0_WUSER=0,WRITE_ACCEPTANCE_CAPABILITY=16,WRITE_ISSUING_CAPABILITY=16)(altera_merlin_axi_translator:18.0:COMBINED_ACCEPTANCE_CAPABILITY=16,COMBINED_ISSUING_CAPABILITY=16,DATA_WIDTH=16,M0_ADDR_WIDTH=22,M0_AXI_VERSION=AXI4,M0_BURST_LENGTH_WIDTH=8,M0_ID_WIDTH=8,M0_LOCK_WIDTH=1,M0_READ_ADDR_USER_WIDTH=1,M0_READ_DATA_USER_WIDTH=1,M0_WRITE_ADDR_USER_WIDTH=1,M0_WRITE_DATA_USER_WIDTH=1,M0_WRITE_RESPONSE_DATA_USER_WIDTH=1,READ_ACCEPTANCE_CAPABILITY=16,READ_DATA_REORDERING_DEPTH=16,READ_ISSUING_CAPABILITY=16,S0_ADDR_WIDTH=22,S0_AXI_VERSION=AXI4,S0_BURST_LENGTH_WIDTH=8,S0_ID_WIDTH=8,S0_LOCK_WIDTH=1,S0_READ_ADDR_USER_WIDTH=1,S0_READ_DATA_USER_WIDTH=1,S0_WRITE_ADDR_USER_WIDTH=1,S0_WRITE_DATA_USER_WIDTH=1,S0_WRITE_RESPONSE_DATA_USER_WIDTH=1,USE_M0_ARCACHE=0,USE_M0_ARLOCK=0,USE_M0_ARPROT=0,USE_M0_ARQOS=0,USE_M0_ARREGION=0,USE_M0_ARUSER=0,USE_M0_AWCACHE=0,USE_M0_AWLOCK=0,USE_M0_AWPROT=0,USE_M0_AWQOS=0,USE_M0_AWREGION=0,USE_M0_AWUSER=0,USE_M0_BRESP=0,USE_M0_BUSER=0,USE_M0_RRESP=0,USE_M0_RUSER=0,USE_M0_WLAST=1,USE_M0_WUSER=0,USE_S0_ARBURST=1,USE_S0_ARCACHE=1,USE_S0_ARID=1,USE_S0_ARLEN=1,USE_S0_ARLOCK=1,USE_S0_ARQOS=1,USE_S0_ARREGION=1,USE_S0_ARSIZE=1,USE_S0_ARUSER=1,USE_S0_AWBURST=1,USE_S0_AWCACHE=1,USE_S0_AWID=1,USE_S0_AWLEN=1,USE_S0_AWLOCK=1,USE_S0_AWQOS=1,USE_S0_AWREGION=1,USE_S0_AWSIZE=1,USE_S0_AWUSER=1,USE_S0_BID=1,USE_S0_BRESP=1,USE_S0_BUSER=1,USE_S0_RID=1,USE_S0_RLAST=1,USE_S0_RRESP=1,USE_S0_RUSER=1,USE_S0_WSTRB=1,USE_S0_WUSER=1,WRITE_ACCEPTANCE_CAPABILITY=16,WRITE_ISSUING_CAPABILITY=16)(altera_reset_bridge:18.0:ACTIVE_LOW_RESET=0,AUTO_CLK_CLOCK_RATE=100000000,NUM_RESET_OUTPUTS=1,SYNCHRONOUS_EDGES=deassert,USE_RESET_REQUEST=0)(altera_clock_bridge:18.0:DERIVED_CLOCK_RATE=0,EXPLICIT_CLOCK_RATE=100000000,NUM_CLOCK_OUTPUTS=1)(avalon:18.0:arbitrationPriority=1,baseAddress=0x0000,defaultConnection=false)(reset:18.0:)(reset:18.0:)(clock:18.0:)(clock:18.0:)(clock:18.0:)"
+   instancePathKey="sdram_design:.:mm_interconnect_0"
+   kind="altera_mm_interconnect"
+   version="18.0"
+   name="sdram_design_mm_interconnect_0">
+  <parameter name="AUTO_DEVICE" value="10M50SAE144C8G" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="" />
+  <parameter
+     name="COMPOSE_CONTENTS"
+     value="add_instance {axi_bridge_0_m0_translator} {altera_merlin_axi_translator};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWREGION} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWREGION} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWLEN} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWSIZE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWBURST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWLOCK} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWLOCK} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWCACHE} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWCACHE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWPROT} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWQOS} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWQOS} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_WSTRB} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_WLAST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_BID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_BRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_BRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARREGION} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARREGION} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARLEN} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARSIZE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARBURST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARLOCK} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARLOCK} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARCACHE} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARQOS} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARPROT} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARCACHE} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARQOS} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RID} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_RRESP} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RLAST} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_ID_WIDTH} {8};set_instance_parameter_value {axi_bridge_0_m0_translator} {DATA_WIDTH} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_ID_WIDTH} {8};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_ADDR_WIDTH} {22};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_ADDR_WIDTH} {22};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_AWUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_ARUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_WUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_RUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_S0_BUSER} {0};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_AWUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_ARUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_WUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_RUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {USE_M0_BUSER} {1};set_instance_parameter_value {axi_bridge_0_m0_translator} {M0_AXI_VERSION} {AXI4};set_instance_parameter_value {axi_bridge_0_m0_translator} {S0_AXI_VERSION} {AXI4};set_instance_parameter_value {axi_bridge_0_m0_translator} {WRITE_ISSUING_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {READ_ISSUING_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {COMBINED_ISSUING_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {WRITE_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {READ_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {COMBINED_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {axi_bridge_0_m0_translator} {READ_DATA_REORDERING_DEPTH} {1};add_instance {MT48LC4M16A2_AXI_0_axi_translator} {altera_merlin_axi_translator};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWREGION} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWREGION} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWLEN} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWSIZE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWBURST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWLOCK} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWLOCK} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWCACHE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWCACHE} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWPROT} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWQOS} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWQOS} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_WSTRB} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_WLAST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_BID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_BRESP} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_BRESP} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARREGION} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARREGION} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARLEN} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARSIZE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARBURST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARLOCK} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARLOCK} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARCACHE} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARQOS} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARPROT} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARCACHE} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARQOS} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RID} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RRESP} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_RRESP} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RLAST} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_ID_WIDTH} {8};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {DATA_WIDTH} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_ID_WIDTH} {8};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_ADDR_WIDTH} {22};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_WRITE_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_READ_ADDR_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_WRITE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_WRITE_RESPONSE_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_READ_DATA_USER_WIDTH} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_ADDR_WIDTH} {22};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_AWUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_ARUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_WUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_RUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_S0_BUSER} {1};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_AWUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_ARUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_WUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_RUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {USE_M0_BUSER} {0};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {M0_AXI_VERSION} {AXI4};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {S0_AXI_VERSION} {AXI4};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {WRITE_ISSUING_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {READ_ISSUING_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {COMBINED_ISSUING_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {WRITE_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {READ_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {COMBINED_ACCEPTANCE_CAPABILITY} {16};set_instance_parameter_value {MT48LC4M16A2_AXI_0_axi_translator} {READ_DATA_REORDERING_DEPTH} {16};add_instance {axi_bridge_0_clk_reset_reset_bridge} {altera_reset_bridge};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {ACTIVE_LOW_RESET} {0};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {SYNCHRONOUS_EDGES} {deassert};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {NUM_RESET_OUTPUTS} {1};set_instance_parameter_value {axi_bridge_0_clk_reset_reset_bridge} {USE_RESET_REQUEST} {0};add_instance {clk_0_clk_clock_bridge} {altera_clock_bridge};set_instance_parameter_value {clk_0_clk_clock_bridge} {EXPLICIT_CLOCK_RATE} {100000000};set_instance_parameter_value {clk_0_clk_clock_bridge} {NUM_CLOCK_OUTPUTS} {1};add_connection {axi_bridge_0_m0_translator.m0} {MT48LC4M16A2_AXI_0_axi_translator.s0} {avalon};set_connection_parameter_value {axi_bridge_0_m0_translator.m0/MT48LC4M16A2_AXI_0_axi_translator.s0} {arbitrationPriority} {1};set_connection_parameter_value {axi_bridge_0_m0_translator.m0/MT48LC4M16A2_AXI_0_axi_translator.s0} {baseAddress} {0x0000};set_connection_parameter_value {axi_bridge_0_m0_translator.m0/MT48LC4M16A2_AXI_0_axi_translator.s0} {defaultConnection} {false};add_connection {axi_bridge_0_clk_reset_reset_bridge.out_reset} {axi_bridge_0_m0_translator.clk_reset} {reset};add_connection {axi_bridge_0_clk_reset_reset_bridge.out_reset} {MT48LC4M16A2_AXI_0_axi_translator.clk_reset} {reset};add_connection {clk_0_clk_clock_bridge.out_clk} {axi_bridge_0_m0_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {MT48LC4M16A2_AXI_0_axi_translator.clk} {clock};add_connection {clk_0_clk_clock_bridge.out_clk} {axi_bridge_0_clk_reset_reset_bridge.clk} {clock};add_interface {axi_bridge_0_m0} {axi4} {slave};set_interface_property {axi_bridge_0_m0} {EXPORT_OF} {axi_bridge_0_m0_translator.s0};add_interface {MT48LC4M16A2_AXI_0_axi} {axi4} {master};set_interface_property {MT48LC4M16A2_AXI_0_axi} {EXPORT_OF} {MT48LC4M16A2_AXI_0_axi_translator.m0};add_interface {clk_0_clk} {clock} {slave};set_interface_property {clk_0_clk} {EXPORT_OF} {clk_0_clk_clock_bridge.in_clk};add_interface {axi_bridge_0_clk_reset_reset_bridge_in_reset} {reset} {slave};set_interface_property {axi_bridge_0_clk_reset_reset_bridge_in_reset} {EXPORT_OF} {axi_bridge_0_clk_reset_reset_bridge.in_reset};set_module_assignment {interconnect_id.MT48LC4M16A2_AXI_0.axi} {0};set_module_assignment {interconnect_id.axi_bridge_0.m0} {0};" />
+  <generatedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v"
+       type="VERILOG" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_mm_interconnect/altera_mm_interconnect_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_merlin_axi_translator/altera_merlin_axi_translator_hw.tcl" />
+  </childSourceFiles>
+  <instantiator instantiator="sdram_design" as="mm_interconnect_0" />
+  <messages>
+   <message level="Debug" culprit="sdram_design">queue size: 1 starting:altera_mm_interconnect "submodules/sdram_design_mm_interconnect_0"</message>
+   <message level="Progress" culprit="min"></message>
+   <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
+   <message level="Debug">Transform: CustomInstructionTransform</message>
+   <message level="Debug">No custom instruction connections, skipping transform </message>
+   <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>4</b> modules, <b>6</b> connections]]></message>
+   <message level="Debug">Transform: MMTransform</message>
+   <message level="Debug">Transform: InitialInterconnectTransform</message>
+   <message level="Debug" culprit="merlin_initial_interconnect_transform"><![CDATA[After transform: <b>0</b> modules, <b>0</b> connections]]></message>
+   <message level="Debug">Transform: TerminalIdAssignmentUpdateTransform</message>
+   <message level="Debug">Transform: DefaultSlaveTransform</message>
+   <message level="Debug">Transform: TranslatorTransform</message>
+   <message level="Debug">No Avalon connections, skipping transform </message>
+   <message level="Debug">Transform: IDPadTransform</message>
+   <message level="Debug">Transform: DomainTransform</message>
+   <message level="Debug">Transform: RouterTransform</message>
+   <message level="Debug">Transform: TrafficLimiterTransform</message>
+   <message level="Debug">Transform: BurstTransform</message>
+   <message level="Debug">Transform: TreeTransform</message>
+   <message level="Debug">Transform: NetworkToSwitchTransform</message>
+   <message level="Debug">Transform: WidthTransform</message>
+   <message level="Debug">Transform: RouterTableTransform</message>
+   <message level="Debug">Transform: ThreadIDMappingTableTransform</message>
+   <message level="Debug">Transform: ClockCrossingTransform</message>
+   <message level="Debug">Transform: PipelineTransform</message>
+   <message level="Debug">Transform: SpotPipelineTransform</message>
+   <message level="Debug">Transform: PerformanceMonitorTransform</message>
+   <message level="Debug">Transform: TrafficLimiterUpdateTransform</message>
+   <message level="Debug">Transform: InsertClockAndResetBridgesTransform</message>
+   <message level="Debug">Transform: InterconnectConnectionsTagger</message>
+   <message level="Debug">Transform: HierarchyTransform</message>
+   <message level="Debug" culprit="merlin_hierarchy_transform"><![CDATA[After transform: <b>4</b> modules, <b>6</b> connections]]></message>
+   <message level="Debug">Transform: InterruptMapperTransform</message>
+   <message level="Debug">Transform: InterruptSyncTransform</message>
+   <message level="Debug">Transform: InterruptFanoutTransform</message>
+   <message level="Debug">Transform: AvalonStreamingTransform</message>
+   <message level="Debug">Transform: ResetAdaptation</message>
+   <message level="Debug" culprit="mm_interconnect_0"><![CDATA["<b>mm_interconnect_0</b>" reuses <b>altera_merlin_axi_translator</b> "<b>submodules/altera_merlin_axi_translator</b>"]]></message>
+   <message level="Debug" culprit="mm_interconnect_0"><![CDATA["<b>mm_interconnect_0</b>" reuses <b>altera_merlin_axi_translator</b> "<b>submodules/altera_merlin_axi_translator</b>"]]></message>
+   <message level="Info" culprit="mm_interconnect_0"><![CDATA["<b>sdram_design</b>" instantiated <b>altera_mm_interconnect</b> "<b>mm_interconnect_0</b>"]]></message>
+   <message level="Debug" culprit="sdram_design">queue size: 1 starting:altera_merlin_axi_translator "submodules/altera_merlin_axi_translator"</message>
+   <message level="Info" culprit="axi_bridge_0_m0_translator"><![CDATA["<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_axi_translator</b> "<b>axi_bridge_0_m0_translator</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_reset_controller:18.0:ADAPT_RESET_REQUEST=0,MIN_RST_ASSERTION_TIME=3,NUM_RESET_INPUTS=1,OUTPUT_RESET_SYNC_EDGES=deassert,RESET_REQUEST_PRESENT=0,RESET_REQ_EARLY_DSRT_TIME=1,RESET_REQ_WAIT_TIME=1,SYNC_DEPTH=2,USE_RESET_REQUEST_IN0=0,USE_RESET_REQUEST_IN1=0,USE_RESET_REQUEST_IN10=0,USE_RESET_REQUEST_IN11=0,USE_RESET_REQUEST_IN12=0,USE_RESET_REQUEST_IN13=0,USE_RESET_REQUEST_IN14=0,USE_RESET_REQUEST_IN15=0,USE_RESET_REQUEST_IN2=0,USE_RESET_REQUEST_IN3=0,USE_RESET_REQUEST_IN4=0,USE_RESET_REQUEST_IN5=0,USE_RESET_REQUEST_IN6=0,USE_RESET_REQUEST_IN7=0,USE_RESET_REQUEST_IN8=0,USE_RESET_REQUEST_IN9=0,USE_RESET_REQUEST_INPUT=0"
+   instancePathKey="sdram_design:.:rst_controller"
+   kind="altera_reset_controller"
+   version="18.0"
+   name="altera_reset_controller">
+  <generatedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v"
+       type="VERILOG"
+       attributes="" />
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.sdc"
+       type="SDC"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_reset_controller/altera_reset_controller_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator instantiator="sdram_design" as="rst_controller" />
+  <messages>
+   <message level="Debug" culprit="sdram_design">queue size: 2 starting:altera_reset_controller "submodules/altera_reset_controller"</message>
+   <message level="Info" culprit="rst_controller"><![CDATA["<b>sdram_design</b>" instantiated <b>altera_reset_controller</b> "<b>rst_controller</b>"]]></message>
+  </messages>
+ </entity>
+ <entity
+   path="submodules/"
+   parameterizationKey="altera_merlin_axi_translator:18.0:COMBINED_ACCEPTANCE_CAPABILITY=16,COMBINED_ISSUING_CAPABILITY=16,DATA_WIDTH=16,M0_ADDR_WIDTH=22,M0_AXI_VERSION=AXI4,M0_BURST_LENGTH_WIDTH=8,M0_ID_WIDTH=8,M0_LOCK_WIDTH=1,M0_READ_ADDR_USER_WIDTH=1,M0_READ_DATA_USER_WIDTH=1,M0_WRITE_ADDR_USER_WIDTH=1,M0_WRITE_DATA_USER_WIDTH=1,M0_WRITE_RESPONSE_DATA_USER_WIDTH=1,READ_ACCEPTANCE_CAPABILITY=16,READ_DATA_REORDERING_DEPTH=1,READ_ISSUING_CAPABILITY=16,S0_ADDR_WIDTH=22,S0_AXI_VERSION=AXI4,S0_BURST_LENGTH_WIDTH=8,S0_ID_WIDTH=8,S0_LOCK_WIDTH=1,S0_READ_ADDR_USER_WIDTH=1,S0_READ_DATA_USER_WIDTH=1,S0_WRITE_ADDR_USER_WIDTH=1,S0_WRITE_DATA_USER_WIDTH=1,S0_WRITE_RESPONSE_DATA_USER_WIDTH=1,USE_M0_ARCACHE=1,USE_M0_ARLOCK=1,USE_M0_ARPROT=1,USE_M0_ARQOS=1,USE_M0_ARREGION=1,USE_M0_ARUSER=1,USE_M0_AWCACHE=1,USE_M0_AWLOCK=1,USE_M0_AWPROT=1,USE_M0_AWQOS=1,USE_M0_AWREGION=1,USE_M0_AWUSER=1,USE_M0_BRESP=1,USE_M0_BUSER=1,USE_M0_RRESP=1,USE_M0_RUSER=1,USE_M0_WLAST=1,USE_M0_WUSER=1,USE_S0_ARBURST=1,USE_S0_ARCACHE=0,USE_S0_ARID=1,USE_S0_ARLEN=1,USE_S0_ARLOCK=0,USE_S0_ARQOS=0,USE_S0_ARREGION=0,USE_S0_ARSIZE=1,USE_S0_ARUSER=0,USE_S0_AWBURST=1,USE_S0_AWCACHE=0,USE_S0_AWID=1,USE_S0_AWLEN=1,USE_S0_AWLOCK=0,USE_S0_AWQOS=0,USE_S0_AWREGION=0,USE_S0_AWSIZE=1,USE_S0_AWUSER=0,USE_S0_BID=1,USE_S0_BRESP=1,USE_S0_BUSER=0,USE_S0_RID=1,USE_S0_RLAST=1,USE_S0_RRESP=1,USE_S0_RUSER=0,USE_S0_WSTRB=1,USE_S0_WUSER=0,WRITE_ACCEPTANCE_CAPABILITY=16,WRITE_ISSUING_CAPABILITY=16"
+   instancePathKey="sdram_design:.:mm_interconnect_0:.:axi_bridge_0_m0_translator"
+   kind="altera_merlin_axi_translator"
+   version="18.0"
+   name="altera_merlin_axi_translator">
+  <parameter name="M0_LOCK_WIDTH" value="1" />
+  <parameter name="M0_BURST_LENGTH_WIDTH" value="8" />
+  <parameter name="S0_BURST_LENGTH_WIDTH" value="8" />
+  <parameter name="S0_LOCK_WIDTH" value="1" />
+  <generatedFiles>
+   <file
+       path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv"
+       type="SYSTEM_VERILOG"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles/>
+  <sourceFiles>
+   <file
+       path="/home/user/intelFPGA_lite/18.0/ip/altera/merlin/altera_merlin_axi_translator/altera_merlin_axi_translator_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="sdram_design_mm_interconnect_0"
+     as="axi_bridge_0_m0_translator,MT48LC4M16A2_AXI_0_axi_translator" />
+  <messages>
+   <message level="Debug" culprit="sdram_design">queue size: 1 starting:altera_merlin_axi_translator "submodules/altera_merlin_axi_translator"</message>
+   <message level="Info" culprit="axi_bridge_0_m0_translator"><![CDATA["<b>mm_interconnect_0</b>" instantiated <b>altera_merlin_axi_translator</b> "<b>axi_bridge_0_m0_translator</b>"]]></message>
+  </messages>
+ </entity>
+</deploy>

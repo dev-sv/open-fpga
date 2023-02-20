@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/ip/sdram_micron/axi/test/simulation/modelsim
+vpll
+Z1 !s110 1676304527
+!i10b 1
+!s100 HzMG8o7aA6KZSXb48R@8c2
+I]l6Y:Z8<AX796H4?Eo4=>0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1676298333
+8/home/user/Projects/ip/sdram_micron/axi/test/pll.v
+F/home/user/Projects/ip/sdram_micron/axi/test/pll.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1676304527.000000
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/ip/sdram_micron/axi/test|/home/user/Projects/ip/sdram_micron/axi/test/pll.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/ip/sdram_micron/axi/test
+Z6 tCvgOpt 0
+vpll_altpll
+R1
+!i10b 1
+!s100 >TQ^WF;04W[IGMId]90CU1
+I@BM=MTd8Aa5L^]1<C?0Z]0
+R2
+R0
+w1676298346
+8/home/user/Projects/ip/sdram_micron/axi/test/db/pll_altpll.v
+F/home/user/Projects/ip/sdram_micron/axi/test/db/pll_altpll.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/db|/home/user/Projects/ip/sdram_micron/axi/test/db/pll_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/ip/sdram_micron/axi/test/db
+R6

@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Feb 20 22:07:43 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : sdram_test
+Top-level Entity Name : sdram_test
+Family : MAX 10
+Device : 10M50SAE144C8G
+Power Models : Final
+Total Thermal Power Dissipation : 615.20 mW
+Core Dynamic Thermal Power Dissipation : 338.19 mW
+Core Static Thermal Power Dissipation : 257.30 mW
+I/O Thermal Power Dissipation : 19.71 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

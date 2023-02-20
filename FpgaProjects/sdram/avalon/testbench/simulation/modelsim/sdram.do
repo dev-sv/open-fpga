@@ -29,5 +29,5 @@
  add wave /tb_sdram/readdatavalid
  add wave /tb_sdram/read
 
- run 1650000000
-# run -All
+# run 1650000000
+ run -All

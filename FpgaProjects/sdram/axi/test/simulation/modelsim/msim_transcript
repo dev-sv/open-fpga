@@ -1,0 +1,124 @@
+# do sdram_test_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlib sdram_design
+# ** Warning: (vlib-34) Library already exists at "sdram_design".
+# vmap sdram_design sdram_design
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap sdram_design sdram_design 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# vlog -vlog01compat -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:46 on Feb 13,2023
+# vlog -reportprogress 300 -vlog01compat -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v 
+# -- Compiling module sdram_design
+# 
+# Top level modules:
+# 	sdram_design
+# End time: 19:08:46 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:46 on Feb 13,2023
+# vlog -reportprogress 300 -vlog01compat -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v 
+# -- Compiling module altera_reset_controller
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -vlog01compat -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v 
+# -- Compiling module altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -vlog01compat -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v 
+# -- Compiling module sdram_design_mm_interconnect_0
+# 
+# Top level modules:
+# 	sdram_design_mm_interconnect_0
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/user/Projects/ip/sdram_micron/axi/test {/home/user/Projects/ip/sdram_micron/axi/test/pll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/user/Projects/ip/sdram_micron/axi/test" /home/user/Projects/ip/sdram_micron/axi/test/pll.v 
+# -- Compiling module pll
+# 
+# Top level modules:
+# 	pll
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+/home/user/Projects/ip/sdram_micron/axi/test/db {/home/user/Projects/ip/sdram_micron/axi/test/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/db" /home/user/Projects/ip/sdram_micron/axi/test/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -sv -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv 
+# -- Compiling module altera_merlin_axi_translator
+# 
+# Top level modules:
+# 	altera_merlin_axi_translator
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -sv -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv 
+# -- Compiling module altera_axi_bridge
+# 
+# Top level modules:
+# 	altera_axi_bridge
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -vlog01compat -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v 
+# -- Compiling module altera_avalon_st_pipeline_base
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:08:47 on Feb 13,2023
+# vlog -reportprogress 300 -sv -work sdram_design "+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules" /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv 
+# -- Compiling module sdram
+# ** Error: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv(146): (vlog-2110) Illegal reference to net "axi_rvalid".
+# ** Error: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv(300): (vlog-2110) Illegal reference to net "axi_rvalid".
+# ** Error: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv(302): (vlog-2110) Illegal reference to net "axi_rdata".
+# ** Error: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv(328): (vlog-2110) Illegal reference to net "axi_rvalid".
+# End time: 19:08:47 on Feb 13,2023, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+# ** Error: /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/vlog failed.
+# Error in macro ./sdram_test_run_msim_rtl_verilog.do line 19
+# /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/vlog failed.
+#     while executing
+# "vlog -sv -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules {/home/user/Projects/ip/sdram_micro..."
+# 
+# stdin: <EOF>

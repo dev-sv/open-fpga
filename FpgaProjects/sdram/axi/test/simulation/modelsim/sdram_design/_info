@@ -1,0 +1,195 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/ip/sdram_micron/axi/test/simulation/modelsim
+valtera_avalon_st_pipeline_base
+Z1 !s110 1676304527
+!i10b 1
+!s100 SP[<U8JVkW?]RHOS`DzPF1
+Ilhd?HNhz95hLI4I7n`U]k3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1676280867
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v
+L0 22
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1676304527.000000
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v|
+!s90 -reportprogress|300|-vlog01compat|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v|
+!i113 1
+Z6 o-vlog01compat -work sdram_design
+Z7 !s92 -vlog01compat -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules
+Z8 tCvgOpt 0
+valtera_axi_bridge
+Z9 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 alLm4^RaMFc9gjbHXN3S02
+IW8YW8A;O0omngHhK6XINU2
+R2
+!s105 altera_axi_bridge_sv_unit
+S1
+R0
+R3
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv
+L0 28
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv|
+!s90 -reportprogress|300|-sv|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv|
+!i113 1
+Z10 o-sv -work sdram_design
+Z11 !s92 -sv -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules
+R8
+valtera_merlin_axi_translator
+R9
+R1
+!i10b 1
+!s100 ^T>KWCod4998PA_CK5h8?0
+IKPbFGM>eU_9Zf=8PU7eTH3
+R2
+!s105 altera_merlin_axi_translator_sv_unit
+S1
+R0
+R3
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv
+L0 40
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv|
+!s90 -reportprogress|300|-sv|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_merlin_axi_translator.sv|
+!i113 1
+R10
+R11
+R8
+valtera_reset_controller
+R1
+!i10b 1
+!s100 z[H_hRO9gO=:^2E3_jWH03
+IjVGdoHPN?M;]C[NJHP7BH1
+R2
+R0
+R3
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v
+L0 42
+R4
+r1
+!s85 0
+31
+Z12 !s108 1676304526.000000
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v|
+!s90 -reportprogress|300|-vlog01compat|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+R6
+R7
+R8
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 oWLYmSO[EOX[G0PgQhZ2=0
+I^BYB5FOZNJcV3?QgbPF@;1
+R2
+R0
+R3
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -reportprogress|300|-vlog01compat|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R6
+R7
+R8
+vsdram
+R9
+!s110 1675190446
+!i10b 1
+!s100 OGGeJ[SnlfC:oe9JdXT=;2
+I<:kck:k0@jaZJHYd`QV?N2
+R2
+!s105 sdram_sv_unit
+S1
+R0
+w1675190277
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv
+L0 4
+R4
+r1
+!s85 0
+31
+!s108 1675190446.000000
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv|
+!s90 -reportprogress|300|-sv|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv|
+!i113 1
+R10
+R11
+R8
+vsdram_design
+!s110 1676304526
+!i10b 1
+!s100 L3eo<d?igRW47C_BGO<f?2
+IX5R93EIjWe3lib[5A7iag2
+R2
+R0
+R3
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v
+L0 6
+R4
+r1
+!s85 0
+31
+R12
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v|
+!s90 -reportprogress|300|-vlog01compat|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v|
+!i113 1
+R6
+!s92 -vlog01compat -work sdram_design +incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis
+R8
+vsdram_design_mm_interconnect_0
+R1
+!i10b 1
+!s100 WhMU9gm2Wk?2REB9=7cmc1
+II]6^bSSYmg1[38:GK>maz3
+R2
+R0
+R3
+8/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v
+F/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v
+L0 9
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|sdram_design|+incdir+/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules|/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v|
+!i113 1
+R6
+R7
+R8

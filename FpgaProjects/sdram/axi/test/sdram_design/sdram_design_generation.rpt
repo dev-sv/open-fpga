@@ -1,0 +1,48 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/user/Projects/ip/sdram_micron/axi/test/sdram_design.qsys --block-symbol-file --output-directory=/home/user/Projects/ip/sdram_micron/axi/test/sdram_design --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading test/sdram_design.qsys
+Progress: Reading input file
+Progress: Adding MT48LC4M16A2_AXI_0 [MT48LC4M16A2_AXI 1.0]
+Progress: Parameterizing module MT48LC4M16A2_AXI_0
+Progress: Adding axi_bridge_0 [altera_axi_bridge 18.0]
+Progress: Parameterizing module axi_bridge_0
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram_design.axi_bridge_0: Burst length BURST_LENGTH_WIDTH 8
+Info: sdram_design.axi_bridge_0: Lock signals width LOCK_WIDTH 1
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/user/Projects/ip/sdram_micron/axi/test/sdram_design.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading test/sdram_design.qsys
+Progress: Reading input file
+Progress: Adding MT48LC4M16A2_AXI_0 [MT48LC4M16A2_AXI 1.0]
+Progress: Parameterizing module MT48LC4M16A2_AXI_0
+Progress: Adding axi_bridge_0 [altera_axi_bridge 18.0]
+Progress: Parameterizing module axi_bridge_0
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sdram_design.axi_bridge_0: Burst length BURST_LENGTH_WIDTH 8
+Info: sdram_design.axi_bridge_0: Lock signals width LOCK_WIDTH 1
+Info: sdram_design: Generating sdram_design "sdram_design" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has awprot signal 3 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has bresp signal 2 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has arprot signal 3 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master axi_bridge_0.m0 and slave MT48LC4M16A2_AXI_0.axi because the master has rresp signal 2 bit wide, but the slave is 0 bit wide.
+Info: MT48LC4M16A2_AXI_0: "sdram_design" instantiated MT48LC4M16A2_AXI "MT48LC4M16A2_AXI_0"
+Info: axi_bridge_0: "sdram_design" instantiated altera_axi_bridge "axi_bridge_0"
+Info: mm_interconnect_0: "sdram_design" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "sdram_design" instantiated altera_reset_controller "rst_controller"
+Info: axi_bridge_0_m0_translator: "mm_interconnect_0" instantiated altera_merlin_axi_translator "axi_bridge_0_m0_translator"
+Info: sdram_design: Done "sdram_design" with 6 modules, 9 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

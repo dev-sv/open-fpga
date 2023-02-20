@@ -1,0 +1,46 @@
+	component sdram_design is
+		port (
+			clk_clk       : in    std_logic                     := 'X';             -- clk
+			reset_reset_n : in    std_logic                     := 'X';             -- reset_n
+			sdram_dq      : inout std_logic_vector(15 downto 0) := (others => 'X'); -- dq
+			sdram_address : out   std_logic_vector(11 downto 0);                    -- address
+			sdram_ba      : out   std_logic_vector(1 downto 0);                     -- ba
+			sdram_dqm     : out   std_logic_vector(1 downto 0);                     -- dqm
+			sdram_osc     : out   std_logic;                                        -- osc
+			sdram_cs      : out   std_logic;                                        -- cs
+			sdram_we      : out   std_logic;                                        -- we
+			sdram_ras     : out   std_logic;                                        -- ras
+			sdram_cas     : out   std_logic;                                        -- cas
+			sdram_led     : out   std_logic_vector(7 downto 0);                     -- led
+			user_awid     : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- awid
+			user_awaddr   : in    std_logic_vector(21 downto 0) := (others => 'X'); -- awaddr
+			user_awlen    : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- awlen
+			user_awsize   : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- awsize
+			user_awburst  : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- awburst
+			user_awvalid  : in    std_logic                     := 'X';             -- awvalid
+			user_awready  : out   std_logic;                                        -- awready
+			user_wdata    : in    std_logic_vector(15 downto 0) := (others => 'X'); -- wdata
+			user_wstrb    : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- wstrb
+			user_wlast    : in    std_logic                     := 'X';             -- wlast
+			user_wvalid   : in    std_logic                     := 'X';             -- wvalid
+			user_wready   : out   std_logic;                                        -- wready
+			user_bid      : out   std_logic_vector(7 downto 0);                     -- bid
+			user_bresp    : out   std_logic_vector(1 downto 0);                     -- bresp
+			user_bvalid   : out   std_logic;                                        -- bvalid
+			user_bready   : in    std_logic                     := 'X';             -- bready
+			user_arid     : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- arid
+			user_araddr   : in    std_logic_vector(21 downto 0) := (others => 'X'); -- araddr
+			user_arlen    : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- arlen
+			user_arsize   : in    std_logic_vector(2 downto 0)  := (others => 'X'); -- arsize
+			user_arburst  : in    std_logic_vector(1 downto 0)  := (others => 'X'); -- arburst
+			user_arvalid  : in    std_logic                     := 'X';             -- arvalid
+			user_arready  : out   std_logic;                                        -- arready
+			user_rid      : out   std_logic_vector(7 downto 0);                     -- rid
+			user_rdata    : out   std_logic_vector(15 downto 0);                    -- rdata
+			user_rresp    : out   std_logic_vector(1 downto 0);                     -- rresp
+			user_rlast    : out   std_logic;                                        -- rlast
+			user_rvalid   : out   std_logic;                                        -- rvalid
+			user_rready   : in    std_logic                     := 'X'              -- rready
+		);
+	end component sdram_design;
+

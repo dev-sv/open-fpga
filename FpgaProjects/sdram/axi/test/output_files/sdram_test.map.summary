@@ -1,0 +1,16 @@
+Analysis & Synthesis Status : Successful - Mon Feb 20 22:04:04 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : sdram_test
+Top-level Entity Name : sdram_test
+Family : MAX 10
+Total logic elements : 15,417
+    Total combinational functions : 7,058
+    Dedicated logic registers : 8,890
+Total registers : 8890
+Total pins : 46
+Total virtual pins : 0
+Total memory bits : 4,096
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 1
+UFM blocks : 0
+ADC blocks : 0

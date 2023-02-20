@@ -1,5 +1,5 @@
 Fitter report for tb_top
-Mon Feb 20 13:23:41 2023
+Mon Feb 20 21:15:49 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -60,7 +60,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Fitter Summary                                                                   ;
 +------------------------------------+---------------------------------------------+
-; Fitter Status                      ; Successful - Mon Feb 20 13:23:41 2023       ;
+; Fitter Status                      ; Successful - Mon Feb 20 21:15:49 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; tb_top                                      ;
 ; Top-level Entity Name              ; tb_top                                      ;
@@ -792,9 +792,9 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file /home/user/Projects/ip/sdram_micron/avalon/testbench/output_files/tb_top.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 1642 megabytes
-    Info: Processing ended: Mon Feb 20 13:23:41 2023
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 1638 megabytes
+    Info: Processing ended: Mon Feb 20 21:15:49 2023
+    Info: Elapsed time: 00:00:06
     Info: Total CPU time (on all processors): 00:00:07
 
 
