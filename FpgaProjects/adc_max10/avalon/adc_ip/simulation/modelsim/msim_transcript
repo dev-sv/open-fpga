@@ -1,0 +1,13 @@
+# do adc_run_msim_rtl_systemverilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# 
+# 
+# stdin: <EOF>

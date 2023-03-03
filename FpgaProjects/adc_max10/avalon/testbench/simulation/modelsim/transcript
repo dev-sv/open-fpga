@@ -1,0 +1,8 @@
+# Compile of tb_adc.sv was successful.
+# Compile of adc.sv was successful.
+# Compile of pll.v was successful.
+# Compile of fiftyfivenm_adcblock_top_wrapper.v was successful.
+# Compile of fiftyfivenm_adcblock_primitive_wrapper.v was successful.
+# Compile of chsel_code_converter_sw_to_hw.v was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -i -l msim_transcript work.tb_adc -L fiftyfivenm_ver

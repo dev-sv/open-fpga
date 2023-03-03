@@ -1,0 +1,163 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/ip/adc_max10/avalon/testbench/simulation/modelsim
+vadc
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1677833903
+!i10b 1
+!s100 KRkfa5f<PA]`9AA[7T^jW3
+I9Ej24]EiV`Bd[]FkGQbIN3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adc_sv_unit
+S1
+R0
+w1677833834
+8/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc.sv
+F/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc.sv
+L0 4
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1677833903.000000
+!s107 /home/user/Projects/ip/adc_max10/avalon/adc_ip/adc.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc.sv|
+!i113 1
+Z6 o-work work -sv
+Z7 tCvgOpt 0
+vchsel_code_converter_sw_to_hw
+R2
+!i10b 1
+!s100 =WSfhd;Qi:YEOK:Ef_E3d3
+IkEE7BSlY625>`a_Xk6]eo2
+R3
+R0
+Z8 w1677700822
+8/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/chsel_code_converter_sw_to_hw.v
+F/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/chsel_code_converter_sw_to_hw.v
+L0 32
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/chsel_code_converter_sw_to_hw.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/chsel_code_converter_sw_to_hw.v|
+!i113 1
+Z9 o-work work
+R7
+vfiftyfivenm_adcblock_primitive_wrapper
+R2
+!i10b 1
+!s100 I^:JcO9X^D`ME7KKfVOc83
+IdX7<;XNi<VE^AgH<@<zzD3
+R3
+R0
+R8
+8/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
+F/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v
+L0 37
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_primitive_wrapper.v|
+!i113 1
+R9
+R7
+vfiftyfivenm_adcblock_top_wrapper
+R2
+!i10b 1
+!s100 l9iJ=>VBIF0BGn4;C1LCF0
+ILX8AlTlHlZUn2Xh[hT<J53
+R3
+R0
+R8
+8/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
+F/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v
+L0 31
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis/submodules/fiftyfivenm_adcblock_top_wrapper.v|
+!i113 1
+R9
+R7
+vpll
+R2
+!i10b 1
+!s100 A1HJMJMh11FF4fWT_j[hP1
+IPc?<I_0`oY=h:cebb@J9h3
+R3
+R0
+w1677691731
+8/home/user/Projects/ip/adc_max10/avalon/adc_ip/pll.v
+F/home/user/Projects/ip/adc_max10/avalon/adc_ip/pll.v
+L0 39
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/adc_max10/avalon/adc_ip/pll.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/user/Projects/ip/adc_max10/avalon/adc_ip/pll.v|
+!i113 1
+R9
+R7
+vtb_adc
+R1
+R2
+!i10b 1
+!s100 X3aRH`ffjV:HmT1kM;@1z3
+IAZ_Vf54^:7=P6^8HTH=J^3
+R3
+!s105 tb_adc_sv_unit
+S1
+R0
+w1677771805
+8/home/user/Projects/ip/adc_max10/avalon/testbench/tb_adc.sv
+F/home/user/Projects/ip/adc_max10/avalon/testbench/tb_adc.sv
+L0 7
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/user/Projects/ip/adc_max10/avalon/testbench/tb_adc.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/user/Projects/ip/adc_max10/avalon/testbench/tb_adc.sv|
+!i113 1
+R6
+R7
+vzzz
+!s110 1677689319
+!i10b 1
+!s100 dMD<PD^JLI_>8iRZRSGb]1
+II_GIf86l2ee8BPGH^F]6k2
+R3
+R0
+w1677688193
+8/home/user/Projects/ip/adc_max10/avalon/testbench/zzz/zzz_bb.v
+F/home/user/Projects/ip/adc_max10/avalon/testbench/zzz/zzz_bb.v
+L0 2
+R4
+r1
+!s85 0
+31
+!s108 1677689319.000000
+!s107 /home/user/Projects/ip/adc_max10/avalon/testbench/zzz/zzz_bb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|/home/user/Projects/ip/adc_max10/avalon/testbench/zzz/zzz_bb.v|
+!i113 1
+R9
+R7

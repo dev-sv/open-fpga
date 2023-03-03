@@ -1,0 +1,141 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "command_ready",
+					"strict" : false
+				},
+				{
+					"name" : "response_valid",
+					"strict" : false
+				},
+				{
+					"name" : "response_channel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "response_channel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "response_channel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "response_channel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "response_channel[4]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[8]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[9]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[10]",
+					"strict" : false
+				},
+				{
+					"name" : "response_data[11]",
+					"strict" : false
+				},
+				{
+					"name" : "response_startofpacket",
+					"strict" : false
+				},
+				{
+					"name" : "response_endofpacket",
+					"strict" : false
+				},
+				{
+					"name" : "clock_clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_sink_reset_n",
+					"strict" : false
+				},
+				{
+					"name" : "command_channel[3]",
+					"strict" : false
+				},
+				{
+					"name" : "command_channel[0]",
+					"strict" : false
+				},
+				{
+					"name" : "command_channel[4]",
+					"strict" : false
+				},
+				{
+					"name" : "command_channel[1]",
+					"strict" : false
+				},
+				{
+					"name" : "command_channel[2]",
+					"strict" : false
+				},
+				{
+					"name" : "command_startofpacket",
+					"strict" : false
+				},
+				{
+					"name" : "command_endofpacket",
+					"strict" : false
+				},
+				{
+					"name" : "adc_pll_locked_export",
+					"strict" : false
+				},
+				{
+					"name" : "command_valid",
+					"strict" : false
+				},
+				{
+					"name" : "adc_pll_clock_clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
