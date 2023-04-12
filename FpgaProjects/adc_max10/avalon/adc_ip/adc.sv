@@ -2,32 +2,53 @@
 
 
 module adc(
-           input  bit clk, 
-			             reset,
-			             write, 
-							 read, 
-							 adc_clk,
+
+				input wire clk, 
+				
+				input wire reset,
+				
+			   input wire write, 
+				
+				input wire read, 
+				
+				input wire aclk,
 							 
-           input  bit[9:0] address,
+            input wire[9:0] address,
 			  
-			  input  bit[15:0] writedata,
+			   input wire[15:0] writedata,
 			  
-			  input  bit[0:0] burstcount,
+			   input wire[0:0] burstcount,
 			  
-			  output bit[15:0] readdata,
+			   output bit[15:0] readdata,
 			  
-			  output bit waitrequest,
-							 readdatavalid
+			   output bit waitrequest,
+				
+				output bit readdatavalid
 );
 
 
- enum { S0, S1, S2, S3 } st = S0;
+ enum { INI, S0, S1, S2, S3 } st = INI;
+ 
+ 
+ wire	w_aclk;
  
  bit        soc = 1'b0;
  wire       eoc;
  wire[11:0] data;  
+  
+   
+ //`define HW_TEST
  
- `define TEST
+ //`define TEST
+ 
+ 
+`ifdef HW_TEST
+
+	bit[9:0] np = 0;
+	
+`endif	
+ 
+ 
  
  
  fiftyfivenm_adcblock_top_wrapper
@@ -49,8 +70,7 @@ module adc(
 	 
  `endif
  
-	  adc_inst(
- 
+ adc_inst(
 	 
     .chsel(5'h00),               	// 5-bits channel selection.
     .soc(soc),                 		// signal Start-of-Conversion to ADC
@@ -58,15 +78,25 @@ module adc(
     .dout(data),                		// 12-bits DOUT valid after EOC rise, still valid at falling edge, but not before the next EOC rising edge
     .usr_pwd(1'b0),             		// User Power Down during run time.  0 = Power Up;  1 = Power Down.
     .tsen(1'b0),                		// 0 = Normal Mode; 1 = Temperature Sensing Mode.
-    .clkin_from_pll_c0(adc_clk)   // Clock source from PLL1 c-counter[0] at BL corner or PLL3 c-counter[0] at TL corne	 
+    .clkin_from_pll_c0(aclk)        // Clock source from PLL1 c-counter[0] at BL corner or PLL3 c-counter[0] at TL corne	 
  );
 
-
+ 	
  
   	always @(posedge clk)begin
 	
 		
 		case(st)
+		
+		
+			INI: begin
+			
+					readdatavalid <= 1'b0;
+					
+					waitrequest <= 1'b1;
+					
+					st <= S0;
+				  end	
 
  
 			S0: if(read) begin
@@ -76,24 +106,36 @@ module adc(
 				 end
 				 
  
-			S1: if(eoc)begin
+			S1: begin
 			
-					readdata <= data;
-					readdatavalid <= 1'b1;
-					st <= S2;
-				 end
- 
- 
-			S2: if(!read)begin
+					if(eoc)begin
+					
+						`ifdef HW_TEST
+						
+							readdata <= np;
+							np <= np + 1'b1;
+							
+						`else readdata <= data;
+
+						`endif					
+										
+						readdatavalid <= 1'b1;
+						
+						st <= S2;
+						
+					end
+					
+				 end	
+				
+				
+			S2: if(!eoc) begin
 			
 			       soc <= 1'b0;
+					 
 					 readdatavalid <= 1'b0;
-					 st <= S3;
-				 end 
-				
-				
-			S3: if(!eoc)
-					st <= S0;
+			
+					 st <= S0;
+				 end		
 					
  
 			default: ;
