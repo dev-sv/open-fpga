@@ -1,0 +1,18 @@
+	component avl_if is
+		port (
+			aclk_aclk         : in  std_logic                     := 'X';             -- aclk
+			adc_waitrequest   : out std_logic;                                        -- waitrequest
+			adc_readdata      : out std_logic_vector(15 downto 0);                    -- readdata
+			adc_readdatavalid : out std_logic;                                        -- readdatavalid
+			adc_burstcount    : in  std_logic_vector(0 downto 0)  := (others => 'X'); -- burstcount
+			adc_writedata     : in  std_logic_vector(15 downto 0) := (others => 'X'); -- writedata
+			adc_address       : in  std_logic_vector(9 downto 0)  := (others => 'X'); -- address
+			adc_write         : in  std_logic                     := 'X';             -- write
+			adc_read          : in  std_logic                     := 'X';             -- read
+			adc_byteenable    : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- byteenable
+			adc_debugaccess   : in  std_logic                     := 'X';             -- debugaccess
+			clk_clk           : in  std_logic                     := 'X';             -- clk
+			reset_reset_n     : in  std_logic                     := 'X'              -- reset_n
+		);
+	end component avl_if;
+

@@ -1,0 +1,18 @@
+Fitter Status : Successful - Wed Apr 12 16:31:32 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : max10_rpi
+Top-level Entity Name : max10_rpi
+Family : MAX 10
+Device : 10M50SAE144C8G
+Timing Models : Final
+Total logic elements : 146 / 49,760 ( < 1 % )
+    Total combinational functions : 99 / 49,760 ( < 1 % )
+    Dedicated logic registers : 113 / 49,760 ( < 1 % )
+Total registers : 113
+Total pins : 24 / 101 ( 24 % )
+Total virtual pins : 0
+Total memory bits : 10,240 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 1 / 1 ( 100 % )
