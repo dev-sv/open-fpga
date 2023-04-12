@@ -45,7 +45,7 @@ module sdram_test(
  wire      w_wready;
 
  
- `define PAGE     256		// 256x16. 
+ //`define PAGE     256		// 256x16. 
  `define MAX_PAGE 16384		// 4 banks x 4096 pages.
  
  bit[8:0] i = 0,
@@ -119,7 +119,7 @@ module sdram_test(
 // read data channel.		
 		.user_rdata(w_rdata),		
 		.user_rvalid(w_rvalid),
-		.user_rready(rready)
+		.user_rready(rready),
 		//.user_rid(),
 		//.user_rresp(),
 		//.user_rlast(),
@@ -144,9 +144,9 @@ module sdram_test(
 							
 								wr_data[i] <= value + start;
 								
-								i <= i + 1;
+								i <= i + 1'b1;
 								
-								value <= value + 1;
+								value <= value + 1'b1;
 							end
 							else begin
 									
@@ -162,7 +162,7 @@ module sdram_test(
 			
 					 awaddr <= addr_wr;
 					 
-					 awlen <= len_wr - 1;
+					 awlen <= len_wr - 1'b1;
 					 
 					 awsize <= 3'b001;
 					 
@@ -197,9 +197,9 @@ module sdram_test(
 							
 							wdata <= wr_data[nw];
 							
-							i <= i + 1;
+							i <= i + 1'b1;
 							
-							nw <= nw + 1;
+							nw <= nw + 1'b1;
 						end
 						else begin
 						
@@ -231,7 +231,7 @@ module sdram_test(
 					 
 					 araddr <= addr_rd;
 					 
-					 arlen <= len_rd - 1;
+					 arlen <= len_rd - 1'b1;
 					 
 					 arsize <= 3'b001;
 					 
@@ -262,9 +262,9 @@ module sdram_test(
 					
 							rd_data[nr] <= w_rdata;
 							
-							i <= i + 1;
+							i <= i + 1'b1;
 							
-							nr <= nr + 1;
+							nr <= nr + 1'b1;
 						end
 					end
 					else if(i == len_rd) begin
@@ -301,7 +301,7 @@ module sdram_test(
 						
 					   st <= ERR;
 					end
-				   else i <= i + 1;
+				   else i <= i + 1'b1;
 												
 				end
 				else begin	
@@ -395,9 +395,9 @@ module sdram_test(
 																
 					         pc <= 0;
 								
-								start <= start + 1;
+								start <= start + 1'b1;
 																
-								len <= (len == 24) ? 0 : len + 1;								
+								len <= (len == 24) ? 0 : len + 1'b1;								
 								
 							end
 // next page.							

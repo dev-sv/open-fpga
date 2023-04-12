@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2023.02.20.15:04:33"
+ date="2023.04.12.13:38:05"
  outputDirectory="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/">
  <perimeter>
   <parameter
@@ -74,7 +74,6 @@
    <port name="sdram_we" direction="output" role="we" width="1" />
    <port name="sdram_ras" direction="output" role="ras" width="1" />
    <port name="sdram_cas" direction="output" role="cas" width="1" />
-   <port name="sdram_led" direction="output" role="led" width="8" />
   </interface>
   <interface name="user" kind="axi4" start="0">
    <property name="associatedClock" value="clk" />
@@ -121,13 +120,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="sdram_design:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10M50SAE144C8G,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1676891072,AUTO_UNIQUE_ID=(MT48LC4M16A2_AXI:1.0:)(altera_axi_bridge:18.0:ADDR_WIDTH=22,AXI_VERSION=AXI4,BURST_LENGTH_WIDTH=8,COMBINED_ACCEPTANCE_CAPABILITY=16,COMBINED_ISSUING_CAPABILITY=16,DATA_WIDTH=16,LOCK_WIDTH=1,M0_ID_WIDTH=8,READ_ACCEPTANCE_CAPABILITY=16,READ_ADDR_USER_WIDTH=64,READ_DATA_REORDERING_DEPTH=1,READ_DATA_USER_WIDTH=64,READ_ISSUING_CAPABILITY=16,S0_ID_WIDTH=8,USE_M0_ARBURST=1,USE_M0_ARCACHE=0,USE_M0_ARID=1,USE_M0_ARLEN=1,USE_M0_ARLOCK=0,USE_M0_ARQOS=0,USE_M0_ARREGION=0,USE_M0_ARSIZE=1,USE_M0_ARUSER=0,USE_M0_AWBURST=1,USE_M0_AWCACHE=0,USE_M0_AWID=1,USE_M0_AWLEN=1,USE_M0_AWLOCK=0,USE_M0_AWQOS=0,USE_M0_AWREGION=0,USE_M0_AWSIZE=1,USE_M0_AWUSER=0,USE_M0_BID=1,USE_M0_BRESP=1,USE_M0_BUSER=0,USE_M0_RID=1,USE_M0_RLAST=1,USE_M0_RRESP=1,USE_M0_RUSER=0,USE_M0_WSTRB=1,USE_M0_WUSER=0,USE_PIPELINE=1,USE_S0_ARCACHE=0,USE_S0_ARLOCK=0,USE_S0_ARPROT=0,USE_S0_ARQOS=0,USE_S0_ARREGION=0,USE_S0_ARUSER=0,USE_S0_AWCACHE=0,USE_S0_AWLOCK=0,USE_S0_AWPROT=0,USE_S0_AWQOS=0,USE_S0_AWREGION=0,USE_S0_AWUSER=0,USE_S0_BRESP=1,USE_S0_BUSER=0,USE_S0_RRESP=1,USE_S0_RUSER=0,USE_S0_WLAST=1,USE_S0_WUSER=0,WRITE_ACCEPTANCE_CAPABILITY=16,WRITE_ADDR_USER_WIDTH=64,WRITE_DATA_USER_WIDTH=64,WRITE_ISSUING_CAPABILITY=16,WRITE_RESP_USER_WIDTH=64)(clock_source:18.0:clockFrequency=100000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(avalon:18.0:arbitrationPriority=1,baseAddress=0x0000,defaultConnection=false)(clock:18.0:)(clock:18.0:)(reset:18.0:)(reset:18.0:)"
+   parameterizationKey="sdram_design:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=10M50SAE144C8G,AUTO_DEVICE_FAMILY=MAX 10,AUTO_DEVICE_SPEEDGRADE=8,AUTO_GENERATION_ID=1681292284,AUTO_UNIQUE_ID=(MT48LC4M16A2_AXI:1.0:ACTIVE_READ_WRITE=2,AUTO_REFRESH_PERIOD=7,LOAD_MODE_REGISTER=3,PRECHARGE_COMMAND_PERIOD=2,REFRESH_PERIOD=6400000,WRITE_RECOVERY_TIME=2)(altera_axi_bridge:18.0:ADDR_WIDTH=22,AXI_VERSION=AXI4,BURST_LENGTH_WIDTH=8,COMBINED_ACCEPTANCE_CAPABILITY=16,COMBINED_ISSUING_CAPABILITY=16,DATA_WIDTH=16,LOCK_WIDTH=1,M0_ID_WIDTH=8,READ_ACCEPTANCE_CAPABILITY=16,READ_ADDR_USER_WIDTH=64,READ_DATA_REORDERING_DEPTH=1,READ_DATA_USER_WIDTH=64,READ_ISSUING_CAPABILITY=16,S0_ID_WIDTH=8,USE_M0_ARBURST=1,USE_M0_ARCACHE=0,USE_M0_ARID=1,USE_M0_ARLEN=1,USE_M0_ARLOCK=0,USE_M0_ARQOS=0,USE_M0_ARREGION=0,USE_M0_ARSIZE=1,USE_M0_ARUSER=0,USE_M0_AWBURST=1,USE_M0_AWCACHE=0,USE_M0_AWID=1,USE_M0_AWLEN=1,USE_M0_AWLOCK=0,USE_M0_AWQOS=0,USE_M0_AWREGION=0,USE_M0_AWSIZE=1,USE_M0_AWUSER=0,USE_M0_BID=1,USE_M0_BRESP=1,USE_M0_BUSER=0,USE_M0_RID=1,USE_M0_RLAST=1,USE_M0_RRESP=1,USE_M0_RUSER=0,USE_M0_WSTRB=1,USE_M0_WUSER=0,USE_PIPELINE=1,USE_S0_ARCACHE=0,USE_S0_ARLOCK=0,USE_S0_ARPROT=0,USE_S0_ARQOS=0,USE_S0_ARREGION=0,USE_S0_ARUSER=0,USE_S0_AWCACHE=0,USE_S0_AWLOCK=0,USE_S0_AWPROT=0,USE_S0_AWQOS=0,USE_S0_AWREGION=0,USE_S0_AWUSER=0,USE_S0_BRESP=1,USE_S0_BUSER=0,USE_S0_RRESP=1,USE_S0_RUSER=0,USE_S0_WLAST=1,USE_S0_WUSER=0,WRITE_ACCEPTANCE_CAPABILITY=16,WRITE_ADDR_USER_WIDTH=64,WRITE_DATA_USER_WIDTH=64,WRITE_ISSUING_CAPABILITY=16,WRITE_RESP_USER_WIDTH=64)(clock_source:18.0:clockFrequency=100000000,clockFrequencyKnown=true,inputClockFrequency=0,resetSynchronousEdges=NONE)(avalon:18.0:arbitrationPriority=1,baseAddress=0x0000,defaultConnection=false)(clock:18.0:)(clock:18.0:)(reset:18.0:)(reset:18.0:)"
    instancePathKey="sdram_design"
    kind="sdram_design"
    version="1.0"
    name="sdram_design">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1676891072" />
+  <parameter name="AUTO_GENERATION_ID" value="1681292284" />
   <parameter name="AUTO_DEVICE" value="10M50SAE144C8G" />
   <parameter name="AUTO_DEVICE_FAMILY" value="MAX 10" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -194,6 +193,7 @@
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Debug">Transform: CustomInstructionTransform</message>
    <message level="Debug">No custom instruction connections, skipping transform </message>
    <message level="Debug" culprit="merlin_custom_instruction_transform"><![CDATA[After transform: <b>3</b> modules, <b>5</b> connections]]></message>
@@ -212,8 +212,10 @@
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="min"></message>
    <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
@@ -242,8 +244,10 @@
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="min"></message>
    <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
@@ -252,6 +256,7 @@
    <message level="Debug">Transform: HierarchyTransform</message>
    <message level="Progress" culprit="min"></message>
    <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
@@ -267,6 +272,7 @@
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Debug" culprit="reset_adaptation_transform"><![CDATA[After transform: <b>5</b> modules, <b>10</b> connections]]></message>
    <message level="Debug" culprit="sdram_design"><![CDATA["<b>sdram_design</b>" reuses <b>MT48LC4M16A2_AXI</b> "<b>submodules/sdram</b>"]]></message>
    <message level="Debug" culprit="sdram_design"><![CDATA["<b>sdram_design</b>" reuses <b>altera_axi_bridge</b> "<b>submodules/altera_axi_bridge</b>"]]></message>
@@ -279,6 +285,7 @@
    <message level="Debug" culprit="sdram_design">queue size: 1 starting:altera_mm_interconnect "submodules/sdram_design_mm_interconnect_0"</message>
    <message level="Progress" culprit="min"></message>
    <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
@@ -327,11 +334,17 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="MT48LC4M16A2_AXI:1.0:"
+   parameterizationKey="MT48LC4M16A2_AXI:1.0:ACTIVE_READ_WRITE=2,AUTO_REFRESH_PERIOD=7,LOAD_MODE_REGISTER=3,PRECHARGE_COMMAND_PERIOD=2,REFRESH_PERIOD=6400000,WRITE_RECOVERY_TIME=2"
    instancePathKey="sdram_design:.:MT48LC4M16A2_AXI_0"
    kind="MT48LC4M16A2_AXI"
    version="1.0"
    name="sdram">
+  <parameter name="AUTO_REFRESH_PERIOD" value="7" />
+  <parameter name="LOAD_MODE_REGISTER" value="3" />
+  <parameter name="REFRESH_PERIOD" value="6400000" />
+  <parameter name="ACTIVE_READ_WRITE" value="2" />
+  <parameter name="WRITE_RECOVERY_TIME" value="2" />
+  <parameter name="PRECHARGE_COMMAND_PERIOD" value="2" />
   <generatedFiles>
    <file
        path="/home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv"
@@ -418,6 +431,7 @@
    <message level="Debug" culprit="sdram_design">queue size: 1 starting:altera_mm_interconnect "submodules/sdram_design_mm_interconnect_0"</message>
    <message level="Progress" culprit="min"></message>
    <message level="Progress" culprit="max"></message>
+   <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>
    <message level="Progress" culprit="current"></message>

@@ -4,12 +4,12 @@ preplace inst sdram_design -pg 1 -lvl 1 -y 40 -regy -20
 preplace inst sdram_design.MT48LC4M16A2_AXI_0 -pg 1 -lvl 3 -y 30
 preplace inst sdram_design.clk_0 -pg 1 -lvl 1 -y 110
 preplace inst sdram_design.axi_bridge_0 -pg 1 -lvl 2 -y 150
-preplace netloc FAN_OUT<net_container>sdram_design</net_container>(SLAVE)axi_bridge_0.clk,(SLAVE)MT48LC4M16A2_AXI_0.clock,(MASTER)clk_0.clk) 1 1 2 280 60 N
-preplace netloc POINT_TO_POINT<net_container>sdram_design</net_container>(MASTER)axi_bridge_0.m0,(SLAVE)MT48LC4M16A2_AXI_0.axi) 1 2 1 460
+preplace netloc POINT_TO_POINT<net_container>sdram_design</net_container>(SLAVE)MT48LC4M16A2_AXI_0.axi,(MASTER)axi_bridge_0.m0) 1 2 1 460
+preplace netloc FAN_OUT<net_container>sdram_design</net_container>(SLAVE)axi_bridge_0.clk_reset,(SLAVE)MT48LC4M16A2_AXI_0.reset,(MASTER)clk_0.clk_reset) 1 1 2 260 140 480
+preplace netloc FAN_OUT<net_container>sdram_design</net_container>(SLAVE)MT48LC4M16A2_AXI_0.clock,(MASTER)clk_0.clk,(SLAVE)axi_bridge_0.clk) 1 1 2 280 60 N
 preplace netloc EXPORT<net_container>sdram_design</net_container>(SLAVE)sdram_design.sdram,(SLAVE)MT48LC4M16A2_AXI_0.sdram) 1 0 3 NJ 240 NJ 240 NJ
 preplace netloc EXPORT<net_container>sdram_design</net_container>(SLAVE)sdram_design.user,(SLAVE)axi_bridge_0.s0) 1 0 2 NJ 200 NJ
-preplace netloc EXPORT<net_container>sdram_design</net_container>(SLAVE)sdram_design.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
+preplace netloc EXPORT<net_container>sdram_design</net_container>(SLAVE)clk_0.clk_in,(SLAVE)sdram_design.clk) 1 0 1 NJ
 preplace netloc EXPORT<net_container>sdram_design</net_container>(SLAVE)sdram_design.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
-preplace netloc FAN_OUT<net_container>sdram_design</net_container>(SLAVE)MT48LC4M16A2_AXI_0.reset,(MASTER)clk_0.clk_reset,(SLAVE)axi_bridge_0.clk_reset) 1 1 2 260 140 480
 levelinfo -pg 1 0 50 690
 levelinfo -hier sdram_design 60 90 350 560 680

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for sdram_test
-Mon Feb 20 22:04:04 2023
+Wed Apr 12 12:47:26 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -26,34 +26,35 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  18. Source assignments for sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
  19. Source assignments for altsyncram:rd_data_rtl_0|altsyncram_uag1:auto_generated
  20. Parameter Settings for User Entity Instance: pll:pll_inst|altpll:altpll_component
- 21. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0
- 22. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:aw_channel_pipeline
- 23. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:w_channel_pipeline
- 24. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:b_channel_pipeline
- 25. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:ar_channel_pipeline
- 26. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:r_channel_pipeline
- 27. Parameter Settings for User Entity Instance: sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:axi_bridge_0_m0_translator
- 28. Parameter Settings for User Entity Instance: sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:mt48lc4m16a2_axi_0_axi_translator
- 29. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_reset_controller:rst_controller
- 30. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
- 31. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
- 32. Parameter Settings for Inferred Entity Instance: altsyncram:rd_data_rtl_0
- 33. altpll Parameter Settings by Entity Instance
- 34. altsyncram Parameter Settings by Entity Instance
- 35. Port Connectivity Checks: "sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
- 36. Port Connectivity Checks: "sdram_design:sdram|altera_reset_controller:rst_controller"
- 37. Port Connectivity Checks: "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:mt48lc4m16a2_axi_0_axi_translator"
- 38. Port Connectivity Checks: "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:axi_bridge_0_m0_translator"
- 39. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:r_channel_pipeline"
- 40. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:ar_channel_pipeline"
- 41. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:b_channel_pipeline"
- 42. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:w_channel_pipeline"
- 43. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:aw_channel_pipeline"
- 44. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0"
- 45. Port Connectivity Checks: "sdram_design:sdram"
- 46. Post-Synthesis Netlist Statistics for Top Partition
- 47. Elapsed Time Per Partition
- 48. Analysis & Synthesis Messages
+ 21. Parameter Settings for User Entity Instance: sdram_design:sdram|sdram:mt48lc4m16a2_axi_0
+ 22. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0
+ 23. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:aw_channel_pipeline
+ 24. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:w_channel_pipeline
+ 25. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:b_channel_pipeline
+ 26. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:ar_channel_pipeline
+ 27. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:r_channel_pipeline
+ 28. Parameter Settings for User Entity Instance: sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:axi_bridge_0_m0_translator
+ 29. Parameter Settings for User Entity Instance: sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:mt48lc4m16a2_axi_0_axi_translator
+ 30. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_reset_controller:rst_controller
+ 31. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1
+ 32. Parameter Settings for User Entity Instance: sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1
+ 33. Parameter Settings for Inferred Entity Instance: altsyncram:rd_data_rtl_0
+ 34. altpll Parameter Settings by Entity Instance
+ 35. altsyncram Parameter Settings by Entity Instance
+ 36. Port Connectivity Checks: "sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1"
+ 37. Port Connectivity Checks: "sdram_design:sdram|altera_reset_controller:rst_controller"
+ 38. Port Connectivity Checks: "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:mt48lc4m16a2_axi_0_axi_translator"
+ 39. Port Connectivity Checks: "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:axi_bridge_0_m0_translator"
+ 40. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:r_channel_pipeline"
+ 41. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:ar_channel_pipeline"
+ 42. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:b_channel_pipeline"
+ 43. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:w_channel_pipeline"
+ 44. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:aw_channel_pipeline"
+ 45. Port Connectivity Checks: "sdram_design:sdram|altera_axi_bridge:axi_bridge_0"
+ 46. Port Connectivity Checks: "sdram_design:sdram"
+ 47. Post-Synthesis Netlist Statistics for Top Partition
+ 48. Elapsed Time Per Partition
+ 49. Analysis & Synthesis Messages
 
 
 
@@ -79,7 +80,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Feb 20 22:04:04 2023       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 12 12:47:26 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; sdram_test                                  ;
 ; Top-level Entity Name              ; sdram_test                                  ;
@@ -548,7 +549,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK3_MULTIPLY_BY              ; 1                     ; Untyped                   ;
 ; CLK2_MULTIPLY_BY              ; 1                     ; Untyped                   ;
 ; CLK1_MULTIPLY_BY              ; 1                     ; Untyped                   ;
-; CLK0_MULTIPLY_BY              ; 9                     ; Signed Integer            ;
+; CLK0_MULTIPLY_BY              ; 1                     ; Signed Integer            ;
 ; CLK9_DIVIDE_BY                ; 0                     ; Untyped                   ;
 ; CLK8_DIVIDE_BY                ; 0                     ; Untyped                   ;
 ; CLK7_DIVIDE_BY                ; 0                     ; Untyped                   ;
@@ -558,7 +559,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; CLK3_DIVIDE_BY                ; 1                     ; Untyped                   ;
 ; CLK2_DIVIDE_BY                ; 1                     ; Untyped                   ;
 ; CLK1_DIVIDE_BY                ; 1                     ; Untyped                   ;
-; CLK0_DIVIDE_BY                ; 10                    ; Signed Integer            ;
+; CLK0_DIVIDE_BY                ; 1                     ; Signed Integer            ;
 ; CLK9_PHASE_SHIFT              ; 0                     ; Untyped                   ;
 ; CLK8_PHASE_SHIFT              ; 0                     ; Untyped                   ;
 ; CLK7_PHASE_SHIFT              ; 0                     ; Untyped                   ;
@@ -877,6 +878,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; AUTO_CASCADE_CHAINS           ; ON                    ; AUTO_CASCADE              ;
 ; IGNORE_CASCADE_BUFFERS        ; OFF                   ; IGNORE_CASCADE            ;
 +-------------------------------+-----------------------+---------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: sdram_design:sdram|sdram:mt48lc4m16a2_axi_0 ;
++--------------------------+---------+-----------------------------------------------------+
+; Parameter Name           ; Value   ; Type                                                ;
++--------------------------+---------+-----------------------------------------------------+
+; WRITE_RECOVERY_TIME      ; 2       ; Signed Integer                                      ;
+; PRECHARGE_COMMAND_PERIOD ; 2       ; Signed Integer                                      ;
+; AUTO_REFRESH_PERIOD      ; 7       ; Signed Integer                                      ;
+; LOAD_MODE_REGISTER       ; 3       ; Signed Integer                                      ;
+; ACTIVE_READ_WRITE        ; 2       ; Signed Integer                                      ;
+; REFRESH_PERIOD           ; 6400000 ; Signed Integer                                      ;
++--------------------------+---------+-----------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -1512,7 +1528,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; user_wstrb      ; Input  ; Info     ; Stuck at VCC                                                                                                                                                                       ;
 ; user_arid       ; Input  ; Warning  ; Input port expression (32 bits) is wider than the input port (8 bits) it drives.  The 24 most-significant bit(s) in the expression will be dangling if they have no other fanouts. ;
 ; user_arid[7..0] ; Input  ; Info     ; Stuck at GND                                                                                                                                                                       ;
-; sdram_led       ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
 ; user_wlast      ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND.                                       ;
 ; user_bid        ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
 ; user_bresp      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                                                           ;
@@ -1563,7 +1578,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:19     ;
+; Top            ; 00:00:20     ;
 +----------------+--------------+
 
 
@@ -1573,7 +1588,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon Feb 20 22:03:33 2023
+    Info: Processing started: Wed Apr 12 12:46:55 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off sdram_test -c sdram_test
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_design/synthesis/sdram_design.v
@@ -1591,33 +1606,25 @@ Info (12021): Found 1 design units, including 1 entities, in source file sdram_d
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v
     Info (12023): Found entity 1: altera_avalon_st_pipeline_base File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_avalon_st_pipeline_base.v Line: 22
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_design/synthesis/submodules/sdram.sv
-    Info (12023): Found entity 1: sdram File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 4
-Warning (10274): Verilog HDL macro warning at sdram_test.sv(49): overriding existing definition for macro "PAGE", which was defined in "sdram_design/synthesis/submodules/sdram.sv", line 60 File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 49
+    Info (12023): Found entity 1: sdram File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 3
+Warning (10275): Verilog HDL Module Instantiation warning at sdram_test.sv(128): ignored dangling comma in List of Port Connections File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 128
 Info (12021): Found 1 design units, including 1 entities, in source file sdram_test.sv
     Info (12023): Found entity 1: sdram_test File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file pll.v
     Info (12023): Found entity 1: pll File: /home/user/Projects/ip/sdram_micron/axi/test/pll.v Line: 39
 Info (12127): Elaborating entity "sdram_test" for the top level hierarchy
 Warning (10230): Verilog HDL assignment warning at sdram_test.sv(141): truncated value with size 16 to match size of target (8) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 141
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(147): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 147
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(149): truncated value with size 32 to match size of target (16) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 149
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(165): truncated value with size 32 to match size of target (8) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 165
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(200): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 200
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(202): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 202
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(234): truncated value with size 32 to match size of target (8) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 234
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(265): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 265
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(267): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 267
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(304): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 304
-Warning (10230): Verilog HDL assignment warning at sdram_test.sv(398): truncated value with size 32 to match size of target (16) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 398
+Warning (10230): Verilog HDL assignment warning at sdram_test.sv(165): truncated value with size 9 to match size of target (8) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 165
+Warning (10230): Verilog HDL assignment warning at sdram_test.sv(234): truncated value with size 9 to match size of target (8) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 234
 Warning (10230): Verilog HDL assignment warning at sdram_test.sv(400): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 400
 Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 70
 Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_inst|altpll:altpll_component" File: /home/user/Projects/ip/sdram_micron/axi/test/pll.v Line: 90
 Info (12130): Elaborated megafunction instantiation "pll:pll_inst|altpll:altpll_component" File: /home/user/Projects/ip/sdram_micron/axi/test/pll.v Line: 90
 Info (12133): Instantiated megafunction "pll:pll_inst|altpll:altpll_component" with the following parameter: File: /home/user/Projects/ip/sdram_micron/axi/test/pll.v Line: 90
     Info (12134): Parameter "bandwidth_type" = "AUTO"
-    Info (12134): Parameter "clk0_divide_by" = "10"
+    Info (12134): Parameter "clk0_divide_by" = "1"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
-    Info (12134): Parameter "clk0_multiply_by" = "9"
+    Info (12134): Parameter "clk0_multiply_by" = "1"
     Info (12134): Parameter "clk0_phase_shift" = "0"
     Info (12134): Parameter "compensate_clock" = "CLK0"
     Info (12134): Parameter "inclk0_input_frequency" = "10000"
@@ -1672,28 +1679,26 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/pll_
     Info (12023): Found entity 1: pll_altpll File: /home/user/Projects/ip/sdram_micron/axi/test/db/pll_altpll.v Line: 29
 Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated" File: /home/user/intelFPGA_lite/18.0/quartus/libraries/megafunctions/altpll.tdf Line: 897
 Info (12128): Elaborating entity "sdram_design" for hierarchy "sdram_design:sdram" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 128
-Info (12128): Elaborating entity "sdram" for hierarchy "sdram_design:sdram|sdram:mt48lc4m16a2_axi_0" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 150
-Warning (10230): Verilog HDL assignment warning at sdram.sv(440): truncated value with size 32 to match size of target (9) File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 440
-Warning (10034): Output port "led" at sdram.sv(18) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 18
-Warning (10034): Output port "axi_bid" at sdram.sv(35) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 35
-Warning (10034): Output port "axi_rid" at sdram.sv(47) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 47
-Warning (10034): Output port "axi_bvalid" at sdram.sv(36) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 36
-Warning (10034): Output port "axi_rlast" at sdram.sv(49) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 49
-Info (12128): Elaborating entity "altera_axi_bridge" for hierarchy "sdram_design:sdram|altera_axi_bridge:axi_bridge_0" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 304
+Info (12128): Elaborating entity "sdram" for hierarchy "sdram_design:sdram|sdram:mt48lc4m16a2_axi_0" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 155
+Warning (10034): Output port "axi_bid" at sdram.sv(47) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 47
+Warning (10034): Output port "axi_rid" at sdram.sv(59) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 59
+Warning (10034): Output port "axi_bvalid" at sdram.sv(48) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 48
+Warning (10034): Output port "axi_rlast" at sdram.sv(61) has no driver File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 61
+Info (12128): Elaborating entity "altera_axi_bridge" for hierarchy "sdram_design:sdram|altera_axi_bridge:axi_bridge_0" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 309
 Info (12128): Elaborating entity "altera_avalon_st_pipeline_base" for hierarchy "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:aw_channel_pipeline" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv Line: 433
 Info (12128): Elaborating entity "altera_avalon_st_pipeline_base" for hierarchy "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:w_channel_pipeline" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv Line: 508
 Info (12128): Elaborating entity "altera_avalon_st_pipeline_base" for hierarchy "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:b_channel_pipeline" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv Line: 575
 Info (12128): Elaborating entity "altera_avalon_st_pipeline_base" for hierarchy "sdram_design:sdram|altera_axi_bridge:axi_bridge_0|altera_avalon_st_pipeline_base:r_channel_pipeline" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_axi_bridge.sv Line: 746
-Info (12128): Elaborating entity "sdram_design_mm_interconnect_0" for hierarchy "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 367
+Info (12128): Elaborating entity "sdram_design_mm_interconnect_0" for hierarchy "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 372
 Info (12128): Elaborating entity "altera_merlin_axi_translator" for hierarchy "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:axi_bridge_0_m0_translator" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v Line: 277
 Info (12128): Elaborating entity "altera_merlin_axi_translator" for hierarchy "sdram_design:sdram|sdram_design_mm_interconnect_0:mm_interconnect_0|altera_merlin_axi_translator:mt48lc4m16a2_axi_0_axi_translator" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram_design_mm_interconnect_0.v Line: 439
-Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "sdram_design:sdram|altera_reset_controller:rst_controller" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 430
+Info (12128): Elaborating entity "altera_reset_controller" for hierarchy "sdram_design:sdram|altera_reset_controller:rst_controller" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/sdram_design.v Line: 435
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v Line: 208
 Info (12128): Elaborating entity "altera_reset_synchronizer" for hierarchy "sdram_design:sdram|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_req_sync_uq1" File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/altera_reset_controller.v Line: 220
 Warning (276020): Inferred RAM node "rd_data_rtl_0" from synchronous design logic.  Pass-through logic has been added to match the read-during-write behavior of the original design.
 Info (276014): Found 2 instances of uninferred RAM logic
     Info (276007): RAM logic "wr_data" is uninferred due to asynchronous read logic File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_test.sv Line: 61
-    Info (276007): RAM logic "sdram_design:sdram|sdram:mt48lc4m16a2_axi_0|wr_data" is uninferred due to asynchronous read logic File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 105
+    Info (276007): RAM logic "sdram_design:sdram|sdram:mt48lc4m16a2_axi_0|wr_data" is uninferred due to asynchronous read logic File: /home/user/Projects/ip/sdram_micron/axi/test/sdram_design/synthesis/submodules/sdram.sv Line: 109
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "rd_data_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -1743,10 +1748,10 @@ Info (21057): Implemented 15523 device resources after synthesis - the final res
     Info (21061): Implemented 15460 logic cells
     Info (21064): Implemented 16 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 23 warnings
-    Info: Peak virtual memory: 1091 megabytes
-    Info: Processing ended: Mon Feb 20 22:04:04 2023
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 13 warnings
+    Info: Peak virtual memory: 1097 megabytes
+    Info: Processing ended: Wed Apr 12 12:47:26 2023
     Info: Elapsed time: 00:00:31
-    Info: Total CPU time (on all processors): 00:00:42
+    Info: Total CPU time (on all processors): 00:00:43
 
 

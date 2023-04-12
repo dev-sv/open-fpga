@@ -11,7 +11,6 @@ module sdram_design (
 	sdram_we,
 	sdram_ras,
 	sdram_cas,
-	sdram_led,
 	user_awid,
 	user_awaddr,
 	user_awlen,
@@ -53,7 +52,6 @@ module sdram_design (
 	output		sdram_we;
 	output		sdram_ras;
 	output		sdram_cas;
-	output	[7:0]	sdram_led;
 	input	[7:0]	user_awid;
 	input	[21:0]	user_awaddr;
 	input	[7:0]	user_awlen;

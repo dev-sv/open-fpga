@@ -82,7 +82,14 @@
    name="MT48LC4M16A2_AVL_0"
    kind="MT48LC4M16A2_AVL"
    version="1.0"
-   enabled="1" />
+   enabled="1">
+  <parameter name="ACTIVE_READ_WRITE" value="2" />
+  <parameter name="AUTO_REFRESH_PERIOD" value="7" />
+  <parameter name="LOAD_MODE_REGISTER" value="3" />
+  <parameter name="PRECHARGE_COMMAND_PERIOD" value="2" />
+  <parameter name="REFRESH_PERIOD" value="6400000" />
+  <parameter name="WRITE_RECOVERY_TIME" value="2" />
+ </module>
  <module name="clk_0" kind="clock_source" version="18.0" enabled="1">
   <parameter name="clockFrequency" value="100000000" />
   <parameter name="clockFrequencyKnown" value="true" />

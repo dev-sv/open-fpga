@@ -11,7 +11,6 @@ module sdram_design (
 	sdram_we,
 	sdram_ras,
 	sdram_cas,
-	sdram_led,
 	user_waitrequest,
 	user_readdata,
 	user_readdatavalid,
@@ -34,7 +33,6 @@ module sdram_design (
 	output		sdram_we;
 	output		sdram_ras;
 	output		sdram_cas;
-	output	[7:0]	sdram_led;
 	output		user_waitrequest;
 	output	[15:0]	user_readdata;
 	output		user_readdatavalid;

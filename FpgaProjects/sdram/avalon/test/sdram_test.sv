@@ -22,8 +22,8 @@ module sdram_test(input bit clk,
 
 
  
- `define PAGE 		256				// 256x16.
- `define MAX_PAGE 16384				// 4 banks x 4096 rows.
+ //`define PAGE 		256				// 256x16.
+ `define MAX_PAGE	16384				// 4 banks x 4096 rows.
   
  enum { SET_DATA, WR0, WR1, RD0, RD1, RD2, CMP, ERR } st = SET_DATA;
 
@@ -235,7 +235,7 @@ sdram_design  sdram_inst(
 									
 									st <= ERR;
 								end
-								else i <= i + 1;					
+								else i <= i + 1'b1;					
 							end
 							else begin	
 		
@@ -327,9 +327,9 @@ sdram_design  sdram_inst(
 																
 										pc <= 0;
 								
-										start <= start + 1;
+										start <= start + 1'b1;
 																
-										bc <= (bc == 24) ? 0 : bc + 1;	
+										bc <= (bc == 24) ? 0 : bc + 1'b1;	
 							end							
 // next page.							
 							wr_addr <= wr_addr + bc_wr;

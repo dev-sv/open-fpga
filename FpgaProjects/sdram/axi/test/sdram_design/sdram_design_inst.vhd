@@ -11,7 +11,6 @@
 			sdram_we      : out   std_logic;                                        -- we
 			sdram_ras     : out   std_logic;                                        -- ras
 			sdram_cas     : out   std_logic;                                        -- cas
-			sdram_led     : out   std_logic_vector(7 downto 0);                     -- led
 			user_awid     : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- awid
 			user_awaddr   : in    std_logic_vector(21 downto 0) := (others => 'X'); -- awaddr
 			user_awlen    : in    std_logic_vector(7 downto 0)  := (others => 'X'); -- awlen
@@ -57,7 +56,6 @@
 			sdram_we      => CONNECTED_TO_sdram_we,      --      .we
 			sdram_ras     => CONNECTED_TO_sdram_ras,     --      .ras
 			sdram_cas     => CONNECTED_TO_sdram_cas,     --      .cas
-			sdram_led     => CONNECTED_TO_sdram_led,     --      .led
 			user_awid     => CONNECTED_TO_user_awid,     --  user.awid
 			user_awaddr   => CONNECTED_TO_user_awaddr,   --      .awaddr
 			user_awlen    => CONNECTED_TO_user_awlen,    --      .awlen

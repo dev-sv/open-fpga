@@ -15,7 +15,6 @@ module sdram_design (
 		output wire        sdram_we,           //      .we
 		output wire        sdram_ras,          //      .ras
 		output wire        sdram_cas,          //      .cas
-		output wire [7:0]  sdram_led,          //      .led
 		output wire        user_waitrequest,   //  user.waitrequest
 		output wire [15:0] user_readdata,      //      .readdata
 		output wire        user_readdatavalid, //      .readdatavalid
@@ -49,7 +48,14 @@ module sdram_design (
 	wire   [8:0] mm_interconnect_0_mt48lc4m16a2_avl_0_avalon_slave_burstcount;    // mm_interconnect_0:MT48LC4M16A2_AVL_0_avalon_slave_burstcount -> MT48LC4M16A2_AVL_0:s_burstcount
 	wire         rst_controller_reset_out_reset;                                  // rst_controller:reset_out -> [MT48LC4M16A2_AVL_0:reset, mm_bridge_0:reset, mm_interconnect_0:mm_bridge_0_reset_reset_bridge_in_reset_reset]
 
-	sdram mt48lc4m16a2_avl_0 (
+	sdram #(
+		.WRITE_RECOVERY_TIME      (2),
+		.PRECHARGE_COMMAND_PERIOD (2),
+		.AUTO_REFRESH_PERIOD      (7),
+		.LOAD_MODE_REGISTER       (3),
+		.ACTIVE_READ_WRITE        (2),
+		.REFRESH_PERIOD           (6400000)
+	) mt48lc4m16a2_avl_0 (
 		.clk             (clk_clk),                                                         //        clock.clk
 		.reset           (rst_controller_reset_out_reset),                                  //        reset.reset
 		.dq              (sdram_dq),                                                        //        sdram.dq
@@ -61,7 +67,6 @@ module sdram_design (
 		.we              (sdram_we),                                                        //             .we
 		.ras             (sdram_ras),                                                       //             .ras
 		.cas             (sdram_cas),                                                       //             .cas
-		.led             (sdram_led),                                                       //             .led
 		.s_read          (mm_interconnect_0_mt48lc4m16a2_avl_0_avalon_slave_read),          // avalon_slave.read
 		.s_write         (mm_interconnect_0_mt48lc4m16a2_avl_0_avalon_slave_write),         //             .write
 		.s_address       (mm_interconnect_0_mt48lc4m16a2_avl_0_avalon_slave_address),       //             .address

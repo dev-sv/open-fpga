@@ -10,7 +10,6 @@
 		.sdram_we      (<connected-to-sdram_we>),      //      .we
 		.sdram_ras     (<connected-to-sdram_ras>),     //      .ras
 		.sdram_cas     (<connected-to-sdram_cas>),     //      .cas
-		.sdram_led     (<connected-to-sdram_led>),     //      .led
 		.user_awid     (<connected-to-user_awid>),     //  user.awid
 		.user_awaddr   (<connected-to-user_awaddr>),   //      .awaddr
 		.user_awlen    (<connected-to-user_awlen>),    //      .awlen

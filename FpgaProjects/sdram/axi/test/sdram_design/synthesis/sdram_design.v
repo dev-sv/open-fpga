@@ -15,7 +15,6 @@ module sdram_design (
 		output wire        sdram_we,      //      .we
 		output wire        sdram_ras,     //      .ras
 		output wire        sdram_cas,     //      .cas
-		output wire [7:0]  sdram_led,     //      .led
 		input  wire [7:0]  user_awid,     //  user.awid
 		input  wire [21:0] user_awaddr,   //      .awaddr
 		input  wire [7:0]  user_awlen,    //      .awlen
@@ -107,7 +106,14 @@ module sdram_design (
 	wire         mm_interconnect_0_mt48lc4m16a2_axi_0_axi_rvalid;  // MT48LC4M16A2_AXI_0:axi_rvalid -> mm_interconnect_0:MT48LC4M16A2_AXI_0_axi_rvalid
 	wire         rst_controller_reset_out_reset;                   // rst_controller:reset_out -> [MT48LC4M16A2_AXI_0:reset, axi_bridge_0:aresetn, mm_interconnect_0:axi_bridge_0_clk_reset_reset_bridge_in_reset_reset]
 
-	sdram mt48lc4m16a2_axi_0 (
+	sdram #(
+		.WRITE_RECOVERY_TIME      (2),
+		.PRECHARGE_COMMAND_PERIOD (2),
+		.AUTO_REFRESH_PERIOD      (7),
+		.LOAD_MODE_REGISTER       (3),
+		.ACTIVE_READ_WRITE        (2),
+		.REFRESH_PERIOD           (6400000)
+	) mt48lc4m16a2_axi_0 (
 		.clk         (clk_clk),                                          // clock.clk
 		.reset       (rst_controller_reset_out_reset),                   // reset.reset
 		.dq          (sdram_dq),                                         // sdram.dq
@@ -119,7 +125,6 @@ module sdram_design (
 		.we          (sdram_we),                                         //      .we
 		.ras         (sdram_ras),                                        //      .ras
 		.cas         (sdram_cas),                                        //      .cas
-		.led         (sdram_led),                                        //      .led
 		.axi_awid    (mm_interconnect_0_mt48lc4m16a2_axi_0_axi_awid),    //   axi.awid
 		.axi_awaddr  (mm_interconnect_0_mt48lc4m16a2_axi_0_axi_awaddr),  //      .awaddr
 		.axi_awlen   (mm_interconnect_0_mt48lc4m16a2_axi_0_axi_awlen),   //      .awlen

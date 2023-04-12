@@ -1,8 +1,22 @@
 
 
+module sdram #(parameter 
 
-module sdram(input bit clk,
-                       reset,
+						WRITE_RECOVERY_TIME= 2,
+					
+						PRECHARGE_COMMAND_PERIOD= 2,
+					
+						AUTO_REFRESH_PERIOD = 7,
+					
+						LOAD_MODE_REGISTER = 3,
+					
+						ACTIVE_READ_WRITE = 2,
+					
+						REFRESH_PERIOD = 6400000
+					)
+
+				(input bit 			clk,
+										reset,
 
 //sdram_if.
 				 inout     [15:0] dq,
@@ -14,9 +28,7 @@ module sdram(input bit clk,
 										we,
 										ras,
 										cas,
-					
-				 output bit[7:0]  led,
-				 
+									 
 // axi_if.				 
 				input bit[7:0]   axi_awid,
 				input bit[21:0]  axi_awaddr,
@@ -67,14 +79,6 @@ enum { INI, CMD_PRECHARGE, CMD_REF_INI, CMD_LMR, CMD_ACTIVE, CMD_WRITE, WR,
        CMD_READ, RD, RD_END, RD_WR, CMD_AREF, S0, S1, S2, S3, S4 } st = INI;
 
 		 
-// t_delays params.
-localparam t_WR = 2; 				 	// t_WR = 20ns(15ns).
-localparam t_RP = 2;	  				 	// t_RP = 20ns         precharge time.
-localparam t_RFC = 7; 				 	// t_RFC = 70ns(66ns)  Auto refresh.
-localparam t_MRD = 3;	   		 	// t_MRD = 30ns		  Delay after LMR.
-localparam t_RCD = 2; 				 	// t_RCD = (20 / t_CK) ACTIVE READ or WRITE.
-localparam t_REFRESH = 6400000;     // 64 ms.
-
 int unsigned t_count = 0,				// time count.
 				 t_aref = 0,
 				 row_count = 0,
@@ -144,7 +148,7 @@ bit[15:0] buff_wr,
 									
 										cmd <= PRECHARGE;
 
-										t_count <= t_RP;
+										t_count <= PRECHARGE_COMMAND_PERIOD;
 
 										if(new_burstcount || power_up)begin
 
@@ -160,7 +164,7 @@ bit[15:0] buff_wr,
 										else begin
 																																		
 // go to check time refresh.																					
-												if(t_aref >= t_REFRESH)
+												if(t_aref >= REFRESH_PERIOD)
 													st <= CMD_AREF;
 												
 												else st <= S0;
@@ -177,7 +181,7 @@ bit[15:0] buff_wr,
 											
 											cmd <= REFRESH;
 											
-											t_count <= t_RFC;
+											t_count <= AUTO_REFRESH_PERIOD;
 										end
 										else st <= CMD_LMR;
 										
@@ -194,7 +198,7 @@ bit[15:0] buff_wr,
 										address[8:7] <= op_mode;
 										address[9] <= wb;
 							
-										t_count <= t_MRD;
+										t_count <= LOAD_MODE_REGISTER;
 										
 										st <= new_burstcount ? CMD_ACTIVE : S0;	
 									end
@@ -208,7 +212,7 @@ bit[15:0] buff_wr,
 // set row.															
 										address <= buff_addr[19:8];
 							  
-										t_count <= t_RCD;
+										t_count <= ACTIVE_READ_WRITE;
 							  
 										st <= RD_WR;
 									end 
@@ -232,7 +236,7 @@ bit[15:0] buff_wr,
 											
 											buff_wr <= wr_data[0];
 														
-											i <= 1;																						
+											i <= 1'b1;																						
 											
 											st <= WR;												
 																		 
@@ -269,7 +273,7 @@ bit[15:0] buff_wr,
 							  							  
 												sw <= `EN_RD;
 																																					
-												t_count <= t_WR;
+												t_count <= WRITE_RECOVERY_TIME;
 												
 												axi_awready <= 1'b1;
 												
@@ -318,11 +322,11 @@ bit[15:0] buff_wr,
 
 										if(row_count < `MAX_ROWS) begin
 
-											row_count <= row_count + 1;
+											row_count <= row_count + 1'b1;
 
 											cmd <= REFRESH;
 
-										   t_count <= t_RFC;
+										   t_count <= AUTO_REFRESH_PERIOD;
 										end
 										else begin
 
@@ -437,7 +441,7 @@ bit[15:0] buff_wr,
 						
 									wr_data[i] <= axi_wdata;
 									
-									i <= i + 1;
+									i <= i + 1'b1;
 								end
 						
 							end		 
@@ -462,7 +466,7 @@ bit[15:0] buff_wr,
 		
 				cmd <= NOP;
 				
-				t_count <= t_count - 1;				
+				t_count <= t_count - 1'b1;				
 		end
 
 
@@ -470,8 +474,8 @@ bit[15:0] buff_wr,
 		
 		if(!power_up)begin
 		
-			if(t_aref < t_REFRESH)
-			   t_aref <= t_aref + 1;
+			if(t_aref < REFRESH_PERIOD)
+			   t_aref <= t_aref + 1'b1;
 			
 		end
 		

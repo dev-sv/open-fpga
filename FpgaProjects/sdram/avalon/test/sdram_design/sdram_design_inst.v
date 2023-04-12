@@ -10,7 +10,6 @@
 		.sdram_we           (<connected-to-sdram_we>),           //      .we
 		.sdram_ras          (<connected-to-sdram_ras>),          //      .ras
 		.sdram_cas          (<connected-to-sdram_cas>),          //      .cas
-		.sdram_led          (<connected-to-sdram_led>),          //      .led
 		.user_waitrequest   (<connected-to-user_waitrequest>),   //  user.waitrequest
 		.user_readdata      (<connected-to-user_readdata>),      //      .readdata
 		.user_readdatavalid (<connected-to-user_readdatavalid>), //      .readdatavalid

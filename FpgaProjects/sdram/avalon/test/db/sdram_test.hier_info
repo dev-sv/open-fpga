@@ -1,26 +1,26 @@
 |sdram_test
 clk => clk.IN1
-osc <= sdram_design:sdram_inst.sdram_osc
-cs <= sdram_design:sdram_inst.sdram_cs
-ras <= sdram_design:sdram_inst.sdram_ras
-cas <= sdram_design:sdram_inst.sdram_cas
-we <= sdram_design:sdram_inst.sdram_we
-ba[0] <= sdram_design:sdram_inst.sdram_ba
-ba[1] <= sdram_design:sdram_inst.sdram_ba
-dqm[0] <= sdram_design:sdram_inst.sdram_dqm
-dqm[1] <= sdram_design:sdram_inst.sdram_dqm
-address[0] <= sdram_design:sdram_inst.sdram_address
-address[1] <= sdram_design:sdram_inst.sdram_address
-address[2] <= sdram_design:sdram_inst.sdram_address
-address[3] <= sdram_design:sdram_inst.sdram_address
-address[4] <= sdram_design:sdram_inst.sdram_address
-address[5] <= sdram_design:sdram_inst.sdram_address
-address[6] <= sdram_design:sdram_inst.sdram_address
-address[7] <= sdram_design:sdram_inst.sdram_address
-address[8] <= sdram_design:sdram_inst.sdram_address
-address[9] <= sdram_design:sdram_inst.sdram_address
-address[10] <= sdram_design:sdram_inst.sdram_address
-address[11] <= sdram_design:sdram_inst.sdram_address
+osc << sdram_design:sdram_inst.sdram_osc
+cs << sdram_design:sdram_inst.sdram_cs
+ras << sdram_design:sdram_inst.sdram_ras
+cas << sdram_design:sdram_inst.sdram_cas
+we << sdram_design:sdram_inst.sdram_we
+ba[0] << sdram_design:sdram_inst.sdram_ba
+ba[1] << sdram_design:sdram_inst.sdram_ba
+dqm[0] << sdram_design:sdram_inst.sdram_dqm
+dqm[1] << sdram_design:sdram_inst.sdram_dqm
+address[0] << sdram_design:sdram_inst.sdram_address
+address[1] << sdram_design:sdram_inst.sdram_address
+address[2] << sdram_design:sdram_inst.sdram_address
+address[3] << sdram_design:sdram_inst.sdram_address
+address[4] << sdram_design:sdram_inst.sdram_address
+address[5] << sdram_design:sdram_inst.sdram_address
+address[6] << sdram_design:sdram_inst.sdram_address
+address[7] << sdram_design:sdram_inst.sdram_address
+address[8] << sdram_design:sdram_inst.sdram_address
+address[9] << sdram_design:sdram_inst.sdram_address
+address[10] << sdram_design:sdram_inst.sdram_address
+address[11] << sdram_design:sdram_inst.sdram_address
 dq[0] <> sdram_design:sdram_inst.sdram_dq
 dq[1] <> sdram_design:sdram_inst.sdram_dq
 dq[2] <> sdram_design:sdram_inst.sdram_dq
@@ -37,14 +37,14 @@ dq[12] <> sdram_design:sdram_inst.sdram_dq
 dq[13] <> sdram_design:sdram_inst.sdram_dq
 dq[14] <> sdram_design:sdram_inst.sdram_dq
 dq[15] <> sdram_design:sdram_inst.sdram_dq
-led[0] <= led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[1] <= led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[2] <= led[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[3] <= led[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[4] <= led[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[5] <= led[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[6] <= led[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[7] <= led[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[0] << led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] << led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] << led[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] << led[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[4] << led[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[5] << led[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[6] << led[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[7] << led[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |sdram_test|pll:pll_inst
@@ -162,14 +162,6 @@ sdram_cs <= sdram:mt48lc4m16a2_avl_0.cs
 sdram_we <= sdram:mt48lc4m16a2_avl_0.we
 sdram_ras <= sdram:mt48lc4m16a2_avl_0.ras
 sdram_cas <= sdram:mt48lc4m16a2_avl_0.cas
-sdram_led[0] <= sdram:mt48lc4m16a2_avl_0.led
-sdram_led[1] <= sdram:mt48lc4m16a2_avl_0.led
-sdram_led[2] <= sdram:mt48lc4m16a2_avl_0.led
-sdram_led[3] <= sdram:mt48lc4m16a2_avl_0.led
-sdram_led[4] <= sdram:mt48lc4m16a2_avl_0.led
-sdram_led[5] <= sdram:mt48lc4m16a2_avl_0.led
-sdram_led[6] <= sdram:mt48lc4m16a2_avl_0.led
-sdram_led[7] <= sdram:mt48lc4m16a2_avl_0.led
 user_waitrequest <= altera_avalon_mm_bridge:mm_bridge_0.s0_waitrequest
 user_readdata[0] <= altera_avalon_mm_bridge:mm_bridge_0.s0_readdata
 user_readdata[1] <= altera_avalon_mm_bridge:mm_bridge_0.s0_readdata
@@ -811,14 +803,6 @@ cs <= cmd[3].DB_MAX_OUTPUT_PORT_TYPE
 we <= cmd[0].DB_MAX_OUTPUT_PORT_TYPE
 ras <= cmd[2].DB_MAX_OUTPUT_PORT_TYPE
 cas <= cmd[1].DB_MAX_OUTPUT_PORT_TYPE
-led[0] <= <GND>
-led[1] <= <GND>
-led[2] <= <GND>
-led[3] <= <GND>
-led[4] <= <GND>
-led[5] <= <GND>
-led[6] <= <GND>
-led[7] <= <GND>
 
 
 |sdram_test|sdram_design:sdram_inst|altera_avalon_mm_bridge:mm_bridge_0
