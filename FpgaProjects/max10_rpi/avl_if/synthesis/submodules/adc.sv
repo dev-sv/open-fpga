@@ -36,9 +36,8 @@ module adc(
  wire       eoc;
  wire[11:0] data;  
   
- 
    
- `define HW_TEST
+ //`define HW_TEST
  
  //`define TEST
  

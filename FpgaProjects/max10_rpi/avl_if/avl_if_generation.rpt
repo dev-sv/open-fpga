@@ -1,6 +1,6 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate /home/user/Projects/max10/z_max10_rpi/avl_if.qsys --block-symbol-file --output-directory=/home/user/Projects/max10/z_max10_rpi/avl_if --family="MAX 10" --part=10M50SAE144C8G
-Progress: Loading z_max10_rpi/avl_if.qsys
+Info: qsys-generate /home/user/Projects/max10/max10_rpi/avl_if.qsys --block-symbol-file --output-directory=/home/user/Projects/max10/max10_rpi/avl_if --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading max10_rpi/avl_if.qsys
 Progress: Reading input file
 Progress: Adding adc_max10_0 [adc_max10 1.0]
 Progress: Parameterizing module adc_max10_0
@@ -16,8 +16,8 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate /home/user/Projects/max10/z_max10_rpi/avl_if.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/max10/z_max10_rpi/avl_if/synthesis --family="MAX 10" --part=10M50SAE144C8G
-Progress: Loading z_max10_rpi/avl_if.qsys
+Info: qsys-generate /home/user/Projects/max10/max10_rpi/avl_if.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/max10/max10_rpi/avl_if/synthesis --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading max10_rpi/avl_if.qsys
 Progress: Reading input file
 Progress: Adding adc_max10_0 [adc_max10 1.0]
 Progress: Parameterizing module adc_max10_0

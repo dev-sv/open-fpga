@@ -34,27 +34,27 @@ soc => st.OUTPUTSELECT
 soc => st.OUTPUTSELECT
 soc => st.OUTPUTSELECT
 soc => st.OUTPUTSELECT
-ready << ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[0] << data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[1] << data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[2] << data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[3] << data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[4] << data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[5] << data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[6] << data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[7] << data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[8] << data[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[9] << data[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[10] << data[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-data[11] << data[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[0] << led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[1] << led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[2] << led[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[3] << led[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[4] << led[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[5] << led[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[6] << led[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
-led[7] << led[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+ready <= ready~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[0] <= data[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[1] <= data[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[2] <= data[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[3] <= data[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[4] <= data[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[5] <= data[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[6] <= data[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[7] <= data[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[8] <= data[8]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[9] <= data[9]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[10] <= data[10]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+data[11] <= data[11]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[0] <= led[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[1] <= led[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[2] <= led[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[3] <= led[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[4] <= led[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[5] <= led[5]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[6] <= led[6]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+led[7] <= led[7]~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |max10_rpi|pll:pll_inst
@@ -192,16 +192,6 @@ reset_reset_n => _.IN1
 
 
 |max10_rpi|avl_if:avl_inst|adc:adc_max10_0
-clk => np[0].CLK
-clk => np[1].CLK
-clk => np[2].CLK
-clk => np[3].CLK
-clk => np[4].CLK
-clk => np[5].CLK
-clk => np[6].CLK
-clk => np[7].CLK
-clk => np[8].CLK
-clk => np[9].CLK
 clk => readdata[0]~reg0.CLK
 clk => readdata[1]~reg0.CLK
 clk => readdata[2]~reg0.CLK

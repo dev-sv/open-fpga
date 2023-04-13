@@ -48,11 +48,11 @@
 					"strict" : false
 				},
 				{
-					"name" : "led[0]",
+					"name" : "data[10]",
 					"strict" : false
 				},
 				{
-					"name" : "led[7]",
+					"name" : "data[11]",
 					"strict" : false
 				},
 				{

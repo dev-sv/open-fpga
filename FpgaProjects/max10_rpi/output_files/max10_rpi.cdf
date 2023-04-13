@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10M50SAE144) Path("/home/user/Projects/max10/z_max10_rpi/output_files/") File("max10_rpi.sof") MfrSpec(OpMask(1));
+		Device PartName(10M50SAE144) Path("/home/user/Projects/max10/max10_rpi/output_files/") File("max10_rpi.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

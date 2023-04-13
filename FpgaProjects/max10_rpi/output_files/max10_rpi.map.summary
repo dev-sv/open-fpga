@@ -1,15 +1,15 @@
-Analysis & Synthesis Status : Successful - Wed Apr 12 16:31:25 2023
+Analysis & Synthesis Status : Successful - Thu Apr 13 11:38:58 2023
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : max10_rpi
 Top-level Entity Name : max10_rpi
 Family : MAX 10
-Total logic elements : 153
-    Total combinational functions : 98
-    Dedicated logic registers : 113
-Total registers : 113
+Total logic elements : 140
+    Total combinational functions : 79
+    Dedicated logic registers : 109
+Total registers : 109
 Total pins : 24
 Total virtual pins : 0
-Total memory bits : 10,240
+Total memory bits : 12,288
 Embedded Multiplier 9-bit elements : 0
 Total PLLs : 1
 UFM blocks : 0
