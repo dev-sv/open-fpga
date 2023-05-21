@@ -1,0 +1,127 @@
+# do i2c_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/user/Projects/cyclone_iv/i2c/i2c_if {/home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:43:16 on May 21,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/user/Projects/cyclone_iv/i2c/i2c_if" /home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv 
+# -- Compiling module i2c
+# 
+# Top level modules:
+# 	i2c
+# End time: 11:43:16 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+do i2c.do
+# 
+#  set PRJ_DIR "/home/user/Projects/cyclone_iv/i2c/i2c_if"
+# /home/user/Projects/cyclone_iv/i2c/i2c_if
+# 
+#  vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+#  vlog -sv $PRJ_DIR/i2c.sv $PRJ_DIR/tb_i2c.sv $PRJ_DIR/tb_stimulus.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:43:25 on May 21,2023
+# vlog -reportprogress 300 -sv /home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv /home/user/Projects/cyclone_iv/i2c/i2c_if/tb_i2c.sv /home/user/Projects/cyclone_iv/i2c/i2c_if/tb_stimulus.sv 
+# -- Compiling module i2c
+# -- Compiling module tb_i2c
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	tb_i2c
+# End time: 11:43:25 on May 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+#  vsim tb_i2c
+# vsim tb_i2c 
+# Start time: 11:43:25 on May 21,2023
+# Loading sv_std.std
+# Loading work.tb_i2c
+# Loading work.i2c
+# Loading work.stimulus
+# 
+#  add wave /tb_i2c/w_sclk
+#  add wave /tb_i2c/w_sda
+#  add wave /tb_i2c/sw
+#  add wave /tb_i2c/w_rw
+#  add wave /tb_i2c/w_wr_data
+#  add wave /tb_i2c/w_rd_data
+# 
+#  run 45000000000
+# addr =          0 wr = 01 rd = 01 pass
+# addr =          1 wr = 02 rd = 02 pass
+# addr =          2 wr = 03 rd = 03 pass
+# addr =          3 wr = 04 rd = 04 pass
+# addr =          4 wr = 05 rd = 05 pass
+# addr =          5 wr = 06 rd = 06 pass
+# addr =          6 wr = 07 rd = 07 pass
+# addr =          7 wr = 08 rd = 08 pass
+# addr =          8 wr = 09 rd = 09 pass
+# addr =          9 wr = 0a rd = 0a pass
+# addr =         10 wr = 0b rd = 0b pass
+# addr =         11 wr = 0c rd = 0c pass
+# addr =         12 wr = 0d rd = 0d pass
+# addr =         13 wr = 0e rd = 0e pass
+# addr =         14 wr = 0f rd = 0f pass
+# addr =         15 wr = 10 rd = 10 pass
+# addr =         16 wr = 11 rd = 11 pass
+# addr =         17 wr = 12 rd = 12 pass
+# addr =         18 wr = 13 rd = 13 pass
+# addr =         19 wr = 14 rd = 14 pass
+# addr =         20 wr = 15 rd = 15 pass
+# addr =         21 wr = 16 rd = 16 pass
+# addr =         22 wr = 17 rd = 17 pass
+# addr =         23 wr = 18 rd = 18 pass
+# addr =         24 wr = 19 rd = 19 pass
+# addr =         25 wr = 1a rd = 1a pass
+# addr =         26 wr = 1b rd = 1b pass
+# addr =         27 wr = 1c rd = 1c pass
+# addr =         28 wr = 1d rd = 1d pass
+# addr =         29 wr = 1e rd = 1e pass
+# addr =         30 wr = 1f rd = 1f pass
+# addr =         31 wr = 20 rd = 20 pass
+# addr =         32 wr = 21 rd = 21 pass
+# addr =         33 wr = 22 rd = 22 pass
+# addr =         34 wr = 23 rd = 23 pass
+# addr =         35 wr = 24 rd = 24 pass
+# addr =         36 wr = 25 rd = 25 pass
+# addr =         37 wr = 26 rd = 26 pass
+# addr =         38 wr = 27 rd = 27 pass
+# addr =         39 wr = 28 rd = 28 pass
+# addr =         40 wr = 29 rd = 29 pass
+# addr =         41 wr = 2a rd = 2a pass
+# addr =         42 wr = 2b rd = 2b pass
+# addr =         43 wr = 2c rd = 2c pass
+# addr =         44 wr = 2d rd = 2d pass
+# addr =         45 wr = 2e rd = 2e pass
+# addr =         46 wr = 2f rd = 2f pass
+# addr =         47 wr = 30 rd = 30 pass
+# addr =         48 wr = 31 rd = 31 pass
+# addr =         49 wr = 32 rd = 32 pass
+# addr =         50 wr = 33 rd = 33 pass
+# addr =         51 wr = 34 rd = 34 pass
+# addr =         52 wr = 35 rd = 35 pass
+# addr =         53 wr = 36 rd = 36 pass
+# addr =         54 wr = 37 rd = 37 pass
+# addr =         55 wr = 38 rd = 38 pass
+# addr =         56 wr = 39 rd = 39 pass
+# addr =         57 wr = 3a rd = 3a pass
+# addr =         58 wr = 3b rd = 3b pass
+# addr =         59 wr = 3c rd = 3c pass
+# addr =         60 wr = 3d rd = 3d pass
+# addr =         61 wr = 3e rd = 3e pass
+# addr =         62 wr = 3f rd = 3f pass
+# addr =         63 wr = 40 rd = 40 pass
+# run -All
+# End time: 11:43:34 on May 21,2023, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0

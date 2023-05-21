@@ -1,0 +1,14 @@
+-- begin_signature
+-- hw_test(Nb
+-- 2)
+-- end_signature
+WIDTH=8;
+DEPTH=2;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	1 :	00000100;
+	0 :	00000011;
+END;

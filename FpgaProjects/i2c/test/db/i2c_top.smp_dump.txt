@@ -1,0 +1,6 @@
+
+State Machine - |i2c_top|op
+Name op.00 op.10 op.01 
+op.00 0 0 0 
+op.01 1 0 1 
+op.10 1 1 0 

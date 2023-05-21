@@ -1,0 +1,35 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/cyclone_iv/i2c/hw_test/simulation/modelsim
+vpll
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1684438460
+!i10b 1
+!s100 BPkhfi1MDI^PN@Q^37:L[1
+I3`g:HJn5[7jP8CzLaT16n1
+VDg1SIo80bB@j0V0VzS_@n1
+!s105 pll_v_unit
+S1
+R0
+w1682936259
+8/home/user/Projects/cyclone_iv/i2c/hw_test/pll.v
+F/home/user/Projects/cyclone_iv/i2c/hw_test/pll.v
+L0 39
+OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1684438460.000000
+!s107 /home/user/Projects/cyclone_iv/i2c/hw_test/pll.v|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/user/Projects/cyclone_iv/i2c/hw_test|/home/user/Projects/cyclone_iv/i2c/hw_test/pll.v|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+/home/user/Projects/cyclone_iv/i2c/hw_test
+tCvgOpt 0

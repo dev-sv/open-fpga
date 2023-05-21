@@ -1,0 +1,82 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/cyclone_iv/i2c/i2c_if/simulation/modelsim
+vi2c
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1684658605
+!i10b 1
+!s100 C0J0gUb5EanWS05b<ohn02
+IN>5;]Boh2Q9a@U]OL^al53
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!s105 i2c_sv_unit
+S1
+R0
+w1684658016
+8/home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv
+F/home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv
+L0 5
+Z4 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z5 !s108 1684658605.000000
+Z6 !s107 /home/user/Projects/cyclone_iv/i2c/i2c_if/tb_stimulus.sv|/home/user/Projects/cyclone_iv/i2c/i2c_if/tb_i2c.sv|/home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv|
+Z7 !s90 -reportprogress|300|-sv|/home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv|/home/user/Projects/cyclone_iv/i2c/i2c_if/tb_i2c.sv|/home/user/Projects/cyclone_iv/i2c/i2c_if/tb_stimulus.sv|
+!i113 1
+o-sv
+Z8 tCvgOpt 0
+vstimulus
+R1
+R2
+!i10b 1
+!s100 ^b1Y:XSlPJe23=58NDofX0
+IG>CkBiDmMzRkc?5lP5R6f0
+R3
+!s105 tb_stimulus_sv_unit
+S1
+R0
+w1684595127
+8/home/user/Projects/cyclone_iv/i2c/i2c_if/tb_stimulus.sv
+F/home/user/Projects/cyclone_iv/i2c/i2c_if/tb_stimulus.sv
+L0 4
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8
+vtb_i2c
+R1
+R2
+!i10b 1
+!s100 TN;;gS=^kS=b5b<WVSU>L2
+IZnUZN<[I<=P]XNLXf^8`61
+R3
+!s105 tb_i2c_sv_unit
+S1
+R0
+w1684594956
+8/home/user/Projects/cyclone_iv/i2c/i2c_if/tb_i2c.sv
+F/home/user/Projects/cyclone_iv/i2c/i2c_if/tb_i2c.sv
+L0 6
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+o-sv
+R8

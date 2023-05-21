@@ -1,0 +1,111 @@
+do i2c.do
+# 
+#  set PRJ_DIR "/home/user/Projects/cyclone_iv/i2c/i2c_if"
+# /home/user/Projects/cyclone_iv/i2c/i2c_if
+# 
+#  vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+#  vlog -sv $PRJ_DIR/i2c.sv $PRJ_DIR/tb_i2c.sv $PRJ_DIR/tb_stimulus.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:25:54 on May 20,2023
+# vlog -reportprogress 300 -sv /home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv /home/user/Projects/cyclone_iv/i2c/i2c_if/tb_i2c.sv /home/user/Projects/cyclone_iv/i2c/i2c_if/tb_stimulus.sv 
+# -- Compiling module i2c
+# -- Compiling module tb_i2c
+# -- Compiling module stimulus
+# 
+# Top level modules:
+# 	tb_i2c
+# End time: 17:25:54 on May 20,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+#  vsim tb_i2c
+# vsim tb_i2c 
+# Start time: 17:25:54 on May 20,2023
+# Loading sv_std.std
+# Loading work.tb_i2c
+# Loading work.i2c
+# Loading work.stimulus
+# 
+#  add wave /tb_i2c/w_sclk
+#  add wave /tb_i2c/w_sda
+#  add wave /tb_i2c/sw
+#  add wave /tb_i2c/w_rw
+#  add wave /tb_i2c/w_wr_data
+#  add wave /tb_i2c/w_rd_data
+# 
+# add wave /tb_sdram/address
+# add wave /tb_sdram/dq
+# add wave /tb_sdram/cs
+# add wave /tb_sdram/we
+# add wave /tb_sdram/ras
+# add wave /tb_sdram/cas
+# 
+#  run 45000000000
+# addr =   0
+# addr =   1
+# addr =   2
+# addr =   3
+# addr =   4
+# addr =   5
+# addr =   6
+# addr =   7
+# addr =   8
+# addr =   9
+# addr =  10
+# addr =  11
+# addr =  12
+# addr =  13
+# addr =  14
+# addr =  15
+# addr =  16
+# addr =  17
+# addr =  18
+# addr =  19
+# addr =  20
+# addr =  21
+# addr =  22
+# addr =  23
+# addr =  24
+# addr =  25
+# addr =  26
+# addr =  27
+# addr =  28
+# addr =  29
+# addr =  30
+# addr =  31
+# addr =  32
+# addr =  33
+# addr =  34
+# addr =  35
+# addr =  36
+# addr =  37
+# addr =  38
+# addr =  39
+# addr =  40
+# addr =  41
+# addr =  42
+# addr =  43
+# addr =  44
+# addr =  45
+# addr =  46
+# addr =  47
+# addr =  48
+# addr =  49
+# addr =  50
+# addr =  51
+# addr =  52
+# addr =  53
+# addr =  54
+# addr =  55
+# addr =  56
+# addr =  57
+# addr =  58
+# addr =  59
+# addr =  60
+# addr =  61
+# addr =  62
+# addr =  63
+# run -All
+# End time: 17:26:04 on May 20,2023, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0

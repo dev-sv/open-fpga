@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun May 21 13:03:26 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : i2c_top
+Top-level Entity Name : i2c_top
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 1,038 / 6,272 ( 17 % )
+    Total combinational functions : 816 / 6,272 ( 13 % )
+    Dedicated logic registers : 613 / 6,272 ( 10 % )
+Total registers : 613
+Total pins : 7 / 92 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 512 / 276,480 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 1 / 2 ( 50 % )

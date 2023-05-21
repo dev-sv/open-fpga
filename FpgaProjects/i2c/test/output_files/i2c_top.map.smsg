@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at hw_test.sv(50): object "err" differs only in case from object "ERR" in the same scope File: /home/user/Projects/cyclone_iv/i2c/test/hw_test.sv Line: 50

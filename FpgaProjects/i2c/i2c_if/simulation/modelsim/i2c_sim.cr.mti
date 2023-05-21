@@ -1,0 +1,8 @@
+/home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv {1 {vlog -work work -sv -stats=none /home/user/Projects/cyclone_iv/i2c/i2c_if/i2c.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module i2c
+
+Top level modules:
+	i2c
+
+} {} {}}
