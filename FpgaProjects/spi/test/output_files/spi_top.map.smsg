@@ -1,0 +1,1 @@
+Info (10281): Verilog HDL Declaration information at spi_top.sv(44): object "ERR" differs only in case from object "err" in the same scope File: /home/user/Projects/cyclone_iv/spi/test/spi_top.sv Line: 44

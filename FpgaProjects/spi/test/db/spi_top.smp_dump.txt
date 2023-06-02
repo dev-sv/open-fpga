@@ -1,0 +1,5 @@
+
+State Machine - |spi_top|cmd
+Name cmd.00000110 
+cmd.00000101 0 
+cmd.00000110 1 

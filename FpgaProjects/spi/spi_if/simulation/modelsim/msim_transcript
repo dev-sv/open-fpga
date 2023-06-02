@@ -1,0 +1,106 @@
+# do spi_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/user/Projects/cyclone_iv/spi/spi_if {/home/user/Projects/cyclone_iv/spi/spi_if/tb_spi.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:31 on Jun 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/user/Projects/cyclone_iv/spi/spi_if" /home/user/Projects/cyclone_iv/spi/spi_if/tb_spi.sv 
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 12:23:31 on Jun 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/user/Projects/cyclone_iv/spi/spi_if {/home/user/Projects/cyclone_iv/spi/spi_if/spi.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:31 on Jun 02,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/user/Projects/cyclone_iv/spi/spi_if" /home/user/Projects/cyclone_iv/spi/spi_if/spi.sv 
+# -- Compiling module spi
+# 
+# Top level modules:
+# 	spi
+# End time: 12:23:31 on Jun 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+do spi.do
+# 
+#  set PRJ_DIR "/home/user/Projects/cyclone_iv/spi/spi_if"
+# /home/user/Projects/cyclone_iv/spi/spi_if
+# 
+#  vlib work
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+#  vlog -sv $PRJ_DIR/spi.sv $PRJ_DIR/tb_spi.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 12:23:34 on Jun 02,2023
+# vlog -reportprogress 300 -sv /home/user/Projects/cyclone_iv/spi/spi_if/spi.sv /home/user/Projects/cyclone_iv/spi/spi_if/tb_spi.sv 
+# -- Compiling module spi
+# -- Compiling module tb_spi
+# 
+# Top level modules:
+# 	tb_spi
+# End time: 12:23:34 on Jun 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+#  vsim tb_spi
+# vsim tb_spi 
+# Start time: 12:23:34 on Jun 02,2023
+# Loading sv_std.std
+# Loading work.tb_spi
+# Loading work.spi
+# 
+# 
+#  add wave /tb_spi/sclk
+#  add wave /tb_spi/ss
+#  add wave /tb_spi/mosi
+#  add wave /tb_spi/miso
+#  add wave /tb_spi/op
+# 
+#  run 2150000
+# spi mode 00
+# 
+#          0 in_buff = 5a out _data = 5a pass
+#          1 in_buff = 0c out _data = 0c pass
+#          2 in_buff = 21 out _data = 21 pass
+#          3 in_buff = 2f out _data = 2f pass
+#          4 in_buff = 05 out _data = 05 pass
+#          5 in_buff = 10 out _data = 10 pass
+#          6 in_buff = 4f out _data = 4f pass
+#          7 in_buff = 08 out _data = 08 pass
+#          8 in_buff = 5e out _data = 5e pass
+#          9 in_buff = 0a out _data = 0a pass
+#         10 in_buff = 0b out _data = 0b pass
+#         11 in_buff = 66 out _data = 66 pass
+#         12 in_buff = 0d out _data = 0d pass
+#         13 in_buff = 94 out _data = 94 pass
+#         14 in_buff = 0f out _data = 0f pass
+#         15 in_buff = 00 out _data = 00 pass
+#         16 in_buff = ff out _data = ff pass
+#         17 in_buff = c9 out _data = c9 pass
+#         18 in_buff = 7b out _data = 7b pass
+#         19 in_buff = 62 out _data = 62 pass
+#         20 in_buff = 2d out _data = 2d pass
+#         21 in_buff = 3d out _data = 3d pass
+#         22 in_buff = 4f out _data = 4f pass
+#         23 in_buff = 50 out _data = 50 pass
+#         24 in_buff = 63 out _data = 63 pass
+#         25 in_buff = 6b out _data = 6b pass
+#         26 in_buff = 6f out _data = 6f pass
+#         27 in_buff = 7e out _data = 7e pass
+#         28 in_buff = 84 out _data = 84 pass
+#         29 in_buff = 8d out _data = 8d pass
+#         30 in_buff = 9b out _data = 9b pass
+#         31 in_buff = a7 out _data = a7 pass
+# 
+# run -All
+# End time: 12:23:40 on Jun 02,2023, Elapsed time: 0:00:06
+# Errors: 0, Warnings: 0

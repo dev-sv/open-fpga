@@ -1,0 +1,79 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/cyclone_iv/spi/test/simulation/modelsim
+vpll
+Z1 !s110 1685360174
+!i10b 1
+!s100 E5`Q1G1lHKbGj:RB@>zj<3
+II65Z?5@8AzbUa4VJdQjm51
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1685359214
+8/home/user/Projects/cyclone_iv/spi/test/pll.v
+F/home/user/Projects/cyclone_iv/spi/test/pll.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1685360174.000000
+!s107 /home/user/Projects/cyclone_iv/spi/test/pll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/cyclone_iv/spi/test|/home/user/Projects/cyclone_iv/spi/test/pll.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/cyclone_iv/spi/test
+Z6 tCvgOpt 0
+vpll_altpll
+R1
+!i10b 1
+!s100 VMJnj@KPlg=MI>oCDYJR>0
+IYQDS76CLidzWN?_57gdjX0
+R2
+R0
+w1685347393
+8/home/user/Projects/cyclone_iv/spi/test/db/pll_altpll.v
+F/home/user/Projects/cyclone_iv/spi/test/db/pll_altpll.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/user/Projects/cyclone_iv/spi/test/db/pll_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/cyclone_iv/spi/test/db|/home/user/Projects/cyclone_iv/spi/test/db/pll_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/cyclone_iv/spi/test/db
+R6
+vspi
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 Y=mEb2Hi^CBYRhR0NgL?C3
+I0D33lY61GSDYAI_beioR?2
+R2
+!s105 spi_sv_unit
+S1
+R0
+w1685359997
+8/home/user/Projects/cyclone_iv/spi/spi_if/spi.sv
+F/home/user/Projects/cyclone_iv/spi/spi_if/spi.sv
+L0 15
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/user/Projects/cyclone_iv/spi/spi_if/spi.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+/home/user/Projects/cyclone_iv/spi/spi_if|/home/user/Projects/cyclone_iv/spi/spi_if/spi.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+/home/user/Projects/cyclone_iv/spi/spi_if
+R6

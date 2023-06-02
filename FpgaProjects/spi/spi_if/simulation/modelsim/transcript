@@ -1,0 +1,4 @@
+# Compile of spi.sv was successful.
+# Compile of tb_spi.sv was successful.
+# 2 compiles, 0 failed with no errors.
+vsim -i -l msim_transcript work.tb_spi

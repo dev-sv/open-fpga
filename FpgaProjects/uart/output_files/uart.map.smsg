@@ -1,7 +1,0 @@
-Warning (10268): Verilog HDL information at uart.sv(65): always construct contains both blocking and non-blocking assignments File: C:/Projects/uart/uart.sv Line: 65
-Info (10281): Verilog HDL Declaration information at uart.sv(25): object "rx" differs only in case from object "RX" in the same scope File: C:/Projects/uart/uart.sv Line: 25
-Info (10281): Verilog HDL Declaration information at uart.sv(24): object "tx" differs only in case from object "TX" in the same scope File: C:/Projects/uart/uart.sv Line: 24
-Warning (10268): Verilog HDL information at tb_uart.sv(49): always construct contains both blocking and non-blocking assignments File: C:/Projects/uart/tb_uart.sv Line: 49
-Info (10281): Verilog HDL Declaration information at tb_uart.sv(16): object "TX_BUSY" differs only in case from object "tx_busy" in the same scope File: C:/Projects/uart/tb_uart.sv Line: 16
-Info (10281): Verilog HDL Declaration information at tb_uart.sv(16): object "TX" differs only in case from object "tx" in the same scope File: C:/Projects/uart/tb_uart.sv Line: 16
-Info (10281): Verilog HDL Declaration information at tb_uart.sv(16): object "RX" differs only in case from object "rx" in the same scope File: C:/Projects/uart/tb_uart.sv Line: 16

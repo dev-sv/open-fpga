@@ -1,0 +1,15 @@
+/home/user/Projects/cyclone_iv/spi/spi_if/tb_spi.sv {1 {vlog -work work -sv -stats=none /home/user/Projects/cyclone_iv/spi/spi_if/tb_spi.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module tb_spi
+
+Top level modules:
+	tb_spi
+
+} {} {}} /home/user/Projects/cyclone_iv/spi/spi_if/spi.sv {1 {vlog -work work -sv -stats=none /home/user/Projects/cyclone_iv/spi/spi_if/spi.sv
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module spi
+
+Top level modules:
+	spi
+
+} {} {}}
