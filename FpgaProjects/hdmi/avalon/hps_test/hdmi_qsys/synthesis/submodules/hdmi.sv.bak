@@ -1,0 +1,209 @@
+
+
+				
+module hdmi #(
+					parameter horz_front_porch = 20,
+								 horz_sync = 60,
+								 horz_back_porch = 110,
+								 horz_pix = 1024,
+
+								 vert_front_porch = 30,
+								 vert_sync = 80,
+								 vert_back_porch = 110,
+								 vert_pix = 600 )
+/*
+					parameter HORZ_FRONT_PORCH = 0,
+								 HORZ_SYNC = 0,
+								 HORZ_BACK_PORCH = 0,
+								 HORZ_PIX = 0,
+
+								 VERT_FRONT_PORCH = 0,
+								 VERT_SYNC = 0,
+								 VERT_BACK_PORCH = 0,
+								 VERT_PIX = 0 )
+								 */							 
+
+				 (
+					input wire        clk,
+					input wire        reset,			
+// avalon_if.								
+					//input wire			s_read,
+					input wire			s_write,
+					input wire[11:0]  s_address,
+					input wire[31:0]  s_writedata,
+					input wire		   s_chipselect,
+					
+					/*
+					input wire[10:0]  s_burstcount,
+					input wire[3:0]   s_byteenable,
+					output bit        s_waitrequest,
+					output bit		   s_readdatavalid,
+					output bit[31:0]  s_readdata,
+					*/
+					
+// hdmi_if.				 					
+					output bit clk_pix_p,
+					output bit clk_pix_n,
+					
+					output bit 	red_p,
+					output bit 	red_n,
+					
+					output bit	green_p,
+					output bit 	green_n,
+					
+					output bit 	blue_p,
+					output bit 	blue_n,
+					
+					output wire[7:0] led
+					
+					);
+				
+				
+ bit       de; 
+ bit[1:0]  vh; 
+
+ wire[9:0] w_red;
+ wire[9:0] w_green;
+ wire[9:0] w_blue;
+
+ wire w_clk_pix;
+ wire clk_pix;
+ wire clk_x10;
+
+ 
+ bit[7:0] 	red; 
+ bit[7:0] 	green; 
+ bit[7:0] 	blue; 
+										
+ bit[10:0] 	x;
+ bit[10:0] 	y;
+
+ 
+ bit[10:0] 	i = 0;
+ bit[9:0] 	j = 0;
+
+ bit[31:0]  fb_addr = 0;
+ bit[31:0]  fb[1024] = 0;
+
+ 
+ enum { S0, S1 } st = S0;
+ 
+ 
+	
+	pll pll_inst(
+						.refclk(clk),   		// refclk.clk
+						.rst(1'b0),  			// reset.reset
+						.outclk_0(clk_x10), 	// outclk0.clk
+						.outclk_1(clk_pix)  	// outclk1.clk
+	);
+	
+	
+	//assign clk_pix = (s_write && s_chipselect) ? w_clk_pix : 1'b0;
+	
+	assign clk_pix_p = clk_pix;
+	
+	assign clk_pix_n = ~clk_pix;
+
+	
+	always @(posedge clk_pix) begin
+	
+
+		de <= (x < horz_pix) && (y < vert_pix);	
+			
+		x <= (x == (horz_pix + horz_front_porch + horz_sync + horz_back_porch - 1'b1)) ? 1'b0 : (x + 1'b1);
+				
+		if(x == (horz_pix + horz_front_porch + horz_sync + horz_back_porch - 1'b1))
+		   y <= (y == (vert_pix + vert_front_porch + vert_sync + vert_back_porch - 1'b1)) ? 1'b0 : (y + 1'b1);
+			
+	end
+	
+
+	assign vh[0] = (x >= (horz_pix + horz_front_porch - 1'b1) && x < (horz_pix + horz_front_porch + horz_sync - 1'b1));
+						
+	assign vh[1] = (y >= (vert_pix + vert_front_porch - 1'b1) && y < (vert_pix + vert_front_porch + vert_sync - 1'b1));
+	
+	
+	tmds_encoder tmds_encoder_red(.clk(clk_pix), .de(de), .vh(vh), .color(red), .out(w_red));
+	
+	tmds_serial  tmds_serial_red(.clk_x10(clk_x10), .d(w_red), .p(red_p), .n(red_n)); 
+
+	
+	tmds_encoder tmds_encoder_green(.clk(clk_pix), .de(de), .vh(vh), .color(green), .out(w_green));
+	
+	tmds_serial  tmds_serial_green(.clk_x10(clk_x10), .d(w_green), .p(green_p), .n(green_n)); 
+
+	
+	tmds_encoder tmds_encoder_blue(.clk(clk_pix), .de(de), .vh(vh), .color(blue), .out(w_blue));
+	
+	tmds_serial  tmds_serial_blue(.clk_x10(clk_x10), .d(w_blue), .p(blue_p), .n(blue_n)); 
+
+	
+	
+// get start addr fb.	
+  	always @(posedge s_write)begin
+	
+	
+		if(i < 1024) begin
+	
+			fb_addr <= s_writedata;
+		
+			fb[i] <= s_writedata;
+			
+			i <= i + 1'b1;
+			
+		end	
+
+	end
+	
+
+	
+  	always @(posedge clk_pix)begin
+	
+		
+		case(st)
+
+ 
+			S0: begin
+			
+					if(fb_addr)					
+						st <= S1;
+					
+					else begin
+				
+							red <= 8'h00;
+							
+							green <= 8'h00;
+							
+							blue <= 8'h00;
+					end
+					
+  				 end
+				  
+					 
+			
+			S1: begin
+	
+					if(i == 1024) begin
+	
+						red <= fb[j][23:16];
+							
+						green <= fb[j][15:8];
+							
+						blue <= fb[j][7:0];
+						
+						j <= j + 1'b1;
+						
+					end	
+
+				 end
+					 
+	
+			default: ;
+			
+	
+		endcase
+		
+	end
+	
+	
+endmodule: hdmi

@@ -1,0 +1,109 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys.qsys --block-symbol-file --output-directory=/home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading hps_test/hdmi_qsys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hdmi_avl_0 [hdmi_avl 1.0]
+Progress: Parameterizing module hdmi_avl_0
+Progress: Adding hps_0 [altera_hps 18.0]
+Progress: Parameterizing module hps_0
+Progress: Adding pll_0 [altera_pll 18.0]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: hdmi_qsys.hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: hdmi_qsys.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hdmi_qsys.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hdmi_qsys.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hdmi_qsys.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: hdmi_qsys.hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: hdmi_qsys.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: hdmi_qsys.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: hdmi_qsys.pll_0: Able to implement PLL with user settings
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys/synthesis --family="Cyclone V" --part=5CSEMA4U23C6
+Progress: Loading hps_test/hdmi_qsys.qsys
+Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hdmi_avl_0 [hdmi_avl 1.0]
+Progress: Parameterizing module hdmi_avl_0
+Progress: Adding hps_0 [altera_hps 18.0]
+Progress: Parameterizing module hps_0
+Progress: Adding pll_0 [altera_pll 18.0]
+Progress: Parameterizing module pll_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: hdmi_qsys.hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: hdmi_qsys.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hdmi_qsys.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hdmi_qsys.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hdmi_qsys.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: hdmi_qsys.hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: hdmi_qsys.hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: hdmi_qsys.pll_0: The legal reference clock frequency is 5.0 MHz..800.0 MHz
+Info: hdmi_qsys.pll_0: Able to implement PLL with user settings
+Info: hdmi_qsys: Generating hdmi_qsys "hdmi_qsys" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master hdmi_avl_0.avalon_master and slave hps_0.f2h_sdram0_data because the master has burstcount signal 11 bit wide, but the slave is 8 bit wide.
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave hdmi_avl_0.avalon_slave because the master is of type axi and the slave is of type avalon.
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave hdmi_avl_0.avalon_slave because they have different clock source.
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src0 and cmd_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux.src1 and rsp_mux_001.sink0
+Info: hdmi_avl_0: "hdmi_qsys" instantiated hdmi_avl "hdmi_avl_0"
+Info: hps_0: "Running  for module: hps_0"
+Warning: hps_0: Setting the slave port width of interface f2h_sdram0 to 32 results in bandwidth under-utilization.  Altera recommends you set the interface data width to 64-bit or greater.
+Info: hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: hps_0: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: hps_0: set_interface_assignment: Interface "hps_io" does not exist
+Info: hps_0: "hdmi_qsys" instantiated altera_hps "hps_0"
+Info: pll_0: "hdmi_qsys" instantiated altera_pll "pll_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "hdmi_qsys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "hdmi_qsys" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: rst_controller: "hdmi_qsys" instantiated altera_reset_controller "rst_controller"
+Info: fpga_interfaces: "hps_0" instantiated altera_interface_generator "fpga_interfaces"
+Info: hps_io: "hps_0" instantiated altera_hps_io "hps_io"
+Info: hdmi_avl_0_avalon_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "hdmi_avl_0_avalon_master_translator"
+Info: hps_0_f2h_sdram0_data_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "hps_0_f2h_sdram0_data_translator"
+Info: hdmi_avl_0_avalon_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "hdmi_avl_0_avalon_master_agent"
+Info: hps_0_f2h_sdram0_data_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "hps_0_f2h_sdram0_data_agent"
+Info: hps_0_f2h_sdram0_data_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "hps_0_f2h_sdram0_data_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: hps_0_f2h_sdram0_data_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "hps_0_f2h_sdram0_data_burst_adapter"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: hps_0_h2f_lw_axi_master_agent: "mm_interconnect_1" instantiated altera_merlin_axi_master_ni "hps_0_h2f_lw_axi_master_agent"
+Info: Reusing file /home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file /home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_1" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file /home/user/Projects/cyclone_v/hdmi/avalon/hps_test/hdmi_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: border: "hps_io" instantiated altera_interface_generator "border"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: hdmi_qsys: Done "hdmi_qsys" with 31 modules, 93 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

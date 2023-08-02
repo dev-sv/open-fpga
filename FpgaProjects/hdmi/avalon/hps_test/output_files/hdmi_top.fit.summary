@@ -1,0 +1,20 @@
+Fitter Status : Successful - Wed Jul 26 13:12:44 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : hdmi_top
+Top-level Entity Name : hdmi_top
+Family : Cyclone V
+Device : 5CSEMA4U23C6
+Timing Models : Final
+Logic utilization (in ALMs) : 625 / 15,880 ( 4 % )
+Total registers : 1298
+Total pins : 82 / 314 ( 26 % )
+Total virtual pins : 0
+Total block memory bits : 24,576 / 2,764,800 ( < 1 % )
+Total RAM Blocks : 3 / 270 ( 1 % )
+Total DSP Blocks : 0 / 84 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 1 / 5 ( 20 % )
+Total DLLs : 1 / 4 ( 25 % )
