@@ -1,31 +1,40 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate /home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core.qsys --block-symbol-file --output-directory=/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core --family="MAX 10" --part=10M50SAE144C8G
+Info: qsys-generate /home/user/Projects/max10/adc_max10/avalon/adc_ip/adc_core.qsys --block-symbol-file --output-directory=/home/user/Projects/max10/adc_max10/avalon/adc_ip/adc_core --family="MAX 10" --part=10M50SAE144C8G
 Progress: Loading adc_ip/adc_core.qsys
 Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
 Progress: Adding modular_adc_0 [altera_modular_adc 18.0]
 Progress: Parameterizing module modular_adc_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Warning: adc_core.modular_adc_0.command: modular_adc_0.command must be connected to an Avalon-ST source
+Warning: adc_core.modular_adc_0.response: modular_adc_0.response must be connected to an Avalon-ST sink
+Warning: adc_core.modular_adc_0: modular_adc_0.adc_pll_locked must be exported, or connected to a matching conduit.
 Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate /home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/ip/adc_max10/avalon/adc_ip/adc_core/synthesis --family="MAX 10" --part=10M50SAE144C8G
+Info: qsys-generate /home/user/Projects/max10/adc_max10/avalon/adc_ip/adc_core.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/max10/adc_max10/avalon/adc_ip/adc_core/synthesis --family="MAX 10" --part=10M50SAE144C8G
 Progress: Loading adc_ip/adc_core.qsys
 Progress: Reading input file
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
 Progress: Adding modular_adc_0 [altera_modular_adc 18.0]
 Progress: Parameterizing module modular_adc_0
 Progress: Building connections
 Progress: Parameterizing connections
 Progress: Validating
 Progress: Done reading input file
+Warning: adc_core.modular_adc_0.command: modular_adc_0.command must be connected to an Avalon-ST source
+Warning: adc_core.modular_adc_0.response: modular_adc_0.response must be connected to an Avalon-ST sink
+Warning: adc_core.modular_adc_0: modular_adc_0.adc_pll_locked must be exported, or connected to a matching conduit.
 Info: adc_core: Generating adc_core "adc_core" for QUARTUS_SYNTH
 Info: modular_adc_0: "adc_core" instantiated altera_modular_adc "modular_adc_0"
+Info: rst_controller: "adc_core" instantiated altera_reset_controller "rst_controller"
 Info: control_internal: "modular_adc_0" instantiated altera_modular_adc_control "control_internal"
-Info: sequencer_internal: "modular_adc_0" instantiated altera_modular_adc_sequencer "sequencer_internal"
-Info: sample_store_internal: "modular_adc_0" instantiated altera_modular_adc_sample_store "sample_store_internal"
-Info: adc_core: Done "adc_core" with 5 modules, 14 files
+Info: adc_core: Done "adc_core" with 4 modules, 12 files
 Info: qsys-generate succeeded.
 Info: Finished: Create HDL design files for synthesis

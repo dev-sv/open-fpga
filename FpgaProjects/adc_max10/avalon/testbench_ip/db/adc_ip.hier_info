@@ -1,0 +1,4 @@
+|adc_ip
+clk => ~NO_FANOUT~
+
+

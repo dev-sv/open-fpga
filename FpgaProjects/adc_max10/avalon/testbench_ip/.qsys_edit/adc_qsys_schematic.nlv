@@ -1,0 +1,14 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst adc_qsys.master_bfm -pg 1 -lvl 2 -y 30
+preplace inst adc_qsys.clk_0 -pg 1 -lvl 1 -y 110
+preplace inst adc_qsys.adc_max10_0 -pg 1 -lvl 3 -y 70
+preplace inst adc_qsys -pg 1 -lvl 1 -y 40 -regy -20
+preplace netloc EXPORT<net_container>adc_qsys</net_container>(SLAVE)adc_qsys.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
+preplace netloc EXPORT<net_container>adc_qsys</net_container>(SLAVE)clk_0.clk_in,(SLAVE)adc_qsys.clk) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>adc_qsys</net_container>(SLAVE)adc_max10_0.avalon_slave_0,(MASTER)master_bfm.m0) 1 2 1 430
+preplace netloc FAN_OUT<net_container>adc_qsys</net_container>(SLAVE)adc_max10_0.reset,(SLAVE)master_bfm.clk_reset,(MASTER)clk_0.clk_reset) 1 1 2 280 140 N
+preplace netloc EXPORT<net_container>adc_qsys</net_container>(SLAVE)adc_max10_0.aclk,(SLAVE)adc_qsys.aclk) 1 0 3 NJ 100 NJ 100 NJ
+preplace netloc FAN_OUT<net_container>adc_qsys</net_container>(SLAVE)master_bfm.clk,(SLAVE)adc_max10_0.clock,(MASTER)clk_0.clk) 1 1 2 260 120 N
+levelinfo -pg 1 0 50 590
+levelinfo -hier adc_qsys 60 90 310 460 580

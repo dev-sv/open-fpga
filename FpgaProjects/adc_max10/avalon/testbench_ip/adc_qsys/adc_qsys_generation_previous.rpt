@@ -1,0 +1,55 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/user/Projects/max10/adc_max10/avalon/testbench_ip/adc_qsys.qsys --block-symbol-file --output-directory=/home/user/Projects/max10/adc_max10/avalon/testbench_ip/adc_qsys --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading testbench_ip/adc_qsys.qsys
+Progress: Reading input file
+Progress: Adding adc_max10 [adc_max10 1.0]
+Progress: Parameterizing module adc_max10
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding master_bfm [altera_avalon_mm_master_bfm 18.0]
+Info: altera_avalon_mm_master_bfm: Preferred Simulation Language is set to None.
+Progress: Parameterizing module master_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/user/Projects/max10/adc_max10/avalon/testbench_ip/adc_qsys.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/max10/adc_max10/avalon/testbench_ip/adc_qsys/synthesis --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading testbench_ip/adc_qsys.qsys
+Progress: Reading input file
+Progress: Adding adc_max10 [adc_max10 1.0]
+Progress: Parameterizing module adc_max10
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding master_bfm [altera_avalon_mm_master_bfm 18.0]
+Progress: Parameterizing module master_bfm
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: adc_qsys: Generating adc_qsys "adc_qsys" for QUARTUS_SYNTH
+Info: Interconnect is inserted between master master_bfm.m0 and slave adc_max10.avalon_slave because they have different value on parameter linewrapBursts.
+Info: adc_max10: "adc_qsys" instantiated adc_max10 "adc_max10"
+Info: master_bfm: "adc_qsys" instantiated altera_avalon_mm_master_bfm "master_bfm"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "adc_qsys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: rst_controller: "adc_qsys" instantiated altera_reset_controller "rst_controller"
+Info: master_bfm_m0_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "master_bfm_m0_translator"
+Info: adc_max10_avalon_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "adc_max10_avalon_slave_translator"
+Info: master_bfm_m0_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "master_bfm_m0_agent"
+Info: adc_max10_avalon_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "adc_max10_avalon_slave_agent"
+Info: adc_max10_avalon_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "adc_max10_avalon_slave_agent_rsp_fifo"
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file /home/user/Projects/max10/adc_max10/avalon/testbench_ip/adc_qsys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: adc_qsys: Done "adc_qsys" with 17 modules, 24 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

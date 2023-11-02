@@ -1,0 +1,8 @@
+	component adc_qsys is
+		port (
+			aclk_clk      : in std_logic := 'X'; -- clk
+			clk_clk       : in std_logic := 'X'; -- clk
+			reset_reset_n : in std_logic := 'X'  -- reset_n
+		);
+	end component adc_qsys;
+

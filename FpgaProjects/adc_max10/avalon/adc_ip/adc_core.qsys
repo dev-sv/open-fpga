@@ -5,15 +5,23 @@
    displayName="$${FILENAME}"
    version="1.0"
    description=""
-   tags="INTERNAL_COMPONENT=true"
+   tags=""
    categories="" />
  <parameter name="bonusData"><![CDATA[bonusData 
 {
-   element modular_adc_0
+   element clk_0
    {
       datum _sortIndex
       {
          value = "0";
+         type = "int";
+      }
+   }
+   element modular_adc_0
+   {
+      datum _sortIndex
+      {
+         value = "1";
          type = "int";
       }
    }
@@ -28,7 +36,7 @@
  <parameter name="generationId" value="0" />
  <parameter name="globalResetBus" value="false" />
  <parameter name="hdlLanguage" value="VERILOG" />
- <parameter name="hideFromIPCatalog" value="true" />
+ <parameter name="hideFromIPCatalog" value="false" />
  <parameter name="lockedInterfaceDefinition" value="" />
  <parameter name="maxAdditionalLatency" value="1" />
  <parameter name="projectName" value="" />
@@ -38,75 +46,27 @@
  <parameter name="timeStamp" value="0" />
  <parameter name="useTestBenchNamingPattern" value="false" />
  <instanceScript></instanceScript>
- <interface
-   name="adc_pll_clock"
-   internal="modular_adc_0.adc_pll_clock"
-   type="clock"
-   dir="end">
-  <port name="adc_pll_clock_clk" internal="adc_pll_clock_clk" />
- </interface>
- <interface
-   name="adc_pll_locked"
-   internal="modular_adc_0.adc_pll_locked"
-   type="conduit"
-   dir="end">
-  <port name="adc_pll_locked_export" internal="adc_pll_locked_export" />
- </interface>
- <interface name="clock" internal="modular_adc_0.clock" type="clock" dir="end">
-  <port name="clock_clk" internal="clock_clk" />
- </interface>
- <interface
-   name="reset_sink"
-   internal="modular_adc_0.reset_sink"
-   type="reset"
-   dir="end">
-  <port name="reset_sink_reset_n" internal="reset_sink_reset_n" />
- </interface>
- <interface
-   name="sample_store_csr"
-   internal="modular_adc_0.sample_store_csr"
-   type="avalon"
-   dir="end">
-  <port name="sample_store_csr_address" internal="sample_store_csr_address" />
-  <port name="sample_store_csr_read" internal="sample_store_csr_read" />
-  <port name="sample_store_csr_write" internal="sample_store_csr_write" />
-  <port
-     name="sample_store_csr_writedata"
-     internal="sample_store_csr_writedata" />
-  <port name="sample_store_csr_readdata" internal="sample_store_csr_readdata" />
- </interface>
- <interface
-   name="sample_store_irq"
-   internal="modular_adc_0.sample_store_irq"
-   type="interrupt"
-   dir="end">
-  <port name="sample_store_irq_irq" internal="sample_store_irq_irq" />
- </interface>
- <interface
-   name="sequencer_csr"
-   internal="modular_adc_0.sequencer_csr"
-   type="avalon"
-   dir="end">
-  <port name="sequencer_csr_address" internal="sequencer_csr_address" />
-  <port name="sequencer_csr_read" internal="sequencer_csr_read" />
-  <port name="sequencer_csr_write" internal="sequencer_csr_write" />
-  <port name="sequencer_csr_writedata" internal="sequencer_csr_writedata" />
-  <port name="sequencer_csr_readdata" internal="sequencer_csr_readdata" />
- </interface>
+ <interface name="clk" internal="clk_0.clk_in" type="clock" dir="end" />
+ <interface name="reset" internal="clk_0.clk_in_reset" type="reset" dir="end" />
+ <module name="clk_0" kind="clock_source" version="18.0" enabled="1">
+  <parameter name="clockFrequency" value="50000000" />
+  <parameter name="clockFrequencyKnown" value="true" />
+  <parameter name="inputClockFrequency" value="0" />
+  <parameter name="resetSynchronousEdges" value="NONE" />
+ </module>
  <module
    name="modular_adc_0"
    kind="altera_modular_adc"
    version="18.0"
-   enabled="1"
-   autoexport="1">
+   enabled="1">
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="8" />
-  <parameter name="CLOCK_FREQ" value="0" />
-  <parameter name="CORE_VAR" value="0" />
+  <parameter name="CLOCK_FREQ" value="50000000" />
+  <parameter name="CORE_VAR" value="3" />
   <parameter name="DEVICE_PART" value="10M50SAE144C8G" />
   <parameter name="ENABLE_DEBUG" value="0" />
   <parameter name="FAMILY" value="MAX 10" />
   <parameter name="MONITOR_COUNT_WIDTH" value="12" />
-  <parameter name="clkdiv" value="2" />
+  <parameter name="clkdiv" value="1" />
   <parameter name="en_thmax_ch0" value="false" />
   <parameter name="en_thmax_ch1" value="false" />
   <parameter name="en_thmax_ch10" value="false" />
@@ -143,7 +103,7 @@
   <parameter name="en_thmin_ch9" value="false" />
   <parameter name="en_tsd_max" value="false" />
   <parameter name="en_tsd_min" value="false" />
-  <parameter name="enable_usr_sim" value="1" />
+  <parameter name="enable_usr_sim" value="0" />
   <parameter name="external_vref" value="2.5" />
   <parameter name="int_vref_vr" value="3.0" />
   <parameter name="ip_is_for_which_adc" value="1" />
@@ -152,7 +112,7 @@
   <parameter name="refsel" value="0" />
   <parameter name="sample_rate" value="0" />
   <parameter name="seq_order_length" value="1" />
-  <parameter name="seq_order_slot_1" value="0" />
+  <parameter name="seq_order_slot_1" value="30" />
   <parameter name="seq_order_slot_10" value="30" />
   <parameter name="seq_order_slot_11" value="30" />
   <parameter name="seq_order_slot_12" value="30" />
@@ -216,7 +176,7 @@
   <parameter name="seq_order_slot_7" value="30" />
   <parameter name="seq_order_slot_8" value="30" />
   <parameter name="seq_order_slot_9" value="30" />
-  <parameter name="simfilename_ch0">/home/user/Projects/ip/adc_max10/avalon/testbench/sin_test/sin.txt</parameter>
+  <parameter name="simfilename_ch0" value="" />
   <parameter name="simfilename_ch1" value="" />
   <parameter name="simfilename_ch10" value="" />
   <parameter name="simfilename_ch11" value="" />
@@ -289,6 +249,21 @@
   <parameter name="use_ch9" value="false" />
   <parameter name="use_tsd" value="false" />
  </module>
+ <connection
+   kind="clock"
+   version="18.0"
+   start="clk_0.clk"
+   end="modular_adc_0.adc_pll_clock" />
+ <connection
+   kind="clock"
+   version="18.0"
+   start="clk_0.clk"
+   end="modular_adc_0.clock" />
+ <connection
+   kind="reset"
+   version="18.0"
+   start="clk_0.clk_reset"
+   end="modular_adc_0.reset_sink" />
  <interconnectRequirement for="$system" name="qsys_mm.clockCrossingAdapter" value="HANDSHAKE" />
  <interconnectRequirement for="$system" name="qsys_mm.enableEccProtection" value="FALSE" />
  <interconnectRequirement for="$system" name="qsys_mm.insertDefaultSlave" value="FALSE" />

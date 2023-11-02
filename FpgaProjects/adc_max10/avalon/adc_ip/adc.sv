@@ -18,6 +18,8 @@ module adc(
 			   input wire[15:0] writedata,
 			  
 			   input wire[0:0] burstcount,
+				
+			   input wire[1:0] byteenable,
 			  
 			   output bit[15:0] readdata,
 			  
@@ -27,28 +29,17 @@ module adc(
 );
 
 
- enum { INI, S0, S1, S2, S3 } st = INI;
+ enum { S0, S1, S2, S3 } st = S0;
  
- 
- wire	w_aclk;
- 
+  
  bit        soc = 1'b0;
  wire       eoc;
  wire[11:0] data;  
   
    
- //`define HW_TEST
  
- //`define TEST
- 
- 
-`ifdef HW_TEST
-
-	bit[9:0] np = 0;
-	
-`endif	
- 
- 
+ `define TEST
+  
  
  
  fiftyfivenm_adcblock_top_wrapper
@@ -66,9 +57,10 @@ module adc(
     .hard_pwd (0),
     .enable_usr_sim (1),	
     .reference_voltage_sim (65536),
-    .simfilename_ch0("/home/user/Projects/ip/adc_max10/avalon/testbench/sin_test/sin.txt")) 
+    .simfilename_ch0("/home/user/Projects/max10/adc_max10/avalon/testbench_ip/sin_test/sin.txt")) 
 	 
  `endif
+ 
  
  adc_inst(
 	 
@@ -83,64 +75,65 @@ module adc(
 
  	
  
-  	always @(posedge clk)begin
+  	always @(posedge clk or posedge reset)begin
 	
+	
+		if(reset) begin
+	
+			readdatavalid <= 1'b0;
+					
+			waitrequest <= 1'b1;
+	
+		end
+		else begin
 		
-		case(st)
+		
+				case(st)
 		
 		
-			INI: begin
+					S0: begin
 			
-					readdatavalid <= 1'b0;
+							readdatavalid <= 1'b0;
 					
-					waitrequest <= 1'b1;
+							waitrequest <= 1'b1;
 					
-					st <= S0;
-				  end	
+							st <= S1;
+						 end	
 
  
-			S0: if(read) begin
+					S1: if(read) begin
 			
-					 soc <= 1'b1;	
-					 st <= S1;		
-				 end
+							 soc <= 1'b1;	
+					 
+							 waitrequest <= 1'b0;
+					 
+							 st <= S2;		
+						 end
 				 
  
-			S1: begin
-			
-					if(eoc)begin
-					
-						`ifdef HW_TEST
+					S2: if(eoc)begin
 						
-							readdata <= np;
-							np <= np + 1'b1;
-							
-						`else readdata <= data;
-
-						`endif					
-										
-						readdatavalid <= 1'b1;
+							 readdata <= data;
 						
-						st <= S2;
-						
-					end
-					
-				 end	
+							 readdatavalid <= 1'b1;
+											
+							 st <= S3;
+						 end	
+				 				
 				
-				
-			S2: if(!eoc) begin
+					S3: if(!eoc) begin
 			
-			       soc <= 1'b0;
-					 
-					 readdatavalid <= 1'b0;
-			
-					 st <= S0;
-				 end		
+							 soc <= 1'b0;
+					 			
+							 st <= S0;
+						 end		
 					
  
-			default: ;
+					default: ;
  
-		endcase
+				endcase
+		
+		end
 		
 	end
 

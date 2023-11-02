@@ -67,7 +67,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   </table>
   <table class="blueBar">
    <tr>
-    <td class="l">2023.03.02.00:00:21</td>
+    <td class="l">2023.11.01.16:05:41</td>
     <td class="r">Datasheet</td>
    </tr>
   </table>
@@ -76,16 +76,17 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
   <div class="greydiv">
    <div style="display:inline-block ; text-align:left">
     <table class="connectionboxes">
+     <tr>
+      <td class="lefthandwire">&#160;&#160;clk_0&#160;</td>
+      <td class="main" rowspan="2">adc_core</td>
+     </tr>
      <tr style="height:6px">
       <td></td>
      </tr>
     </table>
    </div><span style="display:inline-block ; width:28px"> </span>
    <div style="display:inline-block ; text-align:left"><span>
-     <br/>All Components
-     <br/>&#160;&#160;
-     <a href="#module_modular_adc_0"><b>modular_adc_0</b>
-     </a> altera_modular_adc 18.0</span>
+     <br/></span>
    </div>
   </div>
   <div style="width:100% ;  height:10px"> </div>
@@ -94,23 +95,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
    <tr>
     <td class="empty" rowspan="2"></td>
    </tr>
-   <tr>
-    <td class="slavemodule">&#160;
-     <a href="#module_modular_adc_0"><b>modular_adc_0</b>
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="slavem">sequencer_csr&#160;</td>
-   </tr>
-   <tr>
-    <td class="slavem">sample_store_csr&#160;</td>
-   </tr>
   </table>
-  <a name="module_modular_adc_0"> </a>
+  <a name="module_clk_0"> </a>
   <div>
    <hr/>
-   <h2>modular_adc_0</h2>altera_modular_adc v18.0
+   <h2>clk_0</h2>clock_source v18.0
    <br/>
    <br/>
    <br/>
@@ -120,8 +109,81 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <h2>Parameters</h2>
       <table>
        <tr>
-        <td class="parametername">CORE_VAR</td>
+        <td class="parametername">clockFrequency</td>
+        <td class="parametervalue">50000000</td>
+       </tr>
+       <tr>
+        <td class="parametername">clockFrequencyKnown</td>
+        <td class="parametervalue">true</td>
+       </tr>
+       <tr>
+        <td class="parametername">inputClockFrequency</td>
         <td class="parametervalue">0</td>
+       </tr>
+       <tr>
+        <td class="parametername">resetSynchronousEdges</td>
+        <td class="parametervalue">NONE</td>
+       </tr>
+       <tr>
+        <td class="parametername">deviceFamily</td>
+        <td class="parametervalue">UNKNOWN</td>
+       </tr>
+       <tr>
+        <td class="parametername">generateLegacySim</td>
+        <td class="parametervalue">false</td>
+       </tr>
+      </table>
+     </td>
+    </tr>
+   </table>&#160;&#160;
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Software Assignments</h2>(none)</td>
+    </tr>
+   </table>
+  </div>
+  <a name="module_modular_adc_0"> </a>
+  <div>
+   <hr/>
+   <h2>modular_adc_0</h2>altera_modular_adc v18.0
+   <br/>
+   <div class="greydiv">
+    <table class="connectionboxes">
+     <tr>
+      <td class="neighbor" rowspan="6">
+       <a href="#module_clk_0">clk_0</a>
+      </td>
+      <td class="from">clk&#160;&#160;</td>
+      <td class="main" rowspan="6">modular_adc_0</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;adc_pll_clock</td>
+     </tr>
+     <tr>
+      <td class="from">clk&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;clock</td>
+     </tr>
+     <tr>
+      <td class="from">clk_reset&#160;&#160;</td>
+     </tr>
+     <tr>
+      <td class="to">&#160;&#160;reset_sink</td>
+     </tr>
+    </table>
+   </div>
+   <br/>
+   <br/>
+   <table class="flowbox">
+    <tr>
+     <td class="parametersbox">
+      <h2>Parameters</h2>
+      <table>
+       <tr>
+        <td class="parametername">CORE_VAR</td>
+        <td class="parametervalue">3</td>
        </tr>
        <tr>
         <td class="parametername">ENABLE_DEBUG</td>
@@ -133,7 +195,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">CLOCK_FREQ</td>
-        <td class="parametervalue">0</td>
+        <td class="parametervalue">50000000</td>
        </tr>
        <tr>
         <td class="parametername">FAMILY</td>
@@ -185,11 +247,11 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">clkdiv</td>
-        <td class="parametervalue">2</td>
+        <td class="parametervalue">1</td>
        </tr>
        <tr>
         <td class="parametername">derived_clkdiv</td>
-        <td class="parametervalue">2</td>
+        <td class="parametervalue">1</td>
        </tr>
        <tr>
         <td class="parametername">tsclkdiv</td>
@@ -229,7 +291,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">enable_usr_sim</td>
-        <td class="parametervalue">1</td>
+        <td class="parametervalue">0</td>
        </tr>
        <tr>
         <td class="parametername">use_tsd</td>
@@ -273,7 +335,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">simfilename_ch0</td>
-        <td class="parametervalue">/home/user/Projects/ip/adc_max10/avalon/testbench/sin_test/sin.txt</td>
+        <td class="parametervalue"></td>
        </tr>
        <tr>
         <td class="parametername">use_ch1</td>
@@ -673,7 +735,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
        </tr>
        <tr>
         <td class="parametername">seq_order_slot_1</td>
-        <td class="parametervalue">0</td>
+        <td class="parametervalue">30</td>
        </tr>
        <tr>
         <td class="parametername">seq_order_slot_2</td>
@@ -950,267 +1012,7 @@ div.greydiv { vertical-align:top ; text-align:center ; background:#eeeeee ; bord
       <table>
        <tr>
         <td class="parametername">CORE_VARIANT</td>
-        <td class="parametervalue">0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_LENGTH</td>
-        <td class="parametervalue">1</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_0</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_1</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_10</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_11</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_12</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_13</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_14</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_15</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_16</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_17</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_18</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_19</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_2</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_20</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_21</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_22</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_23</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_24</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_25</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_26</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_27</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_28</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_29</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_3</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_30</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_31</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_32</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_33</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_34</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_35</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_36</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_37</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_38</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_39</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_4</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_40</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_41</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_42</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_43</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_44</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_45</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_46</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_47</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_48</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_49</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_5</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_50</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_51</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_52</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_53</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_54</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_55</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_56</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_57</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_58</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_59</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_6</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_60</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_61</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_62</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_63</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_7</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_8</td>
-        <td class="parametervalue">CH0</td>
-       </tr>
-       <tr>
-        <td class="parametername">CSD_SLOT_9</td>
-        <td class="parametervalue">CH0</td>
+        <td class="parametervalue">3</td>
        </tr>
        <tr>
         <td class="parametername">DUAL_ADC_MODE</td>

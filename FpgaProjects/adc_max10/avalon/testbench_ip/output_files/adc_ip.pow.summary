@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Oct 30 19:54:23 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : adc_ip
+Top-level Entity Name : adc_ip
+Family : MAX 10
+Device : 10M50SAE144C8G
+Power Models : Final
+Total Thermal Power Dissipation : 249.55 mW
+Core Dynamic Thermal Power Dissipation : 0.00 mW
+Core Static Thermal Power Dissipation : 241.07 mW
+I/O Thermal Power Dissipation : 8.48 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data
