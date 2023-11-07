@@ -1,0 +1,83 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/max10/sdram/avalon/hw_test/simulation/modelsim
+vpll
+Z1 !s110 1699269739
+!i10b 1
+!s100 6FDhQG15DXVEfoXYRX08z3
+IJhEzOdS8dbEDDYzK@1LnR3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 pll_v_unit
+S1
+R0
+w1699190080
+8/home/user/Projects/max10/sdram/avalon/hw_test/pll.v
+F/home/user/Projects/max10/sdram/avalon/hw_test/pll.v
+L0 39
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1699269739.000000
+!s107 /home/user/Projects/max10/sdram/avalon/hw_test/pll.v|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/max10/sdram/avalon/hw_test|/home/user/Projects/max10/sdram/avalon/hw_test/pll.v|
+!i113 1
+Z5 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/max10/sdram/avalon/hw_test
+Z6 tSvlog 1 CvgOpt 0
+vpll_altpll
+R1
+!i10b 1
+!s100 DY[98mAKh^NQWc:3nfAd71
+IW:i?LCWY3ii2^c6joS;2[3
+R2
+!s105 pll_altpll_v_unit
+S1
+R0
+w1699190094
+8/home/user/Projects/max10/sdram/avalon/hw_test/db/pll_altpll.v
+F/home/user/Projects/max10/sdram/avalon/hw_test/db/pll_altpll.v
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/user/Projects/max10/sdram/avalon/hw_test/db/pll_altpll.v|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|work|+incdir+/home/user/Projects/max10/sdram/avalon/hw_test/db|/home/user/Projects/max10/sdram/avalon/hw_test/db/pll_altpll.v|
+!i113 1
+R5
+!s92 -vlog01compat -work work +incdir+/home/user/Projects/max10/sdram/avalon/hw_test/db
+R6
+vsdram_test
+DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+!s110 1699269740
+!i10b 1
+!s100 29P>IlgWVFQ;P]H0aWPIN1
+I?bb;Ii]igfGdcTEbmnml93
+R2
+!s105 sdram_test_sv_unit
+S1
+R0
+w1699269105
+8/home/user/Projects/max10/sdram/avalon/hw_test/sdram_test.sv
+F/home/user/Projects/max10/sdram/avalon/hw_test/sdram_test.sv
+L0 8
+R3
+r1
+!s85 0
+31
+R4
+!s107 /home/user/Projects/max10/sdram/avalon/hw_test/sdram_test.sv|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-##implicit##pop_minusfile_path##|-reportprogress|300|-sv|-work|work|+incdir+/home/user/Projects/max10/sdram/avalon/hw_test|/home/user/Projects/max10/sdram/avalon/hw_test/sdram_test.sv|
+!i113 1
+o-sv -work work
+!s92 -sv -work work +incdir+/home/user/Projects/max10/sdram/avalon/hw_test
+R6

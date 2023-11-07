@@ -1,0 +1,612 @@
+# do top_sdram_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -sv -work work +incdir+/home/user/Projects/max10/sdram/avalon/testbench_ip {/home/user/Projects/max10/sdram/avalon/testbench_ip/top_sdram.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:34:59 on Nov 07,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/user/Projects/max10/sdram/avalon/testbench_ip" /home/user/Projects/max10/sdram/avalon/testbench_ip/top_sdram.sv 
+# -- Compiling module top_sdram
+# 
+# Top level modules:
+# 	top_sdram
+# End time: 21:34:59 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+cd /home/user/Projects/max10/sdram/avalon/testbench_ip
+do /home/user/Projects/max10/sdram/avalon/testbench_ip/script.do
+# /home/user/Projects/max10/sdram/avalon
+# /home/user/intelFPGA_lite/18.0/modelsim_ase/altera/verilog
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work work 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/verbosity_pkg.sv 
+# -- Compiling package verbosity_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/avalon_mm_pkg.sv 
+# -- Compiling package avalon_mm_pkg
+# -- Importing package verbosity_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/avalon_utilities_pkg.sv 
+# -- Compiling package avalon_utilities_pkg
+# 
+# Top level modules:
+# 	--none--
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_avalon_mm_master_bfm.sv 
+# -- Compiling module altera_avalon_mm_master_bfm
+# -- Importing package verbosity_pkg
+# -- Importing package avalon_mm_pkg
+# -- Importing package avalon_utilities_pkg
+# 
+# Top level modules:
+# 	altera_avalon_mm_master_bfm
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_avalon_mm_master_bfm.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_default_burst_converter.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_incr_burst_converter.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_address_alignment.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_arbitrator.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_13_1.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_uncmpr.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_uncompressor.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_master_agent.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_master_translator.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_agent.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_translator.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_width_adapter.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_wrap_burst_converter.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/avalon_mm_pkg.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/avalon_utilities_pkg.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0_cmd_demux.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0_cmd_mux.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0_router.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0_router_001.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0_rsp_mux.sv /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/verbosity_pkg.sv 
+# -- Compiling module altera_avalon_mm_master_bfm
+# -- Importing package verbosity_pkg
+# -- Importing package avalon_mm_pkg
+# -- Importing package avalon_utilities_pkg
+# -- Compiling module altera_avalon_st_pipeline_stage
+# -- Compiling module altera_default_burst_converter
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_default_burst_converter.sv(102): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module altera_incr_burst_converter
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_incr_burst_converter.sv(266): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_incr_burst_converter.sv(268): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_incr_burst_converter.sv(283): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_incr_burst_converter.sv(285): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module altera_merlin_address_alignment
+# -- Compiling module altera_merlin_arbitrator
+# -- Compiling module altera_merlin_arb_adder
+# -- Compiling module altera_merlin_burst_adapter
+# -- Compiling module altera_merlin_burst_adapter_burstwrap_increment
+# -- Compiling module altera_merlin_burst_adapter_adder
+# -- Compiling module altera_merlin_burst_adapter_subtractor
+# -- Compiling module altera_merlin_burst_adapter_min
+# -- Compiling module altera_merlin_burst_adapter_13_1
+# -- Compiling module altera_merlin_burst_adapter_new
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(500): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(501): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(502): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(503): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(504): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(505): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(506): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(507): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(508): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(509): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(511): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(512): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(513): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(514): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(515): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(516): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(517): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(518): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(519): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(520): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(521): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(522): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(523): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(526): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(527): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(614): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(615): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(616): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(617): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(618): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(619): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(620): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(621): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(622): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(623): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(624): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(625): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(746): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(762): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(860): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(861): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(862): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(863): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(864): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(865): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(866): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(867): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(900): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(901): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(902): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(903): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(940): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(942): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(945): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(947): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1040): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1041): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1042): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1043): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1044): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1045): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1046): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1047): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1048): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1049): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1084): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1085): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1086): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1087): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1088): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1089): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1104): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1106): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1206): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1207): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1208): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1209): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1210): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1211): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1212): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1213): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1214): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1215): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1216): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1256): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1257): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1258): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1259): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1260): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1261): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1291): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_burst_adapter_new.sv(1294): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# -- Compiling module altera_merlin_burst_adapter_uncompressed_only
+# -- Compiling module altera_merlin_burst_uncompressor
+# -- Compiling module altera_merlin_master_agent
+# -- Compiling module altera_merlin_master_translator
+# -- Compiling module altera_merlin_slave_agent
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(618): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(488): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(489): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(490): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(491): (vlog-2583) [SVCHK] - Some checking for conflicts with always_comb and always_latch variables not yet supported. Run vopt to provide additional design-level checks.
+# ** Warning: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_merlin_slave_agent.sv(34): (vlog-2186) SystemVerilog testbench feature
+# (randomization, coverage or assertion) detected in the design.
+# These features are only supported in Questasim.
+# -- Compiling module altera_merlin_slave_translator
+# -- Compiling module altera_merlin_width_adapter
+# -- Compiling module altera_wrap_burst_converter
+# -- Compiling package avalon_mm_pkg
+# -- Compiling package avalon_utilities_pkg
+# -- Compiling module sdram
+# -- Compiling module sdram_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# -- Compiling module sdram_qsys_mm_interconnect_0_cmd_demux
+# -- Compiling module sdram_qsys_mm_interconnect_0_cmd_mux
+# -- Compiling module sdram_qsys_mm_interconnect_0_router_default_decode
+# -- Compiling module sdram_qsys_mm_interconnect_0_router
+# -- Compiling module sdram_qsys_mm_interconnect_0_router_001_default_decode
+# -- Compiling module sdram_qsys_mm_interconnect_0_router_001
+# -- Compiling module sdram_qsys_mm_interconnect_0_rsp_mux
+# -- Compiling package verbosity_pkg
+# 
+# Top level modules:
+# 	altera_avalon_mm_master_bfm
+# 	altera_merlin_arbitrator
+# 	altera_merlin_burst_adapter
+# 	altera_merlin_master_agent
+# 	altera_merlin_master_translator
+# 	altera_merlin_slave_agent
+# 	altera_merlin_slave_translator
+# 	altera_merlin_width_adapter
+# 	sdram
+# 	sdram_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# 	sdram_qsys_mm_interconnect_0_cmd_demux
+# 	sdram_qsys_mm_interconnect_0_cmd_mux
+# 	sdram_qsys_mm_interconnect_0_router
+# 	sdram_qsys_mm_interconnect_0_router_001
+# 	sdram_qsys_mm_interconnect_0_rsp_mux
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 103
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_avalon_sc_fifo.v /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_reset_controller.v /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_reset_synchronizer.v /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0.v /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/sdram_qsys_mm_interconnect_0_avalon_st_adapter.v 
+# -- Compiling module altera_avalon_sc_fifo
+# -- Compiling module altera_avalon_st_pipeline_base
+# -- Compiling module altera_reset_controller
+# -- Compiling module altera_reset_synchronizer
+# -- Compiling module sdram_qsys_mm_interconnect_0
+# -- Compiling module sdram_qsys_mm_interconnect_0_avalon_st_adapter
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# 	altera_reset_controller
+# 	sdram_qsys_mm_interconnect_0
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/sdram_qsys.v 
+# -- Compiling module sdram_qsys
+# 
+# Top level modules:
+# 	sdram_qsys
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work ./master_bfm_tb.sv 
+# -- Compiling module master_bfm_tb
+# -- Importing package avalon_mm_pkg
+# -- Importing package verbosity_pkg
+# 
+# Top level modules:
+# 	master_bfm_tb
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:10 on Nov 07,2023
+# vlog -reportprogress 300 -work work ./mt48lc4m16a2.v 
+# -- Compiling module mt48lc4m16a2
+# 
+# Top level modules:
+# 	mt48lc4m16a2
+# End time: 21:35:10 on Nov 07,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.master_bfm_tb 
+# Start time: 21:35:10 on Nov 07,2023
+# Loading sv_std.std
+# Loading work.verbosity_pkg
+# Loading work.avalon_mm_pkg
+# Loading work.master_bfm_tb
+# Loading work.sdram_qsys
+# Loading work.avalon_utilities_pkg
+# Loading work.altera_avalon_mm_master_bfm
+# Loading work.sdram
+# Loading work.sdram_qsys_mm_interconnect_0
+# Loading work.altera_merlin_master_translator
+# Loading work.altera_merlin_slave_translator
+# Loading work.altera_merlin_master_agent
+# Loading work.altera_merlin_slave_agent
+# Loading work.altera_merlin_burst_uncompressor
+# Loading work.altera_avalon_sc_fifo
+# Loading work.sdram_qsys_mm_interconnect_0_router
+# Loading work.sdram_qsys_mm_interconnect_0_router_default_decode
+# Loading work.sdram_qsys_mm_interconnect_0_router_001
+# Loading work.sdram_qsys_mm_interconnect_0_router_001_default_decode
+# Loading work.sdram_qsys_mm_interconnect_0_cmd_demux
+# Loading work.sdram_qsys_mm_interconnect_0_cmd_mux
+# Loading work.sdram_qsys_mm_interconnect_0_rsp_mux
+# Loading work.sdram_qsys_mm_interconnect_0_avalon_st_adapter
+# Loading work.sdram_qsys_mm_interconnect_0_avalon_st_adapter_error_adapter_0
+# Loading work.altera_reset_controller
+# Loading work.mt48lc4m16a2
+# Loading work.altera_reset_synchronizer
+# ** Warning: (vsim-8311) System Verilog assertions are supported only in Questasim.
+# ** Warning: (vsim-3017) /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/sdram_qsys.v(73): [TFMPC] - Too few port connections. Expected 25, found 24.
+#    Time: 0 ps  Iteration: 0  Instance: /master_bfm_tb/tb/master_bfm File: /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/submodules/altera_avalon_mm_master_bfm.sv
+# ** Warning: (vsim-3722) /home/user/Projects/max10/sdram/avalon/testbench_ip/sdram_qsys/synthesis/sdram_qsys.v(73): [TFMPC] - Missing connection for port 'avm_writeresponserequest'.
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: - Hello from altera_avalon_mm_master_bfm
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   $Revision: #1 $
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   $Date: 2018/01/31 $
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   AV_ADDRESS_W             = 22
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   AV_SYMBOL_W              = 8
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   AV_NUMSYMBOLS            = 2
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   AV_BURSTCOUNT_W          = 9
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   REGISTER_WAITREQUEST     = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   AV_FIX_READ_LATENCY      = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   AV_MAX_PENDING_READS     = 4
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   AV_MAX_PENDING_WRITES    = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_READ                 = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_WRITE                = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_ADDRESS              = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_BYTE_ENABLE          = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_BURSTCOUNT           = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_READ_DATA            = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_READ_DATA_VALID      = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_WRITE_DATA           = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_BEGIN_TRANSFER       = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_BEGIN_BURST_TRANSFER = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_WAIT_REQUEST         = 1
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_LOCK                 = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_DEBUGACCESS          = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_TRANSACTIONID        = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_WRITERESPONSE        = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_READRESPONSE         = 0
+#                    0: INFO: master_bfm_tb.tb.master_bfm.__hello: -   USE_CLKEN                = 0
+#                    0: INFO: ------------------------------------------------------------
+# master_bfm_tb.mt48lc4m16a2_inst : at time      15.0 ns ERROR: all banks must be Precharge before Load Mode Register
+# master_bfm_tb.mt48lc4m16a2_inst : at time      15.0 ns ERROR: tRFC violation during Load Mode Register
+# master_bfm_tb.mt48lc4m16a2_inst : at time      15.0 ns ERROR: tMRD violation during Load Mode Register
+# Start test...
+#  100025.0 ns: INFO: master_bfm_tb.tb.master_bfm.set_command_timeout: set to 300 cycles
+# 
+# 
+#  Testbench sdram...
+# 
+#  105025.0 ns: INFO: master_bfm_tb.tb.master_bfm.set_command_timeout: set to 300 cycles
+# wr_buff[  0] = 0001	 rd_buff[  0] = 0001 pass
+# wr_buff[  1] = 0002	 rd_buff[  1] = 0002 pass
+# wr_buff[  2] = 0003	 rd_buff[  2] = 0003 pass
+# wr_buff[  3] = 0004	 rd_buff[  3] = 0004 pass
+# wr_buff[  4] = 0005	 rd_buff[  4] = 0005 pass
+# wr_buff[  5] = 0006	 rd_buff[  5] = 0006 pass
+# wr_buff[  6] = 0007	 rd_buff[  6] = 0007 pass
+# wr_buff[  7] = 0008	 rd_buff[  7] = 0008 pass
+# wr_buff[  8] = 0009	 rd_buff[  8] = 0009 pass
+# wr_buff[  9] = 000a	 rd_buff[  9] = 000a pass
+# wr_buff[ 10] = 000b	 rd_buff[ 10] = 000b pass
+# wr_buff[ 11] = 000c	 rd_buff[ 11] = 000c pass
+# wr_buff[ 12] = 000d	 rd_buff[ 12] = 000d pass
+# wr_buff[ 13] = 000e	 rd_buff[ 13] = 000e pass
+# wr_buff[ 14] = 000f	 rd_buff[ 14] = 000f pass
+# wr_buff[ 15] = 0010	 rd_buff[ 15] = 0010 pass
+# wr_buff[ 16] = 0011	 rd_buff[ 16] = 0011 pass
+# wr_buff[ 17] = 0012	 rd_buff[ 17] = 0012 pass
+# wr_buff[ 18] = 0013	 rd_buff[ 18] = 0013 pass
+# wr_buff[ 19] = 0014	 rd_buff[ 19] = 0014 pass
+# wr_buff[ 20] = 0015	 rd_buff[ 20] = 0015 pass
+# wr_buff[ 21] = 0016	 rd_buff[ 21] = 0016 pass
+# wr_buff[ 22] = 0017	 rd_buff[ 22] = 0017 pass
+# wr_buff[ 23] = 0018	 rd_buff[ 23] = 0018 pass
+# wr_buff[ 24] = 0019	 rd_buff[ 24] = 0019 pass
+# wr_buff[ 25] = 001a	 rd_buff[ 25] = 001a pass
+# wr_buff[ 26] = 001b	 rd_buff[ 26] = 001b pass
+# wr_buff[ 27] = 001c	 rd_buff[ 27] = 001c pass
+# wr_buff[ 28] = 001d	 rd_buff[ 28] = 001d pass
+# wr_buff[ 29] = 001e	 rd_buff[ 29] = 001e pass
+# wr_buff[ 30] = 001f	 rd_buff[ 30] = 001f pass
+# wr_buff[ 31] = 0020	 rd_buff[ 31] = 0020 pass
+# wr_buff[ 32] = 0021	 rd_buff[ 32] = 0021 pass
+# wr_buff[ 33] = 0022	 rd_buff[ 33] = 0022 pass
+# wr_buff[ 34] = 0023	 rd_buff[ 34] = 0023 pass
+# wr_buff[ 35] = 0024	 rd_buff[ 35] = 0024 pass
+# wr_buff[ 36] = 0025	 rd_buff[ 36] = 0025 pass
+# wr_buff[ 37] = 0026	 rd_buff[ 37] = 0026 pass
+# wr_buff[ 38] = 0027	 rd_buff[ 38] = 0027 pass
+# wr_buff[ 39] = 0028	 rd_buff[ 39] = 0028 pass
+# wr_buff[ 40] = 0029	 rd_buff[ 40] = 0029 pass
+# wr_buff[ 41] = 002a	 rd_buff[ 41] = 002a pass
+# wr_buff[ 42] = 002b	 rd_buff[ 42] = 002b pass
+# wr_buff[ 43] = 002c	 rd_buff[ 43] = 002c pass
+# wr_buff[ 44] = 002d	 rd_buff[ 44] = 002d pass
+# wr_buff[ 45] = 002e	 rd_buff[ 45] = 002e pass
+# wr_buff[ 46] = 002f	 rd_buff[ 46] = 002f pass
+# wr_buff[ 47] = 0030	 rd_buff[ 47] = 0030 pass
+# wr_buff[ 48] = 0031	 rd_buff[ 48] = 0031 pass
+# wr_buff[ 49] = 0032	 rd_buff[ 49] = 0032 pass
+# wr_buff[ 50] = 0033	 rd_buff[ 50] = 0033 pass
+# wr_buff[ 51] = 0034	 rd_buff[ 51] = 0034 pass
+# wr_buff[ 52] = 0035	 rd_buff[ 52] = 0035 pass
+# wr_buff[ 53] = 0036	 rd_buff[ 53] = 0036 pass
+# wr_buff[ 54] = 0037	 rd_buff[ 54] = 0037 pass
+# wr_buff[ 55] = 0038	 rd_buff[ 55] = 0038 pass
+# wr_buff[ 56] = 0039	 rd_buff[ 56] = 0039 pass
+# wr_buff[ 57] = 003a	 rd_buff[ 57] = 003a pass
+# wr_buff[ 58] = 003b	 rd_buff[ 58] = 003b pass
+# wr_buff[ 59] = 003c	 rd_buff[ 59] = 003c pass
+# wr_buff[ 60] = 003d	 rd_buff[ 60] = 003d pass
+# wr_buff[ 61] = 003e	 rd_buff[ 61] = 003e pass
+# wr_buff[ 62] = 003f	 rd_buff[ 62] = 003f pass
+# wr_buff[ 63] = 0040	 rd_buff[ 63] = 0040 pass
+# wr_buff[ 64] = 0041	 rd_buff[ 64] = 0041 pass
+# wr_buff[ 65] = 0042	 rd_buff[ 65] = 0042 pass
+# wr_buff[ 66] = 0043	 rd_buff[ 66] = 0043 pass
+# wr_buff[ 67] = 0044	 rd_buff[ 67] = 0044 pass
+# wr_buff[ 68] = 0045	 rd_buff[ 68] = 0045 pass
+# wr_buff[ 69] = 0046	 rd_buff[ 69] = 0046 pass
+# wr_buff[ 70] = 0047	 rd_buff[ 70] = 0047 pass
+# wr_buff[ 71] = 0048	 rd_buff[ 71] = 0048 pass
+# wr_buff[ 72] = 0049	 rd_buff[ 72] = 0049 pass
+# wr_buff[ 73] = 004a	 rd_buff[ 73] = 004a pass
+# wr_buff[ 74] = 004b	 rd_buff[ 74] = 004b pass
+# wr_buff[ 75] = 004c	 rd_buff[ 75] = 004c pass
+# wr_buff[ 76] = 004d	 rd_buff[ 76] = 004d pass
+# wr_buff[ 77] = 004e	 rd_buff[ 77] = 004e pass
+# wr_buff[ 78] = 004f	 rd_buff[ 78] = 004f pass
+# wr_buff[ 79] = 0050	 rd_buff[ 79] = 0050 pass
+# wr_buff[ 80] = 0051	 rd_buff[ 80] = 0051 pass
+# wr_buff[ 81] = 0052	 rd_buff[ 81] = 0052 pass
+# wr_buff[ 82] = 0053	 rd_buff[ 82] = 0053 pass
+# wr_buff[ 83] = 0054	 rd_buff[ 83] = 0054 pass
+# wr_buff[ 84] = 0055	 rd_buff[ 84] = 0055 pass
+# wr_buff[ 85] = 0056	 rd_buff[ 85] = 0056 pass
+# wr_buff[ 86] = 0057	 rd_buff[ 86] = 0057 pass
+# wr_buff[ 87] = 0058	 rd_buff[ 87] = 0058 pass
+# wr_buff[ 88] = 0059	 rd_buff[ 88] = 0059 pass
+# wr_buff[ 89] = 005a	 rd_buff[ 89] = 005a pass
+# wr_buff[ 90] = 005b	 rd_buff[ 90] = 005b pass
+# wr_buff[ 91] = 005c	 rd_buff[ 91] = 005c pass
+# wr_buff[ 92] = 005d	 rd_buff[ 92] = 005d pass
+# wr_buff[ 93] = 005e	 rd_buff[ 93] = 005e pass
+# wr_buff[ 94] = 005f	 rd_buff[ 94] = 005f pass
+# wr_buff[ 95] = 0060	 rd_buff[ 95] = 0060 pass
+# wr_buff[ 96] = 0061	 rd_buff[ 96] = 0061 pass
+# wr_buff[ 97] = 0062	 rd_buff[ 97] = 0062 pass
+# wr_buff[ 98] = 0063	 rd_buff[ 98] = 0063 pass
+# wr_buff[ 99] = 0064	 rd_buff[ 99] = 0064 pass
+# wr_buff[100] = 0065	 rd_buff[100] = 0065 pass
+# wr_buff[101] = 0066	 rd_buff[101] = 0066 pass
+# wr_buff[102] = 0067	 rd_buff[102] = 0067 pass
+# wr_buff[103] = 0068	 rd_buff[103] = 0068 pass
+# wr_buff[104] = 0069	 rd_buff[104] = 0069 pass
+# wr_buff[105] = 006a	 rd_buff[105] = 006a pass
+# wr_buff[106] = 006b	 rd_buff[106] = 006b pass
+# wr_buff[107] = 006c	 rd_buff[107] = 006c pass
+# wr_buff[108] = 006d	 rd_buff[108] = 006d pass
+# wr_buff[109] = 006e	 rd_buff[109] = 006e pass
+# wr_buff[110] = 006f	 rd_buff[110] = 006f pass
+# wr_buff[111] = 0070	 rd_buff[111] = 0070 pass
+# wr_buff[112] = 0071	 rd_buff[112] = 0071 pass
+# wr_buff[113] = 0072	 rd_buff[113] = 0072 pass
+# wr_buff[114] = 0073	 rd_buff[114] = 0073 pass
+# wr_buff[115] = 0074	 rd_buff[115] = 0074 pass
+# wr_buff[116] = 0075	 rd_buff[116] = 0075 pass
+# wr_buff[117] = 0076	 rd_buff[117] = 0076 pass
+# wr_buff[118] = 0077	 rd_buff[118] = 0077 pass
+# wr_buff[119] = 0078	 rd_buff[119] = 0078 pass
+# wr_buff[120] = 0079	 rd_buff[120] = 0079 pass
+# wr_buff[121] = 007a	 rd_buff[121] = 007a pass
+# wr_buff[122] = 007b	 rd_buff[122] = 007b pass
+# wr_buff[123] = 007c	 rd_buff[123] = 007c pass
+# wr_buff[124] = 007d	 rd_buff[124] = 007d pass
+# wr_buff[125] = 007e	 rd_buff[125] = 007e pass
+# wr_buff[126] = 007f	 rd_buff[126] = 007f pass
+# wr_buff[127] = 0080	 rd_buff[127] = 0080 pass
+# wr_buff[128] = 0081	 rd_buff[128] = 0081 pass
+# wr_buff[129] = 0082	 rd_buff[129] = 0082 pass
+# wr_buff[130] = 0083	 rd_buff[130] = 0083 pass
+# wr_buff[131] = 0084	 rd_buff[131] = 0084 pass
+# wr_buff[132] = 0085	 rd_buff[132] = 0085 pass
+# wr_buff[133] = 0086	 rd_buff[133] = 0086 pass
+# wr_buff[134] = 0087	 rd_buff[134] = 0087 pass
+# wr_buff[135] = 0088	 rd_buff[135] = 0088 pass
+# wr_buff[136] = 0089	 rd_buff[136] = 0089 pass
+# wr_buff[137] = 008a	 rd_buff[137] = 008a pass
+# wr_buff[138] = 008b	 rd_buff[138] = 008b pass
+# wr_buff[139] = 008c	 rd_buff[139] = 008c pass
+# wr_buff[140] = 008d	 rd_buff[140] = 008d pass
+# wr_buff[141] = 008e	 rd_buff[141] = 008e pass
+# wr_buff[142] = 008f	 rd_buff[142] = 008f pass
+# wr_buff[143] = 0090	 rd_buff[143] = 0090 pass
+# wr_buff[144] = 0091	 rd_buff[144] = 0091 pass
+# wr_buff[145] = 0092	 rd_buff[145] = 0092 pass
+# wr_buff[146] = 0093	 rd_buff[146] = 0093 pass
+# wr_buff[147] = 0094	 rd_buff[147] = 0094 pass
+# wr_buff[148] = 0095	 rd_buff[148] = 0095 pass
+# wr_buff[149] = 0096	 rd_buff[149] = 0096 pass
+# wr_buff[150] = 0097	 rd_buff[150] = 0097 pass
+# wr_buff[151] = 0098	 rd_buff[151] = 0098 pass
+# wr_buff[152] = 0099	 rd_buff[152] = 0099 pass
+# wr_buff[153] = 009a	 rd_buff[153] = 009a pass
+# wr_buff[154] = 009b	 rd_buff[154] = 009b pass
+# wr_buff[155] = 009c	 rd_buff[155] = 009c pass
+# wr_buff[156] = 009d	 rd_buff[156] = 009d pass
+# wr_buff[157] = 009e	 rd_buff[157] = 009e pass
+# wr_buff[158] = 009f	 rd_buff[158] = 009f pass
+# wr_buff[159] = 00a0	 rd_buff[159] = 00a0 pass
+# wr_buff[160] = 00a1	 rd_buff[160] = 00a1 pass
+# wr_buff[161] = 00a2	 rd_buff[161] = 00a2 pass
+# wr_buff[162] = 00a3	 rd_buff[162] = 00a3 pass
+# wr_buff[163] = 00a4	 rd_buff[163] = 00a4 pass
+# wr_buff[164] = 00a5	 rd_buff[164] = 00a5 pass
+# wr_buff[165] = 00a6	 rd_buff[165] = 00a6 pass
+# wr_buff[166] = 00a7	 rd_buff[166] = 00a7 pass
+# wr_buff[167] = 00a8	 rd_buff[167] = 00a8 pass
+# wr_buff[168] = 00a9	 rd_buff[168] = 00a9 pass
+# wr_buff[169] = 00aa	 rd_buff[169] = 00aa pass
+# wr_buff[170] = 00ab	 rd_buff[170] = 00ab pass
+# wr_buff[171] = 00ac	 rd_buff[171] = 00ac pass
+# wr_buff[172] = 00ad	 rd_buff[172] = 00ad pass
+# wr_buff[173] = 00ae	 rd_buff[173] = 00ae pass
+# wr_buff[174] = 00af	 rd_buff[174] = 00af pass
+# wr_buff[175] = 00b0	 rd_buff[175] = 00b0 pass
+# wr_buff[176] = 00b1	 rd_buff[176] = 00b1 pass
+# wr_buff[177] = 00b2	 rd_buff[177] = 00b2 pass
+# wr_buff[178] = 00b3	 rd_buff[178] = 00b3 pass
+# wr_buff[179] = 00b4	 rd_buff[179] = 00b4 pass
+# wr_buff[180] = 00b5	 rd_buff[180] = 00b5 pass
+# wr_buff[181] = 00b6	 rd_buff[181] = 00b6 pass
+# wr_buff[182] = 00b7	 rd_buff[182] = 00b7 pass
+# wr_buff[183] = 00b8	 rd_buff[183] = 00b8 pass
+# wr_buff[184] = 00b9	 rd_buff[184] = 00b9 pass
+# wr_buff[185] = 00ba	 rd_buff[185] = 00ba pass
+# wr_buff[186] = 00bb	 rd_buff[186] = 00bb pass
+# wr_buff[187] = 00bc	 rd_buff[187] = 00bc pass
+# wr_buff[188] = 00bd	 rd_buff[188] = 00bd pass
+# wr_buff[189] = 00be	 rd_buff[189] = 00be pass
+# wr_buff[190] = 00bf	 rd_buff[190] = 00bf pass
+# wr_buff[191] = 00c0	 rd_buff[191] = 00c0 pass
+# wr_buff[192] = 00c1	 rd_buff[192] = 00c1 pass
+# wr_buff[193] = 00c2	 rd_buff[193] = 00c2 pass
+# wr_buff[194] = 00c3	 rd_buff[194] = 00c3 pass
+# wr_buff[195] = 00c4	 rd_buff[195] = 00c4 pass
+# wr_buff[196] = 00c5	 rd_buff[196] = 00c5 pass
+# wr_buff[197] = 00c6	 rd_buff[197] = 00c6 pass
+# wr_buff[198] = 00c7	 rd_buff[198] = 00c7 pass
+# wr_buff[199] = 00c8	 rd_buff[199] = 00c8 pass
+# wr_buff[200] = 00c9	 rd_buff[200] = 00c9 pass
+# wr_buff[201] = 00ca	 rd_buff[201] = 00ca pass
+# wr_buff[202] = 00cb	 rd_buff[202] = 00cb pass
+# wr_buff[203] = 00cc	 rd_buff[203] = 00cc pass
+# wr_buff[204] = 00cd	 rd_buff[204] = 00cd pass
+# wr_buff[205] = 00ce	 rd_buff[205] = 00ce pass
+# wr_buff[206] = 00cf	 rd_buff[206] = 00cf pass
+# wr_buff[207] = 00d0	 rd_buff[207] = 00d0 pass
+# wr_buff[208] = 00d1	 rd_buff[208] = 00d1 pass
+# wr_buff[209] = 00d2	 rd_buff[209] = 00d2 pass
+# wr_buff[210] = 00d3	 rd_buff[210] = 00d3 pass
+# wr_buff[211] = 00d4	 rd_buff[211] = 00d4 pass
+# wr_buff[212] = 00d5	 rd_buff[212] = 00d5 pass
+# wr_buff[213] = 00d6	 rd_buff[213] = 00d6 pass
+# wr_buff[214] = 00d7	 rd_buff[214] = 00d7 pass
+# wr_buff[215] = 00d8	 rd_buff[215] = 00d8 pass
+# wr_buff[216] = 00d9	 rd_buff[216] = 00d9 pass
+# wr_buff[217] = 00da	 rd_buff[217] = 00da pass
+# wr_buff[218] = 00db	 rd_buff[218] = 00db pass
+# wr_buff[219] = 00dc	 rd_buff[219] = 00dc pass
+# wr_buff[220] = 00dd	 rd_buff[220] = 00dd pass
+# wr_buff[221] = 00de	 rd_buff[221] = 00de pass
+# wr_buff[222] = 00df	 rd_buff[222] = 00df pass
+# wr_buff[223] = 00e0	 rd_buff[223] = 00e0 pass
+# wr_buff[224] = 00e1	 rd_buff[224] = 00e1 pass
+# wr_buff[225] = 00e2	 rd_buff[225] = 00e2 pass
+# wr_buff[226] = 00e3	 rd_buff[226] = 00e3 pass
+# wr_buff[227] = 00e4	 rd_buff[227] = 00e4 pass
+# wr_buff[228] = 00e5	 rd_buff[228] = 00e5 pass
+# wr_buff[229] = 00e6	 rd_buff[229] = 00e6 pass
+# wr_buff[230] = 00e7	 rd_buff[230] = 00e7 pass
+# wr_buff[231] = 00e8	 rd_buff[231] = 00e8 pass
+# wr_buff[232] = 00e9	 rd_buff[232] = 00e9 pass
+# wr_buff[233] = 00ea	 rd_buff[233] = 00ea pass
+# wr_buff[234] = 00eb	 rd_buff[234] = 00eb pass
+# wr_buff[235] = 00ec	 rd_buff[235] = 00ec pass
+# wr_buff[236] = 00ed	 rd_buff[236] = 00ed pass
+# wr_buff[237] = 00ee	 rd_buff[237] = 00ee pass
+# wr_buff[238] = 00ef	 rd_buff[238] = 00ef pass
+# wr_buff[239] = 00f0	 rd_buff[239] = 00f0 pass
+# wr_buff[240] = 00f1	 rd_buff[240] = 00f1 pass
+# wr_buff[241] = 00f2	 rd_buff[241] = 00f2 pass
+# wr_buff[242] = 00f3	 rd_buff[242] = 00f3 pass
+# wr_buff[243] = 00f4	 rd_buff[243] = 00f4 pass
+# wr_buff[244] = 00f5	 rd_buff[244] = 00f5 pass
+# wr_buff[245] = 00f6	 rd_buff[245] = 00f6 pass
+# wr_buff[246] = 00f7	 rd_buff[246] = 00f7 pass
+# wr_buff[247] = 00f8	 rd_buff[247] = 00f8 pass
+# wr_buff[248] = 00f9	 rd_buff[248] = 00f9 pass
+# wr_buff[249] = 00fa	 rd_buff[249] = 00fa pass
+# wr_buff[250] = 00fb	 rd_buff[250] = 00fb pass
+# wr_buff[251] = 00fc	 rd_buff[251] = 00fc pass
+# wr_buff[252] = 00fd	 rd_buff[252] = 00fd pass
+# wr_buff[253] = 00fe	 rd_buff[253] = 00fe pass
+# wr_buff[254] = 00ff	 rd_buff[254] = 00ff pass
+# wr_buff[255] = 0100	 rd_buff[255] = 0100 pass
+# End time: 21:35:50 on Nov 07,2023, Elapsed time: 0:00:40
+# Errors: 0, Warnings: 3

@@ -1,0 +1,18 @@
+Fitter Status : Successful - Tue Nov  7 20:59:35 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : sdram_test
+Top-level Entity Name : sdram_test
+Family : MAX 10
+Device : 10M50SAE144C8G
+Timing Models : Final
+Total logic elements : 5,956 / 49,760 ( 12 % )
+    Total combinational functions : 3,701 / 49,760 ( 7 % )
+    Dedicated logic registers : 4,603 / 49,760 ( 9 % )
+Total registers : 4603
+Total pins : 46 / 101 ( 46 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 1,677,312 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 1 ( 100 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 1 ( 0 % )
