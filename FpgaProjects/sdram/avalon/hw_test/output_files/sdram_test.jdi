@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="deebdee28652a5645b91"/>
+    <hash md5_digest_80b="5a5566eeb1be9028c6b4"/>
   </project>
   <file_info>
     <file device="10M50SAE144C8G" path="sdram_test.sof" usercode="0xFFFFFFFF"/>
@@ -8,7 +8,7 @@
   <sld_infos>
     <sld_info hpath="sdram_qsys:sdram_inst" name="sdram_inst">
       <assignment_values>
-        <assignment_value text="QSYS_NAME sdram_qsys HAS_SOPCINFO 1 GENERATION_ID 1699379444"/>
+        <assignment_value text="QSYS_NAME sdram_qsys HAS_SOPCINFO 1 GENERATION_ID 1699703351"/>
       </assignment_values>
       <parameters/>
     </sld_info>

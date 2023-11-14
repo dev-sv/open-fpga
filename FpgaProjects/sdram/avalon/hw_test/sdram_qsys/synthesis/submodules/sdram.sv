@@ -60,14 +60,14 @@ enum bit[3:0]{ LMR, REFRESH, PRECHARGE, ACTIVE, WRITE,
 
 // states.
 enum { INI, CMD_PRECHARGE, CMD_REF_INI, CMD_LMR, CMD_ACTIVE, 
-		 CMD_WRITE, WR, CMD_READ, RD, RD_WR, CMD_AREF, S0, S1 } st = INI;
+		 CMD_WRITE, WR, CMD_READ, RD, RD_WR, RD_END, CMD_AREF, S0, S1 } st = INI;
 
 		 
 
 int unsigned t_count = 0;				// time count.
 int unsigned t_aref = 0;
 int unsigned row_count = 0;
-int unsigned count_auto_ref = 0;		// auto_refresh count.
+int unsigned count_auto_ref = 0;
 
 
 /* Mode register. *****************/
@@ -85,11 +85,11 @@ bit      op = `WR; 				      // RD or WR operation flag.
 bit      sw = `EN_RD;					// switch dq bus to wr or rd.
 
 bit       power_up = 1'b1;				// power up flag.
-bit       new_burstcount = 1'b0;		// new burst count flag.
+bit       new_burstcount = 1'b0;		// new burst_count flag.
 
-bit[8:0]  bc = 0;  					  	// burst count(1, 2, 4, 8, 256);
-bit[8:0]	 i = 0;
+bit[8:0]  i = 0;
 bit[8:0]	 j = 0;
+bit[8:0]  bc = 0;  					  	// burst count(1, 2, 4, 8, 256);
 
 bit[21:0] buff_addr;
 bit[15:0] buff_wr;
@@ -132,7 +132,6 @@ bit[15:0] wr_data[256];
 				CMD_PRECHARGE:	begin
 									
 										cmd <= PRECHARGE;
-
 										
 										t_count <= PRECHARGE_COMMAND_PERIOD;
 
@@ -290,11 +289,12 @@ bit[15:0] wr_data[256];
 												dqm <= 2'b11;
 												
 												s_readdatavalid<= 1'b0;
+												
+												s_waitrequest <= 1'b1;
 																				
 												st <= CMD_PRECHARGE;	
 										end
 									end
-									
 
 
 				CMD_AREF:		begin
@@ -328,13 +328,10 @@ bit[15:0] wr_data[256];
 
 				S0: begin
 				
-						ba <= 0;
-						
-						s_waitrequest <= 1'b1;
-						
+						ba <= 0;						
 						
 						if(s_write || s_read) begin
-												
+						
 												
 							buff_addr <= s_address;
 														
@@ -365,7 +362,7 @@ bit[15:0] wr_data[256];
 								
 					
 							end
-					
+												
 						   st <= S1;
 					
 						end
@@ -389,14 +386,14 @@ bit[15:0] wr_data[256];
 						 
 						 
 									if(s_write) begin
-																  
-									  
+									
+																  										
 										if((buff_addr + i) == s_address) begin
 									  											
 											wr_data[i] <= s_writedata;	
-																				
+																			
 											i <= i + 1'b1;
-										end									  
+										end
 									  
 									end
 									else begin 
@@ -404,7 +401,7 @@ bit[15:0] wr_data[256];
 											i <= 0;
 						 						
 											op <= `WR;
-																														
+																																																				
 											s_waitrequest <= 1'b1;
 																				
 											st <= new_burstcount ? CMD_PRECHARGE : CMD_ACTIVE;

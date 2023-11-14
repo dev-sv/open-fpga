@@ -42,11 +42,12 @@ module sdram_test(
  bit[21:0]	wr_addr = 22'h000000;
  bit[21:0]	rd_addr = 22'h000000;
  bit[15:0]  writedata;
- bit[15:0]	wr_data[256];
- bit[15:0]  rd_data[256];
- bit[15:0]	value = 16'h0000;
+ bit[15:0]	wr_data[`BURST_COUNT];
+ bit[15:0]  rd_data[`BURST_COUNT];
  
  bit[7:0] 	error = 8'h00;
+ bit[15:0]	off = 16'h0001;
+ bit[15:0]	value = 16'h0000; 
 				 
 
 		  
@@ -126,7 +127,7 @@ sdram_qsys  sdram_inst(
 														
 							wr_addr <= wr_addr + 1'b1;
 								
-							st <= WR1;											
+							st <= WR1;
 						end
 						
 	
@@ -142,7 +143,7 @@ sdram_qsys  sdram_inst(
 									i <= 0;
 																											
 									write <= 1'b0;
-	
+										
 									st <= RD0;
 						  end		
 																						
@@ -184,7 +185,7 @@ sdram_qsys  sdram_inst(
 										i <= 0;
 																				
 										read <= 1'b0;
-										
+																				
 										rd_addr <= rd_addr + `BURST_COUNT;
 										
 										st <= CMP;
@@ -207,16 +208,23 @@ sdram_qsys  sdram_inst(
 									
 									st <= ERR;
 								end
-								else begin	
-
-// pass bank.							
-										error <= rd_addr[21:20];
-													
-										i <= 0;
-																		
-										st <= SET_DATA;							
-								end
+								else i <= i + 1'b1;
 								
+							end
+							else begin
+
+									error <= rd_addr[21:20];
+// all banks passed.									
+									if(rd_addr == 22'h000000) begin
+									
+									   value <= off;
+										
+									   off <= off + 1'b1;																			
+									end
+									
+									i <= 0;
+																			
+									st <= SET_DATA;					
 							end
 							
 						end

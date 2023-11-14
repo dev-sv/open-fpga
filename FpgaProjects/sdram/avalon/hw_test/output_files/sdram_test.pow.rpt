@@ -1,5 +1,5 @@
 Power Analyzer report for sdram_test
-Tue Nov  7 20:59:47 2023
+Sat Nov 11 15:05:31 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -51,28 +51,28 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
-; Average used               ; 2.14        ;
+; Average used               ; 2.17        ;
 ; Maximum used               ; 4           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;  38.0%      ;
+;     Processors 2-4         ;  38.9%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Tue Nov  7 20:59:47 2023            ;
+; Power Analyzer Status                  ; Successful - Sat Nov 11 15:05:31 2023            ;
 ; Quartus Prime Version                  ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition      ;
 ; Revision Name                          ; sdram_test                                       ;
 ; Top-level Entity Name                  ; sdram_test                                       ;
 ; Family                                 ; MAX 10                                           ;
 ; Device                                 ; 10M50SAE144C8G                                   ;
 ; Power Models                           ; Final                                            ;
-; Total Thermal Power Dissipation        ; 527.32 mW                                        ;
-; Core Dynamic Thermal Power Dissipation ; 251.84 mW                                        ;
-; Core Static Thermal Power Dissipation  ; 255.83 mW                                        ;
+; Total Thermal Power Dissipation        ; 522.48 mW                                        ;
+; Core Dynamic Thermal Power Dissipation ; 247.07 mW                                        ;
+; Core Static Thermal Power Dissipation  ; 255.75 mW                                        ;
 ; I/O Thermal Power Dissipation          ; 19.65 mW                                         ;
 ; Power Estimation Confidence            ; Low: user provided insufficient toggle rate data ;
 +----------------------------------------+--------------------------------------------------+
@@ -143,11 +143,11 @@ refer to the applicable agreement for further details.
 +---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
 ; PLL                 ; 14.26 mW                          ; 14.26 mW                    ; --                             ; 0.00 mW                       ;  100.000                                                  ;
 ; M9K                 ; 2.54 mW                           ; 2.54 mW                     ; --                             ; 0.00 mW                       ;    0.000                                                  ;
-; Combinational cell  ; 26.14 mW                          ; 8.35 mW                     ; --                             ; 17.80 mW                      ;   15.747                                                  ;
-; Clock control block ; 24.00 mW                          ; 0.00 mW                     ; --                             ; 24.00 mW                      ;  200.000                                                  ;
-; Register cell       ; 38.29 mW                          ; 17.77 mW                    ; --                             ; 20.52 mW                      ;   12.493                                                  ;
-; I/O                 ; 11.25 mW                          ; 10.95 mW                    ; 0.26 mW                        ; 0.04 mW                       ;   16.204                                                  ;
-; Voltage Regulator   ; 147.53 mW                         ; 146.57 mW                   ; 0.97 mW                        ; --                            ; --                                                        ;
+; Combinational cell  ; 27.47 mW                          ; 8.74 mW                     ; --                             ; 18.73 mW                      ;   15.978                                                  ;
+; Clock control block ; 20.81 mW                          ; 0.00 mW                     ; --                             ; 20.81 mW                      ;  200.000                                                  ;
+; Register cell       ; 38.21 mW                          ; 17.26 mW                    ; --                             ; 20.95 mW                      ;   12.493                                                  ;
+; I/O                 ; 11.29 mW                          ; 10.95 mW                    ; 0.26 mW                        ; 0.08 mW                       ;   16.204                                                  ;
+; Voltage Regulator   ; 144.67 mW                         ; 143.71 mW                   ; 0.97 mW                        ; --                            ; --                                                        ;
 +---------------------+-----------------------------------+-----------------------------+--------------------------------+-------------------------------+-----------------------------------------------------------+
 (1) The "Block Thermal Static Power" for all block types except Pins and the Voltage Regulator, if one exists, is part of the "Core Static Thermal Power Dissipation" value found on the PowerPlay Power Analyzer-->Summary report panel. The "Core Static Thermal Power Dissipation" also contains the thermal static power dissipated by the routing.
 
@@ -157,17 +157,17 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
 ; Compilation Hierarchy Node                              ; Total Thermal Power by Hierarchy (1) ; Block Thermal Dynamic Power (1) ; Block Thermal Static Power (1)(2) ; Routing Thermal Dynamic Power (1) ; Full Hierarchy Name                                                                                                 ;
 +---------------------------------------------------------+--------------------------------------+---------------------------------+-----------------------------------+-----------------------------------+---------------------------------------------------------------------------------------------------------------------+
-; |sdram_test                                             ; 264.02 mW (160.88 mW)                ; 200.42 mW (158.80 mW)           ; 1.23 mW (1.23 mW)                 ; 62.36 mW (0.85 mW)                ; |sdram_test                                                                                                         ;
+; |sdram_test                                             ; 259.25 mW (158.27 mW)                ; 197.45 mW (156.02 mW)           ; 1.23 mW (1.23 mW)                 ; 60.58 mW (1.03 mW)                ; |sdram_test                                                                                                         ;
 ;     |hard_block:auto_generated_inst                     ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |sdram_test|hard_block:auto_generated_inst                                                                          ;
-;     |pll:pll_inst                                       ; 38.25 mW (0.00 mW)                   ; 14.26 mW (0.00 mW)              ; --                                ; 24.00 mW (0.00 mW)                ; |sdram_test|pll:pll_inst                                                                                            ;
-;         |altpll:altpll_component                        ; 38.25 mW (0.00 mW)                   ; 14.26 mW (0.00 mW)              ; --                                ; 24.00 mW (0.00 mW)                ; |sdram_test|pll:pll_inst|altpll:altpll_component                                                                    ;
-;             |pll_altpll:auto_generated                  ; 38.25 mW (38.25 mW)                  ; 14.26 mW (14.26 mW)             ; --                                ; 24.00 mW (24.00 mW)               ; |sdram_test|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated                                          ;
+;     |pll:pll_inst                                       ; 35.07 mW (0.00 mW)                   ; 14.26 mW (0.00 mW)              ; --                                ; 20.81 mW (0.00 mW)                ; |sdram_test|pll:pll_inst                                                                                            ;
+;         |altpll:altpll_component                        ; 35.07 mW (0.00 mW)                   ; 14.26 mW (0.00 mW)              ; --                                ; 20.81 mW (0.00 mW)                ; |sdram_test|pll:pll_inst|altpll:altpll_component                                                                    ;
+;             |pll_altpll:auto_generated                  ; 35.07 mW (35.07 mW)                  ; 14.26 mW (14.26 mW)             ; --                                ; 20.81 mW (20.81 mW)               ; |sdram_test|pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated                                          ;
 ;     |altsyncram:rd_data_rtl_0                           ; 1.24 mW (0.00 mW)                    ; 1.24 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |sdram_test|altsyncram:rd_data_rtl_0                                                                                ;
 ;         |altsyncram_uag1:auto_generated                 ; 1.24 mW (1.24 mW)                    ; 1.24 mW (1.24 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |sdram_test|altsyncram:rd_data_rtl_0|altsyncram_uag1:auto_generated                                                 ;
-;     |sdram_qsys:sdram_inst                              ; 62.35 mW (0.00 mW)                   ; 24.83 mW (0.00 mW)              ; --                                ; 37.51 mW (0.00 mW)                ; |sdram_test|sdram_qsys:sdram_inst                                                                                   ;
-;         |altera_avalon_mm_bridge:mm_bridge_0            ; 9.23 mW (9.23 mW)                    ; 0.78 mW (0.78 mW)               ; --                                ; 8.44 mW (8.44 mW)                 ; |sdram_test|sdram_qsys:sdram_inst|altera_avalon_mm_bridge:mm_bridge_0                                               ;
+;     |sdram_qsys:sdram_inst                              ; 63.37 mW (0.00 mW)                   ; 24.64 mW (0.00 mW)              ; --                                ; 38.74 mW (0.00 mW)                ; |sdram_test|sdram_qsys:sdram_inst                                                                                   ;
+;         |altera_avalon_mm_bridge:mm_bridge_0            ; 9.50 mW (9.50 mW)                    ; 0.75 mW (0.75 mW)               ; --                                ; 8.75 mW (8.75 mW)                 ; |sdram_test|sdram_qsys:sdram_inst|altera_avalon_mm_bridge:mm_bridge_0                                               ;
 ;         |sdram_qsys_mm_interconnect_0:mm_interconnect_0 ; 0.00 mW (0.00 mW)                    ; 0.00 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |sdram_test|sdram_qsys:sdram_inst|sdram_qsys_mm_interconnect_0:mm_interconnect_0                                    ;
-;         |sdram:mt48lc4m16a2_0                           ; 53.08 mW (53.08 mW)                  ; 24.01 mW (24.01 mW)             ; --                                ; 29.07 mW (29.07 mW)               ; |sdram_test|sdram_qsys:sdram_inst|sdram:mt48lc4m16a2_0                                                              ;
+;         |sdram:mt48lc4m16a2_0                           ; 53.84 mW (53.84 mW)                  ; 23.85 mW (23.85 mW)             ; --                                ; 29.98 mW (29.98 mW)               ; |sdram_test|sdram_qsys:sdram_inst|sdram:mt48lc4m16a2_0                                                              ;
 ;         |altera_reset_controller:rst_controller         ; 0.04 mW (0.00 mW)                    ; 0.04 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |sdram_test|sdram_qsys:sdram_inst|altera_reset_controller:rst_controller                                            ;
 ;             |altera_reset_synchronizer:alt_rst_sync_uq1 ; 0.04 mW (0.04 mW)                    ; 0.04 mW (0.04 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |sdram_test|sdram_qsys:sdram_inst|altera_reset_controller:rst_controller|altera_reset_synchronizer:alt_rst_sync_uq1 ;
 ;     |altsyncram:wr_data_rtl_0                           ; 1.29 mW (0.00 mW)                    ; 1.29 mW (0.00 mW)               ; --                                ; 0.00 mW (0.00 mW)                 ; |sdram_test|altsyncram:wr_data_rtl_0                                                                                ;
@@ -183,7 +183,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------+-----------------------+--------------------------+
 ; Clock Domain                                                                    ; Clock Frequency (MHz) ; Total Core Dynamic Power ;
 +---------------------------------------------------------------------------------+-----------------------+--------------------------+
-; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; 100.00                ; 105.27                   ;
+; pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated|wire_pll1_clk[0] ; 100.00                ; 103.37                   ;
 ; clk                                                                             ; 100.00                ; 0.00                     ;
 ; osc                                                                             ; 100.00                ; 0.00                     ;
 +---------------------------------------------------------------------------------+-----------------------+--------------------------+
@@ -196,7 +196,7 @@ refer to the applicable agreement for further details.
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 ; VCCIO          ; 7.76 mA                 ; 4.22 mA                   ; 3.54 mA                  ; 7.76 mA                          ;
 ; VCCA           ; 5.57 mA                 ; 2.63 mA                   ; 2.94 mA                  ; 5.57 mA                          ;
-; VCC_ONE        ; 163.77 mA               ; 81.43 mA                  ; 82.34 mA                 ; 163.77 mA                        ;
+; VCC_ONE        ; 162.15 mA               ; 79.84 mA                  ; 82.31 mA                 ; 162.15 mA                        ;
 +----------------+-------------------------+---------------------------+--------------------------+----------------------------------+
 (1) Currents reported in columns "Total Current Drawn", "Dynamic Current Drawn", and "Static Current Drawn" are sufficient for user operation of the device.  
 (2) Currents reported in column "Minimum Power Supply Current" are sufficient for power-up, configuration, and user operation of the device.
@@ -244,9 +244,9 @@ refer to the applicable agreement for further details.
 ;     -- Number of signals with Static Probability from Node, entity or clock assignment ; 4 (0.0%)     ; 2 (2.9%)   ; 0 (0.0%)      ; 2 (0.0%)      ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Vectorless estimation                                                                  ;              ;            ;               ;               ;
-;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 9877 (99.7%) ; 45 (64.3%) ; 4603 (100.0%) ; 5229 (100.0%) ;
+;     -- Number of signals with Toggle Rate from Vectorless estimation                   ; 9903 (99.7%) ; 45 (64.3%) ; 4619 (100.0%) ; 5239 (100.0%) ;
 ;     -- Number of signals with Zero toggle rate, from Vectorless estimation             ; 36 (0.4%)    ; 7 (10.0%)  ; 3 (0.1%)      ; 26 (0.5%)     ;
-;     -- Number of signals with Static Probability from Vectorless estimation            ; 9877 (99.7%) ; 45 (64.3%) ; 4603 (100.0%) ; 5229 (100.0%) ;
+;     -- Number of signals with Static Probability from Vectorless estimation            ; 9903 (99.7%) ; 45 (64.3%) ; 4619 (100.0%) ; 5239 (100.0%) ;
 ;                                                                                        ;              ;            ;               ;               ;
 ; Default assignment                                                                     ;              ;            ;               ;               ;
 ;     -- Number of signals with Toggle Rate from Default assignment                      ; 16 (0.2%)    ; 16 (22.9%) ; 0 (0.0%)      ; 0 (0.0%)      ;
@@ -271,7 +271,7 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov  7 20:59:40 2023
+    Info: Processing started: Sat Nov 11 15:05:24 2023
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off sdram_test -c sdram_test
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
@@ -286,12 +286,12 @@ Info (223001): Completed Vectorless Power Activity Estimation
 Info (218000): Using Advanced I/O Power to simulate I/O buffers with the specified board trace model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
-Info (215049): Average toggle rate for this design is 14.209 millions of transitions / sec
-Info (215031): Total thermal power estimate for the design is 527.32 mW
+Info (215049): Average toggle rate for this design is 14.329 millions of transitions / sec
+Info (215031): Total thermal power estimate for the design is 522.48 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 1308 megabytes
-    Info: Processing ended: Tue Nov  7 20:59:47 2023
-    Info: Elapsed time: 00:00:07
+    Info: Peak virtual memory: 1313 megabytes
+    Info: Processing ended: Sat Nov 11 15:05:32 2023
+    Info: Elapsed time: 00:00:08
     Info: Total CPU time (on all processors): 00:00:14
 
 

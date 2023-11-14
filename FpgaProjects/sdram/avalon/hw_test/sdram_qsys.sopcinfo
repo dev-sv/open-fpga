@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="sdram_qsys" kind="sdram_qsys" version="1.0" fabric="QSYS">
  <!-- Format version 18.0 614 (Future versions may contain additional information.) -->
- <!-- 2023.11.07.21:50:44 -->
+ <!-- 2023.11.11.15:49:11 -->
  <!-- A collection of modules and connections -->
  <parameter name="AUTO_GENERATION_ID">
   <type>java.lang.Integer</type>
-  <value>1699379444</value>
+  <value>1699703351</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>false</visible>

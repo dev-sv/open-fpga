@@ -2,7 +2,7 @@ set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_TOOL_N
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_TOOL_VERSION "18.0"
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "sdram_qsys" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../sdram_qsys.sopcinfo"]
-set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name SLD_INFO "QSYS_NAME sdram_qsys HAS_SOPCINFO 1 GENERATION_ID 1699379444"
+set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name SLD_INFO "QSYS_NAME sdram_qsys HAS_SOPCINFO 1 GENERATION_ID 1699703351"
 set_global_assignment -library "sdram_qsys" -name MISC_FILE [file join $::quartus(qip_path) "../sdram_qsys.cmp"]
 set_global_assignment -library "sdram_qsys" -name SLD_FILE [file join $::quartus(qip_path) "sdram_qsys.debuginfo"]
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_TARGETED_DEVICE_FAMILY "MAX 10"
@@ -15,7 +15,7 @@ set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPON
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY5OTM3OTQ0NA==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTY5OTcwMzM1MQ==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::TUFYIDEw::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::MTBNNTBTQUUxNDRDOEc=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "sdram_qsys" -library "sdram_qsys" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::OA==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="

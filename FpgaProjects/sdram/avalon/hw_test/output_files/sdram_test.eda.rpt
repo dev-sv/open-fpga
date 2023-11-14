@@ -1,5 +1,5 @@
 EDA Netlist Writer report for sdram_test
-Tue Nov  7 20:59:56 2023
+Sat Nov 11 15:05:41 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -36,7 +36,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Nov  7 20:59:56 2023 ;
+; EDA Netlist Writer Status ; Successful - Sat Nov 11 15:05:41 2023 ;
 ; Revision Name             ; sdram_test                            ;
 ; Top-level Entity Name     ; sdram_test                            ;
 ; Family                    ; MAX 10                                ;
@@ -81,13 +81,13 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue Nov  7 20:59:54 2023
+    Info: Processing started: Sat Nov 11 15:05:39 2023
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off sdram_test -c sdram_test
 Warning (10905): Generated the EDA functional simulation netlist because it is the only supported netlist type for this device.
 Info (204019): Generated file sdram_test.vo in folder "/home/user/Projects/max10/sdram/avalon/hw_test/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1149 megabytes
-    Info: Processing ended: Tue Nov  7 20:59:56 2023
+    Info: Peak virtual memory: 1150 megabytes
+    Info: Processing ended: Sat Nov 11 15:05:41 2023
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 

@@ -1,5 +1,5 @@
 Flow report for sdram_test
-Tue Nov  7 20:59:56 2023
+Sat Nov 11 15:05:41 2023
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,17 +40,17 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Nov  7 20:59:56 2023       ;
+; Flow Status                        ; Successful - Sat Nov 11 15:05:41 2023       ;
 ; Quartus Prime Version              ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name                      ; sdram_test                                  ;
 ; Top-level Entity Name              ; sdram_test                                  ;
 ; Family                             ; MAX 10                                      ;
 ; Device                             ; 10M50SAE144C8G                              ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 5,956 / 49,760 ( 12 % )                     ;
-;     Total combinational functions  ; 3,701 / 49,760 ( 7 % )                      ;
-;     Dedicated logic registers      ; 4,603 / 49,760 ( 9 % )                      ;
-; Total registers                    ; 4603                                        ;
+; Total logic elements               ; 5,964 / 49,760 ( 12 % )                     ;
+;     Total combinational functions  ; 3,725 / 49,760 ( 7 % )                      ;
+;     Dedicated logic registers      ; 4,619 / 49,760 ( 9 % )                      ;
+; Total registers                    ; 4619                                        ;
 ; Total pins                         ; 46 / 101 ( 46 % )                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 8,192 / 1,677,312 ( < 1 % )                 ;
@@ -66,7 +66,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/07/2023 20:57:57 ;
+; Start date & time ; 11/11/2023 15:03:29 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; sdram_test          ;
 +-------------------+---------------------+
@@ -77,7 +77,7 @@ refer to the applicable agreement for further details.
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                        ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 171921340889519.169937987724882                              ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 171921340889519.169970420814364                              ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                    ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                                                         ; --            ; --          ; eda_simulation ;
@@ -98,7 +98,7 @@ refer to the applicable agreement for further details.
 ; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                        ; --            ; --          ; --             ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                 ; --            ; --          ; --             ;
 ; SLD_FILE                            ; sdram_qsys/synthesis/sdram_qsys.debuginfo                    ; --            ; --          ; --             ;
-; SLD_INFO                            ; QSYS_NAME sdram_qsys HAS_SOPCINFO 1 GENERATION_ID 1699379444 ; --            ; sdram_qsys  ; --             ;
+; SLD_INFO                            ; QSYS_NAME sdram_qsys HAS_SOPCINFO 1 GENERATION_ID 1699703351 ; --            ; sdram_qsys  ; --             ;
 ; SOPCINFO_FILE                       ; sdram_qsys/synthesis/../../sdram_qsys.sopcinfo               ; --            ; --          ; --             ;
 ; SYNTHESIS_ONLY_QIP                  ; On                                                           ; --            ; --          ; --             ;
 +-------------------------------------+--------------------------------------------------------------+---------------+-------------+----------------+
@@ -109,13 +109,13 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:18     ; 1.0                     ; 1035 MB             ; 00:00:30                           ;
-; Fitter               ; 00:01:20     ; 1.2                     ; 1748 MB             ; 00:01:59                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 839 MB              ; 00:00:03                           ;
-; Power Analyzer       ; 00:00:07     ; 2.1                     ; 1308 MB             ; 00:00:14                           ;
-; Timing Analyzer      ; 00:00:06     ; 2.4                     ; 948 MB              ; 00:00:13                           ;
-; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1149 MB             ; 00:00:01                           ;
-; Total                ; 00:01:55     ; --                      ; --                  ; 00:03:00                           ;
+; Analysis & Synthesis ; 00:00:17     ; 1.0                     ; 1035 MB             ; 00:00:28                           ;
+; Fitter               ; 00:01:33     ; 1.2                     ; 1741 MB             ; 00:02:11                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 840 MB              ; 00:00:03                           ;
+; Power Analyzer       ; 00:00:07     ; 2.2                     ; 1313 MB             ; 00:00:14                           ;
+; Timing Analyzer      ; 00:00:07     ; 2.4                     ; 950 MB              ; 00:00:13                           ;
+; EDA Netlist Writer   ; 00:00:02     ; 1.0                     ; 1150 MB             ; 00:00:02                           ;
+; Total                ; 00:02:09     ; --                      ; --                  ; 00:03:11                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
