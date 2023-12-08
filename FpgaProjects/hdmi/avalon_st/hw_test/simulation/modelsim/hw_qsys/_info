@@ -1,0 +1,252 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/max10/hdmi/avalon_st/hw_test/simulation/modelsim
+valtera_avalon_st_pipeline_base
+Z1 !s110 1701292810
+!i10b 1
+!s100 IZ246NSd;dW2a7WAUFMLa1
+IXP9<[9zPfOf?_LB@DZ;kj1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 altera_avalon_st_pipeline_base_v_unit
+S1
+R0
+Z3 w1701292585
+8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v
+F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Z4 L0 22
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1701292810.000000
+!s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|hw_qsys|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v|
+!i113 1
+Z7 o-vlog01compat -work hw_qsys
+Z8 !s92 -y /home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program -vlog01compat -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules
+Z9 tSvlog 1 CvgOpt 0
+valtera_avalon_st_pipeline_stage
+Z10 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+R1
+!i10b 1
+!s100 0[eR^H<[LF9R7ZA?d`HaW2
+IcDmaY`C<[TV2Em[3nd_o`3
+R2
+!s105 altera_avalon_st_pipeline_stage_sv_unit
+S1
+R0
+R3
+8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-sv|-work|hw_qsys|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv|
+!i113 1
+Z11 o-sv -work hw_qsys
+Z12 !s92 -y /home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program -sv -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules
+R9
+valtera_reset_controller
+R1
+!i10b 1
+!s100 BY0`7TD<QPSCOO[`H0GM11
+I]MJ7LGVjOTXfkJGhS>aHU1
+R2
+!s105 altera_reset_controller_v_unit
+S1
+R0
+R3
+8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_controller.v
+F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_controller.v
+L0 42
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_controller.v|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|hw_qsys|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_controller.v|
+!i113 1
+R7
+R8
+R9
+valtera_reset_synchronizer
+R1
+!i10b 1
+!s100 jGF0G[N3WmCeE44bVz8Kc3
+IYUVdoGib=>jOzYNj95ed@2
+R2
+!s105 altera_reset_synchronizer_v_unit
+S1
+R0
+R3
+8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_synchronizer.v
+F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_synchronizer.v
+L0 24
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_synchronizer.v|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|hw_qsys|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_synchronizer.v|
+!i113 1
+R7
+R8
+R9
+vhdmi_st
+R10
+R1
+!i10b 1
+!s100 QF5AGkzCBJoi5?k[7ejOn3
+IWJ8YJ3f>;3lzd4QZNzUaS1
+R2
+!s105 hdmi_st_sv_unit
+S1
+R0
+R3
+8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hdmi_st.sv
+F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hdmi_st.sv
+L0 4
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hdmi_st.sv|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-sv|-work|hw_qsys|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hdmi_st.sv|
+!i113 1
+R11
+R12
+R9
+vhw_qsys
+R1
+!i10b 1
+!s100 jbiG`@W[6C:YI1Q2eKDh=1
+I94a;h8DN?Y7PjB<_[<<Wg3
+R2
+!s105 hw_qsys_v_unit
+S1
+R0
+w1701292584
+8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/hw_qsys.v
+F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/hw_qsys.v
+L0 6
+R5
+r1
+!s85 0
+31
+R6
+!s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/hw_qsys.v|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|hw_qsys|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/hw_qsys.v|
+!i113 1
+R7
+!s92 -y /home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program -vlog01compat -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis
+R9
+vhw_qsys_altpll_0
+R1
+!i10b 1
+!s100 :O?`h:bDZ@4LGPKW6hIeR2
+ID0i989OJW_Gz@@bFNEz7Z1
+R2
+Z13 !s105 hw_qsys_altpll_0_v_unit
+S1
+R0
+R3
+Z14 8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hw_qsys_altpll_0.v
+Z15 F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hw_qsys_altpll_0.v
+L0 217
+R5
+r1
+!s85 0
+31
+R6
+Z16 !s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hw_qsys_altpll_0.v|
+Z17 !s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-vlog01compat|-work|hw_qsys|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hw_qsys_altpll_0.v|
+!i113 1
+R7
+R8
+R9
+vhw_qsys_altpll_0_altpll_ab92
+R1
+!i10b 1
+!s100 oc6`0@U47FLelzO=h0I643
+Ia<o_Y[VNMF5f<T9B2IL]U1
+R2
+R13
+S1
+R0
+R3
+R14
+R15
+L0 130
+R5
+r1
+!s85 0
+31
+R6
+R16
+R17
+!i113 1
+R7
+R8
+R9
+vhw_qsys_altpll_0_dffpipe_l2c
+R1
+!i10b 1
+!s100 ?IeUSQmf2d:ZoL`K9m5G^0
+I?bYf]kh@_miPiFeKJ5RUb3
+R2
+R13
+S1
+R0
+R3
+R14
+R15
+L0 37
+R5
+r1
+!s85 0
+31
+R6
+R16
+R17
+!i113 1
+R7
+R8
+R9
+vhw_qsys_altpll_0_stdsync_sv6
+R1
+!i10b 1
+!s100 eX:CzOOjaNnKeQ2VY9RiU1
+IVY`^1CU[_DPRi]NK0?<S<0
+R2
+R13
+S1
+R0
+R3
+R14
+R15
+L0 98
+R5
+r1
+!s85 0
+31
+R6
+R16
+R17
+!i113 1
+R7
+R8
+R9

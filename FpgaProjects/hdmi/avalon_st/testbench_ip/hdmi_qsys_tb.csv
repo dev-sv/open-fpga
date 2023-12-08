@@ -1,0 +1,35 @@
+# system info hdmi_qsys_tb on 2023.12.08.14:59:19
+system_info:
+name,value
+DEVICE,10M50SAE144C8G
+DEVICE_FAMILY,MAX 10
+GENERATION_ID,1702033159
+#
+#
+# Files generated for hdmi_qsys_tb on 2023.12.08.14:59:19
+files:
+filepath,kind,attributes,module,is_top
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/hdmi_qsys_tb.v,VERILOG,,hdmi_qsys_tb,true
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/hdmi_qsys.v,VERILOG,,hdmi_qsys,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/verbosity_pkg.sv,SYSTEM_VERILOG, COMMON_SYSTEMVERILOG_PACKAGE=avalon_vip_verbosity_pkg,altera_avalon_clock_source,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/altera_avalon_clock_source.sv,SYSTEM_VERILOG,,altera_avalon_clock_source,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/verbosity_pkg.sv,SYSTEM_VERILOG, COMMON_SYSTEMVERILOG_PACKAGE=avalon_vip_verbosity_pkg,altera_conduit_bfm,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/altera_conduit_bfm.sv,SYSTEM_VERILOG,,altera_conduit_bfm,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/verbosity_pkg.sv,SYSTEM_VERILOG, COMMON_SYSTEMVERILOG_PACKAGE=avalon_vip_verbosity_pkg,altera_avalon_reset_source,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/altera_avalon_reset_source.sv,SYSTEM_VERILOG,,altera_avalon_reset_source,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/verbosity_pkg.sv,SYSTEM_VERILOG, COMMON_SYSTEMVERILOG_PACKAGE=avalon_vip_verbosity_pkg,altera_avalon_st_source_bfm,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/avalon_utilities_pkg.sv,SYSTEM_VERILOG, COMMON_SYSTEMVERILOG_PACKAGE=avalon_vip_avalon_utilities_pkg,altera_avalon_st_source_bfm,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/altera_avalon_st_source_bfm.sv,SYSTEM_VERILOG,,altera_avalon_st_source_bfm,false
+hdmi_qsys/testbench/hdmi_qsys_tb/simulation/submodules/hdmi_st.sv,SYSTEM_VERILOG,,hdmi_st,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+hdmi_qsys_tb.hdmi_qsys_inst,hdmi_qsys
+hdmi_qsys_tb.hdmi_qsys_inst.hdmi,hdmi_st
+hdmi_qsys_tb.hdmi_qsys_inst_clk_bfm,altera_avalon_clock_source
+hdmi_qsys_tb.hdmi_qsys_inst_clk_pix_bfm,altera_avalon_clock_source
+hdmi_qsys_tb.hdmi_qsys_inst_clk_x10_bfm,altera_avalon_clock_source
+hdmi_qsys_tb.hdmi_qsys_inst_hdmi_bfm,altera_conduit_bfm
+hdmi_qsys_tb.hdmi_qsys_inst_reset_bfm,altera_avalon_reset_source
+hdmi_qsys_tb.hdmi_qsys_inst_st_in_bfm,altera_avalon_st_source_bfm

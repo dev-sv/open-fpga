@@ -1,0 +1,85 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/user/Projects/max10/hdmi/avalon_st/hw_test/simulation/modelsim
+valtera_gpio_lite
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1701292810
+!i10b 1
+!s100 mcJ@@2HNNf2oMEL5UAe@00
+IIh<8R=2201BNYVaQNKao^2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 altera_gpio_lite_sv_unit
+S1
+R0
+Z5 w1700126573
+Z6 8/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio/altera_gpio_lite.sv
+Z7 F/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio/altera_gpio_lite.sv
+L0 940
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1701292810.000000
+Z10 !s107 /home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio/altera_gpio_lite.sv|
+Z11 !s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-sv|-work|work|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio|/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio/altera_gpio_lite.sv|
+!i113 1
+Z12 o-sv -work work
+Z13 !s92 -y /home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program -sv -work work +incdir+/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio
+Z14 tSvlog 1 CvgOpt 0
+valtgpio_one_bit
+R1
+R2
+!i10b 1
+!s100 A<6c0iH^IYoe9^l^?>[>A2
+I?2@GMSiDVO<gMkB6jWf]13
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 16
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+R13
+R14
+vhdmi_test
+R1
+R2
+!i10b 1
+!s100 JSdY]o8C6j]4Q4JRE9BKY2
+IAUceVi24Ja768eR[Li1GD3
+R3
+!s105 hdmi_test_sv_unit
+S1
+R0
+w1701292776
+8/home/user/Projects/max10/hdmi/avalon_st/hw_test/hdmi_test.sv
+F/home/user/Projects/max10/hdmi/avalon_st/hw_test/hdmi_test.sv
+L0 4
+R8
+r1
+!s85 0
+31
+R9
+!s107 /home/user/Projects/max10/hdmi/avalon_st/hw_test/hdmi_test.sv|
+!s90 -##implicit##push_minusfile_path##|/home/user/Projects/TB_IP/sopc_builder/tutorial_master_bfm/vlog.opt|-y|/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program|-##implicit##pop_minusfile_path##|-reportprogress|300|-sv|-work|work|+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test|/home/user/Projects/max10/hdmi/avalon_st/hw_test/hdmi_test.sv|
+!i113 1
+R12
+!s92 -y /home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program -sv -work work +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test
+R14

@@ -1,0 +1,215 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2018  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 256 528)
+	(text "hdmi_qsys" (rect 97 -1 141 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 512 20 524)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 96 72)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "clk_pix_clk" (rect 0 0 43 12)(font "Arial" (font_size 8)))
+		(text "clk_pix_clk" (rect 4 101 70 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 96 112)(line_width 1))
+	)
+	(port
+		(pt 0 152)
+		(input)
+		(text "clk_x10_clk" (rect 0 0 46 12)(font "Arial" (font_size 8)))
+		(text "clk_x10_clk" (rect 4 141 70 152)(font "Arial" (font_size 8)))
+		(line (pt 0 152)(pt 96 152)(line_width 1))
+	)
+	(port
+		(pt 0 424)
+		(input)
+		(text "reset_reset" (rect 0 0 46 12)(font "Arial" (font_size 8)))
+		(text "reset_reset" (rect 4 413 70 424)(font "Arial" (font_size 8)))
+		(line (pt 0 424)(pt 96 424)(line_width 1))
+	)
+	(port
+		(pt 0 464)
+		(input)
+		(text "st_in_data[23..0]" (rect 0 0 66 12)(font "Arial" (font_size 8)))
+		(text "st_in_data[23..0]" (rect 4 453 106 464)(font "Arial" (font_size 8)))
+		(line (pt 0 464)(pt 96 464)(line_width 3))
+	)
+	(port
+		(pt 0 496)
+		(input)
+		(text "st_in_valid" (rect 0 0 42 12)(font "Arial" (font_size 8)))
+		(text "st_in_valid" (rect 4 485 70 496)(font "Arial" (font_size 8)))
+		(line (pt 0 496)(pt 96 496)(line_width 1))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "hdmi_blue_n" (rect 0 0 50 12)(font "Arial" (font_size 8)))
+		(text "hdmi_blue_n" (rect 4 181 70 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 96 192)(line_width 1))
+	)
+	(port
+		(pt 0 208)
+		(output)
+		(text "hdmi_blue_p" (rect 0 0 50 12)(font "Arial" (font_size 8)))
+		(text "hdmi_blue_p" (rect 4 197 70 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 96 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(output)
+		(text "hdmi_clk_pix_n" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "hdmi_clk_pix_n" (rect 4 213 88 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 96 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(output)
+		(text "hdmi_clk_pix_p" (rect 0 0 62 12)(font "Arial" (font_size 8)))
+		(text "hdmi_clk_pix_p" (rect 4 229 88 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 96 240)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(output)
+		(text "hdmi_green_n" (rect 0 0 57 12)(font "Arial" (font_size 8)))
+		(text "hdmi_green_n" (rect 4 245 76 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 96 256)(line_width 1))
+	)
+	(port
+		(pt 0 272)
+		(output)
+		(text "hdmi_green_p" (rect 0 0 57 12)(font "Arial" (font_size 8)))
+		(text "hdmi_green_p" (rect 4 261 76 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 96 272)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "hdmi_red_n" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "hdmi_red_n" (rect 4 277 64 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 96 288)(line_width 1))
+	)
+	(port
+		(pt 0 304)
+		(output)
+		(text "hdmi_red_p" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "hdmi_red_p" (rect 4 293 64 304)(font "Arial" (font_size 8)))
+		(line (pt 0 304)(pt 96 304)(line_width 1))
+	)
+	(port
+		(pt 0 320)
+		(output)
+		(text "hdmi_x[10..0]" (rect 0 0 53 12)(font "Arial" (font_size 8)))
+		(text "hdmi_x[10..0]" (rect 4 309 82 320)(font "Arial" (font_size 8)))
+		(line (pt 0 320)(pt 96 320)(line_width 3))
+	)
+	(port
+		(pt 0 336)
+		(output)
+		(text "hdmi_y[10..0]" (rect 0 0 54 12)(font "Arial" (font_size 8)))
+		(text "hdmi_y[10..0]" (rect 4 325 82 336)(font "Arial" (font_size 8)))
+		(line (pt 0 336)(pt 96 336)(line_width 3))
+	)
+	(port
+		(pt 0 352)
+		(output)
+		(text "hdmi_horz[10..0]" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "hdmi_horz[10..0]" (rect 4 341 100 352)(font "Arial" (font_size 8)))
+		(line (pt 0 352)(pt 96 352)(line_width 3))
+	)
+	(port
+		(pt 0 368)
+		(output)
+		(text "hdmi_vert[10..0]" (rect 0 0 64 12)(font "Arial" (font_size 8)))
+		(text "hdmi_vert[10..0]" (rect 4 357 100 368)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 96 368)(line_width 3))
+	)
+	(port
+		(pt 0 384)
+		(output)
+		(text "hdmi_clk_st" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "hdmi_clk_st" (rect 4 373 70 384)(font "Arial" (font_size 8)))
+		(line (pt 0 384)(pt 96 384)(line_width 1))
+	)
+	(port
+		(pt 0 480)
+		(output)
+		(text "st_in_ready" (rect 0 0 48 12)(font "Arial" (font_size 8)))
+		(text "st_in_ready" (rect 4 469 70 480)(font "Arial" (font_size 8)))
+		(line (pt 0 480)(pt 96 480)(line_width 1))
+	)
+	(drawing
+		(text "clk" (rect 81 43 180 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 67 220 144)(font "Arial" (color 0 0 0)))
+		(text "clk_pix" (rect 57 83 156 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 107 220 224)(font "Arial" (color 0 0 0)))
+		(text "clk_x10" (rect 55 123 152 259)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 101 147 220 304)(font "Arial" (color 0 0 0)))
+		(text "hdmi" (rect 69 163 162 339)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "blue_n" (rect 101 187 238 384)(font "Arial" (color 0 0 0)))
+		(text "blue_p" (rect 101 203 238 416)(font "Arial" (color 0 0 0)))
+		(text "clk_pix_n" (rect 101 219 256 448)(font "Arial" (color 0 0 0)))
+		(text "clk_pix_p" (rect 101 235 256 480)(font "Arial" (color 0 0 0)))
+		(text "green_n" (rect 101 251 244 512)(font "Arial" (color 0 0 0)))
+		(text "green_p" (rect 101 267 244 544)(font "Arial" (color 0 0 0)))
+		(text "red_n" (rect 101 283 232 576)(font "Arial" (color 0 0 0)))
+		(text "red_p" (rect 101 299 232 608)(font "Arial" (color 0 0 0)))
+		(text "x" (rect 101 315 208 640)(font "Arial" (color 0 0 0)))
+		(text "y" (rect 101 331 208 672)(font "Arial" (color 0 0 0)))
+		(text "horz" (rect 101 347 226 704)(font "Arial" (color 0 0 0)))
+		(text "vert" (rect 101 363 226 736)(font "Arial" (color 0 0 0)))
+		(text "clk_st" (rect 101 379 238 768)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 67 395 164 803)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset" (rect 101 419 232 848)(font "Arial" (color 0 0 0)))
+		(text "st_in" (rect 68 435 166 883)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "data" (rect 101 459 226 928)(font "Arial" (color 0 0 0)))
+		(text "ready" (rect 101 475 232 960)(font "Arial" (color 0 0 0)))
+		(text "valid" (rect 101 491 232 992)(font "Arial" (color 0 0 0)))
+		(text " system " (rect 221 512 490 1034)(font "Arial" ))
+		(line (pt 96 32)(pt 160 32)(line_width 1))
+		(line (pt 160 32)(pt 160 512)(line_width 1))
+		(line (pt 96 512)(pt 160 512)(line_width 1))
+		(line (pt 96 32)(pt 96 512)(line_width 1))
+		(line (pt 97 52)(pt 97 76)(line_width 1))
+		(line (pt 98 52)(pt 98 76)(line_width 1))
+		(line (pt 97 92)(pt 97 116)(line_width 1))
+		(line (pt 98 92)(pt 98 116)(line_width 1))
+		(line (pt 97 132)(pt 97 156)(line_width 1))
+		(line (pt 98 132)(pt 98 156)(line_width 1))
+		(line (pt 97 172)(pt 97 388)(line_width 1))
+		(line (pt 98 172)(pt 98 388)(line_width 1))
+		(line (pt 97 404)(pt 97 428)(line_width 1))
+		(line (pt 98 404)(pt 98 428)(line_width 1))
+		(line (pt 97 444)(pt 97 500)(line_width 1))
+		(line (pt 98 444)(pt 98 500)(line_width 1))
+		(line (pt 0 0)(pt 256 0)(line_width 1))
+		(line (pt 256 0)(pt 256 528)(line_width 1))
+		(line (pt 0 528)(pt 256 528)(line_width 1))
+		(line (pt 0 0)(pt 0 528)(line_width 1))
+	)
+)

@@ -1,0 +1,161 @@
+# do hdmi_test_run_msim_rtl_systemverilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlib hw_qsys
+# vmap hw_qsys hw_qsys
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap hw_qsys hw_qsys 
+# Modifying /home/user/intelFPGA_lite/18.0/modelsim_ase/linuxaloem/../modelsim.ini
+# vlog -vlog01compat -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/hw_qsys.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -vlog01compat -work hw_qsys "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/hw_qsys.v 
+# ** Warning: (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Compiling module hw_qsys
+# ** Warning: /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/hw_qsys.v(245): (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Scanning library directory '/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	hw_qsys_altpll_0
+# 	hdmi_st
+# 	altera_avalon_st_pipeline_stage
+# 	altera_reset_controller
+# 
+# Top level modules:
+# 	hw_qsys
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vlog -vlog01compat -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_controller.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -vlog01compat -work hw_qsys "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_controller.v 
+# ** Warning: (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Compiling module altera_reset_controller
+# ** Warning: /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_controller.v(320): (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Scanning library directory '/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	altera_reset_synchronizer
+# 
+# Top level modules:
+# 	altera_reset_controller
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vlog -vlog01compat -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_synchronizer.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -vlog01compat -work hw_qsys "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_synchronizer.v 
+# ** Warning: (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Compiling module altera_reset_synchronizer
+# ** Warning: /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_reset_synchronizer.v(88): (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# 
+# Top level modules:
+# 	altera_reset_synchronizer
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vlog -vlog01compat -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hw_qsys_altpll_0.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -vlog01compat -work hw_qsys "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hw_qsys_altpll_0.v 
+# ** Warning: (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Compiling module hw_qsys_altpll_0_dffpipe_l2c
+# -- Compiling module hw_qsys_altpll_0_stdsync_sv6
+# -- Compiling module hw_qsys_altpll_0_altpll_ab92
+# -- Compiling module hw_qsys_altpll_0
+# ** Warning: /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hw_qsys_altpll_0.v(331): (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Scanning library directory '/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	fiftyfivenm_pll
+# 
+# Top level modules:
+# 	hw_qsys_altpll_0
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vlog -sv -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -sv -work hw_qsys "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv 
+# -- Compiling module altera_avalon_st_pipeline_stage
+# -- Scanning library directory '/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	altera_avalon_st_pipeline_base
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_stage
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -vlog01compat -work hw_qsys "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v 
+# ** Warning: (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# -- Compiling module altera_avalon_st_pipeline_base
+# ** Warning: /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/altera_avalon_st_pipeline_base.v(140): (vlog-2644) Conflicting semantics, "-vlog01compat" switch disables SystemVerilog support.
+# 
+# Top level modules:
+# 	altera_avalon_st_pipeline_base
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+# vlog -sv -work hw_qsys +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hdmi_st.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -sv -work hw_qsys "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hdmi_st.sv 
+# -- Compiling module hdmi_st
+# -- Scanning library directory '/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	tmds_encoder
+# 	tmds_serial
+# 
+# Top level modules:
+# 	hdmi_st
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test {/home/user/Projects/max10/hdmi/avalon_st/hw_test/hdmi_test.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hw_test" /home/user/Projects/max10/hdmi/avalon_st/hw_test/hdmi_test.sv 
+# -- Compiling module hdmi_test
+# -- Scanning library directory '/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	hw_qsys
+# 
+# Top level modules:
+# 	hdmi_test
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio {/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio/altera_gpio_lite.sv}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:20:10 on Nov 30,2023
+# vlog -reportprogress 300 -sv -work work "+incdir+/home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio" /home/user/Projects/max10/hdmi/avalon_st/hdmi_ip/ddio/altera_gpio_lite.sv 
+# -- Compiling module altgpio_one_bit
+# -- Compiling module altera_gpio_lite
+# -- Scanning library directory '/home/user/Projects/max10/hdmi/avalon_st/testbench_ip/user_test_program'
+# 
+# Referenced (but uncompiled) modules or primitives:
+# 	fiftyfivenm_ddio_out
+# 	fiftyfivenm_ddio_oe
+# 	fiftyfivenm_ff
+# 	fiftyfivenm_ddio_in
+# 	fiftyfivenm_io_obuf
+# 	fiftyfivenm_pseudo_diff_out
+# 	fiftyfivenm_io_ibuf
+# 	fiftyfivenm_io_clock_divider
+# 
+# Top level modules:
+# 	altera_gpio_lite
+# End time: 00:20:10 on Nov 30,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>

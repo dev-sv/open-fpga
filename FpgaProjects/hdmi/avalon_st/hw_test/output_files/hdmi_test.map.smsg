@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at hdmi_st.sv(147): always construct contains both blocking and non-blocking assignments File: /home/user/Projects/max10/hdmi/avalon_st/hw_test/hw_qsys/synthesis/submodules/hdmi_st.sv Line: 147

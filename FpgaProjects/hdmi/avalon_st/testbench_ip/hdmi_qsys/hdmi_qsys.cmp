@@ -1,0 +1,25 @@
+	component hdmi_qsys is
+		port (
+			clk_clk        : in  std_logic                     := 'X';             -- clk
+			clk_pix_clk    : in  std_logic                     := 'X';             -- clk
+			clk_x10_clk    : in  std_logic                     := 'X';             -- clk
+			hdmi_blue_n    : out std_logic;                                        -- blue_n
+			hdmi_blue_p    : out std_logic;                                        -- blue_p
+			hdmi_clk_pix_n : out std_logic;                                        -- clk_pix_n
+			hdmi_clk_pix_p : out std_logic;                                        -- clk_pix_p
+			hdmi_green_n   : out std_logic;                                        -- green_n
+			hdmi_green_p   : out std_logic;                                        -- green_p
+			hdmi_red_n     : out std_logic;                                        -- red_n
+			hdmi_red_p     : out std_logic;                                        -- red_p
+			hdmi_x         : out std_logic_vector(10 downto 0);                    -- x
+			hdmi_y         : out std_logic_vector(10 downto 0);                    -- y
+			hdmi_horz      : out std_logic_vector(10 downto 0);                    -- horz
+			hdmi_vert      : out std_logic_vector(10 downto 0);                    -- vert
+			hdmi_clk_st    : out std_logic;                                        -- clk_st
+			reset_reset    : in  std_logic                     := 'X';             -- reset
+			st_in_data     : in  std_logic_vector(23 downto 0) := (others => 'X'); -- data
+			st_in_ready    : out std_logic;                                        -- ready
+			st_in_valid    : in  std_logic                     := 'X'              -- valid
+		);
+	end component hdmi_qsys;
+
