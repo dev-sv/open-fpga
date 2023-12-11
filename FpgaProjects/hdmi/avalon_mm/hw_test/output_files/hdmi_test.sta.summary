@@ -1,0 +1,89 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : -1.514
+TNS   : -15.657
+
+Type  : Slow 1200mV 85C Model Setup 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 3.367
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 0.334
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'osc'
+Slack : 4.936
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 5.939
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : -1.358
+TNS   : -13.171
+
+Type  : Slow 1200mV 0C Model Setup 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 3.466
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 0.231
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.316
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.013
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'osc'
+Slack : 4.806
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 5.896
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.911
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 5.015
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 0.014
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.147
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'hw_qsys_inst|altpll_0|sd1|pll7|clk[0]'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'osc'
+Slack : 4.662
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'hw_qsys_inst|altpll_0|sd1|pll7|clk[1]'
+Slack : 5.973
+TNS   : 0.000
+
+------------------------------------------------------------

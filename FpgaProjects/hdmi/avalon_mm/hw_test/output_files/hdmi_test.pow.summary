@@ -1,0 +1,12 @@
+Power Analyzer Status : Successful - Mon Dec 11 14:27:12 2023
+Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Revision Name : hdmi_test
+Top-level Entity Name : hdmi_test
+Family : MAX 10
+Device : 10M50SAE144C8G
+Power Models : Final
+Total Thermal Power Dissipation : 362.49 mW
+Core Dynamic Thermal Power Dissipation : 96.29 mW
+Core Static Thermal Power Dissipation : 253.19 mW
+I/O Thermal Power Dissipation : 13.01 mW
+Power Estimation Confidence : Low: user provided insufficient toggle rate data

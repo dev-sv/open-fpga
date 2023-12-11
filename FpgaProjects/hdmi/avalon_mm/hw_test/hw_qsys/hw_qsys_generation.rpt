@@ -1,0 +1,42 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/user/Projects/max10/hdmi/avalon_mm/hw_test/hw_qsys.qsys --block-symbol-file --output-directory=/home/user/Projects/max10/hdmi/avalon_mm/hw_test/hw_qsys --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading hw_test/hw_qsys.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 18.0]
+Progress: Parameterizing module altpll_0
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hdmi_mm_0 [hdmi_mm 1.0]
+Progress: Parameterizing module hdmi_mm_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: hw_qsys.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: hw_qsys.: You have exported the interface hdmi_mm_0.avalon_slave but not its associated clock interface.  Export the driver of hdmi_mm_0.clock
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/user/Projects/max10/hdmi/avalon_mm/hw_test/hw_qsys.qsys --synthesis=VERILOG --output-directory=/home/user/Projects/max10/hdmi/avalon_mm/hw_test/hw_qsys/synthesis --family="MAX 10" --part=10M50SAE144C8G
+Progress: Loading hw_test/hw_qsys.qsys
+Progress: Reading input file
+Progress: Adding altpll_0 [altpll 18.0]
+Progress: Parameterizing module altpll_0
+Progress: Adding clk_0 [clock_source 18.0]
+Progress: Parameterizing module clk_0
+Progress: Adding hdmi_mm_0 [hdmi_mm 1.0]
+Progress: Parameterizing module hdmi_mm_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: hw_qsys.altpll_0: altpll_0.pll_slave must be connected to an Avalon-MM master
+Warning: hw_qsys.: You have exported the interface hdmi_mm_0.avalon_slave but not its associated clock interface.  Export the driver of hdmi_mm_0.clock
+Info: hw_qsys: Generating hw_qsys "hw_qsys" for QUARTUS_SYNTH
+Info: altpll_0: "hw_qsys" instantiated altpll "altpll_0"
+Info: hdmi_mm_0: "hw_qsys" instantiated hdmi_mm "hdmi_mm_0"
+Info: rst_controller: "hw_qsys" instantiated altera_reset_controller "rst_controller"
+Info: hw_qsys: Done "hw_qsys" with 4 modules, 6 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
