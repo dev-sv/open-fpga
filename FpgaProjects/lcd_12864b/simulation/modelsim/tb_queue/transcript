@@ -1,4 +1,0 @@
-# Compile of queue.sv was successful.
-# Compile of tb_queue.sv was successful.
-# 2 compiles, 0 failed with no errors.
-vsim -gui -l msim_transcript work.tb_queue
